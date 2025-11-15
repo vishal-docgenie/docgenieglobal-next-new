@@ -33,13 +33,13 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      console.info("Form submitted successfully. Attempting to fire LinkedIn Insight Tag."); // Debugging
-      if (window.lintrk) {
-        window.lintrk('track', { conversion_id: 22311258 });
-        console.log("LinkedIn Insight Tag tracking fired for successful contact form submission."); // Debugging
-      } else {
-        console.warn("window.lintrk is not defined. LinkedIn Insight Tag might not be loaded for contact form conversion.");
-      }
+      // console.info("Form submitted successfully. Attempting to fire LinkedIn Insight Tag."); // Debugging
+      // if (window.lintrk) {
+      //   window.lintrk('track', { conversion_id: 22311258 });
+      //   console.log("LinkedIn Insight Tag tracking fired for successful contact form submission."); // Debugging
+      // } else {
+      //   console.warn("window.lintrk is not defined. LinkedIn Insight Tag might not be loaded for contact form conversion.");
+      // }
       
       // const response = await fetch('https://apis.docgenieglobal.com/apis/common/globalContactMail.php', {
       const response = await fetch('/api/contact', {
