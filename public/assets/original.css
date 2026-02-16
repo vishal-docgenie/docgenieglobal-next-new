@@ -3254,9 +3254,9 @@ html {
     color: rgb(107 114 128 / var(--tw-placeholder-opacity, 1));
 }
 
-.opacity-0 {
+/* .opacity-0 {
     opacity: 0;
-}
+} */
 
 .opacity-10 {
     opacity: 0.1;
@@ -3424,11 +3424,11 @@ html {
     transition-duration: 0.15s;
 }
 
-.transition-opacity {
+/* .transition-opacity {
     transition-property: opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 0.15s;
-}
+} */
 
 .transition-shadow {
     transition-property: box-shadow;
