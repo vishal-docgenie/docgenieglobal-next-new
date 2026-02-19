@@ -5,24 +5,24 @@ import { HelpCircle } from "lucide-react";
 const FaqSection = () => {
   const faqItems = [
     {
-      question: "How does the pricing and implementation work?",
-      answer: "We offer two plans - the Individual Provider Plan for independent doctors, care providers and smaller clinics who need a ready-to-use telemedicine solution, and the Enterprise Plan for clinics and hospitals requiring more complex workflows and customizations. Our team will work in close consultation with yours and take care of all implementation and integration processes."
-    }, 
+      question: "What's the difference between Basic and Premium?",
+      answer: "Both plans include the core platform features like Appointment Scheduling, Calendar Management, EMR, ePrescription, Admin Module, and HIPAA & ISO compliance, plus SMS alerts.\n\nPremium adds capabilities designed for growing practices, including:\n• Advanced customisation, branding & colour scheme changes\n• WhatsApp + SMS reminders\n• CIMS drug database access\n• AI enablement"
+    },
     {
-      question: "Do you offer a pilot program?",
-      answer: "Yes we offer 15-day pilot programs for both the Individual Provider and Enterprise plans. This allows our partners to fully test out the platform and assess if it fits with their needs."
-    }, 
+      question: "When should I choose the Enterprise plan?",
+      answer: "Choose Enterprise if you're a clinic/hospital/organisation that needs more sophisticated integrations, custom workflows, or you have 20+ doctors. Enterprise includes everything in Premium, with implementation and configuration tailored to your needs (and pricing provided via a custom quote)."
+    },
     {
-      question: "Do you offer customized pricing?",
-      answer: "The Enterprise Plan offers customized pricing based on specific needs, integrations, and additional features. The Individual Provider Plan has a fixed monthly fee, with optional add-on services."
-    }, 
+      question: "Can I upgrade from Basic to Premium (or switch plans later)?",
+      answer: "Yes — you can move between plans as your needs change."
+    },
     {
-      question: "Do you provide customer support, and is it included in the pricing?",
-      answer: "Enterprise Plan customers are eligible to receive ongoing priority support. Individual Provider Plan users can have access to regular tech support. They can opt for premium tech support for an additional fee."
-    }, 
+      question: "Do you offer a free trial or a pilot program?",
+      answer: "We only offer a 15-day pilot program for customers on the Enterprise plan."
+    },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards (Visa, Mastercard, American Express). Enterprise customers can also pay by invoice."
+      answer: "We accept all major credit cards (e.g., Visa, Mastercard, American Express) and forms of payment including bank transfers, payment by invoice and digital payment methods."
     }
   ];
 
@@ -36,7 +36,7 @@ const FaqSection = () => {
               <HelpCircle className="h-5 w-5 text-brand-orange mr-3 flex-shrink-0" />
               {faq.question}
             </h3>
-            <p className="text-gray-600 ml-8 text-left">{faq.answer}</p>
+            <p className="text-gray-600 ml-8 text-left whitespace-pre-line">{faq.answer}</p>
           </div>
         ))}
       </div>

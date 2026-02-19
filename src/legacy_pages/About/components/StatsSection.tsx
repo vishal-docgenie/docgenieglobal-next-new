@@ -4,11 +4,11 @@ import React from "react";
 const StatsSection = () => {
   const stats = [
     {
-      number: "300+",
+      number: "400+",
       label: "Healthcare Providers"
     }, 
     {
-      number: "50,000+",
+      number: "55,000+",
       label: "Patient Consultations"
     }, 
     {

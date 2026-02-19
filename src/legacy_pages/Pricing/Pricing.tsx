@@ -66,9 +66,6 @@ const Pricing = () => {
             />
           </div>
           
-          {/* Comparison Table */}
-          <ComparisonTable />
-          
           {/* FAQ Section */}
           <FaqSection />
           

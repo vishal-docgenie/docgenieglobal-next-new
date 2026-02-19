@@ -35,11 +35,11 @@ const Industries = () => {
     image: '/images/public-health.jpg'
   }];
   const overviewStats = [{
-    number: "300+",
+    number: "400+",
     label: "Healthcare Providers",
     icon: <Hospital className="h-8 w-8 text-brand-blue" />
   }, {
-    number: "70,000+",
+    number: "80,000+",
     label: "Patients Served",
     icon: <Users className="h-8 w-8 text-brand-blue" />
   }, {
@@ -194,7 +194,7 @@ const Industries = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="heading-2 mb-4">Trusted by Healthcare Organizations Worldwide</h2>
+            <h2 className="heading-2 mb-4">Trusted by Healthcare Providers &amp; Organizations</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Our platform powers telemedicine solutions across diverse healthcare environments
             </p>

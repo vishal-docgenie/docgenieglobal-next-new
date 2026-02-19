@@ -4,38 +4,38 @@ export const pricingFAQSchema = {
   "@type": "FAQPage",
   "mainEntity": [{
     "@type": "Question",
-    "name": "How does the pricing and implementation work?",
+    "name": "What's the difference between Basic and Premium?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "We offer two plans - the Individual Provider Plan for independent doctors, care providers and smaller clinics who need a ready-to-use telemedicine solution, and the Enterprise Plan for clinics and hospitals requiring more complex workflows and customizations. Our team will work in close consultation with yours and take care of all implementation and integration processes."
+      "text": "Both plans include the core platform features like Appointment Scheduling, Calendar Management, EMR, ePrescription, Admin Module, and HIPAA & ISO compliance, plus SMS alerts. Premium adds capabilities designed for growing practices, including advanced customisation, branding & colour scheme changes, WhatsApp + SMS reminders, CIMS drug database access, and AI enablement."
     }
   },{
     "@type": "Question",
-    "name": "Do you offer a pilot program?",
+    "name": "When should I choose the Enterprise plan?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes we offer 15-day pilot programs for both the Individual Provider and Enterprise plans. This allows our partners to fully test out the platform and assess if it fits with their needs."
+      "text": "Choose Enterprise if you're a clinic/hospital/organisation that needs more sophisticated integrations, custom workflows, or you have 20+ doctors. Enterprise includes everything in Premium, with implementation and configuration tailored to your needs (and pricing provided via a custom quote)."
     }
   },{
     "@type": "Question",
-    "name": "Do you offer customized pricing?",
+    "name": "Can I upgrade from Basic to Premium (or switch plans later)?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The Enterprise Plan offers customized pricing based on specific needs, integrations, and additional features. The Individual Provider Plan has a fixed monthly fee, with optional add-on services."
+      "text": "Yes — you can move between plans as your needs change."
     }
   },{
     "@type": "Question",
-    "name": "Do you provide customer support, and is it included in the pricing?",
+    "name": "Do you offer a free trial or a pilot program?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Enterprise Plan customers are eligible to receive ongoing priority support. Individual Provider Plan users can have access to regular tech support. They can opt for premium tech support for an additional fee."
+      "text": "We only offer a 15-day pilot program for customers on the Enterprise plan."
     }
   },{
     "@type": "Question",
     "name": "What payment methods do you accept?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "We accept all major credit cards (Visa, Mastercard, American Express). Enterprise customers can also pay by invoice."
+      "text": "We accept all major credit cards (e.g., Visa, Mastercard, American Express) and forms of payment including bank transfers, payment by invoice and digital payment methods."
     }
   }]
 };
