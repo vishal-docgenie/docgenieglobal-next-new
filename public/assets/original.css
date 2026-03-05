@@ -1191,6 +1191,9 @@ html {
     margin-top: auto;
 }
 
+.mr-0 {
+    margin-right: 0;
+}
 .line-clamp-3 {
     overflow: hidden;
     display: -webkit-box;
@@ -4723,4 +4726,8 @@ html {
     background-image: linear-gradient(to right, #A3D9FF, #FAC0A1);
     background-clip: text;
     color: transparent;
+}
+.fl-r {float: right;}
+.anchor-hide {
+    cursor: inherit !important;
 }

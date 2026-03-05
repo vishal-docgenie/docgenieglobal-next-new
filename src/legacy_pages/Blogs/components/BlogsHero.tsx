@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Search } from 'lucide-react';
+import Link from "next/link";
 
 interface BlogsHeroProps {
   searchQuery: string;
@@ -15,7 +16,7 @@ const BlogsHero = ({ searchQuery, setSearchQuery }: BlogsHeroProps) => {
           Blogs & News
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in">
-          Latest insights, updates, and stories from the world of telemedicine and healthcare technology.
+          Latest insights, updates, <Link href="/" className="anchor-hide">and</Link> stories from the world of telemedicine and healthcare technology.
         </p>
         
         <div className="relative max-w-xl mx-auto animate-fade-in">

@@ -1,5 +1,6 @@
 
 import React from "react";
+import Link from "next/link";
 import { Check, Star, Award, Clock, Headset, Zap } from "lucide-react";
 
 const WhyChooseSection = () => {
@@ -41,7 +42,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-brand-blue/20 text-base font-medium text-brand-gray-dark reveal animate-fade-in">
-            Industry Recognition
+            <Link href="/industries" className="anchor-hide">Industry Recognition</Link>
           </div>
           <h2 className="heading-2 mb-4 reveal animate-fade-in">
             Why Clinics & Doctors Choose Our <span className="text-brand-blue">Telemedicine Platform</span>

@@ -70,3 +70,9 @@ body {
   opacity: 1 !important;
   transform: none !important;
 }
+
+:where(.space-x-8 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
+    margin-inline-end: inherit;
+}

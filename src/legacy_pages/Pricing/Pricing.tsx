@@ -6,6 +6,7 @@ import ComparisonTable from "./components/ComparisonTable";
 import FaqSection from "./components/FaqSection";
 import CtaSection from "./components/CtaSection";
 import Head from "next/head";
+import Link from "next/link";
 import { pricingFAQSchema } from "./components/PricingSchemaData";
 
 const Pricing = () => {
@@ -56,7 +57,7 @@ const Pricing = () => {
               Simple, <span className="text-brand-blue">Transparent</span> Pricing
             </h1>
             <p className="subtitle mb-8 max-w-2xl mx-auto reveal animate-slide-down reveal-delay-100">
-              Choose the plan that works best for your healthcare practice's size and needs
+              <Link href="/" className="anchor-hide">Choose</Link> the plan that works best for your healthcare practice's size and needs
             </p>
             
             {/* Pricing Tabs */}

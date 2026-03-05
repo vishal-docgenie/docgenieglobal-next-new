@@ -16,11 +16,13 @@ const HeroSection = () => {
             Revolutionizing <span className="text-brand-blue">Healthcare</span> Through Technology
           </h1>
           <p className="subtitle mb-8 max-w-2xl mx-auto reveal animate-slide-down reveal-delay-100 text-center">
-            Our end-to-end telehealth solution delivers everything clinics and doctors need to provide exceptional virtual care experiences.
+            <Link href="/" className="anchor-hide">Our</Link> end-to-end telehealth solution delivers everything clinics and doctors need to provide exceptional virtual care experiences.
           </p>
           <div className="flex flex-wrap justify-center gap-4 reveal animate-slide-down reveal-delay-200">
-            <Button className="primary-button">Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
-              <Link href="/contact"></Link>
+            <Button className="primary-button">
+              <Link href="/contact">
+                Get in Touch <ArrowRight className="ml-2 h-4 w-4 fl-r" />
+              </Link>
             </Button>
             <Button variant="outline" className="bg-white">
               <Link href="/solutions">

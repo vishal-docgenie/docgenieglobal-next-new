@@ -60,7 +60,7 @@ const Index = () => {
     <Layout>
       <Head>
         <title>DocGenie Global – Complete AI-Powered Telemedicine Platform | HIPAA-Compliant Virtual Care Solutions</title>
-        <meta name="description" content="Empower your healthcare practice with our HIPAA-compliant virtual care platform. The best telemedicine solution for clinics and doctors with white label capabilities." />
+        <meta name="description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <link rel="canonical" href="https://www.docgenieglobal.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
         

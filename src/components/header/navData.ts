@@ -1,10 +1,6 @@
 
 export const navLinks = [
   {
-    name: "Home",
-    path: "/"
-  }, 
-  {
     name: "Solutions",
     path: "/solutions",
     hasDropdown: true

@@ -172,7 +172,7 @@ const Industries = () => {
             <h1 className="heading-1 mb-6">
               Telemedicine Solutions for Every <span className="text-brand-blue">Healthcare Stakeholder</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">Our telemedicine solution is designed to meet the unique needs of healthcare providers, technology partners, and public health organizations, delivering customized solutions that drive results.</p>
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed"><Link href="/" className="anchor-hide">Our</Link> telemedicine solution is designed to meet the unique needs of healthcare providers, technology partners, and public health organizations, delivering customized solutions that drive results.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#healthcare-providers">
                 <Button size="lg" className="primary-button">

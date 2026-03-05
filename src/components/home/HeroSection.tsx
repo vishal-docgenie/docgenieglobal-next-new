@@ -23,8 +23,10 @@ const HeroSection = () => {
               The most comprehensive virtual care platform for clinics and doctors. HIPAA-compliant, fully customizable, and designed to enhance patient engagement.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start reveal animate-slide-down reveal-delay-200">
-              <Button className="primary-button">Start Your Virtual Care Journey <ArrowRight className="ml-2 h-4 w-4" />
-                <Link href="/contact"></Link>
+              <Button className="primary-button">
+                <Link href="/contact">
+                    Start Your Virtual Care Journey <ArrowRight className="ml-2 h-4 w-4 fl-r" />
+                </Link>
               </Button>
               <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10">
                 <Link href="/solutions">

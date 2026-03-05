@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
             <h1 className="heading-2 mb-6">Comprehensive <span className="text-brand-blue">Telemedicine Solutions</span> for Healthcare Providers</h1>
             <p className="text-lg text-gray-700 mb-8 max-w-2xl">
-              Empower your healthcare practice with our customizable, secure, and feature-rich telemedicine platform designed to enhance patient care and streamline your operations.
+              Empower your healthcare practice with <Link href="/" className="anchor-hide">our</Link> customizable, secure, and feature-rich telemedicine platform designed to enhance patient care and streamline your operations.
             </p>
             
             <div className="flex flex-col items-start mb-8">

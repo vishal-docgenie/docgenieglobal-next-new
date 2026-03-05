@@ -185,7 +185,7 @@ const TestimonialCarousel = () => {
             disabled={isTransitioning}
             className={`h-3 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 disabled:cursor-not-allowed ${
               i === activeIndex 
-                ? 'w-8 bg-brand-blue shadow-lg scale-125' 
+                ? 'w-8 bg-brand-blue shadow-lg scale-120' 
                 : 'w-3 bg-gray-300 hover:bg-gray-400 hover:w-4'
             }`}
             aria-label={`Go to testimonial ${i + 1}`}

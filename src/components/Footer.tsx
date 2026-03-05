@@ -75,7 +75,7 @@ const Footer = () => {
                   href="/solutions"
                   className="text-gray-600 hover:text-brand-blue transition-colors"
                 >
-                  Features
+                  Solutions
                 </Link>
               </li>
               <li>
@@ -88,10 +88,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/solutions#integrations"
+                  href="/industries"
                   className="text-gray-600 hover:text-brand-blue transition-colors"
                 >
-                  Integrations
+                  Industries
                 </Link>
               </li>
             </ul>
