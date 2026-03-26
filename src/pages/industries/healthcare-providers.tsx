@@ -63,38 +63,104 @@ const HealthcareProviders = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Telemedicine for Healthcare Providers - Doctors, Clinics & Hospitals",
-    "description": "Comprehensive telemedicine solutions for independent doctors, clinics, and hospitals. Expand patient reach, reduce costs, and improve care quality with our white-label platform.",
-    "url": "https://www.docgenieglobal.com/industries/healthcare-providers",
-    "publisher": {
-      "@type": "Organization",
-      "name": "DocGenie Global",
-      "logo": "https://www.docgenieglobal.com/lovable-uploads/docgenie-logo.png"
-    },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.docgenieglobal.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Industries",
-          "item": "https://www.docgenieglobal.com/industries"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Healthcare Providers",
-          "item": "https://www.docgenieglobal.com/industries/healthcare-providers"
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#software",
+        "name": "Telemedicine Platform for Healthcare Providers",
+        "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "Telemedicine SaaS",
+        "operatingSystem": "Web",
+        "url": "https://www.docgenieglobal.com/industries/healthcare-providers",
+        "applicationSuite": "Telemedicine Platform",
+        "provider": {
+          "@type": "Organization",
+          "name": "DocGenie Global",
+          "url": "https://www.docgenieglobal.com/"
         }
-      ]
-    }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#service",
+        "serviceType": "Telemedicine Platform for Healthcare Providers",
+        "provider": {
+          "@type": "Organization",
+          "name": "DocGenie Global"
+        },
+        "areaServed": [
+          "United States",
+          "United Kingdom",
+          "India",
+          "Singapore"
+        ],
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Global"
+          }
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Hospitals, Clinics, Healthcare Providers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "0",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#medical",
+        "name": "DocGenie Global",
+        "medicalSpecialty": "Telemedicine"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How can telemedicine help healthcare providers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Telemedicine helps healthcare providers improve patient access, reduce no-shows, and streamline clinical workflows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this platform suitable for clinics and hospitals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the platform is designed for hospitals, clinics, and healthcare organizations of all sizes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the platform be customized for providers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the telemedicine platform can be fully customized to match provider requirements and workflows."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#webpage",
+        "url": "https://www.docgenieglobal.com/industries/healthcare-providers",
+        "name": "Telemedicine Platform for Healthcare Providers",
+        "about": {
+          "@id": "https://www.docgenieglobal.com/industries/healthcare-providers#software"
+        }
+      },
+      {
+        "@type": "ContactAction",
+        "target": "https://www.docgenieglobal.com/contact"
+      }
+    ]
   };
 
   return (
@@ -126,48 +192,6 @@ const HealthcareProviders = () => {
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
-        </script>
-        
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How can telemedicine improve access for healthcare providers?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Telemedicine overcomes physical distance barriers, allowing providers to consult patients remotely and reach underserved populations, improving overall access to care."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is DocGenie's platform compatible with existing EHR systems?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, the platform supports seamless integration with popular EHR systems to maintain accurate and continuous patient records."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does telemedicine reduce costs for clinics and hospitals?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "By automating administrative tasks, reducing in-person visits, and enabling efficient patient monitoring, telemedicine helps lower operational expenses."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can small clinics scale their services with DocGenie Global?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Absolutely. Our flexible platform is designed to support small and independent practices, empowering them to expand services without significant capital investment."
-                }
-              }
-            ]
-          })}
         </script>
       </Head>
       

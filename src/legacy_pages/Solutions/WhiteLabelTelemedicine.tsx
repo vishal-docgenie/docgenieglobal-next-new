@@ -12,7 +12,7 @@ import RelatedSolutions from "./components/RelatedSolutions";
 import BrandTrustSection from "./components/WhiteLabel/BrandTrustSection";
 import PerformanceSection from "./components/WhiteLabel/PerformanceSection";
 import ImplementationSection from "./components/WhiteLabel/ImplementationSection";
-import { whiteLabelSchemaData, whiteLabelFAQSchema } from "./components/WhiteLabel/SchemaData";
+import { whiteLabelSchemaData } from "./components/WhiteLabel/SchemaData";
 
 const WhiteLabelTelemedicine = () => {
   return (
@@ -43,11 +43,6 @@ const WhiteLabelTelemedicine = () => {
         {/* JSON-LD Structured Data - Product */}
         <script type="application/ld+json">
           {JSON.stringify(whiteLabelSchemaData)}
-        </script>
-        
-        {/* JSON-LD Structured Data - FAQ */}
-        <script type="application/ld+json">
-          {JSON.stringify(whiteLabelFAQSchema)}
         </script>
       </Head>
       

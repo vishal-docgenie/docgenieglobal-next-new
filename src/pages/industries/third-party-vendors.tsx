@@ -63,38 +63,118 @@ const ThirdPartyVendors = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "White-Label Telemedicine for Ecosystem Vendors & Resellers",
-    "description": "Partner with DocGenie to offer white-label telemedicine solutions. Perfect for insurance companies, technology providers, and third-party administrators looking to expand their healthcare offerings.",
-    "url": "https://www.docgenieglobal.com/industries/third-party-vendors",
-    "publisher": {
-      "@type": "Organization",
-      "name": "DocGenie Global",
-      "logo": "https://www.docgenieglobal.com/lovable-uploads/docgenie-logo.png"
-    },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.docgenieglobal.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Industries",
-          "item": "https://www.docgenieglobal.com/industries"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Ecosystem Vendors",
-          "item": "https://www.docgenieglobal.com/industries/third-party-vendors"
+    "@graph": [
+
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#software",
+        "name": "Telemedicine Platform for Third Party Vendors",
+        "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "Telemedicine SaaS",
+        "operatingSystem": "Web",
+        "url": "https://www.docgenieglobal.com/industries/third-party-vendors",
+        "applicationSuite": "Telemedicine Platform",
+        "provider": {
+          "@type": "Organization",
+          "name": "DocGenie Global",
+          "url": "https://www.docgenieglobal.com/"
         }
-      ]
-    }
+      },
+
+      {
+        "@type": "Service",
+        "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#service",
+        "serviceType": "Telemedicine SaaS for Third Party Vendors and Integrations",
+        "provider": {
+          "@type": "Organization",
+          "name": "DocGenie Global"
+        },
+        "areaServed": [
+          "United States",
+          "United Kingdom",
+          "India",
+          "Singapore"
+        ],
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Global"
+          }
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Healthcare Vendors, SaaS Companies, API Partners, Integration Providers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "0",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#api",
+        "name": "DocGenie API",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Healthcare API Integration",
+        "operatingSystem": "Web",
+        "url": "https://www.docgenieglobal.com/industries/third-party-vendors",
+        "provider": {
+          "@type": "Organization",
+          "name": "DocGenie Global"
+        }
+      },
+
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can third party vendors integrate with DocGenie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, DocGenie Global supports integrations with third party healthcare vendors and SaaS platforms through APIs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of integrations are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The platform supports integrations such as EMR systems, payment gateways, analytics tools, and healthcare software solutions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the platform scalable for partners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the platform is designed to scale with partners and supports enterprise-level integrations."
+            }
+          }
+        ]
+      },
+
+      {
+        "@type": "WebPage",
+        "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#webpage",
+        "url": "https://www.docgenieglobal.com/industries/third-party-vendors",
+        "name": "Telemedicine Platform for Third Party Vendors",
+        "about": {
+          "@id": "https://www.docgenieglobal.com/industries/third-party-vendors#software"
+        }
+      },
+
+      {
+        "@type": "ContactAction",
+        "target": "https://www.docgenieglobal.com/contact"
+      }
+
+    ]
   };
 
   return (
@@ -127,48 +207,6 @@ const ThirdPartyVendors = () => {
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
-        </script>
-        
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is a white-label telemedicine platform?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "It is a fully customisable telehealth platform that allows vendors to brand and market virtual care solutions under their own brand name, enabling quicker launch and greater brand recognition."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How quickly can we deploy the platform?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The exact time to deploy will depend on the complexity of the project and expected usage. However, the modular structure of the platform typically allows deployment of standard projects in less than 30 days, thereby significantly reducing time-to-market."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can the platform integrate with our existing systems?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, DocGenie supports extensive API and data integration with insurance claims, healthcare databases, and third-party applications."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What business models do you support?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We offer flexible subscription, licensing, and revenue sharing models tailored to vendor partnerships and business goals."
-                }
-              }
-            ]
-          })}
         </script>
       </Head>
       

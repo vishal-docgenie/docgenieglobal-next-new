@@ -25,35 +25,133 @@ const Index = () => {
   // Schema.org JSON-LD structured data for the home page
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "DocGenie Global",
-    "url": "https://www.docgenieglobal.com",
-    "logo": "https://www.docgenieglobal.com/lovable-uploads/docgenie-logo.png",
-    "description": "White Label Telemedicine Platform for Clinics & Healthcare Providers. HIPAA-compliant virtual care solution.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "143 Cecil Street, #03-01, GB Building",
-      "addressLocality": "Singapore",
-      "postalCode": "069542",
-      "addressCountry": "Singapore"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-800-DOC-GENIE",
-      "contactType": "customer service",
-      "availableLanguage": ["English"]
-    },
-    "sameAs": [
-      "https://twitter.com/docgenie",
-      "https://www.linkedin.com/company/docgenie-global",
-      "https://www.facebook.com/docgenieglobal"
-    ],
-    "offers": {
-      "@type": "Offer",
-      "name": "White Label Telemedicine Platform",
-      "description": "HIPAA-compliant virtual care solutions for healthcare providers",
-      "url": "https://www.docgenieglobal.com/solutions"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.docgenieglobal.com/#organization",
+        "name": "DocGenie Global",
+        "url": "https://www.docgenieglobal.com/",
+        "logo": "https://www.docgenieglobal.com/lovable-uploads/9f8cf5b9-0b09-4cc4-a771-e2e187f0618a.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "globalsupport@docgenie.in",
+          "areaServed": ["US","UK","IN","SG"],
+          "availableLanguage": ["English"]
+        },
+        "areaServed": [
+          "United States",
+          "United Kingdom",
+          "India",
+          "Singapore"
+        ],
+        "knowsAbout": [
+          "Telemedicine Software",
+          "White Label Telemedicine",
+          "HIPAA Compliant Telehealth",
+          "Remote Patient Monitoring",
+          "Virtual Care Platforms",
+          "Healthcare SaaS"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Telemedicine Solutions",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "White Label Telemedicine Platform"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "HIPAA Compliant Telehealth Platform"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.docgenieglobal.com/#software",
+        "name": "DocGenie Telemedicine Platform",
+        "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "Telemedicine SaaS",
+        "operatingSystem": "Web",
+        "url": "https://www.docgenieglobal.com/",
+        "applicationSuite": "White Label Telemedicine Platform",
+        "provider": {
+          "@id": "https://www.docgenieglobal.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "0",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "price": "0",
+            "eligibleTransactionVolume": {
+              "@type": "PriceSpecification",
+              "price": "Custom"
+            }
+          },
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "ContactAction",
+          "target": "https://www.docgenieglobal.com/contact"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.docgenieglobal.com/#website",
+        "url": "https://www.docgenieglobal.com/",
+        "name": "DocGenie Global",
+        "publisher": {
+          "@id": "https://www.docgenieglobal.com/#organization"
+        },
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.docgenieglobal.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.docgenieglobal.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is DocGenie Global?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DocGenie Global is a white label telemedicine platform that enables healthcare providers to launch virtual care services under their own brand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can I launch a telemedicine platform?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can launch your telemedicine platform within 2 to 3 weeks depending on customization and integrations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is DocGenie Global HIPAA compliant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, DocGenie Global follows HIPAA compliance standards to ensure patient data security and privacy."
+            }
+          }
+        ]
+      }
+    ]
   };
   
   return (

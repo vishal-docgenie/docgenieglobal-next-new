@@ -16,7 +16,7 @@ import HealthRecordsSection from "./components/HIPAACompliant/HealthRecordsSecti
 import SecurePlatformSection from "./components/HIPAACompliant/SecurePlatformSection";
 import BillingSection from "./components/HIPAACompliant/BillingSection";
 import FAQ from "./components/HIPAACompliant/FAQ";
-import { hipaaSchemaData, hipaaFAQSchema } from "./components/HIPAACompliant/SchemaData";
+import { hipaaSchemaData } from "./components/HIPAACompliant/SchemaData";
 
 const HIPAACompliantHealthcare = () => {
   return (
@@ -50,11 +50,6 @@ const HIPAACompliantHealthcare = () => {
         {/* JSON-LD Structured Data - Product */}
         <script type="application/ld+json">
           {JSON.stringify(hipaaSchemaData)}
-        </script>
-        
-        {/* JSON-LD Structured Data - FAQ */}
-        <script type="application/ld+json">
-          {JSON.stringify(hipaaFAQSchema)}
         </script>
       </Head>
       
