@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 
 interface LazyImageProps {
@@ -22,7 +22,10 @@ interface LazyImageProps {
 
 /**
  * A responsive image component that supports both eager and lazy loading
- * based on whether the image is critical (above the fold) or not
+ * based on whether the image is critical (above the fold) or not.
+ *
+ * Handles the Next.js SSR hydration race condition where onLoad can fire
+ * before React hydrates, leaving the image stuck at opacity-0.
  */
 const LazyImage: React.FC<LazyImageProps> = ({
   src,
@@ -44,29 +47,38 @@ const LazyImage: React.FC<LazyImageProps> = ({
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [error, setError] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // After hydration, check if the image is already loaded (e.g. from browser cache).
+  // In SSR/Next.js, onLoad can fire before React attaches event handlers,
+  // so the image may already be complete by the time this component hydrates.
+  useEffect(() => {
+    if (imgRef.current?.complete && imgRef.current?.naturalWidth > 0) {
+      setIsLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
     setIsLoaded(false);
     setError(false);
   }, [src]);
 
-  const handleLoad = () => {
+  const handleLoad = useCallback(() => {
     setIsLoaded(true);
-    console.log(`Image loaded: ${src}`);
     if (onLoad) {
       onLoad();
     }
-  };
+  }, [onLoad]);
 
-  const handleError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const handleError = useCallback((e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     setError(true);
     console.error(`Failed to load image: ${src}`);
     if (onError) {
       onError(e);
     }
-  };
+  }, [src, onError]);
 
-  // Create props object with React's built-in ImgHTMLAttributes (now including fetchpriority)
+  // Create props object with React's built-in ImgHTMLAttributes
   const imgProps: React.ImgHTMLAttributes<HTMLImageElement> = {
     src,
     alt,
@@ -96,9 +108,9 @@ const LazyImage: React.FC<LazyImageProps> = ({
         <div className="absolute inset-0 bg-gray-100 animate-pulse" 
              style={{ aspectRatio: width && height ? `${width}/${height}` : 'auto' }} />
       )}
-      
-      <img {...imgProps} />
-      
+
+      <img ref={imgRef} {...imgProps} />
+
       {error && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-red-500 text-sm">
           Failed to load image
