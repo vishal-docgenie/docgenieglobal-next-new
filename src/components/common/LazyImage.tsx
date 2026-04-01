@@ -30,7 +30,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
   className = '',
   width,
   height,
-  forceLazy = false,
+  forceLazy = true,
   onLoad,
   priority = 'auto',
   componentName,
@@ -71,10 +71,11 @@ const LazyImage: React.FC<LazyImageProps> = ({
     src,
     alt,
     className: cn(
-      "transition-opacity duration-300 max-w-full h-auto",
+      "transition-opacity duration-300",
+      className,
       isLoaded ? "opacity-100" : "opacity-0"
     ),
-    loading: forceLazy ? 'lazy' : 'eager',
+    loading: forceEager ? 'eager' : (forceLazy ? 'lazy' : 'eager'),
     onLoad: handleLoad,
     onError: handleError,
     width,
@@ -96,7 +97,6 @@ const LazyImage: React.FC<LazyImageProps> = ({
              style={{ aspectRatio: width && height ? `${width}/${height}` : 'auto' }} />
       )}
       
-      {/* Spread the props to the img element */}
       <img {...imgProps} />
       
       {error && (
