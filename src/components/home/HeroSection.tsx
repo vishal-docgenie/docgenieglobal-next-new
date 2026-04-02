@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Shield } from "lucide-react";
@@ -9,9 +9,9 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const HeroSection = () => {
 const isMobile = useIsMobile();
 const [state,setState]=useState(false);
-useEffect(()=>{
+useEffect(() => {
 setState(true);
-},[])
+}, [])
   return <section className="blue-white-gradient-b-30 pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse md:flex-row items-center">
@@ -41,7 +41,7 @@ setState(true);
           <div className="w-full md:w-1/2 relative reveal animate-slide-left">
             <div className={`w-full ${isMobile ? 'h-[450px]' : 'h-[400px]'} md:h-[500px] rounded-2xl overflow-hidden shadow-2xl relative glass-card`}>
               <div className="absolute inset-0 bg-gradient-to-br from-brand-blue to-brand-blue-light opacity-10 rounded-lg"></div>
-              {state==true?
+              { state == true ?
               <LazyImage 
                 src="/lovable-uploads/ad2d91b3-b21a-459a-abd0-7a78c4e7a382.png"
                 alt="Doctor conducting telemedicine consultation on smartphone with a patient, demonstrating the DocGenie white label platform interface" 
@@ -56,7 +56,7 @@ setState(true);
                   console.error("Image failed to load");
                   e.currentTarget.src = "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2940&auto=format&fit=crop";
                 }}
-              />:""}
+              /> : "" }
               <div className="absolute top-6 right-6 glass-card rounded-lg p-3 shadow-lg animate-float max-w-full">
                 <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">HD</span>

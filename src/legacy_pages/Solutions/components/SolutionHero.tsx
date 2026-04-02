@@ -1,5 +1,5 @@
 
-import React from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -13,6 +13,10 @@ interface SolutionHeroProps {
 }
 
 const SolutionHero = ({ title, description, image, altText }: SolutionHeroProps) => {
+  const [state,setState]=useState(false);
+  useEffect(() => {
+  setState(true);
+  }, [])
   return (
     <section className="pt-20 pb-16 md:pt-24 md:pb-20 bg-gradient-to-r from-brand-blue/10 to-brand-orange/10">
       <div className="container mx-auto px-4">
@@ -36,6 +40,7 @@ const SolutionHero = ({ title, description, image, altText }: SolutionHeroProps)
             </div>
           </div>
           <div className="lg:justify-self-end reveal">
+            { state == true ?
             <LazyImage
               src={image}
               alt={altText}
@@ -49,7 +54,7 @@ const SolutionHero = ({ title, description, image, altText }: SolutionHeroProps)
                 console.error("Image failed to load");
                 e.currentTarget.src = "/lovable-uploads/7eea6038-175c-4722-aa75-a6aaeba42a54.png";
               }}
-            />
+            /> : "" }
           </div>
         </div>
       </div>
