@@ -6,7 +6,7 @@ import { BlogPost } from '../types';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { generateSlug } from '../../BlogPost/hooks/useBlogData';
-import LazyImage from '@/components/common/LazyImage';
+// import LazyImage from '@/components/common/LazyImage';
 
 interface BlogCardProps {
   blog: BlogPost;
@@ -48,7 +48,7 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
     <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
       <div className="relative overflow-hidden aspect-video">
         {!imageLoaded && <Skeleton className="absolute inset-0" />}
-        <LazyImage
+        <img
           src={getResponsiveImageUrl(blog.image)}
           alt={blog.imageAlt || blog.title}
           className={cn(
@@ -57,9 +57,7 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
           )}
           width={parseInt(getImageSize())}
           height={Math.floor(parseInt(getImageSize()) * 0.6)}
-          componentName="BlogCard"
-          imagePurpose="thumbnail"
-          forceLazy={true}
+          loading="eager"
           sizes={`(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw`}
           onLoad={() => setImageLoaded(true)}
         />

@@ -1,5 +1,4 @@
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Shield } from "lucide-react";

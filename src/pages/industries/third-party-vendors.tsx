@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { Building, Palette, Zap, Users, DollarSign, Shield, Globe, ChevronRight, CheckCircle, HelpCircle, Settings, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import LazyImage from "@/components/common/LazyImage";
+// import LazyImage from "@/components/common/LazyImage";
 // import heroImage from "@/assets/images/third-party-vendors-office.jpg";
 
 const ThirdPartyVendors = () => {
@@ -239,14 +239,13 @@ const ThirdPartyVendors = () => {
               </div>
             </div>
             <div>
-              <LazyImage 
+              <img 
                 src={ '/images/third-party-vendors-office.jpg' } 
                 alt="Modern corporate office environment for third-party vendors"
                 className="rounded-2xl shadow-lg w-full h-auto" 
                 width={600}
                 height={400}
-                componentName="ThirdPartyVendors"
-                imagePurpose="hero"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -305,14 +304,13 @@ const ThirdPartyVendors = () => {
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                  <LazyImage 
+                  <img 
                     src={vendor.image} 
                     alt={vendor.title} 
                     className="rounded-2xl shadow-lg w-full h-auto" 
                     width={600}
                     height={400}
-                    componentName="ThirdPartyVendors"
-                    imagePurpose="vendor-type"
+                    loading="eager"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
@@ -327,14 +325,13 @@ const ThirdPartyVendors = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <LazyImage 
+              <img 
                 src="/lovable-uploads/ae06b433-da1b-4356-810a-119494b3568c.png" 
                 alt="Partner benefits and support" 
                 className="rounded-2xl shadow-lg w-full h-auto" 
                 width={600}
                 height={400}
-                componentName="ThirdPartyVendors"
-                imagePurpose="partner-benefits"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

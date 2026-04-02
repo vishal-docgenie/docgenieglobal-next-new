@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Check } from "lucide-react";
-import LazyImage from "@/components/common/LazyImage";
+// import LazyImage from "@/components/common/LazyImage";
 
 interface Feature {
   title: string;
@@ -52,14 +52,13 @@ const FeatureSection = ({
 
           {/* Image Section */}
           <div className={`reveal mb-6 sm:mb-0 ${reversed ? 'lg:order-1' : 'lg:order-2'}`}>
-            <LazyImage 
+            <img 
               src={image} 
               alt={altText} 
               className="rounded-2xl shadow-lg max-w-full h-auto" 
               width={600}
               height={400}
-              componentName="FeatureSection"
-              imagePurpose="feature"
+              loading="eager"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

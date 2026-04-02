@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CheckCircle, ChevronRight } from "lucide-react";
-import LazyImage from "@/components/common/LazyImage";
+// import LazyImage from "@/components/common/LazyImage";
 
 const HeroSection = () => {
   const keyPoints = [
@@ -45,15 +45,13 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="lg:justify-self-end reveal">
-            <LazyImage
+            <img
               src="/lovable-uploads/d3501c49-eb5e-437a-830e-127319059048.png"
               alt="Healthcare provider using DocGenie's white label telemedicine platform for virtual consultation with patient, showing custom branding capabilities"
               className="rounded-2xl shadow-xl max-w-full h-auto"
               width={600}
               height={400}
-              componentName="HeroSection"
-              imagePurpose="primary"
-              forceEager={true}
+              loading="eager"
               sizes="(max-width: 1024px) 100vw, 50vw"
               onError={(e) => {
                 console.error("Image failed to load");

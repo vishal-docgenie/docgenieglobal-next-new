@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { Users, Heart, MapPin, TrendingDown, Shield, Globe, ChevronRight, CheckCircle, HelpCircle, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import LazyImage from "@/components/common/LazyImage";
+// import LazyImage from "@/components/common/LazyImage";
 // import heroImage from "@/assets/images/public-health-community.jpg";
 // import telemedicineConsultationImage from "@/assets/images/telemedicine-consultation.jpg";
 
@@ -220,14 +220,13 @@ const PublicHealth = () => {
               </div>
             </div>
             <div>
-              <LazyImage 
+              <img 
                 src={ '/images/public-health-community.jpg' } 
                 alt="Community health gathering and education session"
                 className="rounded-2xl shadow-lg w-full h-auto" 
                 width={600}
                 height={400}
-                componentName="PublicHealth"
-                imagePurpose="hero"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -371,38 +370,35 @@ const PublicHealth = () => {
             {/* Images Column */}
             <div className="grid grid-cols-1 gap-4 sm:gap-6">
               {/* Partnership Image 1 */}
-              <LazyImage 
+              <img 
                 src={ '/images/telemedicine-consultation.jpg' } 
                 alt="Community telemedicine consultation session with healthcare education"
                 className="rounded-xl shadow-lg w-full h-auto" 
                 width={500}
                 height={300}
-                componentName="PublicHealth"
-                imagePurpose="partnership"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               {/* Partnership Image 2 */}
-              <LazyImage 
+              <img 
                 src="/images/partnership-health-camp.jpg" 
                 alt="Health camp partnership with Jeevana NGO providing healthcare services in rural communities" 
                 className="rounded-xl shadow-lg w-full h-auto" 
                 width={500}
                 height={300}
-                componentName="PublicHealth"
-                imagePurpose="partnership"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               {/* Partnership Image 3 */}
-              <LazyImage 
+              <img 
                 src="/images/partnership-community-health.jpg" 
                 alt="Community health partnership showing healthcare workers serving local population" 
                 className="rounded-xl shadow-lg w-full h-auto" 
                 width={500}
                 height={300}
-                componentName="PublicHealth"
-                imagePurpose="partnership"
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
