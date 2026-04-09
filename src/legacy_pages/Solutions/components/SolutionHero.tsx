@@ -34,11 +34,11 @@ const SolutionHero = ({ title, description, image, altText }: SolutionHeroProps)
               </Link>
             </div>
           </div>
-          <div className="lg:justify-self-end reveal">
+          <div className="lg:justify-self-end reveal animate-float">
             <img
               src={image}
               alt={altText}
-              className="rounded-2xl shadow-xl max-w-full h-auto animate-float"
+              className="rounded-2xl shadow-xl max-w-full h-auto"
               width={800}
               height={500}
               loading="eager"
