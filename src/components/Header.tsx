@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-lg shadow-sm py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white/80 backdrop-blur-lg shadow-sm" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           <img
             src="/lovable-uploads/9f8cf5b9-0b09-4cc4-a771-e2e187f0618a.png"
             alt="DocGenie Global Logo"
-            className="h-[120px] md:h-[130px] object-contain"
+            className="h-24 md:h-[130px] object-contain"
           />
         </Link>
 

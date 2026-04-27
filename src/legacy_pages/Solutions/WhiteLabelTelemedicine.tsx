@@ -11,7 +11,10 @@ import PatientTrustSection from "./components/PatientTrustSection";
 import RelatedSolutions from "./components/RelatedSolutions";
 import BrandTrustSection from "./components/WhiteLabel/BrandTrustSection";
 import PerformanceSection from "./components/WhiteLabel/PerformanceSection";
+import ResultSection from "./components/WhiteLabel/ResultSection";
+import LeadMarketSection from "./components/WhiteLabel/LeadMarketSection";
 import ImplementationSection from "./components/WhiteLabel/ImplementationSection";
+import TechnicalStandardsSection from "./components/WhiteLabel/TechnicalStandardsSection";
 import { whiteLabelSchemaData } from "./components/WhiteLabel/SchemaData";
 
 const WhiteLabelTelemedicine = () => {
@@ -49,7 +52,7 @@ const WhiteLabelTelemedicine = () => {
       <ErrorBoundary>
         <SolutionHero 
           title="White Label Telemedicine Platform"
-          description="Transform your healthcare practice with our fully customizable white label telemedicine solution that maintains your brand identity while delivering exceptional virtual care experiences. The best telemedicine platform for clinics, doctors, and hospitals."
+          description="DocGenie Global provides a HIPAA-compliant, white-label telemedicine platform that allows healthcare organizations to quickly launch their own branded virtual care practice in weeks. It features AES-128-CTR encryption, session tokens and server-side identifier encryption for EHR/EMR syncing, and 100% UI customization across web, iOS, and Android."
           image="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png"
           altText="Medical professional using white-labeled DocGenie telemedicine platform with customized branding for virtual consultation with patient"
         />
@@ -111,7 +114,19 @@ const WhiteLabelTelemedicine = () => {
       </ErrorBoundary>
       
       <ErrorBoundary>
+        <ResultSection />
+      </ErrorBoundary>
+      
+      <ErrorBoundary>
+        <LeadMarketSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
         <ImplementationSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <TechnicalStandardsSection />
       </ErrorBoundary>
       
       <ErrorBoundary>

@@ -32,6 +32,14 @@ const FAQ = () => {
     {
       question: "What level of technical support is provided after implementation?",
       answer: "We provide comprehensive technical support after implementation, including 24/7 technical assistance, regular platform updates, security patches, and ongoing optimization. Our support team includes dedicated account managers who understand your specific implementation and can provide tailored assistance."
+    },
+    {
+      question: "How does a white label platform improve patient trust?",
+      answer: "By maintaining your brand’s visual identity (URL, logos, and emails), patients feel they are still within your care ecosystem. This reduces \"platform friction\" and reinforces the doctor-patient bond."
+    },
+    {
+      question: "Is the mobile experience a \"Wrapper\" or Native?",
+      answer: "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
     }
   ];
 
