@@ -16,7 +16,6 @@ import LeadMarketSection from "./components/WhiteLabel/LeadMarketSection";
 import ImplementationSection from "./components/WhiteLabel/ImplementationSection";
 import TechnicalStandardsSection from "./components/WhiteLabel/TechnicalStandardsSection";
 import { whiteLabelSchemaData } from "./components/WhiteLabel/SchemaData";
-import StickyDemoButton from "./components/StickyDemoButton";
 
 const WhiteLabelTelemedicine = () => {
   return (
@@ -170,11 +169,6 @@ const WhiteLabelTelemedicine = () => {
           title="Launch Your Branded Telemedicine Platform"
           description="Join healthcare providers who have successfully implemented our white label solution to deliver exceptional virtual care experiences under their trusted brand. Our platform provides the perfect balance of customization flexibility and enterprise-grade performance for clinics, doctors, and hospitals."
         />
-      </ErrorBoundary>
-
-      {/* Floating "Request Demo" CTA — visible across the whole page */}
-      <ErrorBoundary>
-        <StickyDemoButton />
       </ErrorBoundary>
     </Layout>
   );

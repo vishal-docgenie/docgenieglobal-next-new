@@ -23,7 +23,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start reveal animate-slide-down reveal-delay-200">
               <Button className="primary-button">
-                <Link href="/contact">
+                <Link href="/contact" data-hero-cta>
                     Start Your Virtual Care Journey <ArrowRight className="ml-2 h-4 w-4 fl-r" />
                 </Link>
               </Button>

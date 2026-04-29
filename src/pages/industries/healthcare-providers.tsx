@@ -212,7 +212,7 @@ const HealthcareProviders = () => {
                 Empower your practice with comprehensive telemedicine capabilities. From independent practitioners to large hospital systems, expand your reach and improve patient outcomes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href="/contact" data-hero-cta>
                   <Button className="primary-button">
                     Schedule Demo
                     <ChevronRight className="ml-2 h-5 w-5" />

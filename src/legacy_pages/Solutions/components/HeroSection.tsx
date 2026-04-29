@@ -32,7 +32,7 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Link href="/contact">
+              <Link href="/contact" data-hero-cta>
                 <Button className="primary-button">
                   Request Demo <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>

@@ -233,7 +233,7 @@ const ThirdPartyVendors = () => {
                     <ChevronRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
-                <Link href="/contact">
+                <Link href="/contact" data-hero-cta>
                   <Button variant="outline">Contact Us</Button>
                 </Link>
               </div>
