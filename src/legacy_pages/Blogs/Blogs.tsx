@@ -29,9 +29,10 @@ const Blogs = () => {
   );
 
   // Filter blogs based on category (for All Articles section)
-  const categoryFilteredBlogs = activeCategory === 'All' 
+  const categoryFilteredBlogs = (activeCategory === 'All' 
     ? filteredBlogs 
-    : filteredBlogs.filter(blog => blog.category === activeCategory);
+    : filteredBlogs.filter(blog => blog.category === activeCategory)
+  ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
   // Debug logs
   useEffect(() => {
@@ -42,7 +43,10 @@ const Blogs = () => {
   }, [filteredBlogs.length, categoryFilteredBlogs.length, activeCategory]);
   
   // Featured blogs (top 3)
-  const featuredBlogs = blogData.filter(blog => blog.featured).slice(0, 3);
+  const featuredBlogs = blogData
+  .filter(blog => blog.featured)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
   
   // Latest blog (most recent by date)
   const latestBlog = [...blogData].sort((a, b) => 

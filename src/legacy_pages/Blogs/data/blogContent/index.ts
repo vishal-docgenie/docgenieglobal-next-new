@@ -11,6 +11,7 @@ import { aiTelemedicineContent } from './aiTelemedicine';
 import { mentalHealthTelemedicineContent } from './mentalHealthTelemedicine';
 import { chronicCareContent } from './chronicCare';
 import { telemedicinePlatformContent } from './telemedicinePlatform';
+import { launchBrandedDigitalClinicContent } from './launchBrandedDigitalClinic';
 
 export {
   whitelabelTelemedicineContent,
@@ -24,5 +25,6 @@ export {
   aiTelemedicineContent,
   mentalHealthTelemedicineContent,
   chronicCareContent,
-  telemedicinePlatformContent
+  telemedicinePlatformContent,
+  launchBrandedDigitalClinicContent
 };

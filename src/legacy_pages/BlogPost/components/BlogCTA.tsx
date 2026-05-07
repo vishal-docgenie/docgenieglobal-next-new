@@ -14,7 +14,7 @@ const BlogCTA = () => {
       <div className="flex flex-wrap justify-center gap-4">
         <Button className="primary-button">
           <Link href="/contact">
-            Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+            Contact Us
           </Link>
         </Button>
         <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10">

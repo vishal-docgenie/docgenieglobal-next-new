@@ -76,3 +76,7 @@ body {
     margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
     margin-inline-end: inherit;
 }
+
+.blog-section li {
+  margin-left: 2rem;
+}
