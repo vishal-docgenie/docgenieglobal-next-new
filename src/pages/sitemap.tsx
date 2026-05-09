@@ -5,8 +5,14 @@ import Link from "next/link";
 import { ExternalLink, ChevronRight } from "lucide-react";
 import Head from "next/head";
 import { navLinks, solutionsDropdownItems } from "@/components/header/navData";
+import { blogData } from "@/legacy_pages/Blogs/data/blogData";
 
 const Sitemap = () => {
+  // Newest-first, matches the order on /blogs
+  const sortedBlogs = [...blogData].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  
   return (
     <Layout>
       <Head>
@@ -143,6 +149,26 @@ const Sitemap = () => {
                 </li>
               </ul>
             </div>
+          </div>
+
+          {/* Blog Articles Section */}
+          <div className="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900 border-b pb-2">
+              Blog Articles
+            </h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
+              {sortedBlogs.map((blog) => (
+                <li key={blog.id} className="flex items-start">
+                  <ChevronRight className="h-4 w-4 text-brand-blue mr-2 mt-1 flex-shrink-0" />
+                  <Link
+                    href={`/blogs/${blog.slug}`}
+                    className="text-gray-700 hover:text-brand-blue transition-colors text-left"
+                  >
+                    {blog.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Extra Info Box */}

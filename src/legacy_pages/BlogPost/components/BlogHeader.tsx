@@ -14,7 +14,7 @@ const BlogHeader = ({ blog }: BlogHeaderProps) => {
         <img 
           src={blog.image} 
           alt={blog.imageAlt || blog.title}
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover [filter:blur(4px)] scale-[1.02]" 
           loading="eager" // Important for LCP (Largest Contentful Paint)
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>

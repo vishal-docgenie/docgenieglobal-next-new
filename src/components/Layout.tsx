@@ -19,6 +19,7 @@ const HIDDEN_ON_ROUTES = [
   "/integration-guide",
   "/sla-support-policy",
   "/blogs",
+  "/sitemap"
 ];
 
 const Layout = ({ children }: LayoutProps) => {
