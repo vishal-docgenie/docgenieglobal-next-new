@@ -25,20 +25,11 @@ const LatestBlogsSection = () => {
   return (
     <section className="py-20 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-end mb-10 reveal animate-fade-in">
-          <div>
-            <h2 className="heading-2 mb-3">From Our Blog</h2>
-            <p className="subtitle max-w-2xl">
-              Insights, trends, and best practices in telemedicine and virtual care.
-            </p>
-          </div>
-          <Link
-            href="/blogs"
-            className="hidden md:inline-flex items-center text-brand-blue hover:text-brand-blue/80 text-sm font-medium transition-colors duration-300 whitespace-nowrap"
-          >
-            View all articles
-            <ChevronRight className="ml-1 h-4 w-4" />
-          </Link>
+        <div className="max-w-4xl mx-auto text-center mb-10 reveal animate-fade-in">
+          <h2 className="heading-2 mb-3">From Our Blog</h2>
+          <p className="subtitle max-w-2xl mx-auto">
+            Insights, trends, and best practices in telemedicine and virtual care.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -47,8 +38,7 @@ const LatestBlogsSection = () => {
           ))}
         </div>
 
-        {/* Mobile-only "View all" link, since the desktop one in the header is hidden on small screens */}
-        <div className="mt-8 text-center md:hidden">
+        <div className="mt-10 text-center">
           <Link
             href="/blogs"
             className="inline-flex items-center text-brand-blue hover:text-brand-blue/80 text-sm font-medium transition-colors duration-300"
