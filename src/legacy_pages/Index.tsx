@@ -6,6 +6,7 @@ import FeatureSection from "@/components/home/FeatureSection";
 import WhyChooseSection from "@/components/home/WhyChooseSection";
 import PracticeBenefitsSection from "@/components/home/PracticeBenefitsSection";
 import CtaSection from "@/components/home/CtaSection";
+import LatestBlogsSection from "@/components/home/LatestBlogsSection";
 import { debugComponent, LifecycleLogger } from "@/utils/debugUtils";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import Head from "next/head";
@@ -204,6 +205,10 @@ const Index = () => {
         
         <ErrorBoundary>
           <TestimonialSection />
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <LatestBlogsSection />
         </ErrorBoundary>
         
         <ErrorBoundary>

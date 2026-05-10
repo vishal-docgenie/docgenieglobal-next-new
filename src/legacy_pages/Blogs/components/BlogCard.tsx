@@ -1,4 +1,4 @@
-import React, { useState, memo } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { CalendarIcon, Clock } from 'lucide-react';
 import Link from "next/link";
 import { BlogPost } from '../types';
@@ -10,30 +10,40 @@ interface BlogCardProps {
   blog: BlogPost;
 }
 
+// Default image size used during server-side rendering and as the initial
+// client value. Picks the largest size so SSR-rendered cards still look
+// reasonable on every breakpoint until the client effect runs.
+const DEFAULT_IMAGE_SIZE = '800';
+
+// Resolve image size based on viewport width. Browser-only.
+const computeImageSize = (): string => {
+  if (window.innerWidth >= 1024) return '400'; // lg screens (3 columns)
+  if (window.innerWidth >= 768) return '600';  // md screens (2 columns)
+  return '800';                                 // sm screens (1 column)
+};
+
 const BlogCard = memo(({ blog }: BlogCardProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  // SSR-safe: start with a sensible default that works without `window`.
+  // After mount, swap to the actual viewport-based size.
+  const [imageSize, setImageSize] = useState<string>(DEFAULT_IMAGE_SIZE);
+
+  useEffect(() => {
+    const updateSize = () => setImageSize(computeImageSize());
+    updateSize();                                // run once on mount
+    window.addEventListener('resize', updateSize);
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
   const blogSlug = blog.slug || generateSlug(blog.title);
 
-  // Function to determine image size based on screen width
-  const getImageSize = () => {
-    // These sizes correspond to our grid breakpoints
-    if (window.innerWidth >= 1024) {
-      return '400'; // lg screens (3 columns)
-    } else if (window.innerWidth >= 768) {
-      return '600'; // md screens (2 columns)
-    }
-    return '800'; // sm screens (1 column)
-  };
-
-  // Create responsive image URLs with sizing
+  // Create responsive image URL using the current size
   const getResponsiveImageUrl = (url: string) => {
     if (url.includes('unsplash.com')) {
-      // For Unsplash images, we can use their sizing parameters
-      return url.includes('?') 
-        ? `${url}&w=${getImageSize()}&q=75` 
-        : `${url}?w=${getImageSize()}&q=75`;
+      return url.includes('?')
+        ? `${url}&w=${imageSize}&q=75`
+        : `${url}?w=${imageSize}&q=75`;
     }
-    // For other images, return as is (can't modify external URLs)
     return url;
   };
 
@@ -48,8 +58,8 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
             "w-full h-full object-cover transition-all duration-500",
             "transform hover:scale-105"
           )}
-          width={parseInt(getImageSize())}
-          height={Math.floor(parseInt(getImageSize()) * 0.6)}
+          width={parseInt(imageSize)}
+          height={Math.floor(parseInt(imageSize) * 0.6)}
           loading="eager"
           sizes={`(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw`}
           onLoad={() => setImageLoaded(true)}
@@ -58,7 +68,7 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
           {blog.category}
         </div>
       </div>
-      
+
       <div className="p-5 flex-1 flex flex-col">
         <div className="flex items-center flex-wrap gap-2 mb-3">
           <div className="flex items-center text-gray-500 text-xs">
@@ -71,24 +81,24 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
             <span>{blog.readTime}</span>
           </div>
         </div>
-        
-        <Link 
-          href={`/blogs/${blogSlug}`} 
+
+        <Link
+          href={`/blogs/${blogSlug}`}
           className="group flex-1"
         >
           <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-brand-blue transition-colors duration-300">
             {blog.title}
           </h3>
         </Link>
-        
+
         <p className="text-gray-600 text-sm mb-4 line-clamp-3">
           {blog.content.intro}
         </p>
-        
+
         <div className="flex flex-wrap gap-1 mt-auto">
           {blog.tags.slice(0, 3).map((tag, index) => (
-            <span 
-              key={index} 
+            <span
+              key={index}
               className="text-xs px-2 py-1 bg-brand-blue text-white rounded-full"
             >
               {tag}
