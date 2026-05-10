@@ -1,4 +1,3 @@
-
 import React, { useState, memo } from 'react';
 import { CalendarIcon, Clock } from 'lucide-react';
 import Link from "next/link";
@@ -6,7 +5,6 @@ import { BlogPost } from '../types';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { generateSlug } from '../../BlogPost/hooks/useBlogData';
-// import LazyImage from '@/components/common/LazyImage';
 
 interface BlogCardProps {
   blog: BlogPost;
@@ -15,8 +13,6 @@ interface BlogCardProps {
 const BlogCard = memo(({ blog }: BlogCardProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const blogSlug = blog.slug || generateSlug(blog.title);
-  
-  console.log(`BlogCard rendering: "${blog.title}" → slug: "${blogSlug}"`);
 
   // Function to determine image size based on screen width
   const getImageSize = () => {
@@ -31,15 +27,12 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
 
   // Create responsive image URLs with sizing
   const getResponsiveImageUrl = (url: string) => {
-    // If the URL is already optimized or from an external source that doesn't support our params,
-    // just return it as is
     if (url.includes('unsplash.com')) {
       // For Unsplash images, we can use their sizing parameters
       return url.includes('?') 
         ? `${url}&w=${getImageSize()}&q=75` 
         : `${url}?w=${getImageSize()}&q=75`;
     }
-    
     // For other images, return as is (can't modify external URLs)
     return url;
   };
@@ -82,7 +75,6 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
         <Link 
           href={`/blogs/${blogSlug}`} 
           className="group flex-1"
-          onClick={() => console.log(`BlogCard CLICKED: 📣 Navigating to /blogs/${blogSlug} for blog "${blog.title}"`)}
         >
           <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-brand-blue transition-colors duration-300">
             {blog.title}
@@ -90,7 +82,7 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
         </Link>
         
         <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-          {blog.content}
+          {blog.content.intro}
         </p>
         
         <div className="flex flex-wrap gap-1 mt-auto">

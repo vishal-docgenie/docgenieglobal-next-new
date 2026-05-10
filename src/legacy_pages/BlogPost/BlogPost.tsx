@@ -1,4 +1,3 @@
-
 import { useEffect, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Layout from '@/components/Layout';
@@ -8,7 +7,7 @@ import { useBlogData, generateSlug } from './hooks/useBlogData';
 import { useScrollTracking } from './hooks/useScrollTracking';
 import { blogData } from '../Blogs/data/blogData';
 import BlogContent from './components/BlogContent';
-import ConclusionBox from './components/ConclusionBox';
+// import ConclusionBox from './components/ConclusionBox';
 import TableOfContents from './components/TableOfContents';
 import BlogCTA from './components/BlogCTA';
 import FaqSection from './components/FaqSection';
@@ -192,7 +191,9 @@ const BlogPost = () => {
               </div>
             ))}
             
-            {blog.conclusion && <ConclusionBox conclusion={blog.conclusion} />}
+            {/*
+              {blog.content.conclusion && <ConclusionBox conclusion={blog.content.conclusion} />}
+            */}
             
             {/* Add FAQ section before the CTA */}
             {blog.faqs && blog.faqs.length > 0 && (

@@ -28,7 +28,6 @@ export const blogData: BlogPost[] = [
     category: 'Telemedicine',
     tags: ['telemedicine', 'white-label', 'healthcare', 'virtual care', 'branding'],
     featured: true,
-    conclusion: "White-label telemedicine platforms offer clinics and hospitals a way to deliver branded, patient-centered care that builds trust, supports consistent quality, and enhances patient loyalty. For healthcare providers looking to establish or grow their virtual care services, investing in a white-label telemedicine platform is a smart choice for a future-ready, brand-aligned digital solution.\n\nAt DocGenie Global, we're committed to supporting healthcare providers with flexible white-label telemedicine solutions designed to bring value to patients and providers alike. Connect with us to learn more about creating a customized telemedicine experience that reflects your brand's values and vision.",
     faqs: [
       {
         question: "What are the main benefits of telemedicine for patients?",
@@ -176,8 +175,7 @@ export const blogData: BlogPost[] = [
     imageAlt: 'Doctor using a tablet displaying a white-label telemedicine interface with multiple features highlighted in an organized dashboard',
     category: 'Telemedicine',
     tags: ['telemedicine', 'white-label', 'healthcare technology', 'platform features', 'digital health'],
-    featured: false,
-    conclusion: "Selecting the right telemedicine platform can transform the way you deliver care, making your practice more efficient and patient-centric. By focusing on seamless integration, robust security, user-friendly design, scalability, and customization, you're not only investing in technology—you're investing in the future of your practice."
+    featured: false
   },
   {
     id: '5',

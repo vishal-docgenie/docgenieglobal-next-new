@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import BlogHeader from './components/BlogHeader';
 import BlogContent from './components/BlogContent';
-import ConclusionBox from './components/ConclusionBox';
+// import ConclusionBox from './components/ConclusionBox';
 import TableOfContents from './components/TableOfContents';
 import BlogCTA from './components/BlogCTA';
 import FaqSection from './components/FaqSection';
@@ -72,7 +72,9 @@ export default function BlogPostView({
               </div>
             ))}
 
-            {blog.conclusion && <ConclusionBox conclusion={blog.conclusion} />}
+            {/*
+              {blog.content.conclusion && <ConclusionBox conclusion={blog.content.conclusion} />}
+            */}
 
             {blog.faqs?.length ? (
               <div className="mt-16">

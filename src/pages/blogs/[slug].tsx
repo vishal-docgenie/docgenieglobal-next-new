@@ -2,7 +2,7 @@ import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'ne
 import BlogPostView from '@/legacy_pages/BlogPost/BlogPostView';
 import { blogData } from '@/legacy_pages/Blogs/data/blogData';
 import { generateSlug } from '@/legacy_pages/BlogPost/hooks/useBlogData';
-import type { BlogPost } from '@/data/types';
+import type { BlogPost } from '@/legacy_pages/Blogs/types';
 import Layout from '@/components/Layout';
 import { generateSections } from '@/legacy_pages/BlogPost/utils/sectionUtils';
 
@@ -12,9 +12,9 @@ function findBlogBySlug(slug: string): BlogPost | null {
   ) ?? null;
 }
 
-// Build sections using curated generator for consistent numbering, titles, and IDs
+// Build sections from the post's content.
 function buildSectionsFor(post: BlogPost) {
-  return generateSections(post.content, post.id);
+  return generateSections(post.content);
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

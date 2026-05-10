@@ -21,12 +21,23 @@ const Blogs = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Build a single searchable text blob for a blog (intro + all section bodies + conclusion).
+  // Used for the search filter only — never rendered.
+  const getSearchableText = (blog: typeof blogData[number]): string => {
+    const c = blog.content;
+    const sectionsText = c.sections.map(s => `${s.title} ${s.content}`).join(' ');
+    return `${c.intro} ${sectionsText} ${c.conclusion ?? ''}`;
+  };
+
   // Filter blogs based on search query
-  const filteredBlogs = blogData.filter(blog => 
-    blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    blog.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    blog.category.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredBlogs = blogData.filter(blog => {
+    const q = searchQuery.toLowerCase();
+    return (
+      blog.title.toLowerCase().includes(q) ||
+      getSearchableText(blog).toLowerCase().includes(q) ||
+      blog.category.toLowerCase().includes(q)
+    );
+  });
 
   // Filter blogs based on category (for All Articles section)
   const categoryFilteredBlogs = (activeCategory === 'All' 
@@ -34,19 +45,11 @@ const Blogs = () => {
     : filteredBlogs.filter(blog => blog.category === activeCategory)
   ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
-  // Debug logs
-  useEffect(() => {
-    console.log('Total blogs in data:', blogData.length);
-    console.log('Filtered by search:', filteredBlogs.length);
-    console.log('Filtered by category:', categoryFilteredBlogs.length);
-    console.log('Active category:', activeCategory);
-  }, [filteredBlogs.length, categoryFilteredBlogs.length, activeCategory]);
-  
-  // Featured blogs (top 3)
+  // Featured blogs (top 3, newest first)
   const featuredBlogs = blogData
-  .filter(blog => blog.featured)
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  .slice(0, 3);
+    .filter(blog => blog.featured)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
   
   // Latest blog (most recent by date)
   const latestBlog = [...blogData].sort((a, b) => 

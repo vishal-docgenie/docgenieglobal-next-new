@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Head from "next/head";
 import { BlogPost } from '../../Blogs/types';
@@ -12,21 +11,22 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
   // Generate base URL with the correct domain
   const baseUrl = 'https://www.docgenieglobal.com';
   const blogUrl = `${baseUrl}/blogs/${blog.slug || generateSlug(blog.title)}`;
-  
-  // Create meta description with keywords
+
+  // Create meta description with keywords (prefer conclusion, fall back to intro)
   const generateMetaDescription = () => {
-    const sourceText = blog.conclusion?.trim() || blog.content?.trim() || "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers.";
+    const sourceText =
+      blog.content?.conclusion?.trim() ||
+      blog.content?.intro?.trim() ||
+      "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers.";
 
     if (sourceText.length <= 160) {
       return sourceText;
     }
-
     return `${sourceText.substring(0, 157)}...`;
   };
-  
+
   // Format date for schema
   const formatSchemaDate = (dateString: string) => {
-    // Convert date like "August 15, 2024" to ISO format
     try {
       const date = new Date(dateString);
       return date.toISOString();
@@ -35,7 +35,7 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       return dateString;
     }
   };
-  
+
   // Build primary meta values with sensible fallbacks
   const pageTitle = blog.title?.trim()
     ? `${blog.title.trim()} | DocGenie Global`
@@ -46,7 +46,7 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
   const keywords = Array.isArray(blog.tags) && blog.tags.length > 0
     ? blog.tags.join(', ')
     : "telemedicine, healthcare technology, virtual care, DocGenie Global";
-  
+
   // Generate schema for article
   const articleSchema = {
     "@context": "https://schema.org",
@@ -101,14 +101,14 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       <meta property="og:image" content={blog.image} />
       <meta property="og:image:alt" content={blog.imageAlt || `Image related to ${blog.title}`} />
       <meta property="og:site_name" content="DocGenie Global" />
-      
+
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={blog.title || "DocGenie Global"} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={blog.image} />
       <meta name="twitter:image:alt" content={blog.imageAlt || `Image related to ${blog.title}`} />
-      
+
       {/* Article Schema */}
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
