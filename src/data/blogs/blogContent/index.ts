@@ -12,6 +12,7 @@ import { mentalHealthTelemedicineContent } from './mentalHealthTelemedicine';
 import { chronicCareContent } from './chronicCare';
 import { telemedicinePlatformContent } from './telemedicinePlatform';
 import { launchBrandedDigitalClinicContent } from './launchBrandedDigitalClinic';
+import { secureVirtualConsultationsContent } from './secureVirtualConsultations';
 
 export {
   whitelabelTelemedicineContent,
@@ -26,5 +27,6 @@ export {
   mentalHealthTelemedicineContent,
   chronicCareContent,
   telemedicinePlatformContent,
-  launchBrandedDigitalClinicContent
+  launchBrandedDigitalClinicContent,
+  secureVirtualConsultationsContent
 };
