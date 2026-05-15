@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const secureVirtualConsultationsContent: BlogContent = {
-  intro: "",
+  intro: "A secure virtual consultation is not just a digital conversation. It is part of a complete healthcare workflow that includes patient registration, appointment scheduling, consultation notes, electronic medical records, prescriptions, follow-ups, referrals, payments, alerts, and secure communication.",
   sections: [
     {
       id: 'the-anatomy-of-secure-virtual-consultations',
