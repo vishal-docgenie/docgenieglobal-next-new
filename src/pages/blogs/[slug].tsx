@@ -1,10 +1,10 @@
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
-import BlogPostView from '@/legacy_pages/BlogPost/BlogPostView';
-import { blogData } from '@/legacy_pages/Blogs/data/blogData';
-import { generateSlug } from '@/legacy_pages/BlogPost/hooks/useBlogData';
-import type { BlogPost } from '@/legacy_pages/Blogs/types';
+import BlogPostView from '@/components/blog-post/BlogPostView';
+import { blogData } from '@/data/blogs/blogData';
+import { generateSlug } from '@/lib/blog-slug';
+import type { BlogPost } from '@/data/blogs/types';
 import Layout from '@/components/Layout';
-import { generateSections } from '@/legacy_pages/BlogPost/utils/sectionUtils';
+import { generateSections } from '@/lib/sectionUtils';
 
 function findBlogBySlug(slug: string): BlogPost | null {
   return blogData.find(

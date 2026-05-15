@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ExternalLink, ChevronRight } from "lucide-react";
 import Head from "next/head";
 import { navLinks, solutionsDropdownItems } from "@/components/header/navData";
-import { blogData } from "@/legacy_pages/Blogs/data/blogData";
+import { blogData } from "@/data/blogs/blogData";
 
 const Sitemap = () => {
   // Newest-first, matches the order on /blogs

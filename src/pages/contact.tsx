@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import ContactInfo from "@/components/contact/ContactInfo";
-import HeroSection from "./contact/components/HeroSection";
-import ContactFormSection from "./contact/components/ContactFormSection";
-import ScheduleDemo from "./contact/components/ScheduleDemo";
-import ContactFAQ from "./contact/components/ContactFAQ";
-// import ContactTestimonials from "./contact/components/ContactTestimonials";
-// import ContactCTA from "./contact/components/ContactCTA";
+import HeroSection from "@/components/contact-page/HeroSection";
+import ContactFormSection from "@/components/contact-page/ContactFormSection";
+import ScheduleDemo from "@/components/contact-page/ScheduleDemo";
+import ContactFAQ from "@/components/contact-page/ContactFAQ";
+// import ContactTestimonials from "@/components/contact-page/ContactTestimonials";
+// import ContactCTA from "@/components/contact-page/ContactCTA";
 
 const faqSchemaData = {
   "@context": "https://schema.org",

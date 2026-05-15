@@ -1,8 +1,9 @@
+
 import React, { useMemo } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { blogData } from "@/legacy_pages/Blogs/data/blogData";
-import BlogCard from "@/legacy_pages/Blogs/components/BlogCard";
+import { blogData } from "@/data/blogs/blogData";
+import BlogCard from "@/components/blog/BlogCard";
 
 /**
  * Homepage strip showing the 3 most recent blog posts.
