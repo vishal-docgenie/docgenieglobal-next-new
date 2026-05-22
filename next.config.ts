@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
 
-  // Redirect old "/solution" routes to "/solutions"
+  // Redirect "/solution" routes to "/solutions"
   async redirects() {
     return [
       {
