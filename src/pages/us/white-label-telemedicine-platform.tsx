@@ -273,7 +273,7 @@ const ukWhiteLabelPage = () => (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for US Healthcare Providers</h1>
-                            <p className="text-lg text-gray-700 mb-8 max-w-2xl">Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine"><b>white label virtual care solution</b></a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.</p>
+                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.</p>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl">Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.</p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <Link href="/contact" data-hero-cta>
@@ -344,7 +344,7 @@ const ukWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information through administrative, physical, and technical safeguards.</p>
-                            <p className="text-lg text-gray-700">DocGenie Global is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.</p>
+                            <p className="text-lg text-gray-700"><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.</p>
                             <p className="text-lg text-gray-700">Key capabilities include:</p>
                             <ul>
                                 <li>Secure video consultation workflows</li>
