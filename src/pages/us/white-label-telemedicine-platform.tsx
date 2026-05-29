@@ -273,8 +273,9 @@ const ukWhiteLabelPage = () => (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for US Healthcare Providers</h1>
-                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.</p>
-                            <p className="text-lg text-gray-700 mb-8 max-w-2xl">Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.</p>
+                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
+                                Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.<br />Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.
+                            </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <Link href="/contact" data-hero-cta>
                                     <Button className="primary-button">
@@ -316,8 +317,9 @@ const ukWhiteLabelPage = () => (
                             <h2 className="heading-3 mb-6">Built for US Clinics, Hospitals, and Digital Health Companies</h2>
                         </div>
                         <div className="prose my-8">
-                            <p className="text-lg text-gray-700">US healthcare providers need virtual care technology that fits their care model, patient expectations, and operational workflows. DocGenie Global helps healthcare organizations create a branded digital care experience without depending on generic third-party telehealth apps.</p>
-                            <p className="text-lg text-gray-700">Our platform can support:</p>
+                            <p className="text-lg text-gray-700">
+                                US healthcare providers need virtual care technology that fits their care model, patient expectations, and operational workflows. DocGenie Global helps healthcare organizations create a branded digital care experience without depending on generic third-party telehealth apps.<br />Our platform can support:
+                            </p>
                             <ul>
                                 <li>Private practices</li>
                                 <li>Multi-location clinics</li>
@@ -343,9 +345,9 @@ const ukWhiteLabelPage = () => (
                             <h2 className="heading-3 mb-6">HIPAA-Compliant Virtual Care Workflows</h2>
                         </div>
                         <div className="prose my-8">
-                            <p className="text-lg text-gray-700">For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information through administrative, physical, and technical safeguards.</p>
-                            <p className="text-lg text-gray-700"><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.</p>
-                            <p className="text-lg text-gray-700">Key capabilities include:</p>
+                            <p className="text-lg text-gray-700">
+                                For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information through administrative, physical, and technical safeguards.<br /><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.<br />Key capabilities include:
+                            </p>
                             <ul>
                                 <li>Secure video consultation workflows</li>
                                 <li>Patient data protection</li>
@@ -369,8 +371,9 @@ const ukWhiteLabelPage = () => (
                             <h2 className="heading-3 mb-6">Branded Patient Experience for US Healthcare Businesses</h2>
                         </div>
                         <div className="prose my-8">
-                            <p className="text-lg text-gray-700">Patients trust the healthcare provider they choose. Your telemedicine platform should strengthen that trust instead of sending patients to a generic third-party interface.</p>
-                            <p className="text-lg text-gray-700">With DocGenie Global, you can create a branded digital care experience across:</p>
+                            <p className="text-lg text-gray-700">
+                                Patients trust the healthcare provider they choose. Your telemedicine platform should strengthen that trust instead of sending patients to a generic third-party interface.<br />With DocGenie Global, you can create a branded digital care experience across:
+                            </p>
                             <ul>
                                 <li>Patient registration</li>
                                 <li>Appointment booking</li>
@@ -397,8 +400,9 @@ const ukWhiteLabelPage = () => (
                             <h2 className="heading-3 mb-6">EHR/EMR and Healthcare Workflow Integration</h2>
                         </div>
                         <div className="prose my-8">
-                            <p className="text-lg text-gray-700">A telemedicine platform should not operate separately from your existing healthcare systems. DocGenie Global supports integration-ready workflows that help connect virtual care with your existing operations.</p>
-                            <p className="text-lg text-gray-700">The platform can support:</p>
+                            <p className="text-lg text-gray-700">
+                                A telemedicine platform should not operate separately from your existing healthcare systems. DocGenie Global supports integration-ready workflows that help connect virtual care with your existing operations.<br />The platform can support:
+                            </p>
                             <ul>
                                 <li>EHR/EMR integration</li>
                                 <li>Patient intake workflows</li>
@@ -451,8 +455,9 @@ const ukWhiteLabelPage = () => (
                             <h2 className="heading-3 mb-6">Multi-State and Multi-Provider Scalability</h2>
                         </div>
                         <div className="prose my-8">
-                            <p className="text-lg text-gray-700">As your virtual care business grows, your platform should support multiple providers, locations, specialties, and patient segments.</p>
-                            <p className="text-lg text-gray-700">DocGenie Global helps healthcare organizations manage:</p>
+                            <p className="text-lg text-gray-700">
+                                As your virtual care business grows, your platform should support multiple providers, locations, specialties, and patient segments.<br />DocGenie Global helps healthcare organizations manage:
+                            </p>
                             <ul>
                                 <li>Multiple doctors and providers</li>
                                 <li>Multiple specialties</li>
@@ -554,7 +559,7 @@ const ukWhiteLabelPage = () => (
 
         <ErrorBoundary>
             <section>
-                <div className="py-10 bg-white">
+                <div className="py-10 bg-white" id="faq">
                     <div className="py-16 bg-gray-50">
                         <div className="container mx-auto px-4">
                             <div className="text-center max-w-3xl mx-auto mb-12">
