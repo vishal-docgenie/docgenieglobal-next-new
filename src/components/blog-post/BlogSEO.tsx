@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from "next/head";
 import { BlogPost } from '@/data/blogs/types';
 import { generateSlug } from '@/lib/blog-slug';

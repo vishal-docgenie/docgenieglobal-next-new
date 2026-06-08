@@ -90,7 +90,7 @@ export default function BlogPostView({
             <RelatedArticles currentBlog={blog} allBlogs={allBlogs} />
 
             <div className="mt-16">
-              <BlogCTA />
+              <BlogCTA cta={blog.cta} />
             </div>
           </div>
 

@@ -23,6 +23,14 @@ export interface BlogContent {
   conclusion?: string;
 }
 
+/**
+ * Optional custom CTA block at the bottom of a blog post.
+ */
+export interface BlogCustomCta {
+  heading: string;
+  body: string;
+}
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -35,6 +43,7 @@ export interface BlogPost {
   category: string;
   tags: string[];
   featured?: boolean;
+  cta?: BlogCustomCta;    // Optional custom CTA block. Falls back to default if omitted.
   faqs?: {
     question: string;
     answer: string;
