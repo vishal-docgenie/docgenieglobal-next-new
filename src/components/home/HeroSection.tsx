@@ -16,7 +16,7 @@ const HeroSection = () => {
               The Complete Virtual Care Solution
             </div>
             <h1 className="heading-1 mb-6 reveal animate-slide-down text-center md:text-left">
-              <span className="text-black">Cutting-Edge</span> <span className="text-brand-blue">Telemedicine Platform</span> for Care Providers
+              <span className="text-black">Cutting-Edge</span> <span className="text-brand-blue">Telemedicine Platform</span> for Care Provider
             </h1>
             <p className="subtitle mb-8 max-w-lg reveal animate-slide-down reveal-delay-100 text-center md:text-left mx-auto md:mx-0">
               The most comprehensive virtual care platform for clinics and doctors. HIPAA-compliant, fully customizable, and designed to enhance patient engagement.
