@@ -81,7 +81,7 @@ const AICapabilities = () => {
         <meta property="og:description" content="Experience the future of healthcare with DocGenie Global’s AI-powered telemedicine platform. Leverage advanced AI for seamless workflows, intelligent EMR management, automated prescription fulfillment, remote patient monitoring, and enhanced virtual care security." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/63ea607b-5a55-428d-b7c6-d6949d524efe.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/solutions/ai-capabilities" />
-        <meta property="og:og:type" content="website" />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
         {/* Twitter Card Tags */}
@@ -91,7 +91,6 @@ const AICapabilities = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/63ea607b-5a55-428d-b7c6-d6949d524efe.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="artificial intelligence healthcare, AI clinical decision support, predictive analytics, automated documentation, AI healthcare platform, intelligent medical solutions, virtual healthcare assistants" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data */}

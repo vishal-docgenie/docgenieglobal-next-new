@@ -40,7 +40,6 @@ const WhiteLabelTelemedicine = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="white label telemedicine, branded telehealth, custom telemedicine platform, virtual care branding, healthcare brand identity, clinic telemedicine solution, doctor virtual care platform" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data - Product */}

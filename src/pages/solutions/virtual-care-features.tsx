@@ -87,7 +87,6 @@ const VirtualCareFeatures = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/a3b087bc-54d6-41e8-8111-32cd33c8dbf0.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="virtual care platform, telehealth features, telemedicine technology, healthcare video consultations, patient management system, virtual healthcare solution, doctor telemedicine platform" />
         <meta name="author" content="DocGenie Global" />
 
         {/* JSON-LD Structured Data */}

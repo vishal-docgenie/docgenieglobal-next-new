@@ -90,7 +90,6 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       {/* Basic Meta Tags */}
       <title key="title">{pageTitle}</title>
       <meta name="description" content={metaDescription} />
-      <meta name="keywords" content={keywords} />
       <link rel="canonical" href={blogUrl} />
 
       {/* Open Graph Tags for Social Media */}

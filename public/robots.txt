@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admindemo/
+
+Sitemap: https://www.docgenieglobal.com/sitemap.xml

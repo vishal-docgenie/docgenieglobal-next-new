@@ -145,7 +145,6 @@ const PublicHealth = () => {
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/public-health" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="public health telemedicine, government telehealth, NGO telemedicine, non-profit healthcare technology, community health telemedicine" />
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
