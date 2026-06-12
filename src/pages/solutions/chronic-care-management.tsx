@@ -91,7 +91,6 @@ const ChronicCareManagement = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/1adee902-8f64-47fe-9e3c-367901c293a8.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="chronic care management, remote patient monitoring, CCM, healthcare management, chronic conditions, telehealth, virtual care, patient outcomes" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data */}

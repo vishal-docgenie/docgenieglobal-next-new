@@ -30,7 +30,6 @@ const SLASupport = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="SLA, service level agreement, support policy, telemedicine support, healthcare platform support, technical assistance, customer service, DocGenie Global" />
         <meta name="author" content="DocGenie Global" />
       </Head>
       

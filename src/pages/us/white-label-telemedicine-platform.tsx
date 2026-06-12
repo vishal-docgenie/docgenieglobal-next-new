@@ -237,13 +237,19 @@ const ukWhiteLabelPage = () => (
         <Head>
             <title>White Label Telemedicine Platform USA | HIPAA-Aligned Virtual Care</title>
             <meta name="description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
-            <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+            <link rel="canonical" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform" />
+
+            {/* hreflang for regional targeting */}
+            <link rel="alternate" hrefLang="en-US" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en-GB" href="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+            <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
 
             {/* OpenGraph Tags */}
             <meta property="og:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned Virtual Care" />
             <meta property="og:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
-            <meta property="og:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+            <meta property="og:url" content="https://www.docgenieglobal.com/us/white-label-telemedicine-platform" />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="DocGenie Global" />
 
@@ -253,8 +259,6 @@ const ukWhiteLabelPage = () => (
             <meta name="twitter:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
-            {/* Additional SEO Meta Tags */}
-            <meta name="keywords" content="white label telemedicine, branded telehealth, custom telemedicine platform, virtual care branding, healthcare brand identity, clinic telemedicine solution, doctor virtual care platform" />
             <meta name="author" content="DocGenie Global" />
 
             {/* JSON-LD Structured Data*/}

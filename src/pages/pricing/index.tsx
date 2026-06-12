@@ -36,7 +36,6 @@ const Pricing = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/6cf94fc6-58cb-4c05-b124-1078a8267482.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="telemedicine pricing, healthcare software cost, virtual care platform pricing, doctor telemedicine cost, medical telehealth pricing, transparent pricing telemedicine" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data - FAQ */}

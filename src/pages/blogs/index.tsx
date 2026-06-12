@@ -81,7 +81,6 @@ const Blogs = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/31596225-1867-422e-b5bf-01644392c0fb.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="telemedicine blog, healthcare technology, virtual care insights, digital health articles, telehealth trends, medical technology blog" />
         <meta name="author" content="DocGenie Global" />
       </Head>
       

@@ -44,7 +44,6 @@ const HIPAACompliantHealthcare = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="HIPAA compliance, secure telemedicine, healthcare data security, protected health information, patient privacy, telemedicine security, virtual care compliance" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data - Product */}

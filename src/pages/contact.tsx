@@ -72,7 +72,6 @@ const ContactPage = () => (
       <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.webp" />
 
       {/* Additional SEO Meta Tags */}
-      <meta name="keywords" content="contact telemedicine platform, healthcare software support, virtual care solutions, telemedicine demo, healthcare technology contact, HIPAA-compliant support" />
       <meta name="author" content="DocGenie Global" />
       
       {/* JSON-LD Structured Data */}

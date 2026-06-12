@@ -188,7 +188,6 @@ const HealthcareProviders = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/healthcare-providers" />
         
-        <meta name="keywords" content="telemedicine for doctors, clinic telemedicine software, hospital telehealth platform, healthcare provider telemedicine, medical practice telemedicine" />
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}

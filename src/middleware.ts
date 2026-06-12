@@ -9,9 +9,11 @@ export function middleware(request: NextRequest) {
         return NextResponse.next();
     }
 
-    // Redirect URLs ending with a trailing slash to /404 AND set status to 404
+    // Redirect URLs ending with a trailing slash to the canonical non-slash version
     if (pathname.endsWith("/")) {
-        return NextResponse.rewrite(new URL("/404", request.url), { status: 404 });
+        const url = request.nextUrl.clone();
+        url.pathname = pathname.slice(0, -1);
+        return NextResponse.redirect(url, 301);
     }
 
     // Redirect "/solution" routes to "/solutions"

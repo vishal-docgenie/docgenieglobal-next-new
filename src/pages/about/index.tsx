@@ -31,7 +31,6 @@ const About = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/b7dc5536-65af-4491-b947-6b6066db97e4.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="telemedicine company, healthcare technology team, virtual care platform, DocGenie team, telemedicine mission, healthcare innovation, medical software company" />
         <meta name="author" content="DocGenie Global" />
       </Head>
       

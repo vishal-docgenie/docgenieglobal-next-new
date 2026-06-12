@@ -31,7 +31,6 @@ const PrivacyPolicy = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="privacy policy, healthcare data privacy, HIPAA compliance, telemedicine privacy, patient data protection, healthcare data security, medical information privacy" />
         <meta name="author" content="DocGenie Global" />
       </Head>
       
