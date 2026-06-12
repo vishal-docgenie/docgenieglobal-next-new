@@ -178,7 +178,6 @@ const Index = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="telemedicine platform, white label telehealth, virtual care, healthcare software, HIPAA-compliant telemedicine, online doctor consultation, clinic management software" />
         <meta name="author" content="DocGenie Global" />
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">

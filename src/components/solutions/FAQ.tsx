@@ -26,16 +26,12 @@ const FAQ = () => {
       answer: "Our white label telemedicine platform is used by a diverse range of healthcare providers including independent physician practices, multi-specialty clinics, hospital systems, urgent care networks, behavioral health providers, and specialty care organizations. The solution is scalable to accommodate providers of all sizes."
     },
     {
-      question: "How does white labeling impact patient trust compared to third-party platforms?",
-      answer: "White labeling significantly enhances patient trust by maintaining brand continuity across all touchpoints. Research shows that patients are more likely to engage with and trust telehealth services when they're offered under a familiar healthcare brand. This leads to higher adoption rates, better patient satisfaction, and improved clinical outcomes."
+      question: "How does white labeling improve patient trust compared to third-party platforms?",
+      answer: "White labeling significantly enhances patient trust by maintaining brand continuity across all touchpoints. When patients see your logo, domain, and emails rather than a third-party vendor’s, they feel they remain within your care ecosystem — reducing \"platform friction\" and reinforcing the doctor-patient bond. This leads to higher adoption rates, better patient satisfaction, and improved clinical outcomes."
     },
     {
       question: "What level of technical support is provided after implementation?",
       answer: "We provide comprehensive technical support after implementation, including 24/7 technical assistance, regular platform updates, security patches, and ongoing optimization. Our support team includes dedicated account managers who understand your specific implementation and can provide tailored assistance."
-    },
-    {
-      question: "How does a white label platform improve patient trust?",
-      answer: "By maintaining your brand’s visual identity (URL, logos, and emails), patients feel they are still within your care ecosystem. This reduces \"platform friction\" and reinforces the doctor-patient bond."
     },
     {
       question: "Is the mobile experience a \"Wrapper\" or Native?",

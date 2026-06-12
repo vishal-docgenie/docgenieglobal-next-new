@@ -30,7 +30,6 @@ const IntegrationGuide = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="integration guide, telemedicine API, healthcare integration, EHR integration, white-label platform, healthcare technology, API documentation, DocGenie Global" />
         <meta name="author" content="DocGenie Global" />
       </Head>
       

@@ -114,7 +114,6 @@ const Industries = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="telemedicine industries, healthcare providers, insurance telemedicine, public health telehealth, white label healthcare, medical technology partners, healthcare software solutions" />
         <meta name="author" content="DocGenie Global" />
         
         {/* JSON-LD Structured Data */}

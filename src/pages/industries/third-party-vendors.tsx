@@ -203,7 +203,6 @@ const ThirdPartyVendors = () => {
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/third-party-vendors" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="white label telemedicine, telemedicine reseller, healthcare technology partnerships, insurance telemedicine, TPA telehealth solutions" />
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
