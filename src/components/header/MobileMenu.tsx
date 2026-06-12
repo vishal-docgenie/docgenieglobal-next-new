@@ -13,6 +13,7 @@ import {
   Users,
   ChevronRight,
   LogIn,
+  HouseHeart
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getButtonA11yProps } from "@/utils/accessibilityUtils";
@@ -87,7 +88,17 @@ const MobileMenu = ({
       name: "Public Health Sector",
       path: "/industries/public-health",
       icon: <Users className="h-5 w-5 mr-2" />
-    }
+    },
+    // {
+    //   name: "Telemedicine Platform for Clinics",
+    //   path: "/industries/telemedicine-platform-for-clinics",
+    //   icon: <Hospital className="h-5 w-5 mr-2" />
+    // },
+    // {
+    //   name: "Telemedicine Platform for Hospitals",
+    //   path: "/industries/telemedicine-platform-for-hospitals",
+    //   icon: <HouseHeart className="h-5 w-5 mr-2" />
+    // }
   ];
 
   const handleDropdownItemClick = (path: string) => {

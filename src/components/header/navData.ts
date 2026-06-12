@@ -71,7 +71,17 @@ export const industriesDropdownItems = [
     name: "Public Health Sector",
     path: "/industries/public-health",
     iconName: "Users"
-  }
+  },
+  // {
+  //   name: "Telemedicine Platform for Clinics",
+  //   path: "/industries/telemedicine-platform-for-clinics",
+  //   iconName: "Hospital"
+  // },
+  // {
+  //   name: "Telemedicine Platform for Hosptals",
+  //   path: "/industries/telemedicine-platform-for-hosptals",
+  //   iconName: "HouseHeart"
+  // }
 ];
 
 export const footerLinks = [

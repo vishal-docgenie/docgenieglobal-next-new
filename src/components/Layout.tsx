@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -11,23 +10,31 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// Routes (and their child routes) where the floating "Request Demo" CTA should NOT appear
-const HIDDEN_ON_ROUTES = [
+// Routes where the floating "Request Demo" CTA should NOT appear.
+// Two categories:
+//   - HIDDEN_EXACT     → hide only on the exact path (children of these routes still show the button)
+//   - HIDDEN_AND_CHILDREN → hide on the route AND all of its child routes
+const HIDDEN_EXACT = [
+  "/blogs",     // blogs index hides the button; individual /blogs/<slug> posts still show it
+];
+
+const HIDDEN_AND_CHILDREN = [
   "/contact",
   "/privacy-policy",
   "/terms-of-service",
   "/integration-guide",
   "/sla-support-policy",
-  "/blogs",
-  "/sitemap"
+  "/sitemap",
 ];
 
 const Layout = ({ children }: LayoutProps) => {
   console.log("Layout rendering with children:", children);
   const { pathname } = useRouter();
-  const isHiddenRoute = HIDDEN_ON_ROUTES.some(
-    (route) => pathname === route || pathname.startsWith(route + "/")
-  );
+  const isHiddenRoute =
+    HIDDEN_EXACT.includes(pathname) ||
+    HIDDEN_AND_CHILDREN.some(
+      (route) => pathname === route || pathname.startsWith(route + "/")
+    );
   
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">

@@ -88,16 +88,18 @@ export default function BlogPostView({
             ) : null}
 
             <RelatedArticles currentBlog={blog} allBlogs={allBlogs} />
-
-            <div className="mt-16">
-              <BlogCTA cta={blog.cta} />
-            </div>
           </div>
 
           <div className="w-full md:w-1/4 hidden md:block">
             <TableOfContents sections={sections} />
           </div>
+
         </div>
+          <div className="w-full">
+            <div className="mt-16">
+              <BlogCTA cta={blog.cta} />
+            </div>
+          </div>
       </div>
     </>
   );
