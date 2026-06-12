@@ -21,27 +21,32 @@ const WhiteLabelTelemedicine = () => {
   return (
     <Layout>
       <Head>
-        <title>White Label Telemedicine Platform | Custom & HIPAA-Compliant Solutions for Clinics & Hospitals</title>
-        <meta name="description" content="Launch your own branded telemedicine platform with DocGenie Global. Our customizable, HIPAA-compliant solution offers AI-powered virtual care, secure EMR integration, remote monitoring, and seamless patient-doctor communication for clinics, hospitals, and providers." />
+        <title>White Label Telemedicine Platform | HIPAA-Compliant Solution</title>
+        <meta name="description" content="Launch your branded telemedicine platform with DocGenie Global. HIPAA-compliant, AI-powered virtual care with EMR integration and 100% UI customization." />
         <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
-        
+        <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
+
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="White Label Telemedicine Platform | Custom & HIPAA-Compliant Solutions for Clinics & Hospitals" />
-        <meta property="og:description" content="Launch your own branded telemedicine platform with DocGenie Global. Our customizable, HIPAA-compliant solution offers AI-powered virtual care, secure EMR integration, remote monitoring, and seamless patient-doctor communication for clinics, hospitals, and providers." />
+        <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant Solution" />
+        <meta property="og:description" content="Branded telehealth in weeks. HIPAA-compliant, AI-powered, full white-label — your logo, your domain, your patients." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
-        
+
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="White Label Telemedicine Platform | Custom & HIPAA-Compliant Solutions for Clinics & Hospitals" />
-        <meta name="twitter:description" content="Launch your own branded telemedicine platform with DocGenie Global. Our customizable, HIPAA-compliant solution offers AI-powered virtual care, secure EMR integration, remote monitoring, and seamless patient-doctor communication for clinics, hospitals, and providers." />
+        <meta name="twitter:site" content="@DocGenieGlobal" />
+        <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant Solution" />
+        <meta name="twitter:description" content="Branded telehealth in weeks. HIPAA-compliant, AI-powered, full white-label — your logo, your domain, your patients." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
-        
+
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />
-        
+
         {/* JSON-LD Structured Data - Product */}
         <script type="application/ld+json">
           {JSON.stringify(whiteLabelSchemaData)}
@@ -107,7 +112,7 @@ const WhiteLabelTelemedicine = () => {
             }
           ]}
           image="/lovable-uploads/1f93ec14-f910-4b12-8ff8-c1520b2b72bf.png"
-          altText="Multi-device access"
+          altText="Patient and doctor using white label telemedicine platform on mobile, tablet, and desktop devices"
           reversed={true}
         />
       </ErrorBoundary>
@@ -147,7 +152,7 @@ const WhiteLabelTelemedicine = () => {
             }
           ]}
           image="/lovable-uploads/cfd677f7-161c-43c3-ba5f-2ce373ddf739.png"
-          altText="Healthcare business growth"
+          altText="Healthcare provider expanding virtual care practice using white label telemedicine for geographic growth and patient retention"
         />
       </ErrorBoundary>
 
