@@ -253,53 +253,8 @@ const PublicHealth = () => {
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/public-health" />
         
-        {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="public health telemedicine, government telehealth, NGO telemedicine, non-profit healthcare technology, community health telemedicine" />
-        
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
-        </script>
-        
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How does telemedicine improve healthcare access for underserved populations?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Telemedicine bridges distance by enabling virtual consultations and remote monitoring, ensuring healthcare delivery to areas with limited medical facilities."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does the platform support multi-language communication?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Absolutely, it offers multi-language interfaces to serve diverse community needs effectively."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is DocGenie's platform suitable for large-scale public health programs?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, our platform is scalable and designed to support wide-reaching initiatives with advanced analytics, multilingual support and dashboards to closely monitor patient health outcomes."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How secure is the telemedicine platform for public health data?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "DocGenie Global adheres to stringent HIPAA compliance and employs robust security protocols to protect sensitive health information."
-                }
-              }
-            ]
-          })}
         </script>
       </Head>
       
@@ -353,7 +308,7 @@ const PublicHealth = () => {
       
       {/* Side Align Sections */}
       <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">          
+        <div className="container mx-auto px-4">
           <div className="space-y-16">
 
             {/* Built for Independent Doctors */}
@@ -670,7 +625,7 @@ const PublicHealth = () => {
       
       {/* Side Align Sections */}
       <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">          
+        <div className="container mx-auto px-4">
           <div className="space-y-16">
 
             {/* Why Clinics Choose This Platform */}
@@ -824,33 +779,6 @@ const PublicHealth = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-brand-blue/10 py-16 sm:py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="heading-2 text-brand-gray-dark mb-6">
-            Ready to Partner With Us?
-          </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Building on these proven community models, we're scaling partnerships with government ministries and international NGOs for national health system integration and virtual training programs for frontline health workers. We also collaborate with community organizations working on complementary services like climate adaptation and mitigation.
-          </p>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contact our Global Health team to explore partnership opportunities.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact" data-hero-cta>
-              <Button className="primary-button">
-                Book a Free Demo <ChevronRight className="ml-1 h-4 w-4" />
-              </Button>
-            </Link>
-            <Link href="/pricing">
-              <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
-                Get Platform Pricing
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -931,6 +859,30 @@ const PublicHealth = () => {
                 Yes. The platform supports multi-doctor and multi-specialty clinic workflows, including admin coordination, doctor access, appointments, prescriptions, and patient management.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-brand-blue/10 py-16 sm:py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="heading-2 text-brand-gray-dark mb-6">
+            Ready to Partner With Us?
+          </h2>
+          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Bring your clinic online with a secure, branded, and easy-to-manage telemedicine platform built for real clinic workflows.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" data-hero-cta>
+              <Button className="primary-button">
+                Book a Free Demo <ChevronRight className="ml-1 h-4 w-4" />
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
+                Get Platform Pricing
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
