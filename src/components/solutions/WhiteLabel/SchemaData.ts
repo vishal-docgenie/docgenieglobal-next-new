@@ -32,9 +32,11 @@ export const whiteLabelSchemaData = {
       },
       "offers": {
         "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "0",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Custom pricing based on organisation size and requirements"
+        }
       }
     },
     {
@@ -44,19 +46,23 @@ export const whiteLabelSchemaData = {
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Requirement Analysis"
+          "name": "Requirement Analysis",
+          "text": "We conduct a detailed discovery session to understand your brand, clinical workflows, compliance requirements, and integration needs."
         },
         {
           "@type": "HowToStep",
-          "name": "Platform Customization"
+          "name": "Platform Customization",
+          "text": "Your platform is configured with your logo, colours, typography, custom domain, and branded patient communications across web and mobile."
         },
         {
           "@type": "HowToStep",
-          "name": "Integration Setup"
+          "name": "Integration Setup",
+          "text": "We connect the platform to your existing EHR/EMR, payment processors, and third-party services via our comprehensive API ecosystem."
         },
         {
           "@type": "HowToStep",
-          "name": "Launch"
+          "name": "Training & Launch",
+          "text": "Your clinical and admin staff are trained, the platform is tested end-to-end, and your branded telemedicine service goes live — typically within 4–6 weeks."
         }
       ]
     },
@@ -98,10 +104,10 @@ export const whiteLabelSchemaData = {
         },
         {
           "@type": "Question",
-          "name": "How does white labeling impact patient trust compared to third-party platforms?",
+          "name": "How does white labeling improve patient trust compared to third-party platforms?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "White labeling significantly enhances patient trust by maintaining brand continuity across all touchpoints. Research shows that patients are more likely to engage with and trust telehealth services when they're offered under a familiar healthcare brand. This leads to higher adoption rates, better patient satisfaction, and improved clinical outcomes."
+            "text": "White labeling significantly enhances patient trust by maintaining brand continuity across all touchpoints. When patients see your logo, domain, and emails rather than a third-party vendor’s, they feel they remain within your care ecosystem — reducing platform friction and reinforcing the doctor-patient bond. This leads to higher adoption rates, better patient satisfaction, and improved clinical outcomes."
           }
         },
         {
@@ -110,14 +116,6 @@ export const whiteLabelSchemaData = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We provide comprehensive technical support after implementation, including 24/7 technical assistance, regular platform updates, security patches, and ongoing optimization. Our support team includes dedicated account managers who understand your specific implementation and can provide tailored assistance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does a white label platform improve patient trust?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "By maintaining your brand’s visual identity (URL, logos, and emails), patients feel they are still within your care ecosystem. This reduces \"platform friction\" and reinforces the doctor-patient bond."
           }
         },
         {
@@ -134,10 +132,35 @@ export const whiteLabelSchemaData = {
       "@type": "WebPage",
       "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine#webpage",
       "url": "https://www.docgenieglobal.com/solutions/white-label-telemedicine",
-      "name": "White Label Telemedicine Platform",
+      "name": "White Label Telemedicine Platform | HIPAA-Compliant Solution",
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-06-12",
       "about": {
         "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine#software"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.docgenieglobal.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solutions",
+          "item": "https://www.docgenieglobal.com/solutions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White Label Telemedicine"
+        }
+      ]
     },
     {
       "@type": "ContactAction",
