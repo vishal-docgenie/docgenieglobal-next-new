@@ -15,6 +15,7 @@ import { launchBrandedDigitalClinicContent } from './launchBrandedDigitalClinic'
 import { secureVirtualConsultationsContent } from './secureVirtualConsultations';
 import { keyVirtualCareTrendsContent } from './keyVirtualCareTrends';
 import { roiReadymadeVirtualCarePlatformContent } from './roiReadymadeVirtualCarePlatform';
+import { browserNativeVirtualCareContent } from './browserNativeVirtualCare';
 
 export {
   whitelabelTelemedicineContent,
@@ -32,5 +33,6 @@ export {
   launchBrandedDigitalClinicContent,
   secureVirtualConsultationsContent,
   keyVirtualCareTrendsContent,
-  roiReadymadeVirtualCarePlatformContent
+  roiReadymadeVirtualCarePlatformContent,
+  browserNativeVirtualCareContent
 };

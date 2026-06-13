@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { HelpCircle } from 'lucide-react';
 
@@ -26,7 +25,7 @@ const FaqSection = ({ faqs }: FaqSectionProps) => {
               <HelpCircle className="h-5 w-5 text-brand-orange mr-3 flex-shrink-0" />
               {faq.question}
             </h3>
-            <p className="text-gray-600 ml-8">{faq.answer}</p>
+            <p className="text-gray-600 ml-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
           </div>
         ))}
       </div>

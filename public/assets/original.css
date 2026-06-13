@@ -4732,6 +4732,10 @@ html {
 .anchor-hide {
     cursor: inherit !important;
 }
+.blog-faq-anchor {
+    cursor: pointer !important;
+    color: var(--color-brand-blue);
+}
 
 ::selection {
     background-color: var(--color-brand-blue);
