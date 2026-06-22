@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const CTASection = () => {
   return (
@@ -14,10 +15,10 @@ const CTASection = () => {
             Join hundreds of healthcare providers who have revolutionized their patient care delivery with our platform.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact">
+            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Schedule a Demo", cta_location: "solutions_cta", page_path: window.location.pathname })}>
               <Button className="primary-button">Schedule a Demo <ArrowRight className="ml-2 h-4 w-4" /></Button>
             </Link>
-            <Link href="/pricing">
+            <Link href="/pricing" onClick={() => trackEvent({ event: "cta_click", cta_text: "View Pricing", cta_location: "solutions_cta", page_path: window.location.pathname })}>
               <Button variant="outline" className="border-gray-400 text-gray-700 hover:bg-brand-blue/10">
                 View Pricing
               </Button>

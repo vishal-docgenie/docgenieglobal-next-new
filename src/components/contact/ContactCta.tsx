@@ -2,14 +2,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
-/**
- * CTA component for booking a demo via Calendly
- * Contains a card with description and a button that opens Calendly
- */
 const ContactCta = () => {
   const openCalendly = () => {
-    // Open Calendly with your specific URL
+    trackEvent({ event: "cta_click", cta_text: "Book a Demo", cta_location: "contact_cta", page_path: window.location.pathname });
     window.open("https://calendly.com/adityavj-docgenie/30min", "_blank");
   };
 

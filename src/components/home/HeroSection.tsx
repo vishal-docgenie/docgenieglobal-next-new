@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Shield } from "lucide-react";
 // import LazyImage from "@/components/common/LazyImage";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { trackEvent } from "@/lib/analytics";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -23,12 +24,12 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start reveal animate-slide-down reveal-delay-200">
               <Button className="primary-button">
-                <Link href="/contact" data-hero-cta>
+                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "Start Your Virtual Care Journey", cta_location: "hero", page_path: window.location.pathname })}>
                     Start Your Virtual Care Journey <ArrowRight className="ml-2 h-4 w-4 fl-r" />
                 </Link>
               </Button>
               <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10">
-                <Link href="/solutions">
+                <Link href="/solutions" onClick={() => trackEvent({ event: "cta_click", cta_text: "Explore Telemedicine Features", cta_location: "hero", page_path: window.location.pathname })}>
                     Explore Telemedicine Features
                 </Link>
               </Button>
