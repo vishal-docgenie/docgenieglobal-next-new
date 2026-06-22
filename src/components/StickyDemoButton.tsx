@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Floating "Request Demo" CTA — sticks to the bottom-right of every page
@@ -45,6 +46,7 @@ const StickyDemoButton = () => {
   return (
     <Link
       href="/contact"
+      onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "sticky_button", page_path: window.location.pathname })}
       aria-label="Request a demo"
       aria-hidden={!isVisible}
       tabIndex={isVisible ? 0 : -1}

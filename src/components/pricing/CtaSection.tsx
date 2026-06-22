@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const CtaSection = () => (
   <div className="max-w-4xl mx-auto mt-20 blue-orange-gradient-r-20 p-10 rounded-2xl text-center">
@@ -10,10 +11,10 @@ const CtaSection = () => (
       Get started with DocGenie Global today and provide your patients with the modern telehealth experience they expect.
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
-      <Link href="/contact">
+      <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Talk to Our Team", cta_location: "pricing_cta", page_path: window.location.pathname })}>
         <Button className="primary-button">Talk to Our Team</Button>
       </Link>
-      <Link href="/contact">
+      <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Schedule a Demo", cta_location: "pricing_cta", page_path: window.location.pathname })}>
         <Button variant="outline" className="bg-white">
           Schedule a Demo
         </Button>

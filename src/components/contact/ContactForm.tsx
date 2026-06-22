@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Contact form component with form state management and submission handling
@@ -55,6 +56,8 @@ const ContactForm = () => {
       if (response.ok) {
         if (responseData.status === "success") {
           console.info("Form Submitted Successfully!");
+          trackEvent({ event: "generate_lead", form_name: "contact_form", page_path: window.location.pathname });
+          window.lintrk?.("track", { conversion_id: 22311258 });
           toast({
             title: "Form submitted successfully",
             description: responseData.message,

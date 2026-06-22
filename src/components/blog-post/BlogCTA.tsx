@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import type { BlogCustomCta } from "@/data/blogs/types";
+import { trackEvent } from "@/lib/analytics";
 
 interface BlogCTAProps {
   /** Optional per-blog override. When present, replaces heading + body text. */
@@ -34,13 +35,13 @@ const BlogCTA = ({ cta }: BlogCTAProps) => {
 
       <div className="flex flex-wrap justify-center gap-4">
         <Button className="primary-button">
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Contact Us", cta_location: "blog_cta", page_path: window.location.pathname })}>Contact Us</Link>
         </Button>
         <Button
           variant="outline"
           className="border-brand-blue text-brand-blue hover:bg-brand-blue/10"
         >
-          <Link href="/pricing">View Pricing</Link>
+          <Link href="/pricing" onClick={() => trackEvent({ event: "cta_click", cta_text: "View Pricing", cta_location: "blog_cta", page_path: window.location.pathname })}>View Pricing</Link>
         </Button>
       </div>
     </section>
