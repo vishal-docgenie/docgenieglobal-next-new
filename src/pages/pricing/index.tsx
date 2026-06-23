@@ -19,13 +19,13 @@ const Pricing = () => {
           name="description" 
           content="Explore DocGenie's transparent pricing for our white-label telemedicine solutions. Affordable plans tailored for healthcare providers, clinics, and hospitals." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/pricing" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/pricing/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Platform Pricing | DocGenie Global" />
         <meta property="og:description" content="Explore DocGenie's transparent pricing for our white-label telemedicine solutions. Affordable plans tailored for healthcare providers, clinics, and hospitals." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/6cf94fc6-58cb-4c05-b124-1078a8267482.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/pricing" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/pricing/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -34,6 +34,7 @@ const Pricing = () => {
         <meta name="twitter:title" content="Telemedicine Platform Pricing | DocGenie Global" />
         <meta name="twitter:description" content="Explore DocGenie's transparent pricing for our white-label telemedicine solutions. Affordable plans tailored for healthcare providers, clinics, and hospitals." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/6cf94fc6-58cb-4c05-b124-1078a8267482.png" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/pricing/" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

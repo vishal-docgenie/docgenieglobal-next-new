@@ -2,8 +2,9 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import Head from "next/head";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+// import { trackEvent } from "@/lib/analytics";
 import { Poppins } from "next/font/google";
 
 const GA_ID = "G-KSEB3D0KZ0";
@@ -18,28 +19,23 @@ const poppins = Poppins({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-    const router = useRouter();
+    // const router = useRouter();
 
-    // Fix: fire page_view on EVERY route including the very first page load.
-    // Previously send_page_view:false + routeChangeComplete meant the entry
-    // page view was never recorded for organic/direct/paid traffic.
-    useEffect(() => {
-        window.gtag?.("config", GA_ID, {
-            page_path: router.asPath,
-            page_title: document.title,
-        });
-    }, [router.asPath]);
+    // Manual Page Tracking
+    // useEffect(() => {
+    //     trackEvent({
+    //         event: "page_view",
+    //         page_path: router.asPath,
+    //         page_title: document.title,
+    //         page_location: window.location.href,
+    //     });
+    // }, [router.asPath]);
 
     return (
         <div className={poppins.className}>
-            {/* Google Analytics 4 */}
+            {/* Google Analytics 4 library. The gtag stub + config are initialized in
+                _document.tsx; this just loads the heavy library that processes the queue. */}
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-            <Script id="ga-init" strategy="afterInteractive">{`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}');
-            `}</Script>
 
             {/* LinkedIn Insight Tag — required for conversion tracking & retargeting */}
             <Script id="linkedin-insight" strategy="afterInteractive">{`

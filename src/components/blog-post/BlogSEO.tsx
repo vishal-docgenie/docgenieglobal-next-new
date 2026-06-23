@@ -9,7 +9,7 @@ interface BlogSEOProps {
 const BlogSEO = ({ blog }: BlogSEOProps) => {
   // Generate base URL with the correct domain
   const baseUrl = 'https://www.docgenieglobal.com';
-  const blogUrl = `${baseUrl}/blogs/${blog.slug || generateSlug(blog.title)}`;
+  const blogUrl = `${baseUrl}/blogs/${blog.slug || generateSlug(blog.title)}/`;
 
   // Create meta description with keywords (prefer conclusion, fall back to intro)
   const generateMetaDescription = () => {

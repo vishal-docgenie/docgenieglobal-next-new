@@ -14,13 +14,13 @@ const PrivacyPolicy = () => {
           name="description" 
           content="Learn about DocGenie Global's data privacy practices, including how we collect, use, and protect your personal and health information in compliance with healthcare regulations." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/privacy-policy" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/privacy-policy/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Privacy Policy | DocGenie Global" />
         <meta property="og:description" content="Learn about DocGenie Global's data privacy practices, including how we collect, use, and protect your personal and health information in compliance with healthcare regulations." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/privacy-policy" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/privacy-policy/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         

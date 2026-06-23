@@ -1,216 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
 
 <url>
   <loc>https://www.docgenieglobal.com/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/solutions</loc>
+  <loc>https://www.docgenieglobal.com/solutions/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/solutions/white-label-telemedicine/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/solutions/virtual-care-features/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/solutions/chronic-care-management/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/solutions/ai-capabilities/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/industries/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/industries</loc>
+  <loc>https://www.docgenieglobal.com/industries/healthcare-providers/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/pricing</loc>
+  <loc>https://www.docgenieglobal.com/industries/third-party-vendors/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/about</loc>
+  <loc>https://www.docgenieglobal.com/industries/public-health/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/blogs</loc>
+  <loc>https://www.docgenieglobal.com/pricing/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/contact</loc>
+  <loc>https://www.docgenieglobal.com/about/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/solutions/white-label-telemedicine</loc>
+  <loc>https://www.docgenieglobal.com/contact/</loc>
   <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/privacy-policy/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/terms-of-service/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/integration-guide/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/sla-support-policy/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/sitemap/</loc>
+  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/privacy-policy</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/terms-of-service</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/integration-guide</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/sla-support-policy</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/sitemap</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/solutions/virtual-care-features</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/solutions/chronic-care-management</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/solutions/ai-capabilities</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/industries/healthcare-providers</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/industries/third-party-vendors</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/industries/public-health</loc>
-  <lastmod>2026-03-18T10:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/7-benefits-of-integrating-a-white-label-telemedicine-solution-for-clinics-and-hospitals</loc>
-  <lastmod>2025-08-15T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/how-ai-is-transforming-healthcare</loc>
-  <lastmod>2025-07-22T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/the-role-of-technology-in-improving-patient-care</loc>
-  <lastmod>2025-06-10T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/5-ways-telemedicine-improves-access-to-healthcare</loc>
-  <lastmod>2025-05-18T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/the-benefits-of-remote-patient-monitoring</loc>
-  <lastmod>2025-04-25T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/the-impact-of-big-data-on-healthcare</loc>
-  <lastmod>2025-03-08T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/virtual-reality-in-medical-training</loc>
-  <lastmod>2025-02-15T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/mental-health-apps-a-review-of-the-top-solutions</loc>
-  <lastmod>2025-01-22T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/harnessing-ai-in-telemedicine-revolutionizing-virtual-care</loc>
-  <lastmod>2025-09-05T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/how-can-telemedicine-help-expand-access-to-mental-health-care</loc>
-  <lastmod>2024-10-12T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/how-telemedicine-transforms-chronic-care-management</loc>
-  <lastmod>2025-08-15T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/comprehensive-telemedicine-platform-benefits</loc>
-  <lastmod>2025-06-10T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/launch-branded-digital-clinic-under-30-days</loc>
-  <lastmod>2026-05-07T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/secure-virtual-consultations-beyond-video-calls</loc>
-  <lastmod>2026-05-15T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/virtual-care-trends-2026</loc>
+  <loc>https://www.docgenieglobal.com/us/white-label-telemedicine-platform/</loc>
   <lastmod>2026-05-28T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/blogs/roi-ready-made-virtual-care-platform</loc>
-  <lastmod>2026-06-08T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/blogs/browser-native-virtual-care</loc>
-  <lastmod>2026-06-13T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/us/white-label-telemedicine-platform</loc>
-  <lastmod>2026-05-28T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.docgenieglobal.com/uk/white-label-telemedicine-platform</loc>
+  <loc>https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/</loc>
   <lastmod>2026-05-29T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/za/white-label-telemedicine-platform</loc>
+  <loc>https://www.docgenieglobal.com/za/white-label-telemedicine-platform/</loc>
   <lastmod>2026-06-12T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.docgenieglobal.com/gh/white-label-telemedicine-platform</loc>
+  <loc>https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/</loc>
   <lastmod>2026-06-12T12:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/7-benefits-of-integrating-a-white-label-telemedicine-solution-for-clinics-and-hospitals/</loc>
+  <lastmod>2025-08-15T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/how-ai-is-transforming-healthcare/</loc>
+  <lastmod>2025-07-22T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/the-role-of-technology-in-improving-patient-care/</loc>
+  <lastmod>2025-06-10T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/5-ways-telemedicine-improves-access-to-healthcare/</loc>
+  <lastmod>2025-05-18T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/the-benefits-of-remote-patient-monitoring/</loc>
+  <lastmod>2025-04-25T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/the-impact-of-big-data-on-healthcare/</loc>
+  <lastmod>2025-03-08T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/virtual-reality-in-medical-training/</loc>
+  <lastmod>2025-02-15T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/mental-health-apps-a-review-of-the-top-solutions/</loc>
+  <lastmod>2025-01-22T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/harnessing-ai-in-telemedicine-revolutionizing-virtual-care/</loc>
+  <lastmod>2025-09-05T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/how-can-telemedicine-help-expand-access-to-mental-health-care/</loc>
+  <lastmod>2024-10-12T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/how-telemedicine-transforms-chronic-care-management/</loc>
+  <lastmod>2025-08-15T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/comprehensive-telemedicine-platform-benefits/</loc>
+  <lastmod>2025-06-10T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/launch-branded-digital-clinic-under-30-days/</loc>
+  <lastmod>2026-05-07T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/secure-virtual-consultations-beyond-video-calls/</loc>
+  <lastmod>2026-05-15T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/virtual-care-trends-2026/</loc>
+  <lastmod>2026-05-28T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/roi-ready-made-virtual-care-platform/</loc>
+  <lastmod>2026-06-08T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.docgenieglobal.com/blogs/browser-native-virtual-care/</loc>
+  <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
 </url>
 
 </urlset>

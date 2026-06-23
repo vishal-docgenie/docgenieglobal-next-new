@@ -14,7 +14,7 @@ const PricingTabs = ({ billingCycle, setBillingCycle }: PricingTabsProps) => {
       <Tabs
         value={billingCycle}
         onValueChange={(value) => {
-          console.log("Tab changed to:", value);
+          // console.log("Tab changed to:", value);
           setBillingCycle(value as "monthly" | "annual");
         }}
         defaultValue="monthly"

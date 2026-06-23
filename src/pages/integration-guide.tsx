@@ -13,13 +13,13 @@ const IntegrationGuide = () => {
           name="description" 
           content="Comprehensive integration guide for DocGenie Global's telemedicine platform. Learn about our APIs, deployment options, and integration patterns for healthcare providers." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/integration-guide" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/integration-guide/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Integration Guide | DocGenie Global" />
         <meta property="og:description" content="Comprehensive integration guide for DocGenie Global's telemedicine platform. Learn about our APIs, deployment options, and integration patterns for healthcare providers." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/integration-guide" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/integration-guide/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         

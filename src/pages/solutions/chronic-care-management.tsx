@@ -74,13 +74,13 @@ const ChronicCareManagement = () => {
           name="description" 
           content="Streamline chronic disease management with DocGenie Global’s AI-powered telemedicine platform. Enhance patient engagement, automate workflows, integrate EMR, and enable remote monitoring to deliver personalized, continuous care for chronic conditions." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/chronic-care-management" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/chronic-care-management/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Chronic Care Management Solution | AI-Driven Telemedicine for Long-Term Patient Care" />
         <meta property="og:description" content="Streamline chronic disease management with DocGenie Global’s AI-powered telemedicine platform. Enhance patient engagement, automate workflows, integrate EMR, and enable remote monitoring to deliver personalized, continuous care for chronic conditions." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/1adee902-8f64-47fe-9e3c-367901c293a8.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/chronic-care-management" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/chronic-care-management/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -89,6 +89,7 @@ const ChronicCareManagement = () => {
         <meta name="twitter:title" content="Chronic Care Management Solution | AI-Driven Telemedicine for Long-Term Patient Care" />
         <meta name="twitter:description" content="Streamline chronic disease management with DocGenie Global’s AI-powered telemedicine platform. Enhance patient engagement, automate workflows, integrate EMR, and enable remote monitoring to deliver personalized, continuous care for chronic conditions." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/1adee902-8f64-47fe-9e3c-367901c293a8.png" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/chronic-care-management/" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

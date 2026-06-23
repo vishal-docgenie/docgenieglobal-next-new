@@ -31,10 +31,10 @@ const AllArticles = ({ blogs, activeCategory, setActiveCategory }: AllArticlesPr
 
   // Add debug logging to verify data
   useEffect(() => {
-    console.log('AllArticles - blogs:', blogs);
-    console.log('AllArticles - activeCategory:', activeCategory);
-    console.log('AllArticles - currentPage:', currentPage);
-    console.log('AllArticles - displayingBlogs:', currentBlogs);
+    // console.log('AllArticles - blogs:', blogs);
+    // console.log('AllArticles - activeCategory:', activeCategory);
+    // console.log('AllArticles - currentPage:', currentPage);
+    // console.log('AllArticles - displayingBlogs:', currentBlogs);
   }, [blogs, activeCategory, currentPage, currentBlogs]);
 
   const goToNextPage = () => {

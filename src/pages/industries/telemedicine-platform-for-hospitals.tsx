@@ -251,13 +251,13 @@ const PublicHealth = () => {
           name="description" 
           content="A scalable telemedicine platform for hospitals and growing healthcare organisations with branded digital care, doctor modules, referrals, integrations, payments, and secure workflows." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/industries/public-health" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/industries/telemedicine-platform-for-hospitals/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Platform for Hospitals | Scalable Digital Care" />
         <meta property="og:description" content="A scalable telemedicine platform for hospitals and growing healthcare organisations with branded digital care, doctor modules, referrals, integrations, payments, and secure workflows." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/industries/public-health" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/industries/telemedicine-platform-for-hospitals/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -266,7 +266,7 @@ const PublicHealth = () => {
         <meta name="twitter:title" content="Telemedicine Platform for Hospitals | Scalable Digital Care" />
         <meta name="twitter:description" content="A scalable telemedicine platform for hospitals and growing healthcare organisations with branded digital care, doctor modules, referrals, integrations, payments, and secure workflows." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/public-health" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/telemedicine-platform-for-hospitals/" />
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}

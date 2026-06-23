@@ -164,7 +164,7 @@ const Index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
         
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="DocGenie | White Label Telemedicine Platform" />
+        <meta property="og:title" content="DocGenie Global | White Label Telemedicine Platform" />
         <meta property="og:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/" />
@@ -173,7 +173,7 @@ const Index = () => {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DocGenie | White Label Telemedicine Platform" />
+        <meta name="twitter:title" content="DocGenie Global | White Label Telemedicine Platform" />
         <meta name="twitter:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         

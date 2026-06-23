@@ -74,13 +74,13 @@ const AICapabilities = () => {
           name="description" 
           content="Experience the future of healthcare with DocGenie Global’s AI-powered telemedicine platform. Leverage advanced AI for seamless workflows, intelligent EMR management, automated prescription fulfillment, remote patient monitoring, and enhanced virtual care security." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/ai-capabilities" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/ai-capabilities/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="AI-Powered Telemedicine Platform | Advanced Healthcare AI Capabilities - DocGenie Global" />
         <meta property="og:description" content="Experience the future of healthcare with DocGenie Global’s AI-powered telemedicine platform. Leverage advanced AI for seamless workflows, intelligent EMR management, automated prescription fulfillment, remote patient monitoring, and enhanced virtual care security." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/63ea607b-5a55-428d-b7c6-d6949d524efe.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/ai-capabilities" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/ai-capabilities/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -89,6 +89,7 @@ const AICapabilities = () => {
         <meta name="twitter:title" content="AI-Powered Telemedicine Platform | Advanced Healthcare AI Capabilities - DocGenie Global" />
         <meta name="twitter:description" content="Experience the future of healthcare with DocGenie Global’s AI-powered telemedicine platform. Leverage advanced AI for seamless workflows, intelligent EMR management, automated prescription fulfillment, remote patient monitoring, and enhanced virtual care security." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/63ea607b-5a55-428d-b7c6-d6949d524efe.png" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/ai-capabilities/" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

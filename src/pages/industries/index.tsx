@@ -2,12 +2,9 @@ import React from "react";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Link from "next/link";
-import { Hospital, Building, Users, Clock, DollarSign, Shield, Globe, Palette, TrendingUp, MapPin, Heart, ChevronRight, CheckCircle, ArrowRight } from "lucide-react";
+import { Hospital, Building, Users, Shield, Globe, Palette, Heart, ChevronRight, CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import LazyImage from "@/components/common/LazyImage";
-// import healthcareProvidersImage from "@/assets/images/healthcare-providers.jpg";
-// import thirdPartyVendorsImage from "@/assets/images/third-party-vendors.jpg";
-// import publicHealthImage from "@/assets/images/public-health.jpg";
+
 const Industries = () => {
   const industries = [{
     title: "Healthcare Providers",
@@ -97,13 +94,13 @@ const Industries = () => {
       <Head>
         <title>Telemedicine Solutions for Hospitals, Clinics & More | Industries</title>
         <meta name="description" content="See how DocGenie Global supports hospitals, clinics, pharmacies and more with tailored virtual care, white-label telehealth, and enterprise-grade integrations." />
-        <link rel="canonical" href="https://www.docgenieglobal.com/industries" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/industries/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Solutions for Hospitals, Clinics & More | Industries" />
         <meta property="og:description" content="See how DocGenie Global supports hospitals, clinics, pharmacies and more with tailored virtual care, white-label telehealth, and enterprise-grade integrations." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/industries" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/industries/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         

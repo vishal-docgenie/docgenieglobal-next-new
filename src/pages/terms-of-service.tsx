@@ -14,7 +14,7 @@ const TermsOfService = () => {
           name="description" 
           content="Read DocGenie Global's terms of service, detailing the terms and conditions governing the use of our telemedicine platform and services." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/terms-of-service" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/terms-of-service/" />
       </Head>
       
       <div className="container mx-auto px-4 py-12">

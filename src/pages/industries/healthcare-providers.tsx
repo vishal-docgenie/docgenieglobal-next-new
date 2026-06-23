@@ -171,13 +171,13 @@ const HealthcareProviders = () => {
           name="description" 
           content="Empower healthcare providers with scalable, secure telemedicine solutions. Our platform offers virtual care, EMR integration, and HIPAA compliance customized for providers." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/industries/healthcare-providers" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/industries/healthcare-providers/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine & Virtual Care for Healthcare Providers | DocGenie Global" />
         <meta property="og:description" content="Empower healthcare providers with scalable, secure telemedicine solutions. Our platform offers virtual care, EMR integration, and HIPAA compliance customized for providers." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/industries/healthcare-providers" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/industries/healthcare-providers/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -186,7 +186,7 @@ const HealthcareProviders = () => {
         <meta name="twitter:title" content="Telemedicine & Virtual Care for Healthcare Providers | DocGenie Global" />
         <meta name="twitter:description" content="Empower healthcare providers with scalable, secure telemedicine solutions. Our platform offers virtual care, EMR integration, and HIPAA compliance customized for providers." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/healthcare-providers" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/healthcare-providers/" />
         
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}

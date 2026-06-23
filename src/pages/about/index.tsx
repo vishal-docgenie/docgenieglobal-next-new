@@ -14,13 +14,13 @@ const About = () => {
       <Head>
         <title>White-Label Telemedicine Platform for Clinics & Hospitals | About Us</title>
         <meta name="description" content="Learn how our white-label telemedicine platform empowers clinics and hospitals with HIPAA-compliant virtual care, EMR integrations, and enterprise support." />
-        <link rel="canonical" href="https://www.docgenieglobal.com/about" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/about/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="White-Label Telemedicine Platform for Clinics & Hospitals | About Us" />
         <meta property="og:description" content="Learn how our white-label telemedicine platform empowers clinics and hospitals with HIPAA-compliant virtual care, EMR integrations, and enterprise support." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/b7dc5536-65af-4491-b947-6b6066db97e4.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/about" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/about/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         

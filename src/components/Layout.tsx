@@ -28,7 +28,7 @@ const HIDDEN_AND_CHILDREN = [
 ];
 
 const Layout = ({ children }: LayoutProps) => {
-  console.log("Layout rendering with children:", children);
+  // console.log("Layout rendering with children:", children);
   const { pathname } = useRouter();
   const isHiddenRoute =
     HIDDEN_EXACT.includes(pathname) ||

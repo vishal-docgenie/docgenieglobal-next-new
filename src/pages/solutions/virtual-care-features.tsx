@@ -70,13 +70,13 @@ const VirtualCareFeatures = () => {
           name="description" 
           content="Explore the advanced virtual care features of DocGenie Global’s HIPAA-compliant telemedicine platform. Benefit from AI-driven video consultations, secure patient management, EMR integration, remote monitoring, and specialty referral systems designed for clinics and hospitals." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/virtual-care-features" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/virtual-care-features/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Virtual Care Platform Features | AI-Powered HIPAA-Compliant Telemedicine Solutions" />
         <meta property="og:description" content="Explore the advanced virtual care features of DocGenie Global’s HIPAA-compliant telemedicine platform. Benefit from AI-driven video consultations, secure patient management, EMR integration, remote monitoring, and specialty referral systems designed for clinics and hospitals." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/a3b087bc-54d6-41e8-8111-32cd33c8dbf0.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/virtual-care-features" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/virtual-care-features/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -85,7 +85,8 @@ const VirtualCareFeatures = () => {
         <meta name="twitter:title" content="Virtual Care Platform Features | AI-Powered HIPAA-Compliant Telemedicine Solutions" />
         <meta name="twitter:description" content="Explore the advanced virtual care features of DocGenie Global’s HIPAA-compliant telemedicine platform. Benefit from AI-driven video consultations, secure patient management, EMR integration, remote monitoring, and specialty referral systems designed for clinics and hospitals." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/a3b087bc-54d6-41e8-8111-32cd33c8dbf0.png" />
-        
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/virtual-care-features/" />
+
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />
 

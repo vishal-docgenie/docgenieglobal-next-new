@@ -23,7 +23,7 @@ const WhiteLabelTelemedicine = () => {
       <Head>
         <title>White Label Telemedicine Platform | HIPAA-Compliant Solution</title>
         <meta name="description" content="Launch your branded telemedicine platform with DocGenie Global. HIPAA-compliant, AI-powered virtual care with EMR integration and 100% UI customization." />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
         <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
         {/* OpenGraph Tags */}
@@ -33,7 +33,7 @@ const WhiteLabelTelemedicine = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
 
@@ -43,6 +43,7 @@ const WhiteLabelTelemedicine = () => {
         <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant Solution" />
         <meta name="twitter:description" content="Branded telehealth in weeks. HIPAA-compliant, AI-powered, full white-label — your logo, your domain, your patients." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

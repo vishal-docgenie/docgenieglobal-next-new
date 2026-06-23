@@ -58,13 +58,13 @@ const Solutions = () => {
       <Head>
         <title>Telemedicine Solutions for Healthcare | Customizable Virtual Care Platform - DocGenie Global</title>
         <meta name="description" content="Discover DocGenie Global’s customizable telemedicine solutions for clinics and hospitals. Our platform offers white-label virtual care, HIPAA-compliant security, advanced AI capabilities, chronic care management, and comprehensive virtual healthcare features tailored to your needs." />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Solutions for Healthcare | Customizable Virtual Care Platform - DocGenie Global" />
         <meta property="og:description" content="Discover DocGenie Global’s customizable telemedicine solutions for clinics and hospitals. Our platform offers white-label virtual care, HIPAA-compliant security, advanced AI capabilities, chronic care management, and comprehensive virtual healthcare features tailored to your needs." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -73,7 +73,8 @@ const Solutions = () => {
         <meta name="twitter:title" content="Telemedicine Solutions for Healthcare | Customizable Virtual Care Platform - DocGenie Global" />
         <meta name="twitter:description" content="Discover DocGenie Global’s customizable telemedicine solutions for clinics and hospitals. Our platform offers white-label virtual care, HIPAA-compliant security, advanced AI capabilities, chronic care management, and comprehensive virtual healthcare features tailored to your needs." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
-        
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/" />
+
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />
         

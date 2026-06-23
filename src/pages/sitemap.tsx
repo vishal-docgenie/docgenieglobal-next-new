@@ -21,7 +21,7 @@ const Sitemap = () => {
           name="description" 
           content="View a complete sitemap of the DocGenie Global website to easily find and navigate to all our telemedicine platform pages and resources." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/sitemap" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/sitemap/" />
       </Head>
       
       <section className="py-20 md:py-28 bg-white">

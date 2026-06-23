@@ -64,13 +64,13 @@ const Blogs = () => {
           name="description" 
           content="Stay updated with the latest trends and insights in telemedicine, virtual care, and healthcare technology through DocGenie's expert blog articles." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/blogs" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/blogs/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="DocGenie Blog | Insights on Telemedicine & Virtual Care" />
         <meta property="og:description" content="Stay updated with the latest trends and insights in telemedicine, virtual care, and healthcare technology through DocGenie's expert blog articles." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/31596225-1867-422e-b5bf-01644392c0fb.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/blogs" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/blogs/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         

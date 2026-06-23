@@ -3,5 +3,9 @@ Allow: /
 
 Disallow: /api/
 Disallow: /admindemo/
+Disallow: /integration-guide
+Disallow: /sla-support-policy
+Disallow: /terms-of-service
+Disallow: /privacy-policy
 
-Sitemap: https://www.docgenieglobal.com/api/sitemap.xml
+Sitemap: https://www.docgenieglobal.com/sitemap.xml

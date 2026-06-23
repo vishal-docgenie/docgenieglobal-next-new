@@ -27,13 +27,13 @@ const HIPAACompliantHealthcare = () => {
           name="description" 
           content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="HIPAA-Compliant Telemedicine Platform | Secure Virtual Healthcare Solutions" />
         <meta property="og:description" content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -42,7 +42,8 @@ const HIPAACompliantHealthcare = () => {
         <meta name="twitter:title" content="HIPAA-Compliant Telemedicine Platform | Secure Virtual Healthcare Solutions" />
         <meta name="twitter:description" content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png" />
-        
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
+
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />
         

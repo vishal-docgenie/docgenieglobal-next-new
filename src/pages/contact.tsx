@@ -55,13 +55,13 @@ const ContactPage = () => (
       {/* OpenGraph Tags */}
       <title>Contact DocGenie Global — White-Label Telemedicine Provider</title>
       <meta name="description" content="Reach out to DocGenie Global for enterprise telehealth, white-label virtual care, or demo enquiries. We're here to help you launch your telemedicine solution." />
-      <link rel="canonical" href="https://www.docgenieglobal.com/contact" />
+      <link rel="canonical" href="https://www.docgenieglobal.com/contact/" />
 
       {/* OpenGraph Tags */}
       <meta property="og:title" content=" Contact DocGenie Global — White-Label Telemedicine Provider" />
       <meta property="og:description" content="Reach out to DocGenie Global for enterprise telehealth, white-label virtual care, or demo enquiries. We're here to help you launch your telemedicine solution." />
       <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.webp" />
-      <meta property="og:url" content="https://www.docgenieglobal.com/contact" />
+      <meta property="og:url" content="https://www.docgenieglobal.com/contact/" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="DocGenie Global" />
 

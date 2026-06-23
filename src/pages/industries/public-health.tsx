@@ -127,13 +127,13 @@ const PublicHealth = () => {
           name="description" 
           content="Enhance public health initiatives with DocGenie's secure, scalable telehealth platform. Support community health, disease prevention, and remote patient monitoring." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/industries/public-health" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/industries/public-health/" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telehealth Solutions for Public Health | DocGenie Global" />
         <meta property="og:description" content="Enhance public health initiatives with DocGenie's secure, scalable telehealth platform. Support community health, disease prevention, and remote patient monitoring." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/industries/public-health" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/industries/public-health/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
@@ -142,7 +142,7 @@ const PublicHealth = () => {
         <meta name="twitter:title" content="Telehealth Solutions for Public Health | DocGenie Global" />
         <meta name="twitter:description" content="Enhance public health initiatives with DocGenie's secure, scalable telehealth platform. Support community health, disease prevention, and remote patient monitoring." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/public-health" />
+        <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/public-health/" />
         
         {/* Additional SEO Meta Tags */}
         

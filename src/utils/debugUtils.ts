@@ -1,9 +1,9 @@
-
 /**
  * Debug utility for tracking component rendering and props
  */
 export const debugComponent = (componentName: string, props: any, enabled = true) => {
-  if (!enabled && process.env.NODE_ENV === 'production') return;
+  // Silence in production regardless of the `enabled` flag, and allow opt-out in dev.
+  if (process.env.NODE_ENV === 'production' || !enabled) return;
   
   console.group(`%c${componentName} Debug`, 'color: #2D6FC9; font-weight: bold;');
   console.log('Props:', props);
@@ -47,20 +47,26 @@ export const measurePerformance = (componentName: string, callback: () => void) 
  */
 export class LifecycleLogger {
   private componentName: string;
-  
+  private enabled: boolean;
+
   constructor(componentName: string) {
     this.componentName = componentName;
+    // Silence all lifecycle logging in production.
+    this.enabled = process.env.NODE_ENV !== 'production';
   }
-  
+
   mount() {
+    if (!this.enabled) return;
     console.log(`🟢 ${this.componentName} mounted`);
   }
-  
+
   unmount() {
+    if (!this.enabled) return;
     console.log(`🔴 ${this.componentName} unmounted`);
   }
-  
+
   update(prevProps: any, nextProps: any) {
+    if (!this.enabled) return;
     console.log(`🔄 ${this.componentName} updated`, {
       prevProps,
       nextProps,
