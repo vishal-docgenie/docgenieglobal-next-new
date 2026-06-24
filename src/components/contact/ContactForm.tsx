@@ -8,23 +8,21 @@ import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { trackEvent } from "@/lib/analytics";
 
-/**
- * Contact form component with form state management and submission handling
- * Displays form fields for name, email, subject and message
- * Shows success toast on submission
- */
 const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    subject: "",
+    company: "",
+    role: "",
+    phone: "",
+    intent: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -34,66 +32,33 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      console.info("Form submit clicked. Submitting details through API"); // Debugging
-      // if (window.lintrk) {
-      //   window.lintrk('track', { conversion_id: 22311258 });
-      //   console.log("LinkedIn Insight Tag tracking fired for successful contact form submission."); // Debugging
-      // } else {
-      //   console.warn("window.lintrk is not defined. LinkedIn Insight Tag might not be loaded for contact form conversion.");
-      // }
-      
       const response = await fetch('https://apis.docgenieglobal.com/apis/common/globalContactMail.php', {
-      // const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      const responseData = await response.json(); // Parse the JSON response body
+      const responseData = await response.json();
 
       if (response.ok) {
         if (responseData.status === "success") {
-          console.info("Form Submitted Successfully!");
           trackEvent({ event: "generate_lead", form_name: "contact_form", page_path: window.location.pathname });
           window.lintrk?.("track", { conversion_id: 22311258 });
           toast({
-            title: "Form submitted successfully",
+            title: "Message sent successfully",
             description: responseData.message,
             variant: "default",
           });
-    
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            subject: "",
-            message: ""
-          });
+          setFormData({ firstName: "", lastName: "", email: "", company: "", role: "", phone: "", intent: "", message: "" });
         } else {
-          console.error("Server error:", response.status, response.statusText, responseData);
-          toast({
-            title: "Mail could not be sent",
-            description: responseData.message || "Please try again later.",
-            variant: "destructive",
-          });
+          toast({ title: "Could not send message", description: responseData.message || "Please try again later.", variant: "destructive" });
         }
       } else {
-        console.error("Server error:", response.status, response.statusText, responseData);
-        toast({
-          title: "Submission Failed",
-          description: responseData.message || `Server error: ${response.status}. Please try again later.`,
-          variant: "destructive",
-        });
+        toast({ title: "Submission Failed", description: responseData.message || `Server error: ${response.status}. Please try again later.`, variant: "destructive" });
       }
     } catch (error) {
       console.error("Network or fetch error:", error);
-      toast({
-        title: "Submission Failed",
-        description: "Could not connect to the server. Please check your network connection.",
-        variant: "destructive",
-      });
+      toast({ title: "Submission Failed", description: "Could not connect to the server. Please check your network connection.", variant: "destructive" });
     } finally {
       setIsSubmitting(false);
     }
@@ -102,90 +67,84 @@ const ContactForm = () => {
   return (
     <div className="w-full">
       <div className="bg-white rounded-lg shadow-md p-5 md:p-6">
-        <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+        <h3 className="text-xl font-semibold mb-4">Send Us a Message</h3>
         <form onSubmit={handleSubmit} className="space-y-3">
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="space-y-1">
-              <Label htmlFor="firstName">First Name</Label>
-              <Input 
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-                placeholder="Enter your first name"
-                className="w-full"
-              />
+              <Label htmlFor="firstName">First Name *</Label>
+              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required placeholder="First name" className="w-full" />
             </div>
             <div className="space-y-1">
-              <Label htmlFor="lastName">Last Name</Label>
-              <Input 
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                placeholder="Enter your last name"
-                className="w-full"
-              />
+              <Label htmlFor="lastName">Last Name *</Label>
+              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required placeholder="Last name" className="w-full" />
             </div>
           </div>
-          
+
           <div className="space-y-1">
-            <Label htmlFor="email">Email</Label>
-            <Input 
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
+            <Label htmlFor="email">Work Email *</Label>
+            <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" className="w-full" />
+          </div>
+
+          <div className="space-y-1">
+            <Label htmlFor="company">Company Name *</Label>
+            <Input id="company" name="company" value={formData.company} onChange={handleChange} required placeholder="Your organisation name" className="w-full" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <Label htmlFor="role">Your Role *</Label>
+              <select
+                id="role"
+                name="role"
+                value={formData.role}
+                onChange={handleChange}
+                required
+                className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <option value="">Select your role</option>
+                <option value="CEO/Founder">CEO / Founder</option>
+                <option value="CTO/IT Director">CTO / IT Director</option>
+                <option value="Clinic Manager">Clinic Manager</option>
+                <option value="Hospital Admin">Hospital Admin</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="phone">Phone / WhatsApp</Label>
+              <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+1 234 567 8900" className="w-full" />
+            </div>
+          </div>
+
+          <div className="space-y-1">
+            <Label htmlFor="intent">How can we help? *</Label>
+            <select
+              id="intent"
+              name="intent"
+              value={formData.intent}
               onChange={handleChange}
               required
-              placeholder="Enter your email address"
-              className="w-full"
-            />
+              className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <option value="">Select an option</option>
+              <option value="Schedule a Demo">Schedule a Demo</option>
+              <option value="Get Pricing">Get Pricing</option>
+              <option value="Technical Question">Technical Question</option>
+              <option value="Partnership">Partnership</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
-          
-          <div className="space-y-1">
-            <Label htmlFor="subject">Subject</Label>
-            <Input 
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-              placeholder="Enter the subject"
-              className="w-full"
-            />
-          </div>
-          
+
           <div className="space-y-1">
             <Label htmlFor="message">Message</Label>
-            <Textarea 
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              placeholder="Enter your message"
-              className="w-full min-h-[80px] md:min-h-[100px]"
-              rows={3}
-            />
+            <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us more about your needs (optional)" className="w-full min-h-[80px]" rows={3} />
           </div>
-          
-          <Button 
-            type="submit" 
-            className="primary-button w-full" 
-            disabled={isSubmitting}
-            aria-label={isSubmitting ? "Submitting your message" : "Submit your message"}
-          >
+
+          <Button type="submit" className="primary-button w-full" disabled={isSubmitting} aria-label={isSubmitting ? "Submitting your message" : "Submit your message"}>
             {isSubmitting ? (
               <span>Submitting...</span>
             ) : (
-              <>
-                <Send className="h-4 w-4 md:mr-2" /> <span className="hidden md:inline">Submit Message</span>
-                <span className="inline md:hidden">Submit</span>
-              </>
+              <><Send className="h-4 w-4 md:mr-2" /> <span className="hidden md:inline">Submit Message</span><span className="inline md:hidden">Submit</span></>
             )}
           </Button>
         </form>

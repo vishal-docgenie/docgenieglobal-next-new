@@ -22,10 +22,10 @@ const staticPages = [
   { path: "/contact", priority: "0.70", changefreq: "monthly" },
   { path: "/us/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
   { path: "/uk/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
-  { path: "/integration-guide", priority: "0.60", changefreq: "monthly" },
+  { path: "/za/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
+  { path: "/gh/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
   { path: "/privacy-policy", priority: "0.30", changefreq: "yearly" },
   { path: "/terms-of-service", priority: "0.30", changefreq: "yearly" },
-  { path: "/sla-support-policy", priority: "0.30", changefreq: "yearly" },
 ];
 
 function toISODate(dateStr: string): string {
