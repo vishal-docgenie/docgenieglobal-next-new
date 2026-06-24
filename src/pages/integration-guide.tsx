@@ -13,7 +13,8 @@ const IntegrationGuide = () => {
           name="description" 
           content="Comprehensive integration guide for DocGenie Global's telemedicine platform. Learn about our APIs, deployment options, and integration patterns for healthcare providers." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/integration-guide/" />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/integration-guide" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Integration Guide | DocGenie Global" />

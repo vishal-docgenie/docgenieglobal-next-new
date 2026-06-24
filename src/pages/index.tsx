@@ -158,22 +158,22 @@ const Index = () => {
   return (
     <Layout>
       <Head>
-        <title>DocGenie Global – Complete AI-Powered Telemedicine Platform | HIPAA-Compliant Virtual Care Solutions</title>
+        <title>White Label Telemedicine Platform | HIPAA-Compliant Virtual Care | DocGenie Global</title>
         <meta name="description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <link rel="canonical" href="https://www.docgenieglobal.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
-        
+
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="DocGenie Global | White Label Telemedicine Platform" />
+        <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global" />
         <meta property="og:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
-        
+
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DocGenie Global | White Label Telemedicine Platform" />
+        <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global" />
         <meta name="twitter:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
         

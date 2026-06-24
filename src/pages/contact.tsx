@@ -84,9 +84,18 @@ const ContactPage = () => (
       <div className="container mx-auto px-4">
         <HeroSection />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-12">
-          <ContactFormSection />
+        {/* Calendly is the primary action — full width above the form */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <div className="text-center mb-4">
+            <p className="text-sm text-gray-500">Join 39+ healthcare businesses who've already seen the platform · No spam · No pressure · HIPAA-compliant demo</p>
+          </div>
           <ScheduleDemo />
+        </div>
+
+        {/* Contact form is secondary */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-500 text-sm mb-6">Prefer to send a message? We respond within 4 hours.</p>
+          <ContactFormSection />
         </div>
 
         <div className="max-w-3xl mx-auto mt-16">

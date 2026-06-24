@@ -13,7 +13,8 @@ const SLASupport = () => {
           name="description" 
           content="Learn about DocGenie Global's service level agreements, support commitments, and technical assistance policies for our telemedicine platform users." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/sla-support-policy/" />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/sla-support-policy" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Service Level Agreement (SLA) & Support Policy | DocGenie Global" />
