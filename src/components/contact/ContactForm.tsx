@@ -16,7 +16,7 @@ const ContactForm = () => {
     email: "",
     company: "",
     role: "",
-    phone: "",
+    // phone: "",
     intent: "",
     message: ""
   });
@@ -49,7 +49,7 @@ const ContactForm = () => {
             description: responseData.message,
             variant: "default",
           });
-          setFormData({ firstName: "", lastName: "", email: "", company: "", role: "", phone: "", intent: "", message: "" });
+          setFormData({ firstName: "", lastName: "", email: "", company: "", role: "", intent: "", message: "" }); //, phone: ""
         } else {
           toast({ title: "Could not send message", description: responseData.message || "Please try again later.", variant: "destructive" });
         }
@@ -82,27 +82,26 @@ const ContactForm = () => {
           </div>
 
           <div className="space-y-1">
-            <Label htmlFor="email">Work Email *</Label>
+            <Label htmlFor="email">Professional Email *</Label>
             <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" className="w-full" />
           </div>
 
           <div className="space-y-1">
-            <Label htmlFor="company">Company Name *</Label>
+            <Label htmlFor="company">Name of Organisation *</Label>
             <Input id="company" name="company" value={formData.company} onChange={handleChange} required placeholder="Your organisation name" className="w-full" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="space-y-1">
-              <Label htmlFor="role">Your Role *</Label>
+              <Label htmlFor="role">Your Role</Label>
               <select
                 id="role"
                 name="role"
                 value={formData.role}
                 onChange={handleChange}
-                required
                 className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
-                <option value="">Select your role</option>
+                <option value="" hidden>Select your role (Optional)</option>
                 <option value="CEO/Founder">CEO / Founder</option>
                 <option value="CTO/IT Director">CTO / IT Director</option>
                 <option value="Clinic Manager">Clinic Manager</option>
@@ -110,11 +109,11 @@ const ContactForm = () => {
                 <option value="Other">Other</option>
               </select>
             </div>
-            <div className="space-y-1">
+            {/* <div className="space-y-1">
               <Label htmlFor="phone">Phone / WhatsApp</Label>
               <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+1 234 567 8900" className="w-full" />
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           <div className="space-y-1">
             <Label htmlFor="intent">How can we help? *</Label>
@@ -134,10 +133,11 @@ const ContactForm = () => {
               <option value="Other">Other</option>
             </select>
           </div>
+          </div>
 
           <div className="space-y-1">
             <Label htmlFor="message">Message</Label>
-            <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us more about your needs (optional)" className="w-full min-h-[80px]" rows={3} />
+            <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us more about your needs (optional)" className="w-full min-h-[80px]" rows={4} />
           </div>
 
           <Button type="submit" className="primary-button w-full" disabled={isSubmitting} aria-label={isSubmitting ? "Submitting your message" : "Submit your message"}>

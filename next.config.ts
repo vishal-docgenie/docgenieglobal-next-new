@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-<<<<<<< HEAD
   trailingSlash: true,
 
   // Singular-to-plural typo fix: /solution -> /solutions
@@ -17,8 +16,10 @@ const nextConfig: NextConfig = {
         source: "/solution/:path*",
         destination: "/solutions/:path*",
         permanent: true,
-=======
-  skipTrailingSlashRedirect: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {
@@ -30,7 +31,6 @@ const nextConfig: NextConfig = {
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
           { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
         ],
->>>>>>> 6f091381d9e8afd8489a54b4b2d64f372c3eb8ea
       },
     ];
   },
