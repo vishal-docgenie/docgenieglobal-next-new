@@ -32,9 +32,9 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://apis.docgenieglobal.com/apis/common/globalContactMail.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -125,7 +125,7 @@ const ContactForm = () => {
               required
               className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <option value="">Select an option</option>
+              <option value="" hidden>Select an option</option>
               <option value="Schedule a Demo">Schedule a Demo</option>
               <option value="Get Pricing">Get Pricing</option>
               <option value="Technical Question">Technical Question</option>
