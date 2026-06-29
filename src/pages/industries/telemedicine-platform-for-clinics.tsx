@@ -236,13 +236,13 @@ const PublicHealth = () => {
           name="description" 
           content="Launch a branded telemedicine platform for your clinic with appointment scheduling, doctor logins, admin workflows, prescriptions, payments, alerts, and secure patient management." 
         />
-        <link rel="canonical" href="https://www.docgenieglobal.com/industries/public-health" />
+        <link rel="canonical" href="https://www.docgenieglobal.com/industries/telemedicine-platform-for-clinics" />
         
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Platform for Clinics | Launch Branded Virtual Care" />
         <meta property="og:description" content="Launch a branded telemedicine platform for your clinic with appointment scheduling, doctor logins, admin workflows, prescriptions, payments, alerts, and secure patient management." />
         <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
-        <meta property="og:url" content="https://www.docgenieglobal.com/industries/public-health" />
+        <meta property="og:url" content="https://www.docgenieglobal.com/industries/telemedicine-platform-for-clinics" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
         
