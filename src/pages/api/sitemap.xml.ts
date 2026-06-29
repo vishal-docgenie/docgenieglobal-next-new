@@ -13,6 +13,8 @@ const staticPages = [
   { path: "/solutions/chronic-care-management", priority: "0.80", changefreq: "monthly" },
   { path: "/solutions/ai-capabilities", priority: "0.80", changefreq: "monthly" },
   { path: "/industries", priority: "0.80", changefreq: "monthly" },
+  { path: "/industries/telemedicine-platform-for-clinics", priority: "0.85", changefreq: "monthly" },
+  { path: "/industries/telemedicine-platform-for-hospitals", priority: "0.85", changefreq: "monthly" },
   { path: "/industries/healthcare-providers", priority: "0.80", changefreq: "monthly" },
   { path: "/industries/third-party-vendors", priority: "0.80", changefreq: "monthly" },
   { path: "/industries/public-health", priority: "0.80", changefreq: "monthly" },
