@@ -208,12 +208,12 @@ const SouthAfricaWhiteLabelPage = () => (
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
             {/* hreflang for regional targeting */}
-            <link rel="alternate" hrefLang="en-GB" href="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
-            <link rel="alternate" hrefLang="en-US" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
-            <link rel="alternate" hrefLang="en-ZA" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
-            <link rel="alternate" hrefLang="en-GH" href="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/" />
-            <link rel="alternate" hrefLang="en" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
-            <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
+            <link rel="alternate" hrefLang="en-ZA" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en-GH" href="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en-US" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en-GB" href="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform" />
+            <link rel="alternate" hrefLang="en" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
+            <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine" />
 
             {/* OpenGraph Tags */}
             <meta property="og:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
@@ -232,7 +232,7 @@ const SouthAfricaWhiteLabelPage = () => (
             <meta name="twitter:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
             <meta name="twitter:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. Medical aid billing, POPIA-aligned data workflows, and load-shedding resilience built for the South African healthcare market." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
-            <meta name="twitter:url" content="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
+
             <meta name="author" content="DocGenie Global" />
 
             <script type="application/ld+json">
