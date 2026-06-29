@@ -69,6 +69,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
             <Head>
                 <link rel="stylesheet" href="/assets/original.css" />
+                
+                {/* Start cookieyes banner */}
+                <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/90179d5b5383aeb23117b3100435fe53/script.js"></script>
             </Head>
             <Component {...pageProps} />
         </div>
