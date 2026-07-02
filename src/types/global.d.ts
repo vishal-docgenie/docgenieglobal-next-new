@@ -1,16 +1,28 @@
 declare global {
     interface Window {
-        // Flexible signature covers both gtag('config', id, {...}) and
-        // gtag('event', name, {...}) call styles.
+        // Google Analytics
         gtag?: (...args: unknown[]) => void;
-
-        lintrk?: (
-            command: string,
-            data?: Record<string, unknown>
-        ) => void;
-
         dataLayer?: unknown[];
+
+        // LinkedIn
+        _linkedin_partner_id?: string;
+        _linkedin_data_partner_ids?: string[];
+
+        lintrk?: {
+            (command: string, data?: Record<string, unknown>): void;
+            q?: unknown[];
+        };
+
+        // Apollo
+        trackingFunctions?: {
+            onLoad: (config: {
+                appId: string;
+            }) => void;
+        };
+
+        // Clarity
+        clarity?: (...args: unknown[]) => void;
     }
 }
 
-export { };
+export {};
