@@ -9,6 +9,7 @@ import BlogCTA from './BlogCTA';
 import FaqSection from './FaqSection';
 import BlogSEO from './BlogSEO';
 import RelatedArticles from './RelatedArticles';
+import SocialSharing from './SocialSharing';
 
 export default function BlogPostView({
   blog,
@@ -80,6 +81,8 @@ export default function BlogPostView({
 
               {blog.content.conclusion && <ConclusionBox conclusion={blog.content.conclusion} />}
             */}
+
+            <SocialSharing blog={blog} />
 
             {blog.faqs?.length ? (
               <div className="mt-16">

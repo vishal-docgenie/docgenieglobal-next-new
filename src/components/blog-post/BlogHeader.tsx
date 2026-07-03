@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { CalendarIcon, Clock } from 'lucide-react';
 import { BlogPost } from '@/data/blogs/types';
+import HeaderShare from './HeaderShare';
 
 interface BlogHeaderProps {
   blog: BlogPost;
@@ -41,14 +41,15 @@ const BlogHeader = ({ blog }: BlogHeaderProps) => {
           </h1>
           
           <div className="flex flex-wrap gap-2 mb-3">
-            {blog.tags.map((tag, index) => (
+            {/* {blog.tags.map((tag, index) => (
               <span 
                 key={index} 
                 className="text-xs px-2 py-1 bg-brand-blue text-white rounded-full"
               >
                 {tag}
               </span>
-            ))}
+            ))} */}
+            <HeaderShare blog={blog} />
           </div>
         </div>
       </div>
