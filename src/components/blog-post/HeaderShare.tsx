@@ -65,7 +65,7 @@ const HeaderShare = ({ blog }: HeaderShareProps) => {
     };
 
     const iconClass =
-        'relative group p-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-brand-blue hover:text-white transition-colors duration-300';
+        'relative group p-2 rounded-full bg-gray-100 hover:bg-brand-blue hover:text-white transition-colors duration-300';
 
     const tooltipClass =
         'pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-900 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100';
@@ -91,18 +91,18 @@ const HeaderShare = ({ blog }: HeaderShareProps) => {
                 className={iconClass}
                 aria-label="Share via Email"
             >
-                <Mail className="h-4 w-4" />
+                <Mail className="h-5 w-5" />
                 <span className={tooltipClass}>Email</span>
             </a>
 
             <button onClick={handleCopy} className={iconClass} aria-label="Copy link">
-                {copied ? <Check className="h-4 w-4" /> : <Link2 className="h-4 w-4" />}
+                {copied ? <Check className="h-5 w-5" /> : <Link2 className="h-5 w-5" />}
                 <span className={tooltipClass}>{copied ? 'Copied!' : 'Copy link'}</span>
             </button>
 
             {canNativeShare && (
                 <button onClick={handleNativeShare} className={iconClass} aria-label="Share">
-                    <Share2 className="h-4 w-4" />
+                    <Share2 className="h-5 w-5" />
                     <span className={tooltipClass}>Share</span>
                 </button>
             )}
