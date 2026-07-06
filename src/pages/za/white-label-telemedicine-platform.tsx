@@ -204,7 +204,7 @@ const SouthAfricaWhiteLabelPage = () => (
         <Head>
             <title>White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care</title>
             <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in South Africa. POPIA-aligned data workflows, medical aid billing support, load-shedding resilience, and secure online consultations for private clinics, hospitals, and digital health companies." />
-            <link rel="canonical" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
+            <link rel="canonical" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform" />
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
             {/* hreflang for regional targeting */}
