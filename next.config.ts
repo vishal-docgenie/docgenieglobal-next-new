@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
 
-  // Singular-to-plural typo fix: /solution -> /solutions
   async redirects() {
     return [
+      // Singular-to-plural typo fix: /solution -> /solutions
       {
         source: "/solution",
         destination: "/solutions",
@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
       {
         source: "/solution/:path*",
         destination: "/solutions/:path*",
+        permanent: true,
+      },
+      // GSC sitemap fix: redirect submitted URL to actual dynamic sitemap
+      {
+        source: "/sitemap.xml",
+        destination: "/api/sitemap.xml",
         permanent: true,
       },
     ];
