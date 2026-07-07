@@ -125,6 +125,22 @@ export const whiteLabelSchemaData = {
             "@type": "Answer",
             "text": "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does white label telemedicine cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "White label telemedicine is typically priced as a subscription or per-provider license fee rather than a flat rate — cost depends on provider count, branding depth, EHR/EMR integration needs, compliance scope, and support tier. DocGenie Global offers custom pricing based on your organization's size and requirements; contact us for a tailored quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to buy a white label telemedicine platform or build one in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most healthcare organizations, licensing a white label platform is faster and more cost-effective than building in-house. In-house development typically takes 12+ months and requires ongoing investment in HIPAA compliance, security audits, and infrastructure, while a white label platform like DocGenie Global launches in 4-6 weeks with compliance and security already built in."
+          }
         }
       ]
     },
@@ -134,10 +150,17 @@ export const whiteLabelSchemaData = {
       "url": "https://www.docgenieglobal.com/solutions/white-label-telemedicine",
       "name": "White Label Telemedicine Platform | HIPAA-Compliant Solution",
       "datePublished": "2024-01-01",
-      "dateModified": "2025-06-12",
+      "dateModified": "2026-07-07",
       "about": {
         "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine#software"
-      }
+      },
+      "mentions": [
+        { "@type": "MedicalWebPage", "name": "Telemedicine" },
+        { "@type": "Thing", "name": "HIPAA Compliance" },
+        { "@type": "Thing", "name": "EHR/EMR Integration" },
+        { "@type": "Thing", "name": "Virtual Care" }
+      ],
+      "keywords": "white label telemedicine, white label telehealth platform, HIPAA-compliant telemedicine software, branded virtual care platform, telemedicine platform for clinics and hospitals"
     },
     {
       "@type": "BreadcrumbList",
