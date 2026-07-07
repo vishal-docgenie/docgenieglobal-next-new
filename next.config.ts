@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
         destination: "/solutions/:path*",
         permanent: true,
       },
+      {
+        source: "/sitemap.xml",
+        destination: "/api/sitemap.xml",
+        permanent: true
+      }
     ];
   },
 
