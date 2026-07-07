@@ -28,22 +28,37 @@ const LeadMarketSection = () => {
                 <tr className="border-b border-gray-200 bg-gray-50">
                   <td className="p-4 font-medium">Data Architecture</td>
                   <td className="p-4 text-center">Shared database models</td>
-                  <td className="p-4 text-center bg-brand-blue/30">Siloed & Secure Architecture in compliance with healthcare regulations</td>
+                  <td className="p-4 text-center bg-brand-blue/30">Siloed & Secure — fully isolated per client</td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-medium">Integration Speed</td>
                   <td className="p-4 text-center">3 – 6 Months</td>
                   <td className="p-4 text-center bg-brand-blue/30">4 – 6 Weeks (Rapid Deployment)</td>
                 </tr>
-                {/* <tr className="border-b border-gray-200 bg-gray-50">
+                <tr className="border-b border-gray-200 bg-gray-50">
                   <td className="p-4 font-medium">Interoperability</td>
                   <td className="p-4 text-center">Limited API Access</td>
-                  <td className="p-4 text-center bg-brand-blue/30">Full HL7 FHIR & API Ecosystem</td>
-                </tr> */}
+                  <td className="p-4 text-center bg-brand-blue/30">Full HL7 FHIR & RESTful API Ecosystem</td>
+                </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-medium">Customization</td>
                   <td className="p-4 text-center">Color & Logo only</td>
                   <td className="p-4 text-center bg-brand-blue/30">Full CSS Control & Custom Workflows</td>
+                </tr>
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <td className="p-4 font-medium">Mobile App</td>
+                  <td className="p-4 text-center">Shared app store listing</td>
+                  <td className="p-4 text-center bg-brand-blue/30">Your own branded iOS & Android app</td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <td className="p-4 font-medium">Support Model</td>
+                  <td className="p-4 text-center">Ticket-based, shared queue</td>
+                  <td className="p-4 text-center bg-brand-blue/30">Dedicated Account Manager + 24/7 SLA</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-medium">Compliance</td>
+                  <td className="p-4 text-center">HIPAA only</td>
+                  <td className="p-4 text-center bg-brand-blue/30">HIPAA + SOC2 Type II Readiness</td>
                 </tr>
               </tbody>
             </table>

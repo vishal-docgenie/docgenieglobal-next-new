@@ -23,7 +23,7 @@ const BrandTrustSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-center">Complete Brand Customization</h3>
             <p className="text-gray-600">
-              Fully customize colors, logos, typography, and interface elements to match your healthcare organization's visual identity.
+              Your logo, colors, fonts, and custom domain — patients never see "DocGenie." Includes branded email notifications, patient portal, and mobile app store listing under your name.
             </p>
           </div>
           
@@ -33,7 +33,7 @@ const BrandTrustSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-center">Custom Domain Integration</h3>
             <p className="text-gray-600">
-              Deploy on your own domain, creating a cohesive digital experience aligned with your existing web presence.
+              Deploy on telehealth.yourclinic.com in days. SSL-secured, CDN-backed, and fully indexed by Google under your brand — not ours.
             </p>
           </div>
           
@@ -43,7 +43,7 @@ const BrandTrustSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-center">Branded Patient Experience</h3>
             <p className="text-gray-600">
-              Deliver consistent branding across emails, notifications, patient portals, and mobile applications.
+              From appointment reminders to prescription follow-ups — every touchpoint carries your brand. Patients stay within your care ecosystem, not a third-party app.
             </p>
           </div>
         </div>

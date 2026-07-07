@@ -16,6 +16,10 @@ import LeadMarketSection from "@/components/solutions/WhiteLabel/LeadMarketSecti
 import ImplementationSection from "@/components/solutions/WhiteLabel/ImplementationSection";
 import TechnicalStandardsSection from "@/components/solutions/WhiteLabel/TechnicalStandardsSection";
 import { whiteLabelSchemaData } from "@/components/solutions/WhiteLabel/SchemaData";
+import FeatureChecklist from "@/components/solutions/WhiteLabel/FeatureChecklist";
+import ROIStatsSection from "@/components/solutions/WhiteLabel/ROIStatsSection";
+import UseCasesSection from "@/components/solutions/WhiteLabel/UseCasesSection";
+import PricingTeaser from "@/components/solutions/WhiteLabel/PricingTeaser";
 
 const WhiteLabelTelemedicine = () => {
   return (
@@ -65,7 +69,7 @@ const WhiteLabelTelemedicine = () => {
       <ErrorBoundary>
         <SolutionHero 
           title="White Label Telemedicine Platform"
-          description="DocGenie Global provides a HIPAA-compliant, white-label telemedicine platform that allows healthcare organizations to quickly launch their own branded virtual care practice in weeks. It features AES-128-CTR encryption, session tokens and server-side identifier encryption for EHR/EMR syncing, and 100% UI customization across web, iOS, and Android."
+          description="Launch your own branded telemedicine platform in 4–6 weeks — not months. DocGenie Global gives hospitals, clinics, and healthcare vendors a fully white-labeled virtual care solution: your logo, your domain, your patients. HIPAA-compliant by design, with AES-256 encryption, EHR/EMR integration, and 100% UI customization across web, iOS, and Android. No vendor branding. No lock-in. Just your practice, digitized."
           image="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png"
           altText="Medical professional using white-labeled DocGenie telemedicine platform with customized branding for virtual consultation with patient"
         />
@@ -76,7 +80,15 @@ const WhiteLabelTelemedicine = () => {
       </ErrorBoundary>
       
       <ErrorBoundary>
-        <FeatureSection 
+        <FeatureChecklist />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <ROIStatsSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <FeatureSection
           title="Seamless Integration with Your Systems"
           description="Our platform adapts to your existing healthcare infrastructure, enabling a smooth transition to virtual care without disrupting established workflows."
           features={[
@@ -131,6 +143,10 @@ const WhiteLabelTelemedicine = () => {
       </ErrorBoundary>
       
       <ErrorBoundary>
+        <UseCasesSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
         <LeadMarketSection />
       </ErrorBoundary>
 
@@ -163,6 +179,10 @@ const WhiteLabelTelemedicine = () => {
           image="/lovable-uploads/cfd677f7-161c-43c3-ba5f-2ce373ddf739.png"
           altText="Healthcare provider expanding virtual care practice using white label telemedicine for geographic growth and patient retention"
         />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <PricingTeaser />
       </ErrorBoundary>
 
       <ErrorBoundary>

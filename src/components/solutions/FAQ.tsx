@@ -36,6 +36,26 @@ const FAQ = () => {
     {
       question: "Is the mobile experience a \"Wrapper\" or Native?",
       answer: "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
+    },
+    {
+      question: "How much does a white label telemedicine platform cost?",
+      answer: "Pricing is scoped to your organization's size, required features, and deployment region — there is no one-size-fits-all rate card. Factors that influence cost include number of providers, volume of consultations, EHR integrations required, and mobile app publishing. We offer transparent, milestone-based pricing with no hidden fees. Contact us for a custom quote tailored to your use case."
+    },
+    {
+      question: "Do we own the patient data, or does DocGenie?",
+      answer: "You own 100% of your patient data. DocGenie Global operates as a Business Associate (BAA) under HIPAA, meaning we process data on your behalf but never retain ownership or use it for any other purpose. Your patient records are stored in a fully siloed, isolated environment — never shared across clients."
+    },
+    {
+      question: "Can we add our own features or custom workflows?",
+      answer: "Yes. Beyond the standard feature set, we support custom workflow development — specialty-specific intake forms, custom scheduling rules, specialized clinical note templates, and third-party tool integrations. Our RESTful API and webhook infrastructure let your own dev team extend the platform further."
+    },
+    {
+      question: "Is there a minimum number of providers or patients required?",
+      answer: "No minimum. We work with solo practices launching their first virtual clinic as well as large hospital networks handling thousands of consultations monthly. The platform is built to scale with you — you only pay for what you use."
+    },
+    {
+      question: "What countries is the platform available in?",
+      answer: "DocGenie Global is deployed across the United States, United Kingdom, South Africa, and Ghana, with compliance infrastructure tailored to each region (HIPAA for the US, CQC/NHS alignment for the UK, HPCSA guidelines for South Africa, and GHS standards for Ghana). We support multi-currency billing and multi-language patient interfaces for international deployments."
     }
   ];
 
