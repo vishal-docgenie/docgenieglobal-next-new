@@ -1,23 +1,25 @@
+// middleware.ts
 import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
-    const host = request.headers.get("host") ?? "";
-    const hostname = host.split(":")[0]; // strip port
-
-    if (
-        hostname === "localhost" ||
-        hostname === "127.0.0.1" ||
-        hostname.endsWith(".local")
-    ) {
+    // Never normalize the host during local development
+    if (process.env.NODE_ENV !== "production") {
         return NextResponse.next();
     }
 
-    // Only add www to a bare apex (one dot), not to subdomains like app.example.com
+    const host = request.headers.get("host") ?? "";
+    const hostname = host.split(":")[0]; // strip port
+
+    if (hostname === "localhost" || hostname === "127.0.0.1") {
+        return NextResponse.next();
+    }
+
     const isApex = hostname.split(".").length === 2;
 
     if (isApex && !hostname.startsWith("www.")) {
         const url = request.nextUrl.clone();
-        url.host = `www.${host}`; // use .host to preserve port if present
+        url.host = `www.${hostname}`; // hostname only — drops the port
+        url.port = "";               // belt-and-suspenders
         return NextResponse.redirect(url, 308);
     }
 
@@ -25,7 +27,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-    matcher: [
-        "/((?!api|_next|favicon.ico|.*\\..*).*)",
-    ],
+    matcher: ["/((?!api|_next|favicon.ico|.*\\..*).*)"],
 };
