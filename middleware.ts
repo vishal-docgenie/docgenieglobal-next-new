@@ -1,21 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
-    const host = request.headers.get("host") || "";
+    const hostname = request.nextUrl.hostname;
 
-    // Skip localhost
     if (
-        host.startsWith("localhost") ||
-        host.startsWith("127.0.0.1")
+        hostname === "localhost" ||
+        hostname === "127.0.0.1"
     ) {
         return NextResponse.next();
     }
 
-    // Redirect non-www to www
-    if (!host.startsWith("www.")) {
+    if (!hostname.startsWith("www.")) {
         const url = request.nextUrl.clone();
-        url.host = `www.${host}`;
-        url.protocol = "https:";
+        url.hostname = `www.${hostname}`;
 
         return NextResponse.redirect(url, 308);
     }
