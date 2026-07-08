@@ -64,14 +64,14 @@ const KeyQuestionsSection = () => {
 
             <div>
               <h3 className="text-2xl font-semibold mb-3">How much does white label telemedicine cost?</h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 White label telemedicine pricing is typically a subscription or per-provider license fee that
                 varies with user volume, branding depth, and integration complexity — rather than a flat rate.
                 Building the same platform in-house usually costs significantly more upfront and takes months
                 longer to reach compliance and launch.
               </p>
               <p className="text-gray-700 mb-2 font-medium">Key factors that affect the final price:</p>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <ul className="list-disc ml-4 list-inside text-gray-700 space-y-1">
                 <li>Number of providers and patient volume</li>
                 <li>Depth of branding (web only vs. native iOS/Android apps)</li>
                 <li>EHR/EMR and payment integration requirements</li>
