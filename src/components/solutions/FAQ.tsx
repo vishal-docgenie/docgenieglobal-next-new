@@ -36,6 +36,14 @@ const FAQ = () => {
     {
       question: "Is the mobile experience a \"Wrapper\" or Native?",
       answer: "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
+    },
+    {
+      question: "How much does white label telemedicine cost?",
+      answer: "White label telemedicine is typically priced as a subscription or per-provider license fee rather than a flat rate — cost depends on provider count, branding depth, EHR/EMR integration needs, compliance scope, and support tier. DocGenie Global offers custom pricing based on your organization's size and requirements; contact us for a tailored quote."
+    },
+    {
+      question: "Is it better to buy a white label telemedicine platform or build one in-house?",
+      answer: "For most healthcare organizations, licensing a white label platform is faster and more cost-effective than building in-house. In-house development typically takes 12+ months and requires ongoing investment in HIPAA compliance, security audits, and infrastructure, while a white label platform like DocGenie Global launches in 4-6 weeks with compliance and security already built in."
     }
   ];
 

@@ -15,14 +15,17 @@ import ResultSection from "@/components/solutions/WhiteLabel/ResultSection";
 import LeadMarketSection from "@/components/solutions/WhiteLabel/LeadMarketSection";
 import ImplementationSection from "@/components/solutions/WhiteLabel/ImplementationSection";
 import TechnicalStandardsSection from "@/components/solutions/WhiteLabel/TechnicalStandardsSection";
+import QuickAnswerSection from "@/components/solutions/WhiteLabel/QuickAnswerSection";
+import KeyQuestionsSection from "@/components/solutions/WhiteLabel/KeyQuestionsSection";
+import Testimonials from "@/components/solutions/Testimonials";
 import { whiteLabelSchemaData } from "@/components/solutions/WhiteLabel/SchemaData";
 
 const WhiteLabelTelemedicine = () => {
   return (
     <Layout>
       <Head>
-        <title>White Label Telemedicine Platform | HIPAA-Compliant Solution</title>
-        <meta name="description" content="Launch your branded telemedicine platform with DocGenie Global. HIPAA-compliant, AI-powered virtual care with EMR integration and 100% UI customization." />
+        <title>White Label Telemedicine Platform (2026) | HIPAA-Compliant | DocGenie</title>
+        <meta name="description" content="Launch a HIPAA-compliant white label telemedicine platform in 4-6 weeks. Your brand, your domain, EHR/EMR integration, web + iOS + Android. Request a demo today." />
         <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
         <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -70,11 +73,19 @@ const WhiteLabelTelemedicine = () => {
           altText="Medical professional using white-labeled DocGenie telemedicine platform with customized branding for virtual consultation with patient"
         />
       </ErrorBoundary>
-      
+
+      <ErrorBoundary>
+        <QuickAnswerSection />
+      </ErrorBoundary>
+
       <ErrorBoundary>
         <BrandTrustSection />
       </ErrorBoundary>
-      
+
+      <ErrorBoundary>
+        <KeyQuestionsSection />
+      </ErrorBoundary>
+
       <ErrorBoundary>
         <FeatureSection 
           title="Seamless Integration with Your Systems"
@@ -167,6 +178,10 @@ const WhiteLabelTelemedicine = () => {
 
       <ErrorBoundary>
         <PatientTrustSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Testimonials />
       </ErrorBoundary>
 
       <ErrorBoundary>
