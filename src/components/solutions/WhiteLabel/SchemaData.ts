@@ -147,7 +147,7 @@ export const whiteLabelSchemaData = {
     {
       "@type": "WebPage",
       "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine/#webpage",
-      "url": "https://www.docgenieglobal.com/solutions/white-label-telemedicine",
+      "url": "https://www.docgenieglobal.com/solutions/white-label-telemedicine/",
       "name": "White Label Telemedicine Platform | HIPAA-Compliant Solution",
       "datePublished": "2024-01-01",
       "dateModified": "2026-07-07",
