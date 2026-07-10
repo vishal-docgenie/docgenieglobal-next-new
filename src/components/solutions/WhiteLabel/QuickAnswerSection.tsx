@@ -14,18 +14,19 @@ const QuickAnswerSection = () => {
             <span className="text-xs text-gray-500">Last updated: July 7, 2026</span>
           </div>
           <p className="text-gray-800 leading-relaxed">
-            White label telemedicine is a ready-made, HIPAA-compliant virtual care platform that healthcare
-            organizations rebrand as their own — logo, domain, and patient app — instead of building telehealth
-            software from scratch. Providers launch in weeks, keep 100% of the patient relationship, and connect
-            it to their existing EHR/EMR, billing, and staff workflows.
+            A white label telemedicine platform is a ready-made, HIPAA-compliant virtual care solution that clinics,
+            hospitals, healthcare providers, care groups, and healthcare ecosystem partners license and rebrand as
+            their own — your logo, your colours, your domain, and your patient portal — instead of building telehealth
+            software from scratch. The platform supports the complete care journey: patient registration, appointment
+            scheduling, secure video consultations, EHR/EMR workflow support, billing/payment integrations where
+            required, and patient communication — all under your brand.
           </p>
-          <br />
           <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
             {[
-              "Launch in 4–6 weeks under your own brand",
-              "HIPAA-compliant with end-to-end encryption",
-              "Integrates with major EHR/EMR systems",
-              "Web, iOS, and Android — fully white-labeled",
+              "Launch in weeks under your own brand",
+              "HIPAA-compliant virtual care with secure, encrypted data transmission",
+              "EHR/EMR workflow support, billing/payment integrations, and patient communication",
+              "Mobile-responsive — accessible on web, tablet, and phone",
             ].map((point) => (
               <li key={point} className="flex items-start text-gray-700">
                 <CheckCircle2 className="h-5 w-5 text-brand-blue mr-2 flex-shrink-0 mt-0.5" />

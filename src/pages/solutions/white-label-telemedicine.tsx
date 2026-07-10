@@ -24,8 +24,8 @@ const WhiteLabelTelemedicine = () => {
   return (
     <Layout>
       <Head>
-        <title>White Label Telemedicine Platform (2026) | HIPAA-Compliant | DocGenie</title>
-        <meta name="description" content="Launch a HIPAA-compliant white label telemedicine platform in 4-6 weeks. Your brand, your domain, EHR/EMR integration, web + iOS + Android. Request a demo today." />
+        <title>White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global</title>
+        <meta name="description" content="Launch a HIPAA-compliant white label telemedicine platform for clinics, hospitals, and healthcare providers. Your brand, domain, patient portal, and care workflows. Request a demo." />
         <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
         <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -38,8 +38,8 @@ const WhiteLabelTelemedicine = () => {
         <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant Solution" />
-        <meta property="og:description" content="Branded telehealth in weeks. HIPAA-compliant, AI-powered, full white-label — your logo, your domain, your patients." />
+        <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant Virtual Care Solution" />
+        <meta property="og:description" content="Branded virtual care in weeks. HIPAA-compliant, fully white-label — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -51,8 +51,8 @@ const WhiteLabelTelemedicine = () => {
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DocGenieGlobal" />
-        <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant Solution" />
-        <meta name="twitter:description" content="Branded telehealth in weeks. HIPAA-compliant, AI-powered, full white-label — your logo, your domain, your patients." />
+        <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant Virtual Care Solution" />
+        <meta name="twitter:description" content="Branded virtual care in weeks. HIPAA-compliant, fully white-label — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
@@ -68,23 +68,23 @@ const WhiteLabelTelemedicine = () => {
       <ErrorBoundary>
         <SolutionHero 
           title="White Label Telemedicine Platform"
-          description="DocGenie Global provides a HIPAA-compliant, white-label telemedicine platform that allows healthcare organizations to quickly launch their own branded virtual care practice in weeks. It features AES-128-CTR encryption, session tokens and server-side identifier encryption for EHR/EMR syncing, and 100% UI customization across web, iOS, and Android."
+          description="Fully branded virtual care experience across web, tablet, and phone — with your logo, colours, domain, and patient portal."
           image="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png"
           altText="Medical professional using white-labeled DocGenie telemedicine platform with customized branding for virtual consultation with patient"
         />
       </ErrorBoundary>
 
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <QuickAnswerSection />
-      </ErrorBoundary> */}
+      </ErrorBoundary>
 
       <ErrorBoundary>
         <BrandTrustSection />
       </ErrorBoundary>
 
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <KeyQuestionsSection />
-      </ErrorBoundary> */}
+      </ErrorBoundary>
 
       <ErrorBoundary>
         <FeatureSection 
