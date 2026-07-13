@@ -1,4 +1,6 @@
 
+const currentDate = new Date().toISOString().split("T")[0];
+
 export const whiteLabelSchemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -150,7 +152,7 @@ export const whiteLabelSchemaData = {
       "url": "https://www.docgenieglobal.com/solutions/white-label-telemedicine/",
       "name": "White Label Telemedicine Platform | HIPAA-Compliant Solution",
       "datePublished": "2024-01-01",
-      "dateModified": "2026-07-07",
+      "dateModified": currentDate,
       "about": {
         "@id": "https://www.docgenieglobal.com/solutions/white-label-telemedicine#software"
       },

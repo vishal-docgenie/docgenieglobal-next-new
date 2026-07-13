@@ -3,6 +3,13 @@ import React from "react";
 import { CheckCircle2 } from "lucide-react";
 
 const QuickAnswerSection = () => {
+  const lastUpdated = new Date().toLocaleDateString("en-US", {
+    timeZone: "UTC",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <section className="py-10 bg-white border-b border-gray-100" aria-labelledby="quick-answer-heading">
       <div className="container mx-auto px-4">
@@ -11,7 +18,7 @@ const QuickAnswerSection = () => {
             <h2 id="quick-answer-heading" className="text-sm font-semibold uppercase tracking-wide text-brand-blue">
               Quick Answer
             </h2>
-            <span className="text-xs text-gray-500">Last updated: July 7, 2026</span>
+            <span className="text-xs text-gray-500">Last updated: {lastUpdated}</span>
           </div>
           <p className="text-gray-800 leading-relaxed">
             A white label telemedicine platform is a ready-made, HIPAA-compliant virtual care solution that clinics,
