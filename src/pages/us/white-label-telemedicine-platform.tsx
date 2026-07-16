@@ -34,6 +34,8 @@ const schemaData = {
       "name": "White Label Telemedicine Platform for US Healthcare Providers",
       "description": "Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows.",
       "inLanguage": "en-US",
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-07-16",
       "isPartOf": {
         "@id": "https://www.docgenieglobal.com/#website"
       },
@@ -42,7 +44,14 @@ const schemaData = {
       },
       "mainEntity": {
         "@id": "https://www.docgenieglobal.com/us/white-label-telemedicine-platform/#service"
-      }
+      },
+      "keywords": "white label telemedicine USA, HIPAA telemedicine platform, white label telehealth US clinics, branded virtual care platform USA, telemedicine platform for US healthcare providers",
+      "mentions": [
+        { "@type": "MedicalWebPage", "name": "Telemedicine" },
+        { "@type": "Thing", "name": "HIPAA Compliance" },
+        { "@type": "Thing", "name": "EHR/EMR Integration" },
+        { "@type": "Thing", "name": "Virtual Care" }
+      ]
     },
     {
       "@type": "Service",
@@ -232,10 +241,10 @@ const faqs = [
     }
 ];
 
-const ukWhiteLabelPage = () => (
+const usWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform USA | HIPAA-Aligned Virtual Care</title>
+            <title>White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global</title>
             <meta name="description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
             <link rel="canonical" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
 
@@ -248,16 +257,20 @@ const ukWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned Virtual Care" />
+            <meta property="og:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global" />
             <meta property="og:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:type" content="image/png" />
             <meta property="og:url" content="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="DocGenie Global" />
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned Virtual Care" />
+            <meta name="twitter:site" content="@DocGenieGlobal" />
+            <meta name="twitter:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global" />
             <meta name="twitter:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
@@ -279,8 +292,11 @@ const ukWhiteLabelPage = () => (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for US Healthcare Providers</h1>
+                            <p className="text-lg text-gray-700 mb-4 max-w-2xl prose">
+                                Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.
+                            </p>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
-                                Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.<br />Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.
+                                Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <Link href="/contact" data-hero-cta>
@@ -619,4 +635,4 @@ const ukWhiteLabelPage = () => (
     </Layout>
 );
 
-export default ukWhiteLabelPage;
+export default usWhiteLabelPage;
