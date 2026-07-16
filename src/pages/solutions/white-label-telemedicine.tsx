@@ -124,7 +124,7 @@ const WhiteLabelTelemedicine = () => {
             },
             {
               title: "Mobile-friendly experience",
-              description: "Designed with features for convenient mobile use, it works seamless with iOS and Android devices with push notification capabilities."
+              description: "Designed for convenient mobile use, it works seamlessly on any smartphone or tablet with support for push notifications."
             },
             {
               title: "Offline Functionality",

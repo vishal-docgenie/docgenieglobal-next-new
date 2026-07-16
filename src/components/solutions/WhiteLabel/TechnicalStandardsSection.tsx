@@ -27,7 +27,7 @@ const TechnicalStandardsSection = () => {
                 </div>
                 <div className="ml-3 sm:ml-4">
                   <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Security & Compliance</h3>
-                  <p className="text-sm sm:text-base text-gray-600 text-left">Beyond HIPAA, we offer SOC2 Type II readiness, utilizing End-to-End Encryption (E2EE) for all video consultations.</p>
+                  <p className="text-sm sm:text-base text-gray-600 text-left">Beyond HIPAA compliance, the platform uses secure, encrypted data transmission for all video consultations and applies structured access controls to protect patient data throughout the care journey.</p>
                 </div>
               </div>
               
@@ -47,7 +47,7 @@ const TechnicalStandardsSection = () => {
                 </div>
                 <div className="ml-3 sm:ml-4">
                   <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Global Edge Network</h3>
-                  <p className="text-sm sm:text-base text-gray-600 text-left">Low-latency video powered by a global CDN, ensuring 99.9% Uptime even in low-bandwidth regions.</p>
+                  <p className="text-sm sm:text-base text-gray-600 text-left">Low-latency video powered by a global CDN, delivering reliable performance even in low-bandwidth regions.</p>
                 </div>
               </div>
             </div>

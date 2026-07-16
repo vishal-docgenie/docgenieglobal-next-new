@@ -64,7 +64,7 @@ export const whiteLabelSchemaData = {
         {
           "@type": "HowToStep",
           "name": "Training & Launch",
-          "text": "Your clinical and admin staff are trained, the platform is tested end-to-end, and your branded telemedicine service goes live — typically within 4–6 weeks."
+          "text": "Your clinical and admin staff are trained, the platform is tested end-to-end, and your branded telemedicine service goes live — typically within weeks, depending on branding scope, integrations, and workflow complexity."
         }
       ]
     },
@@ -125,7 +125,7 @@ export const whiteLabelSchemaData = {
           "name": "Is the mobile experience a \"Wrapper\" or Native?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
+            "text": "We provide high-performance native-style Progressive Web Apps (PWAs) that deliver a fast, app-like experience on any smartphone or tablet, with support for push notifications and mobile-optimised workflows."
           }
         },
         {

@@ -332,6 +332,52 @@ const usWhiteLabelPage = () => (
         </ErrorBoundary>
 
         <ErrorBoundary>
+          <section className="py-10 bg-white border-b border-gray-100"
+            aria-labelledby="us-quick-answer-heading">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto bg-brand-blue/20 border
+                border-brand-blue/20 rounded-xl p-6 md:p-8">
+                <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+                  <h2 id="us-quick-answer-heading"
+                    className="text-sm font-semibold uppercase tracking-wide text-brand-blue">
+                    Quick Answer
+                  </h2>
+                  <span className="text-xs text-gray-500">Last updated: July 16, 2026</span>
+                </div>
+                <p className="text-gray-800 leading-relaxed">
+                  A white label telemedicine platform for US healthcare providers is a
+                  ready-made, HIPAA-aligned virtual care solution that clinics, hospitals,
+                  specialty practices, behavioral health providers, and digital health
+                  companies license and rebrand as their own — your logo, your domain,
+                  your patient portal — instead of building telehealth software from scratch.
+                  The platform covers the complete US care journey: patient registration,
+                  appointment scheduling, secure video consultations, EHR/EMR workflow
+                  support, billing and payment integrations, and patient communication —
+                  all under your brand.
+                </p>
+                <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                  {[
+                    "Launch under your own brand without building from scratch",
+                    "HIPAA-aligned workflows with secure, encrypted data transmission",
+                    "EHR/EMR integration, patient booking, and provider dashboards included",
+                    "Mobile-responsive — accessible on web, tablet, and phone",
+                  ].map((point) => (
+                    <li key={point} className="flex items-start text-gray-700">
+                      <svg className="h-5 w-5 text-brand-blue mr-2 flex-shrink-0 mt-0.5"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
             <section>
                 <div className="py-10 bg-white">
                     <div className="container mx-auto px-8">

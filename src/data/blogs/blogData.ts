@@ -1,5 +1,5 @@
 import { BlogPost } from '@/data/blogs/types';
-import { 
+import {
   whitelabelTelemedicineContent,
   staffTrainingContent,
   clinicGrowthContent,
@@ -16,7 +16,17 @@ import {
   secureVirtualConsultationsContent,
   keyVirtualCareTrendsContent,
   roiReadymadeVirtualCarePlatformContent,
-  browserNativeVirtualCareContent
+  browserNativeVirtualCareContent,
+  whiteLabelVsBuildInhouseContent,
+  hipaaTelemedicineUsContent,
+  howToLaunchWhiteLabelContent,
+  whiteLabelMentalHealthContent,
+  ehrEmrIntegrationGuideContent,
+  whiteLabelPricingGuideContent,
+  telemedicineBrandingPatientTrustContent,
+  multiStateTelemedicineContent,
+  patientRetentionVirtualCareContent,
+  whiteLabelSpecialtyCareContent
 } from './blogContent';
 
 export const blogData: BlogPost[] = [
@@ -1109,7 +1119,7 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Grow Revenue Without Adding New Staff with DocGenie Global',
-      body: "Create a branded, secure, and scalable virtual care platform that helps you reduce manual work, retain more patients, and expand care delivery without building technology from scratch.<br/><br/><b>Talk to DocGenie Global’s team to explore how your clinic, hospital, healthcare network, or healthcare business can scale virtual care with confidence.</b>"
+      body: "Create a branded, secure, and scalable virtual care platform that helps you reduce manual work, retain more patients, and expand care delivery without building technology from scratch.<br/><br/><b>Talk to DocGenie Global's team to explore how your clinic, hospital, healthcare network, or healthcare business can scale virtual care with confidence.</b>"
     },
   },
   {
@@ -1197,7 +1207,177 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Build Browser-Native Virtual Care with DocGenie Global',
-      body: "Create a branded, secure, and easy-to-access virtual care platform that does not force every patient to download another app.<br/><br/><b>Talk to DocGenie Global’s team to explore how your clinic, hospital, healthcare network, or digital health business can deliver no-download virtual care with confidence.</b>"
+      body: "Create a branded, secure, and easy-to-access virtual care platform that does not force every patient to download another app.<br/><br/><b>Talk to DocGenie Global's team to explore how your clinic, hospital, healthcare network, or digital health business can deliver no-download virtual care with confidence.</b>"
     },
+  },
+  {
+    id: '18',
+    title: 'White Label Telemedicine vs. Building In-House: True Cost Comparison for US Healthcare Providers',
+    slug: 'white-label-telemedicine-vs-build-in-house',
+    content: whiteLabelVsBuildInhouseContent,
+    date: 'Jul 16, 2026',
+    readTime: '7 min',
+    image: '/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png',
+    imageAlt: 'Healthcare administrator comparing white label telemedicine platform options versus in-house development costs on a laptop',
+    category: 'Telemedicine',
+    tags: ['white-label telemedicine', 'build vs buy', 'telemedicine cost', 'US healthcare', 'virtual care platform'],
+    featured: false,
+    cta: {
+      heading: 'Skip the In-House Build — Launch Branded Virtual Care in Weeks',
+      body: 'DocGenie Global gives US healthcare providers a HIPAA-aligned, fully branded telemedicine platform without the cost and complexity of building from scratch. <b>Request a demo to see how it works for your organisation.</b>'
+    }
+  },
+  {
+    id: '19',
+    title: 'HIPAA Compliance for Telemedicine Platforms: What US Healthcare Providers Need to Know',
+    slug: 'hipaa-compliance-telemedicine-us-healthcare',
+    content: hipaaTelemedicineUsContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/beaa9887-15a9-4526-ad87-2edcd6ec20c1.png',
+    imageAlt: 'US healthcare provider reviewing HIPAA compliance documentation for telemedicine platform implementation',
+    category: 'Healthcare',
+    tags: ['HIPAA', 'telemedicine compliance', 'US healthcare', 'virtual care', 'healthcare regulations'],
+    featured: false,
+    cta: {
+      heading: 'HIPAA-Aligned Telemedicine for US Healthcare Providers',
+      body: 'DocGenie Global is designed to support HIPAA-aligned virtual care workflows, with BAA availability and privacy-focused architecture. <b>Talk to our team about your compliance requirements.</b>'
+    }
+  },
+  {
+    id: '20',
+    title: 'How to Launch a White Label Telemedicine Platform: A Step-by-Step Guide for US Healthcare Providers',
+    slug: 'how-to-launch-white-label-telemedicine-platform',
+    content: howToLaunchWhiteLabelContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/1f93ec14-f910-4b12-8ff8-c1520b2b72bf.png',
+    imageAlt: 'Healthcare team planning a white label telemedicine platform launch with step-by-step implementation roadmap',
+    category: 'Telemedicine',
+    tags: ['launch telemedicine platform', 'white-label telemedicine', 'virtual care setup', 'US healthcare', 'telemedicine implementation'],
+    featured: false,
+    cta: {
+      heading: 'Ready to Launch Your Branded Telemedicine Platform?',
+      body: 'DocGenie Global guides US healthcare providers through every step — from discovery to go-live. <b>Request a demo to start the conversation.</b>'
+    }
+  },
+  {
+    id: '21',
+    title: 'White Label Telemedicine for Mental Health Practices: A Complete Guide',
+    slug: 'white-label-telemedicine-mental-health-practices',
+    content: whiteLabelMentalHealthContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/cfd677f7-161c-43c3-ba5f-2ce373ddf739.png',
+    imageAlt: 'Mental health therapist conducting a secure branded telemedicine consultation with a patient via white label virtual care platform',
+    category: 'Healthcare',
+    tags: ['mental health telemedicine', 'white-label telehealth', 'behavioural health platform', 'therapy virtual care', 'mental health virtual care'],
+    featured: false,
+    cta: {
+      heading: 'Branded Virtual Care for Mental Health Practices',
+      body: 'DocGenie Global supports mental health and behavioural health providers with a secure, branded telemedicine platform. <b>Speak to our team about your practice requirements.</b>'
+    }
+  },
+  {
+    id: '22',
+    title: 'EHR and EMR Integration for Telemedicine: What US Healthcare Providers Need to Know',
+    slug: 'ehr-emr-integration-telemedicine',
+    content: ehrEmrIntegrationGuideContent,
+    date: 'Jul 16, 2026',
+    readTime: '7 min',
+    image: '/lovable-uploads/beaa9887-15a9-4526-ad87-2edcd6ec20c1.png',
+    imageAlt: 'Healthcare IT team integrating EHR and EMR systems with a white label telemedicine platform for seamless patient data flow',
+    category: 'Technology',
+    tags: ['EHR integration', 'EMR telemedicine', 'healthcare interoperability', 'HL7 FHIR', 'telemedicine integration'],
+    featured: false,
+    cta: {
+      heading: 'EHR/EMR Integration for Your Telemedicine Platform',
+      body: 'DocGenie Global supports EHR/EMR integration-ready workflows for US healthcare providers. <b>Discuss your integration requirements with our team.</b>'
+    }
+  },
+  {
+    id: '23',
+    title: 'White Label Telemedicine Platform Pricing: A Guide for US Healthcare Providers',
+    slug: 'white-label-telemedicine-platform-pricing',
+    content: whiteLabelPricingGuideContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png',
+    imageAlt: 'Healthcare administrator reviewing white label telemedicine platform pricing options and total cost of ownership comparison',
+    category: 'Telemedicine',
+    tags: ['telemedicine pricing', 'white-label telemedicine cost', 'virtual care platform pricing', 'healthcare SaaS pricing', 'telemedicine ROI'],
+    featured: false,
+    cta: {
+      heading: 'Get a Tailored Pricing Quote for Your Organisation',
+      body: 'DocGenie Global provides custom pricing based on your provider count, integration requirements, and support needs. <b>Request a quote tailored to your organisation.</b>'
+    }
+  },
+  {
+    id: '24',
+    title: "Why Your Telemedicine Platform's Branding Matters More Than Its Features",
+    slug: 'telemedicine-platform-branding-patient-trust',
+    content: telemedicineBrandingPatientTrustContent,
+    date: 'Jul 16, 2026',
+    readTime: '5 min',
+    image: '/lovable-uploads/cfd677f7-161c-43c3-ba5f-2ce373ddf739.png',
+    imageAlt: 'Patient engaging with a fully branded telemedicine portal showing consistent healthcare provider branding and trust signals',
+    category: 'Telemedicine',
+    tags: ['telemedicine branding', 'patient trust', 'white-label telehealth', 'branded virtual care', 'patient experience'],
+    featured: false,
+    cta: {
+      heading: 'Build Patient Trust With Branded Virtual Care',
+      body: 'DocGenie Global delivers a fully branded telemedicine experience — your logo, your domain, your patient portal. <b>See how it works for your organisation.</b>'
+    }
+  },
+  {
+    id: '25',
+    title: 'Multi-State Telemedicine: How White Label Platforms Support Geographic Expansion',
+    slug: 'multi-state-telemedicine-geographic-expansion',
+    content: multiStateTelemedicineContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png',
+    imageAlt: 'US healthcare organisation expanding telemedicine services across multiple states using a scalable white label virtual care platform',
+    category: 'Healthcare',
+    tags: ['multi-state telemedicine', 'geographic expansion', 'virtual care scaling', 'US telehealth', 'white-label telemedicine'],
+    featured: false,
+    cta: {
+      heading: 'Scale Your Virtual Care Across States with DocGenie Global',
+      body: 'DocGenie Global supports multi-provider, multi-location, and multi-state telemedicine deployments under your brand. <b>Talk to our team about your expansion goals.</b>'
+    }
+  },
+  {
+    id: '26',
+    title: 'Patient Retention in Virtual Care: Why Branded Telemedicine Platforms Outperform Generic Apps',
+    slug: 'patient-retention-branded-telemedicine',
+    content: patientRetentionVirtualCareContent,
+    date: 'Jul 16, 2026',
+    readTime: '6 min',
+    image: '/lovable-uploads/cfd677f7-161c-43c3-ba5f-2ce373ddf739.png',
+    imageAlt: 'Healthcare provider reviewing patient retention metrics from a branded telemedicine platform compared to generic telehealth apps',
+    category: 'Healthcare',
+    tags: ['patient retention', 'branded telemedicine', 'virtual care retention', 'telehealth patient engagement', 'white-label platform'],
+    featured: false,
+    cta: {
+      heading: 'Keep Patients in Your Brand — Not a Generic App',
+      body: 'DocGenie Global delivers branded virtual care that keeps patients connected to your practice across every touchpoint. <b>Request a demo to see how it works.</b>'
+    }
+  },
+  {
+    id: '27',
+    title: 'White Label Telemedicine for Specialty Care: A Guide for US Specialty Practices',
+    slug: 'white-label-telemedicine-specialty-care',
+    content: whiteLabelSpecialtyCareContent,
+    date: 'Jul 16, 2026',
+    readTime: '7 min',
+    image: '/lovable-uploads/beaa9887-15a9-4526-ad87-2edcd6ec20c1.png',
+    imageAlt: 'US specialty care physician using a white label telemedicine platform for dermatology, cardiology, and mental health virtual consultations',
+    category: 'Telemedicine',
+    tags: ['specialty care telemedicine', 'white-label telehealth', 'dermatology telemedicine', 'cardiology virtual care', 'mental health telehealth'],
+    featured: false,
+    cta: {
+      heading: 'White Label Telemedicine Built for Your Specialty',
+      body: 'DocGenie Global supports a range of US specialty care workflows with flexible configuration and full brand ownership. <b>Talk to our team about your specialty requirements.</b>'
+    }
   }
 ];
