@@ -31,7 +31,8 @@ With a white label platform, US healthcare organisations get:
 * EHR/EMR integration support without rebuilding data pipelines
 * Payment and billing workflow connectivity
 * A branded patient portal under your domain and logo
-* Ongoing platform maintenance handled by the vendor, not your team`
+* Ongoing platform maintenance handled by the vendor, not your team
+`
     },
     {
       id: 'cost-comparison',

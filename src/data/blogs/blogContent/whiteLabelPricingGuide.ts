@@ -25,7 +25,8 @@ export const whiteLabelPricingGuideContent: BlogContent = {
 * **EHR/EMR integration:** No integration is the lowest cost; deep bi-directional integration with custom mapping is the highest
 * **Compliance scope:** Standard HIPAA-aligned architecture vs. additional audit requirements
 * **Support tier:** Standard support channels vs. dedicated account management
-* **Launch complexity:** Simple single-specialty configuration vs. multi-specialty, multi-location setup`
+* **Launch complexity:** Simple single-specialty configuration vs. multi-specialty, multi-location setup
+`
     },
     {
       id: 'comparison-to-inhouse',
@@ -55,7 +56,8 @@ A white label platform consolidates those costs into a predictable subscription,
 * Do you need EHR/EMR integration, and which system?
 * What level of branding customisation do you need?
 * What is your target launch timeline?
-* What support model do you need post-launch?`
+* What support model do you need post-launch?
+`
     }
   ],
 

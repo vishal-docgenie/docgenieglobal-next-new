@@ -14,7 +14,8 @@ For the practice, considerations include:
 * Session privacy and data confidentiality for therapy notes and psychiatric assessments
 * Continuity of the therapeutic relationship across in-person and virtual sessions
 * Communication tools that support the patient between sessions
-* Scheduling flexibility for recurring appointments across multiple providers`
+* Scheduling flexibility for recurring appointments across multiple providers
+`
     },
     {
       id: 'what-white-labeling-means',
@@ -32,7 +33,8 @@ For the practice, considerations include:
 * Provider scheduling and calendar management
 * Consultation notes workflow with EHR/EMR connectivity
 * Role-based access controls to protect sensitive patient data
-* Multi-provider support for group practices`
+* Multi-provider support for group practices
+`
     },
     {
       id: 'group-practices',

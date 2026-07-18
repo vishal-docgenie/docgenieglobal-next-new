@@ -17,7 +17,8 @@ export const patientRetentionVirtualCareContent: BlogContent = {
 * The platform develops its own relationship with the patient
 * The patient may book consultations with other providers on the same platform
 * Your practice becomes one option among many rather than the patient's established provider
-* The patient's loyalty is to the convenience of the app, not to your practice`
+* The patient's loyalty is to the convenience of the app, not to your practice
+`
     },
     {
       id: 'what-branded-platform-changes',
@@ -31,7 +32,8 @@ export const patientRetentionVirtualCareContent: BlogContent = {
 * Automated follow-up reminders under your brand name
 * Easy rebooking from within the post-visit communication
 * Patient communication history visible to your clinical team
-* Consistent experience across web, tablet, and mobile`
+* Consistent experience across web, tablet, and mobile
+`
     },
     {
       id: 'measuring-retention-impact',
@@ -41,7 +43,8 @@ export const patientRetentionVirtualCareContent: BlogContent = {
 * **Rebooking rates:** Patients who receive follow-up communication from a familiar brand rebook at higher rates than those redirected to a generic platform
 * **No-show rates:** Branded reminder communications — sent from your name, not a platform — have higher open and response rates
 * **Patient lifetime value:** Patients retained over multiple years generate more consultation revenue and are less expensive to serve as the relationship matures
-* **Referral rates:** Patients who have a consistently positive experience with your branded virtual care are more likely to recommend your practice to others`
+* **Referral rates:** Patients who have a consistently positive experience with your branded virtual care are more likely to recommend your practice to others
+`
     },
     {
       id: 'long-term-commercial-case',

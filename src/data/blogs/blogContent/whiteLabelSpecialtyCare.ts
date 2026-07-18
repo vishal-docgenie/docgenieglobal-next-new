@@ -12,7 +12,8 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
 * High-quality video for clear visual assessment during live consultations
 * Patient intake forms that capture skin concern details before the consultation
 * Consultation notes workflow connecting to the provider's existing records
-* Branded patient communication for follow-up and treatment reminders`
+* Branded patient communication for follow-up and treatment reminders
+`
     },
     {
       id: 'cardiology',
@@ -22,7 +23,8 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
 * Appointment scheduling tied to provider-specific availability
 * Consultation notes with structured fields for cardiovascular assessment
 * Referral communication back to the patient's primary care provider
-* Patient engagement for long-term condition monitoring programmes`
+* Patient engagement for long-term condition monitoring programmes
+`
     },
     {
       id: 'mental-health',
@@ -37,7 +39,8 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
 * Recurring appointment scheduling for registered patients
 * Follow-up reminder automation
 * Care plan communication via branded patient portal
-* Provider notes connected to the patient's longitudinal record`
+* Provider notes connected to the patient's longitudinal record
+`
     },
     {
       id: 'womens-health',
@@ -58,7 +61,8 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
 * Workflow flexibility to match your specific consultation model
 * EHR/EMR connectivity to avoid duplicate data entry
 * Secure, private consultation infrastructure
-* Patient communication that reinforces your brand across the care journey`
+* Patient communication that reinforces your brand across the care journey
+`
     }
   ],
 

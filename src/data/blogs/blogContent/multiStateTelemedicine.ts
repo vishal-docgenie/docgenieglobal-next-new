@@ -11,7 +11,8 @@ export const multiStateTelemedicineContent: BlogContent = {
 
 * **Provider licensure:** Physicians and other licensed providers must generally be licensed in the state where the patient is located at the time of consultation. Interstate compacts — such as the Interstate Medical Licensure Compact — simplify multi-state licensure for qualifying providers.
 * **Varying state telehealth regulations:** Some states have specific requirements around informed consent, prescribing via telemedicine, or documentation standards that differ from federal baselines.
-* **Multi-timezone scheduling:** Coordinating appointments across time zones requires scheduling infrastructure that handles this clearly for both patients and providers.`
+* **Multi-timezone scheduling:** Coordinating appointments across time zones requires scheduling infrastructure that handles this clearly for both patients and providers.
+`
     },
     {
       id: 'platform-requirements',
@@ -21,7 +22,8 @@ export const multiStateTelemedicineContent: BlogContent = {
 * **Multi-provider management:** The ability to manage separate provider schedules, specialties, and patient panels across locations and states
 * **Flexible appointment configuration:** Different appointment types, durations, and workflows per specialty or location
 * **Branded experience across all geographies:** Patients in different states should experience the same portal, the same communication style, and the same care journey standard
-* **Reporting by location or provider:** Administrative visibility across the full organisation, not just individual provider views`
+* **Reporting by location or provider:** Administrative visibility across the full organisation, not just individual provider views
+`
     },
     {
       id: 'brand-consistency-at-scale',

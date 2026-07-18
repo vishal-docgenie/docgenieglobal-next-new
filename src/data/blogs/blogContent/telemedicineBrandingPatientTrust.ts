@@ -53,7 +53,8 @@ Each of these outcomes has a measurable impact on both patient health and practi
 * **Booking confirmation:** Emails sent from your domain under your name
 * **Appointment reminders:** Branded SMS and email communications
 * **Video consultation interface:** Your visual identity visible throughout the session
-* **Post-visit follow-up:** Instructions and next steps arrive from your practice, not a platform`
+* **Post-visit follow-up:** Instructions and next steps arrive from your practice, not a platform
+`
     }
   ],
 

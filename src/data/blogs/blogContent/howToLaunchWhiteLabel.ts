@@ -26,7 +26,8 @@ The answers shape your platform configuration requirements and determine which i
 * Can the platform be fully branded with your logo, domain, and colours?
 * What is their implementation support model?
 * How is ongoing maintenance, security patching, and platform updating handled?
-* What does their support tier look like post-launch?`
+* What does their support tier look like post-launch?
+`
     },
     {
       id: 'branding-and-configuration',
@@ -37,7 +38,8 @@ The answers shape your platform configuration requirements and determine which i
 * Custom domain or subdomain setup
 * Patient portal configuration
 * Appointment type setup (consultation lengths, specialties, provider availability)
-* Patient communication templates (booking confirmations, reminders, follow-up messages)`
+* Patient communication templates (booking confirmations, reminders, follow-up messages)
+`
     },
     {
       id: 'integration-setup',
@@ -47,7 +49,8 @@ The answers shape your platform configuration requirements and determine which i
 * EHR/EMR integration for patient records and consultation notes
 * Payment gateway connection for online collections
 * Calendar and scheduling system integration if required
-* Any third-party tools in your existing workflow`
+* Any third-party tools in your existing workflow
+`
     },
     {
       id: 'staff-training-and-testing',
@@ -56,7 +59,8 @@ The answers shape your platform configuration requirements and determine which i
 
 * Provider workflow training (video consultations, consultation notes, patient handoff)
 * Admin workflow training (appointment management, patient queries, reporting)
-* End-to-end testing of the patient journey from booking to post-visit follow-up`
+* End-to-end testing of the patient journey from booking to post-visit follow-up
+`
     },
     {
       id: 'go-live-and-monitor',

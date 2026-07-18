@@ -28,7 +28,8 @@ export const hipaaTelemedicineUsContent: BlogContent = {
 * What access controls exist for patient records?
 * How are audit logs managed?
 * What is the vendor's breach notification process and timeline?
-* How are EHR/EMR data connections secured?`
+* How are EHR/EMR data connections secured?
+`
     },
     {
       id: 'hipaa-aligned-vs-certified',

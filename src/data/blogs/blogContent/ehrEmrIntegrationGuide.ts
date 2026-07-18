@@ -18,7 +18,8 @@ export const ehrEmrIntegrationGuideContent: BlogContent = {
 * Push consultation notes, diagnosis codes, and follow-up instructions back into the patient record after the visit
 * Sync appointment data between the telemedicine platform and your scheduling system
 * Reduce manual data entry for administrative and clinical staff
-* Support continuity of care across in-person and virtual encounters`
+* Support continuity of care across in-person and virtual encounters
+`
     },
     {
       id: 'what-integration-looks-like',
@@ -29,7 +30,8 @@ Integration depth varies:
 
 * **Basic integration** — appointment data sync, patient demographic lookup
 * **Mid-level integration** — consultation note push to EHR, prescription routing
-* **Deep integration** — bi-directional data flow, clinical decision support triggers, automated care pathway updates`
+* **Deep integration** — bi-directional data flow, clinical decision support triggers, automated care pathway updates
+`
     },
     {
       id: 'questions-to-ask-vendor',
@@ -38,7 +40,8 @@ Integration depth varies:
 2. Do you support HL7 FHIR APIs?
 3. What is your process for integrating with a system not on your existing list?
 4. Who manages the integration — your team or ours — and who maintains it as the EHR vendor updates their API?
-5. What data flows in each direction, and what requires manual action?`
+5. What data flows in each direction, and what requires manual action?
+`
     },
     {
       id: 'common-pitfalls',
@@ -48,7 +51,8 @@ Integration depth varies:
 * **Assuming your EHR vendor's API is fully open:** Some EHR vendors restrict API access or charge separately for third-party integrations. Confirm this before selecting your telemedicine vendor.
 * **Underestimating custom mapping work:** Even when two systems both support HL7 FHIR, field-level mapping between them requires planning and testing.
 * **Treating integration as a one-time project:** EHR vendors update their APIs. Integration that works at launch needs to be maintained as both platforms evolve.
-* **Not defining who owns post-launch integration support:** Clarify whether the telemedicine vendor or your internal IT team is responsible for ongoing integration maintenance.`
+* **Not defining who owns post-launch integration support:** Clarify whether the telemedicine vendor or your internal IT team is responsible for ongoing integration maintenance.
+`
     }
   ],
 
