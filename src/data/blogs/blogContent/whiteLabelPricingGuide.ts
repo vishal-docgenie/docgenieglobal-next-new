@@ -57,9 +57,11 @@ A white label platform consolidates those costs into a predictable subscription,
 * What level of branding customisation do you need?
 * What is your target launch timeline?
 * What support model do you need post-launch?
+
+<a href="/pricing" class="text-brand-blue underline">DocGenie Global's pricing</a> is structured around your specific requirements — provider count, integration scope, and support needs. <a href="/contact" class="text-brand-blue underline">Request a tailored quote</a> once you have answers to the questions above.
 `
     }
   ],
 
-  conclusion: "White label telemedicine pricing is not designed to obscure cost — it is designed to reflect the significant variation in what different healthcare organisations actually need. A 3-provider mental health practice and a 200-provider hospital network have genuinely different requirements, and the same flat price would be unfair to one of them. The best approach is to define your requirements clearly, then request a tailored quote from vendors who can scope their pricing to what you actually need."
+  conclusion: "White label telemedicine pricing is not designed to obscure cost — it is designed to reflect the significant variation in what different healthcare organisations actually need. A 3-provider mental health practice and a 200-provider hospital network have genuinely different requirements, and the same flat price would be unfair to one of them. The best approach is to define your requirements clearly, then request a tailored quote from vendors who can scope their pricing to what you actually need. <a href=\"/contact\" class=\"text-brand-blue underline\">Contact DocGenie Global</a> to get a quote matched to your organisation's size, integration needs, and support requirements."
 };

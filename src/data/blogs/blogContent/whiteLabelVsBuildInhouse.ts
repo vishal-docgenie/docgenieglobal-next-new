@@ -59,9 +59,9 @@ With a white label platform, US healthcare organisations get:
     {
       id: 'the-white-label-advantage',
       title: "The White Label Advantage for US Providers",
-      content: "The US healthcare market moves fast. Patient expectations for digital care experiences have shifted significantly. A white label platform lets you enter the virtual care market under your own brand while your competitors are still writing software specifications. DocGenie Global's white label telemedicine platform is designed for US healthcare providers who want a branded, HIPAA-aligned virtual care experience without the cost, complexity, and time of in-house development."
+      content: "The US healthcare market moves fast. Patient expectations for digital care experiences have shifted significantly. A white label platform lets you enter the virtual care market under your own brand while your competitors are still writing software specifications. <a href=\"/solutions/white-label-telemedicine\" class=\"text-brand-blue underline\">DocGenie Global's white label telemedicine platform</a> is designed for US healthcare providers who want a branded, HIPAA-aligned virtual care experience without the cost, complexity, and time of in-house development."
     }
   ],
 
-  conclusion: "For the majority of US healthcare organisations — clinics, specialty practices, hospitals, and digital health companies — a white label telemedicine platform is the faster, more cost-effective, and lower-risk path to branded virtual care. The build-vs-buy decision ultimately comes down to whether your core business is delivering healthcare or building software. For most providers, the answer is clear."
+  conclusion: "For the majority of US healthcare organisations — clinics, specialty practices, hospitals, and digital health companies — a white label telemedicine platform is the faster, more cost-effective, and lower-risk path to branded virtual care. The build-vs-buy decision ultimately comes down to whether your core business is delivering healthcare or building software. For most providers, the answer is clear. <a href=\"/contact\" class=\"text-brand-blue underline\">Talk to DocGenie Global</a> to explore how quickly your organisation can go live with a branded, HIPAA-aligned virtual care platform."
 };

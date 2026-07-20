@@ -54,9 +54,11 @@ Each of these outcomes has a measurable impact on both patient health and practi
 * **Appointment reminders:** Branded SMS and email communications
 * **Video consultation interface:** Your visual identity visible throughout the session
 * **Post-visit follow-up:** Instructions and next steps arrive from your practice, not a platform
+
+<a href="/solutions/white-label-telemedicine" class="text-brand-blue underline">DocGenie Global</a> delivers all of these touchpoints under your brand — logo, domain, patient portal, and communications — so patients stay within your care environment from first booking to post-visit follow-up. <a href="/contact" class="text-brand-blue underline">See how it works for your organisation.</a>
 `
     }
   ],
 
-  conclusion: "Telemedicine branding is not a cosmetic decision — it is a patient experience decision with measurable downstream effects on adoption, retention, and satisfaction. The providers who treat branded telemedicine as a trust-building tool, rather than a technology purchase, are the ones who see the strongest patient engagement with their virtual care programmes."
+  conclusion: "Telemedicine branding is not a cosmetic decision — it is a patient experience decision with measurable downstream effects on adoption, retention, and satisfaction. The providers who treat branded telemedicine as a trust-building tool, rather than a technology purchase, are the ones who see the strongest patient engagement with their virtual care programmes. If you are ready to build a patient experience that reflects your brand at every touchpoint, <a href=\"/contact\" class=\"text-brand-blue underline\">talk to DocGenie Global</a> about launching a fully branded virtual care platform."
 };

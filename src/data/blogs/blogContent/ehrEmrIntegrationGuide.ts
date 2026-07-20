@@ -41,6 +41,8 @@ Integration depth varies:
 3. What is your process for integrating with a system not on your existing list?
 4. Who manages the integration — your team or ours — and who maintains it as the EHR vendor updates their API?
 5. What data flows in each direction, and what requires manual action?
+
+<a href="/contact" class="text-brand-blue underline">DocGenie Global's team</a> can walk you through the platform's EHR/EMR integration approach and confirm compatibility with your specific system before any commitment is made.
 `
     },
     {
@@ -56,5 +58,5 @@ Integration depth varies:
     }
   ],
 
-  conclusion: "EHR and EMR integration is what turns a telemedicine platform from a standalone video tool into a genuine extension of your clinical workflow. The providers who get the most value from white label telemedicine are those who define their integration requirements clearly upfront, ask the right questions of their vendor, and plan for ongoing maintenance — not just the initial go-live."
+  conclusion: "EHR and EMR integration is what turns a telemedicine platform from a standalone video tool into a genuine extension of your clinical workflow. The providers who get the most value from white label telemedicine are those who define their integration requirements clearly upfront, ask the right questions of their vendor, and plan for ongoing maintenance — not just the initial go-live. <a href=\"/solutions/white-label-telemedicine\" class=\"text-brand-blue underline\">DocGenie Global</a> supports EHR/EMR integration-ready workflows for US healthcare providers — <a href=\"/contact\" class=\"text-brand-blue underline\">discuss your integration requirements with our team</a>."
 };

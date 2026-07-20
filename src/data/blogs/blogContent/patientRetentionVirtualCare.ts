@@ -49,9 +49,9 @@ export const patientRetentionVirtualCareContent: BlogContent = {
     {
       id: 'long-term-commercial-case',
       title: "The Long-Term Commercial Case",
-      content: "For US healthcare organisations competing for patients in increasingly crowded virtual care markets, the retention advantage of branded telemedicine is compounding. Each year a patient stays within your branded care environment is a year they are not being targeted by competing platforms. A white label telemedicine platform is not just a technology choice. It is a patient retention strategy."
+      content: "For US healthcare organisations competing for patients in increasingly crowded virtual care markets, the retention advantage of branded telemedicine is compounding. Each year a patient stays within your branded care environment is a year they are not being targeted by competing platforms. A white label telemedicine platform is not just a technology choice. It is a patient retention strategy. <a href=\"/solutions/white-label-telemedicine\" class=\"text-brand-blue underline\">DocGenie Global's white label telemedicine platform</a> keeps every patient interaction — booking, consultation, follow-up — inside your brand's environment, not a third-party app."
     }
   ],
 
-  conclusion: "The healthcare providers who get the most long-term value from telemedicine are those who treat their virtual care platform as a patient relationship tool — not just an appointment delivery mechanism. Branded virtual care, delivered consistently across every patient touchpoint, is the most direct path from a telemedicine investment to measurable improvements in patient retention, lifetime value, and practice growth."
+  conclusion: "The healthcare providers who get the most long-term value from telemedicine are those who treat their virtual care platform as a patient relationship tool — not just an appointment delivery mechanism. Branded virtual care, delivered consistently across every patient touchpoint, is the most direct path from a telemedicine investment to measurable improvements in patient retention, lifetime value, and practice growth. <a href=\"/contact\" class=\"text-brand-blue underline\">Request a demo from DocGenie Global</a> to see how a fully branded virtual care platform keeps patients connected to your practice."
 };

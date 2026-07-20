@@ -27,6 +27,8 @@ The answers shape your platform configuration requirements and determine which i
 * What is their implementation support model?
 * How is ongoing maintenance, security patching, and platform updating handled?
 * What does their support tier look like post-launch?
+
+<a href="/solutions/white-label-telemedicine" class="text-brand-blue underline">DocGenie Global's white label telemedicine platform</a> is built for US healthcare providers and covers all of these requirements — BAA support, EHR/EMR integration, full branding configuration, and structured implementation guidance.
 `
     },
     {
@@ -74,5 +76,5 @@ The answers shape your platform configuration requirements and determine which i
     }
   ],
 
-  conclusion: "Launching a white label telemedicine platform is a structured process with a clear sequence of steps. The most common mistake US healthcare providers make is underestimating the importance of step one — defining the virtual care model — before evaluating any technology. Providers who do the planning work upfront move faster through implementation and go live with fewer surprises."
+  conclusion: "Launching a white label telemedicine platform is a structured process with a clear sequence of steps. The most common mistake US healthcare providers make is underestimating the importance of step one — defining the virtual care model — before evaluating any technology. Providers who do the planning work upfront move faster through implementation and go live with fewer surprises. If you are ready to start, <a href=\"/contact\" class=\"text-brand-blue underline\">request a demo from DocGenie Global</a> to explore how the platform fits your organisation's specific requirements."
 };

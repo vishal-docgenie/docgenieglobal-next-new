@@ -51,9 +51,9 @@ When evaluating a telemedicine vendor, ask specifically how their platform addre
     {
       id: 'docgenie-and-hipaa',
       title: "DocGenie Global and HIPAA Alignment",
-      content: "DocGenie Global is designed to support HIPAA-aligned virtual care workflows for US healthcare providers, with privacy-focused architecture, role-based access controls, secure data handling, and BAA availability. Final HIPAA compliance depends on your organisation's implementation, processes, and configuration — as it does with any platform."
+      content: "<a href=\"/\" class=\"text-brand-blue underline\">DocGenie Global</a> is designed to support HIPAA-aligned virtual care workflows for US healthcare providers, with privacy-focused architecture, role-based access controls, secure data handling, and BAA availability. To explore how the platform supports your compliance requirements, <a href=\"/contact\" class=\"text-brand-blue underline\">speak to the DocGenie Global team</a>. Final HIPAA compliance depends on your organisation's implementation, processes, and configuration — as it does with any platform."
     }
   ],
 
-  conclusion: "HIPAA compliance in telemedicine is a shared responsibility between your organisation and your technology vendor. The right white label telemedicine partner understands their obligations as a Business Associate, provides transparent documentation of their security practices, and signs a BAA before any patient data flows through their systems. Evaluating vendors through this lens — not just their feature list — is how US healthcare providers protect their patients and their organisations."
+  conclusion: "HIPAA compliance in telemedicine is a shared responsibility between your organisation and your technology vendor. The right white label telemedicine partner understands their obligations as a Business Associate, provides transparent documentation of their security practices, and signs a BAA before any patient data flows through their systems. Evaluating vendors through this lens — not just their feature list — is how US healthcare providers protect their patients and their organisations. <a href=\"/solutions/white-label-telemedicine\" class=\"text-brand-blue underline\">Explore DocGenie Global's HIPAA-aligned virtual care platform</a> to see how it supports your compliance obligations."
 };
