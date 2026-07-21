@@ -44,7 +44,7 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
       * **Secure provider-patient messaging** for brief check-ins or care coordination between sessions without requiring a full consultation booking
       * **Branded consistency** — the therapeutic relationship benefits specifically from a consistent, recognisable care environment; a white label platform delivers this in ways a generic app cannot
 
-      See the [guide to white label telemedicine for mental health practices](/blogs/white-label-telemedicine-mental-health-practices) for a full treatment of this specialty's requirements.`
+      See the <a href="/blogs/white-label-telemedicine-mental-health-practices">[guide to white label telemedicine for mental health practices]</a> for a full treatment of this specialty's requirements.`
     },
     {
       id: 'chronic-care',
