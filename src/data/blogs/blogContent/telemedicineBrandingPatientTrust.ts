@@ -35,7 +35,7 @@ export const telemedicineBrandingPatientTrustContent: BlogContent = {
     {
       id: 'what-white-labeling-changes',
       title: "What White Labeling Actually Changes",
-      content: `A [white label telemedicine platform](/solutions/white-label-telemedicine) means patients never leave your brand's environment. From the moment they receive a booking confirmation to the moment they join the video consultation and receive a follow-up message, every touchpoint carries your logo, your name, and your domain.
+      content: `A <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> means patients never leave your brand's environment. From the moment they receive a booking confirmation to the moment they join the video consultation and receive a follow-up message, every touchpoint carries your logo, your name, and your domain.
 
       This is not a cosmetic distinction. It changes the patient's psychological frame throughout the care journey:
 

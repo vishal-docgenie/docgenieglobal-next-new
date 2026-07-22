@@ -17,7 +17,7 @@ export const whiteLabelPricingGuideContent: BlogContent = {
 
       **Custom enterprise pricing:** For health systems, large multi-specialty groups, and digital health companies with complex requirements, pricing is typically negotiated based on scale, integration scope, branding requirements, and support model. Ranges vary widely — from tens of thousands annually for smaller organisations to hundreds of thousands for large systems.
 
-      See [DocGenie Global's pricing](/pricing) for indicative ranges relevant to your organisation size.`
+      See <a href='/pricing/'>DocGenie Global's pricing</a> for indicative ranges relevant to your organisation size.`
     },
     {
       id: 'what-drives-cost',

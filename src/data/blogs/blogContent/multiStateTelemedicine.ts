@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const multiStateTelemedicineContent: BlogContent = {
-  intro: "Multi-state telemedicine allows US healthcare providers to serve patients across state lines without physical expansion — but it introduces provider licensure obligations, varying state regulations, and platform requirements that differ significantly from single-location virtual care. For healthcare organisations evaluating geographic expansion through a [white label telemedicine platform](/solutions/white-label-telemedicine), understanding both the regulatory and technology dimensions of multi-state operation is essential planning work.",
+  intro: "Multi-state telemedicine allows US healthcare providers to serve patients across state lines without physical expansion — but it introduces provider licensure obligations, varying state regulations, and platform requirements that differ significantly from single-location virtual care. For healthcare organisations evaluating geographic expansion through a <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a>, understanding both the regulatory and technology dimensions of multi-state operation is essential planning work.",
 
   sections: [
     {

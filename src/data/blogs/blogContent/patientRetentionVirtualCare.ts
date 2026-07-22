@@ -30,7 +30,7 @@ export const patientRetentionVirtualCareContent: BlogContent = {
     {
       id: 'what-branded-platform-changes',
       title: "What a Branded Telemedicine Platform Changes",
-      content: `A [white label telemedicine platform](/solutions/white-label-telemedicine) keeps the patient inside your brand's environment throughout the entire virtual care journey. Every interaction — booking email, reminder notification, consultation interface, post-visit follow-up — carries your name and your identity.
+      content: `A <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> keeps the patient inside your brand's environment throughout the entire virtual care journey. Every interaction — booking email, reminder notification, consultation interface, post-visit follow-up — carries your name and your identity.
 
       The practical effects on patient behaviour:
 

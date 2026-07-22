@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const ehrEmrIntegrationGuideContent: BlogContent = {
-  intro: "EHR and EMR integration connects your telemedicine platform to your existing clinical records system — so patient history is available before a virtual consultation and consultation notes flow back into the patient record automatically after. For US healthcare providers evaluating [white label telemedicine platforms](/solutions/white-label-telemedicine), understanding what integration actually involves, what it enables, and how to evaluate vendor capability prevents the most common implementation delays.",
+  intro: "EHR and EMR integration connects your telemedicine platform to your existing clinical records system — so patient history is available before a virtual consultation and consultation notes flow back into the patient record automatically after. For US healthcare providers evaluating <a href='/solutions/white-label-telemedicine/'>white label telemedicine platforms</a>, understanding what integration actually involves, what it enables, and how to evaluate vendor capability prevents the most common implementation delays.",
 
   sections: [
     {

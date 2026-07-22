@@ -300,7 +300,7 @@ const ukWhiteLabelPage = () => (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in the UK</h1>
-                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="https://www.docgenieglobal.com/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label telemedicine solution</a> allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
+                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Our <a href="/solutions/white-label-telemedicine/">white label telemedicine solution</a> allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <Link href="/contact" data-hero-cta>
@@ -464,7 +464,7 @@ const ukWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Your website and virtual care platform are often the first digital touchpoints for patients. A white label telemedicine platform helps your clinic create a branded &quot;digital front door&quot; instead of depending on a generic third-party app. Read more about <Link href="/blogs/telemedicine-branding-patient-trust">how branded telemedicine platforms build patient trust</Link> compared to generic alternatives.
+                                Your website and virtual care platform are often the first digital touchpoints for patients. A white label telemedicine platform helps your clinic create a branded &quot;digital front door&quot; instead of depending on a generic third-party app. Read more about <Link href="/blogs/telemedicine-platform-branding-patient-trust/">how branded telemedicine platforms build patient trust</Link> compared to generic alternatives.
                             </p>
                             <p className="text-lg text-gray-700">With DocGenie Global, your clinic can offer:</p>
                             <ul>
@@ -477,7 +477,7 @@ const ukWhiteLabelPage = () => (
                                 <li>Custom domain or subdomain</li>
                                 <li>Consistent visual identity across every patient touchpoint</li>
                             </ul>
-                            <p className="text-lg text-gray-700">This helps UK healthcare providers <Link href="/blogs/patient-retention-virtual-care">improve patient retention</Link> while delivering a professional and trustworthy digital access to care.</p>
+                            <p className="text-lg text-gray-700">This helps UK healthcare providers <Link href="/blogs/patient-retention-branded-telemedicine/">improve patient retention</Link> while delivering a professional and trustworthy digital access to care.</p>
                         </div>
                     </div>
                 </div>
@@ -497,10 +497,10 @@ const ukWhiteLabelPage = () => (
                             <p className="text-lg text-gray-700">Offer convenient online consultations for patients looking for private access to healthcare support, including same-day or next-day appointment availability that NHS waiting times may not allow.</p>
 
                             <h3>Specialist Follow-Ups</h3>
-                            <p className="text-lg text-gray-700">Support dermatology, women's health, cardiology, endocrinology, and other specialist follow-up consultations under your clinic's brand. See our <Link href="/blogs/white-label-telemedicine-specialty-care">guide to white label telemedicine for specialty care</Link> for specialty-specific platform requirements.</p>
+                            <p className="text-lg text-gray-700">Support dermatology, women's health, cardiology, endocrinology, and other specialist follow-up consultations under your clinic's brand. See our <Link href="/blogs/white-label-telemedicine-specialty-care/">guide to white label telemedicine for specialty care</Link> for specialty-specific platform requirements.</p>
 
                             <h3>Mental Health and Therapy</h3>
-                            <p className="text-lg text-gray-700">Enable secure virtual consultations for therapy, counselling, psychiatry, and ongoing mental health support. Learn more in our <Link href="/blogs/white-label-telemedicine-mental-health-practices">guide to white label telemedicine for mental health practices</Link> about the specific platform requirements for this care setting.</p>
+                            <p className="text-lg text-gray-700">Enable secure virtual consultations for therapy, counselling, psychiatry, and ongoing mental health support. Learn more in our <Link href="/blogs/white-label-telemedicine-mental-health-practices/">guide to white label telemedicine for mental health practices</Link> about the specific platform requirements for this care setting.</p>
 
                             <h3>Hybrid Clinic Model</h3>
                             <p className="text-lg text-gray-700">Combine in-clinic appointments with online consultations to improve patient access, reduce operational friction, and give patients the flexibility to choose how they engage with their care team.</p>

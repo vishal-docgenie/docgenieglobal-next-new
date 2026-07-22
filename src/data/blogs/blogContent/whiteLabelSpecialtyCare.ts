@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const whiteLabelSpecialtyCareContent: BlogContent = {
-  intro: "White label telemedicine for specialty care requires platform flexibility that general telehealth tools rarely provide. Each specialty has a distinct consultation model, patient journey, and workflow integration need — dermatology relies on visual assessment, mental health requires session privacy and therapeutic continuity, chronic care depends on recurring engagement, cardiology follow-up needs structured clinical documentation. A configurable [white label telemedicine platform](/solutions/white-label-telemedicine) accommodates these differences; a one-size-fits-all generic tool typically does not.",
+  intro: "White label telemedicine for specialty care requires platform flexibility that general telehealth tools rarely provide. Each specialty has a distinct consultation model, patient journey, and workflow integration need — dermatology relies on visual assessment, mental health requires session privacy and therapeutic continuity, chronic care depends on recurring engagement, cardiology follow-up needs structured clinical documentation. A configurable <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> accommodates these differences; a one-size-fits-all generic tool typically does not.",
 
   sections: [
     {
@@ -44,7 +44,7 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
       * **Secure provider-patient messaging** for brief check-ins or care coordination between sessions without requiring a full consultation booking
       * **Branded consistency** — the therapeutic relationship benefits specifically from a consistent, recognisable care environment; a white label platform delivers this in ways a generic app cannot
 
-      See the <a href="/blogs/white-label-telemedicine-mental-health-practices">[guide to white label telemedicine for mental health practices]</a> for a full treatment of this specialty's requirements.`
+      See the guide to <a href="/blogs/white-label-telemedicine-mental-health-practices/">white label telemedicine for mental health practices</a> for a full treatment of this specialty's requirements.`
     },
     {
       id: 'chronic-care',

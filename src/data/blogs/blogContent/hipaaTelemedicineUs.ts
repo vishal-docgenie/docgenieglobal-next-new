@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const hipaaTelemedicineUsContent: BlogContent = {
-  intro: "HIPAA compliance for telemedicine means more than secure video. Every step of the virtual care journey — patient registration, appointment booking, consultation, post-visit communication, and data storage — generates electronic protected health information (ePHI) that falls under HIPAA's legal requirements. Understanding what those requirements actually are helps US healthcare providers ask the right questions when selecting a [white label telemedicine platform](/solutions/white-label-telemedicine).",
+  intro: "HIPAA compliance for telemedicine means more than secure video. Every step of the virtual care journey — patient registration, appointment booking, consultation, post-visit communication, and data storage — generates electronic protected health information (ePHI) that falls under HIPAA's legal requirements. Understanding what those requirements actually are helps US healthcare providers ask the right questions when selecting a <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a>.",
 
   sections: [
     {

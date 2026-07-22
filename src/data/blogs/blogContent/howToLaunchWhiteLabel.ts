@@ -7,7 +7,7 @@ export const howToLaunchWhiteLabelContent: BlogContent = {
     {
       id: 'define-your-virtual-care-model',
       title: "Step 1: Define Your Virtual Care Model",
-      content: `Before evaluating any [white label telemedicine platform](/solutions/white-label-telemedicine), be clear on what virtual care means for your organisation. The answers to these questions determine your platform configuration requirements and which integrations you need from day one:
+      content: `Before evaluating any <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a>, be clear on what virtual care means for your organisation. The answers to these questions determine your platform configuration requirements and which integrations you need from day one:
 
       * **What types of consultations will you offer?** Follow-ups only, new patient visits, chronic care check-ins, specialist referrals, or a mix?
       * **Which patient segments will you serve?** Existing patients only, new geographies, specific demographics, or employer groups?
@@ -29,7 +29,7 @@ export const howToLaunchWhiteLabelContent: BlogContent = {
       * **Post-launch maintenance:** How are platform updates, security patches, and new features handled? Is there an SLA for platform availability?
       * **Support model:** What does support look like after go-live? Is there a dedicated account contact?
 
-      Review [platform pricing](/pricing) early in vendor evaluation to ensure the model aligns with your organisation's size and budget.`
+      Review <a href='/pricing/'>platform pricing</a> early in vendor evaluation to ensure the model aligns with your organisation's size and budget.`
     },
     {
       id: 'branding-and-configuration',

@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const whiteLabelVsBuildInhouseContent: BlogContent = {
-  intro: "For most US healthcare organisations, licensing a [white label telemedicine platform](/solutions/white-label-telemedicine) is the faster, more cost-effective, and lower-risk path to branded virtual care than building in-house. The decision comes down to one question: is your core business delivering healthcare, or building software? For most providers, the answer shapes everything that follows.",
+  intro: "For most US healthcare organisations, licensing a <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> is the faster, more cost-effective, and lower-risk path to branded virtual care than building in-house. The decision comes down to one question: is your core business delivering healthcare, or building software? For most providers, the answer shapes everything that follows.",
 
   sections: [
     {
@@ -72,7 +72,7 @@ export const whiteLabelVsBuildInhouseContent: BlogContent = {
 
       A white label platform lets you enter the virtual care market under your own brand while your competitors are still writing software specifications. The combination of faster time to market, lower initial investment, predictable ongoing cost, and vendor-managed compliance makes white label the default choice for organisations whose primary expertise is healthcare delivery, not software development.
 
-      Explore [white label telemedicine platform options](/solutions/white-label-telemedicine) and review [platform pricing](/pricing) to understand what a deployment scoped to your organisation's size would look like.`
+      Explore <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform options</a> and review <a href='/pricing/'>platform pricing</a> to understand what a deployment scoped to your organisation's size would look like.`
     }
   ],
 

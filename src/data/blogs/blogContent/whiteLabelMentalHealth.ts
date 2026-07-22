@@ -22,7 +22,7 @@ export const whiteLabelMentalHealthContent: BlogContent = {
       title: "Why Branding Matters More in Mental Health Than Most Specialties",
       content: `In mental health care, the therapeutic relationship is the treatment. Patients who feel they are within their trusted provider's environment are more likely to engage honestly, keep appointments, and continue with care over time.
 
-      A [white label telemedicine platform](/solutions/white-label-telemedicine) keeps your practice brand consistent across every patient interaction. Patients see your practice name, your logo, and your domain — not a third-party platform. This matters because:
+      A <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> keeps your practice brand consistent across every patient interaction. Patients see your practice name, your logo, and your domain — not a third-party platform. This matters because:
 
       * Patients arriving at an unfamiliar branded platform before a therapy session experience a context shift that can affect the session itself
       * The booking confirmation, reminder, and post-session message all carry your practice identity — reinforcing that the patient is in your care environment
