@@ -70,15 +70,9 @@ export const hipaaTelemedicineUsContent: BlogContent = {
       These are not optional best practices. They are regulatory requirements that your telemedicine vendor's platform must support.`
     },
     {
-      id: 'shared-responsibility-model',
-      title: "The Shared Responsibility Model",
-      content: `Even when you select a HIPAA-aligned telemedicine platform from a vendor willing to sign a BAA, your organisation retains significant compliance obligations:
-
-      * **Administrative safeguards:** Documented policies on how staff access and handle ePHI, workforce training, and a designated Security Officer
-      * **Physical safeguards:** Controls over the physical environments where ePHI is accessed — including provider workstations used for telemedicine consultations
-      * **Patient rights management:** Processes for handling patient access requests, amendment requests, and accounting of disclosures under the Privacy Rule
-
-      HIPAA compliance cannot be fully outsourced to a vendor. It requires operational implementation within your organisation, regardless of how well-designed the platform is.`
+      id: 'docgenie-and-hipaa',
+      title: "DocGenie Global and HIPAA Alignment",
+      content: "<a href='https://www.docgenieglobal.com/'>DocGenie Global</a> is designed to support <a href='https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare'>HIPAA-aligned virtual care workflows</a> for US healthcare providers, with privacy-focused architecture, role-based access controls, secure data handling, and BAA availability. Final HIPAA compliance depends on your organisation's implementation, processes, and configuration — as it does with any platform. For a broader look at HIPAA best practices in telemedicine, see our guide on <a href='https://www.docgenieglobal.com/blogs/hipaa-compliance-best-practices-healthcare-providers/'>HIPAA Compliance Best Practices for Healthcare Providers</a>."
     }
   ],
 

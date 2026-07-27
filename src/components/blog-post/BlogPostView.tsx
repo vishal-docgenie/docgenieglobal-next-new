@@ -10,6 +10,7 @@ import FaqSection from './FaqSection';
 import BlogSEO from './BlogSEO';
 import RelatedArticles from './RelatedArticles';
 import SocialSharing from './SocialSharing';
+import { useScrollTracking } from './useScrollTracking';
 
 export default function BlogPostView({
   blog,
@@ -20,6 +21,8 @@ export default function BlogPostView({
   sections: any[];   // section list with id/title/content
   allBlogs: any[];
 }) {
+  const activeSection = useScrollTracking(sections, false);
+
   // Smooth scroll (client-only)
   useEffect(() => {
     const original = document.documentElement.style.scrollBehavior;
@@ -63,7 +66,7 @@ export default function BlogPostView({
           <div className="w-full md:w-3/4">
             {/* table of contents (mobile) */}
             <div className="md:hidden mb-6">
-              <TableOfContents sections={sections} />
+              <TableOfContents sections={sections} activeSection={activeSection} />
             </div>
 
             {/* main content */}
@@ -94,7 +97,7 @@ export default function BlogPostView({
           </div>
 
           <div className="w-full md:w-1/4 hidden md:block">
-            <TableOfContents sections={sections} />
+            <TableOfContents sections={sections} activeSection={activeSection} />
           </div>
 
         </div>
