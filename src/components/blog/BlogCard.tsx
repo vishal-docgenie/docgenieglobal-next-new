@@ -92,9 +92,13 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
           </h3>
         </Link>
 
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+        {/* <p className="text-gray-600 text-sm mb-4 line-clamp-3">
           {blog.content.intro}
-        </p>
+        </p> */}
+        <p
+          className="text-gray-600 text-sm mb-4 line-clamp-3 [&_a]:pointer-events-none [&_a]:cursor-default [&_a]:no-underline"
+          dangerouslySetInnerHTML={{ __html: blog.content.intro }}
+        />
 
         <div className="flex flex-wrap gap-1 mt-auto">
           {blog.tags.slice(0, 3).map((tag, index) => (
