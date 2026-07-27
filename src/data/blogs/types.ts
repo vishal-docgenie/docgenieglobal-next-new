@@ -37,6 +37,7 @@ export interface BlogPost {
   slug?: string;          // Optional — generated from title if not provided
   content: BlogContent;   // Structured content (was: string)
   date: string;
+  dateModified?: string;  // ISO date string; falls back to date if omitted
   readTime: string;
   image: string;
   imageAlt?: string;
@@ -44,6 +45,10 @@ export interface BlogPost {
   tags: string[];
   featured?: boolean;
   cta?: BlogCustomCta;    // Optional custom CTA block. Falls back to default if omitted.
+  howToSteps?: {
+    name: string;
+    text: string;
+  }[];
   faqs?: {
     question: string;
     answer: string;

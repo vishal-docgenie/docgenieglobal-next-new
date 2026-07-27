@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const staffTrainingContent: BlogContent = {
-  intro: "In today's rapidly evolving healthcare landscape, virtual care has become an indispensable component of modern medical practice. However, simply implementing telehealth technology is not enough. To truly harness the power of virtual care, clinics must invest in comprehensive staff training.",
+  intro: "In today's rapidly evolving healthcare landscape, virtual care has become an indispensable component of modern medical practice. However, simply implementing a <a href='/solutions/white-label-telemedicine/'>telemedicine platform</a> is not enough. To truly harness the power of virtual care, clinics must invest in comprehensive staff training.",
 
   sections: [
     {
@@ -41,5 +41,5 @@ export const staffTrainingContent: BlogContent = {
     }
   ],
 
-  conclusion: "By investing in comprehensive staff training, clinics can unlock the full potential of virtual care, improve patient outcomes, and create a more efficient and satisfying work environment. A well-trained team is essential for delivering high-quality virtual care that meets the needs of today's patients."
+  conclusion: "By investing in comprehensive staff training, clinics can unlock the full potential of virtual care, improve patient outcomes, and create a more efficient and satisfying work environment. A well-trained team is essential for delivering high-quality virtual care that meets the needs of today's patients. For clinics evaluating which platform to train on, reviewing the <a href='/solutions/virtual-care-features/'>core virtual care features</a> that staff will use most frequently is a useful starting point."
 };

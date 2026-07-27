@@ -70,12 +70,54 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       }
     },
     "datePublished": formatSchemaDate(blog.date),
-    "dateModified": formatSchemaDate(blog.date),
+    "dateModified": formatSchemaDate(blog.dateModified || blog.date),
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": blogUrl
     },
     "keywords": keywords
+  };
+
+  // HowTo schema (only for step-by-step guide blogs)
+  const howToSchema = Array.isArray(blog.howToSteps) && blog.howToSteps.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": blog.title,
+        "description": generateMetaDescription(),
+        "step": blog.howToSteps.map((step, i) => ({
+          "@type": "HowToStep",
+          "position": i + 1,
+          "name": step.name,
+          "text": step.text
+        }))
+      }
+    : null;
+
+  // BreadcrumbList schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": `${baseUrl}/blogs/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": blog.title,
+        "item": blogUrl
+      }
+    ]
   };
 
   // Generate schema for faq
@@ -112,10 +154,24 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
         {JSON.stringify(articleSchema)}
       </script>
 
-      {/* FAQ Schema */}
+      {/* BreadcrumbList Schema */}
       <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
+        {JSON.stringify(breadcrumbSchema)}
       </script>
+
+      {/* HowTo Schema */}
+      {howToSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(howToSchema)}
+        </script>
+      )}
+
+      {/* FAQ Schema */}
+      {Array.isArray(blog.schemafaqs) && blog.schemafaqs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
     </Head>
   );
 };

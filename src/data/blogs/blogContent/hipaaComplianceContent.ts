@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const hipaaComplianceContent: BlogContent = {
-  intro: "Ensuring HIPAA compliance is crucial for healthcare providers, especially when using telemedicine platforms. HIPAA (Health Insurance Portability and Accountability Act) sets the standard for protecting sensitive patient data. Here are best practices for healthcare providers to ensure they are HIPAA compliant.",
+  intro: "Ensuring HIPAA compliance is crucial for healthcare providers, especially when using telemedicine platforms. HIPAA (Health Insurance Portability and Accountability Act) sets the standard for protecting sensitive patient data. For clinics evaluating whether their current or prospective platform meets these requirements, it helps to understand what <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-compliant healthcare</a> infrastructure looks like in practice. Here are best practices for healthcare providers to ensure they are HIPAA compliant.",
 
   sections: [
     {
@@ -22,7 +22,7 @@ export const hipaaComplianceContent: BlogContent = {
     {
       id: 'obtain-business-associate-agreements-baas',
       title: "4. Obtain Business Associate Agreements (BAAs)",
-      content: "If you use third-party vendors for your telemedicine platform, ensure that you have Business Associate Agreements (BAAs) in place. BAAs are contracts that outline the responsibilities of the vendor in protecting patient data. BAAs are essential for ensuring that your vendors are also HIPAA compliant."
+      content: "If you use third-party vendors for your telemedicine platform, ensure that you have Business Associate Agreements (BAAs) in place. BAAs are contracts that outline the responsibilities of the vendor in protecting patient data. BAAs are essential for ensuring that your vendors are also HIPAA compliant. When selecting a <a href='/solutions/white-label-telemedicine/'>telemedicine platform</a>, confirm that the vendor will sign a BAA as part of the agreement."
     },
     {
       id: 'develop-a-privacy-policy',
@@ -36,5 +36,5 @@ export const hipaaComplianceContent: BlogContent = {
     }
   ],
 
-  conclusion: "Ensuring HIPAA compliance is essential for healthcare providers using telemedicine platforms. By conducting a risk assessment, implementing security measures, training your staff, obtaining BAAs, developing a privacy policy, and monitoring your systems, you can protect patient data and maintain compliance with HIPAA regulations."
+  conclusion: "Ensuring HIPAA compliance is essential for healthcare providers using telemedicine platforms. By conducting a risk assessment, implementing security measures, training your staff, obtaining BAAs, developing a privacy policy, and monitoring your systems, you can protect patient data and maintain compliance with HIPAA regulations. For a deeper look at how a telemedicine platform can be architected to support these requirements, see the guide to <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-compliant healthcare</a> infrastructure. Staff training on the platform itself is equally important — the <a href='/blogs/virtual-care-staff-training-guide/'>virtual care staff training guide</a> covers how to prepare your team for compliant virtual care delivery."
 };

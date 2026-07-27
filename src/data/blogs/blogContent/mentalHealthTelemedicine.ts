@@ -24,7 +24,7 @@ export const mentalHealthTelemedicineContent: BlogContent = {
       title: 'The Future of Online Mental Healthcare',
       content: "Looking ahead, the future of online mental healthcare is bright with rapid technological advancements. Innovations such as artificial intelligence and virtual reality are set to enhance virtual therapy even further. AI-powered tools can analyze patient data to provide personalized treatment recommendations, while virtual reality offers immersive environments that help individuals confront fears and practice new coping strategies safely. This blend of technology and compassionate care is redefining how mental health services are delivered, ensuring that quality support is accessible to everyone, everywhere."
     }
-  ]
+  ],
 
-  // No `conclusion` — blog #10 doesn't have one. Optional field, simply omitted.
+  conclusion: "Telemedicine is removing some of the most stubborn barriers to mental health care — distance, stigma, scheduling friction, and the discomfort of visiting a clinic in person. By making it easier for people to start and sustain mental health support, virtual care is not replacing the therapeutic relationship; it is making that relationship more accessible to those who previously had no practical path to it.\n\nFor clinics, hospitals, and healthcare organisations looking to extend their mental health services, a secure and purpose-built virtual care platform is the foundation. The technology itself is only as effective as the clinical team using it, but the right platform removes the logistical obstacles that have historically kept too many people from receiving the support they need."
 };

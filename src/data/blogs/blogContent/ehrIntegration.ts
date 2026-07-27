@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const ehrIntegrationContent: BlogContent = {
-  intro: "Integrating Electronic Health Record (EHR) or Electronic Medical Record (EMR) systems with telemedicine platforms is essential for modern healthcare practices. This integration streamlines workflows, enhances data accuracy, and improves patient care. Here’s what you need to know about EHR/EMR integration with telemedicine platforms.",
+  intro: "Integrating Electronic Health Record (EHR) or Electronic Medical Record (EMR) systems with <a href=’/solutions/white-label-telemedicine/’>telemedicine platforms</a> is essential for modern healthcare practices. This integration streamlines workflows, enhances data accuracy, and improves patient care. This overview covers the core benefits of EHR/EMR integration — for a deeper technical guide covering specific vendors, HL7 FHIR standards, and US regulatory requirements, see the <a href=’/blogs/ehr-emr-integration-telemedicine-guide/’>detailed EHR/EMR integration guide for telemedicine platforms</a>.",
 
   sections: [
     {
@@ -22,7 +22,7 @@ export const ehrIntegrationContent: BlogContent = {
     {
       id: 'regulatory-compliance',
       title: "4. Regulatory Compliance",
-      content: "EHR/EMR integration helps healthcare providers comply with regulatory requirements, such as HIPAA. By ensuring that patient data is secure and protected, integration reduces the risk of data breaches and legal issues. Regulatory compliance is essential for maintaining patient trust and avoiding penalties."
+      content: "EHR/EMR integration helps healthcare providers comply with regulatory requirements, such as HIPAA. By ensuring that patient data is secure and protected, integration reduces the risk of data breaches and legal issues. Healthcare organizations should also ensure the telemedicine platform itself follows <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-compliant data handling</a> practices throughout the care workflow. Regulatory compliance is essential for maintaining patient trust and avoiding penalties."
     },
     {
       id: 'enhanced-patient-engagement',
@@ -31,5 +31,5 @@ export const ehrIntegrationContent: BlogContent = {
     }
   ],
 
-  conclusion: "Integrating EHR/EMR systems with telemedicine platforms is essential for modern healthcare practices. By streamlining workflows, enhancing data accuracy, improving patient care, ensuring regulatory compliance, and enhancing patient engagement, integration can transform the way healthcare is delivered."
+  conclusion: "Integrating EHR/EMR systems with telemedicine platforms is essential for modern healthcare practices. By streamlining workflows, enhancing data accuracy, improving patient care, ensuring regulatory compliance, and enhancing patient engagement, integration can transform the way healthcare is delivered. Clinics evaluating their options should review the <a href='/solutions/virtual-care-features/'>core virtual care features</a> that depend on EHR connectivity, and explore the <a href='/blogs/ehr-emr-integration-telemedicine-guide/'>technical integration guide</a> for a detailed look at implementation steps, standards, and vendor considerations."
 };

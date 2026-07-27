@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const aiTelemedicineContent: BlogContent = {
-  intro: "The integration of artificial intelligence is transforming the healthcare landscape, ushering in a new era for telemedicine and AI-powered healthcare. With rapid technological advances driving innovation, DocGenie stands at the forefront as an AI-powered telemedicine platform that empowers doctors to deliver high-quality virtual care solutions from anywhere. This evolution not only enhances patient care but also streamlines medical processes for greater efficiency.",
+  intro: "The integration of artificial intelligence is transforming the healthcare landscape, ushering in a new era for telemedicine and AI-powered healthcare. With rapid technological advances driving innovation, DocGenie stands at the forefront as an <a href='/solutions/ai-capabilities/'>AI-powered telemedicine platform</a> that empowers doctors to deliver high-quality virtual care solutions from anywhere. This evolution not only enhances patient care but also streamlines medical processes for greater efficiency.",
 
   sections: [
     {
@@ -31,5 +31,5 @@ export const aiTelemedicineContent: BlogContent = {
     }
   ],
 
-  conclusion: "For healthcare providers looking to enhance their capabilities and improve patient care, AI-powered telemedicine offers transformative solutions. These technologies help clinics diagnose more accurately, engage patients more effectively, reduce administrative burdens, and deliver more personalized care.\n\nAt DocGenie Global, we provide cutting-edge AI-powered virtual care solutions designed to meet the evolving needs of modern healthcare. Our platform empowers clinics to deliver exceptional care today while preparing for the technological advancements of tomorrow."
+  conclusion: "For healthcare providers looking to enhance their capabilities and improve patient care, AI-powered telemedicine offers transformative solutions. These technologies help clinics diagnose more accurately, engage patients more effectively, reduce administrative burdens, and deliver more personalized care.\n\nAt DocGenie Global, we provide cutting-edge <a href='/solutions/ai-capabilities/'>AI-powered virtual care solutions</a> designed to meet the evolving needs of modern healthcare. Our <a href='/solutions/white-label-telemedicine/'>white-label telemedicine platform</a> empowers clinics to deliver exceptional care today while preparing for the technological advancements of tomorrow."
 };
