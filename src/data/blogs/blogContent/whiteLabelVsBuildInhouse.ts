@@ -59,7 +59,7 @@ With a white label platform, US healthcare organisations get:
     {
       id: 'the-white-label-advantage',
       title: "The White Label Advantage for US Providers",
-      content: "The US healthcare market moves fast. Patient expectations for digital care experiences have shifted significantly. A white label platform lets you enter the virtual care market under your own brand while your competitors are still writing software specifications. DocGenie Global's white label telemedicine platform is designed for US healthcare providers who want a branded, HIPAA-aligned virtual care experience without the cost, complexity, and time of in-house development."
+      content: "The US healthcare market moves fast. Patient expectations for digital care experiences have shifted significantly. A white label platform lets you enter the virtual care market under your own brand while your competitors are still writing software specifications. <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>DocGenie Global's white label telemedicine platform</a> is designed for US healthcare providers who want a branded, <a href='https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare'>HIPAA-aligned</a> virtual care experience without the cost, complexity, and time of in-house development. See our step-by-step guide: <a href='https://www.docgenieglobal.com/blogs/how-to-launch-white-label-telemedicine-platform/'>How to Launch a White Label Telemedicine Platform</a>."
     }
   ],
 

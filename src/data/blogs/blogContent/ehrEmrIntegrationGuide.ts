@@ -56,5 +56,5 @@ Integration depth varies:
     }
   ],
 
-  conclusion: "EHR and EMR integration is what turns a telemedicine platform from a standalone video tool into a genuine extension of your clinical workflow. The providers who get the most value from white label telemedicine are those who define their integration requirements clearly upfront, ask the right questions of their vendor, and plan for ongoing maintenance — not just the initial go-live."
+  conclusion: "<a href='https://www.docgenieglobal.com/blogs/ehr-emr-integration-telemedicine-guide/'>EHR and EMR integration</a> is what turns a telemedicine platform from a standalone video tool into a genuine extension of your clinical workflow. The providers who get the most value from <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>white label telemedicine</a> are those who define their integration requirements clearly upfront, ask the right questions of their vendor, and plan for ongoing maintenance — not just the initial go-live. If you are evaluating platforms, see our guide on <a href='https://www.docgenieglobal.com/blogs/white-label-telemedicine-platform-features/'>5 Key Features to Look For in a White Label Telemedicine Platform</a> for a broader evaluation framework."
 };

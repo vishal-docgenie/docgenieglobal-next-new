@@ -66,5 +66,5 @@ export const whiteLabelSpecialtyCareContent: BlogContent = {
     }
   ],
 
-  conclusion: "The best white label telemedicine platform for specialty care is one that can be configured to fit your clinical model — not one that forces your clinical model to fit the platform. DocGenie Global's white label platform is designed to support a range of US specialty care workflows, from single-specialty practices to multi-specialty groups, with the branding, integration, and workflow flexibility that specialty virtual care requires."
+  conclusion: "The best <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>white label telemedicine platform</a> for specialty care is one that can be configured to fit your clinical model — not one that forces your clinical model to fit the platform. <a href='https://www.docgenieglobal.com/'>DocGenie Global's</a> white label platform is designed to support a range of US specialty care workflows, from single-specialty practices to multi-specialty groups, with the branding, integration, and workflow flexibility that specialty virtual care requires. For compliance obligations relevant to specialty telemedicine, see <a href='https://www.docgenieglobal.com/blogs/hipaa-compliance-telemedicine-us-healthcare/'>HIPAA Compliance for Telemedicine Platforms</a>."
 };

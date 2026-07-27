@@ -51,7 +51,7 @@ When evaluating a telemedicine vendor, ask specifically how their platform addre
     {
       id: 'docgenie-and-hipaa',
       title: "DocGenie Global and HIPAA Alignment",
-      content: "DocGenie Global is designed to support HIPAA-aligned virtual care workflows for US healthcare providers, with privacy-focused architecture, role-based access controls, secure data handling, and BAA availability. Final HIPAA compliance depends on your organisation's implementation, processes, and configuration — as it does with any platform."
+      content: "<a href='https://www.docgenieglobal.com/'>DocGenie Global</a> is designed to support <a href='https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare'>HIPAA-aligned virtual care workflows</a> for US healthcare providers, with privacy-focused architecture, role-based access controls, secure data handling, and BAA availability. Final HIPAA compliance depends on your organisation's implementation, processes, and configuration — as it does with any platform. For a broader look at HIPAA best practices in telemedicine, see our guide on <a href='https://www.docgenieglobal.com/blogs/hipaa-compliance-best-practices-healthcare-providers/'>HIPAA Compliance Best Practices for Healthcare Providers</a>."
     }
   ],
 
