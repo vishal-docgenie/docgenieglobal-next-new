@@ -83,5 +83,5 @@ export const telemedicineBrandingPatientTrustContent: BlogContent = {
     }
   ],
 
-  conclusion: "Telemedicine branding is not a cosmetic decision — it is a patient experience decision with measurable downstream effects on adoption, retention, and satisfaction. The providers who treat <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>branded telemedicine</a> as a trust-building tool, rather than a technology purchase, are the ones who see the strongest patient engagement with their virtual care programmes. See also: <a href='https://www.docgenieglobal.com/blogs/patient-retention-branded-telemedicine/'>Patient Retention in Virtual Care</a> for a deeper look at how branding affects long-term patient relationships."
+  conclusion: "Telemedicine branding is not a cosmetic decision — it is a patient experience decision with measurable downstream effects on adoption, retention, and satisfaction. The providers who treat <a href='/solutions/white-label-telemedicine/'>branded telemedicine</a> as a trust-building tool, rather than a technology purchase, are the ones who see the strongest patient engagement with their virtual care programmes. See also: <a href='/blogs/patient-retention-branded-telemedicine/'>Patient Retention in Virtual Care</a> for a deeper look at how branding affects long-term patient relationships."
 };

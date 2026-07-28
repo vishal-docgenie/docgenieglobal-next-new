@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const ehrIntegrationContent: BlogContent = {
-  intro: "Integrating Electronic Health Record (EHR) or Electronic Medical Record (EMR) systems with <a href=’/solutions/white-label-telemedicine/’>telemedicine platforms</a> is essential for modern healthcare practices. This integration streamlines workflows, enhances data accuracy, and improves patient care. This overview covers the core benefits of EHR/EMR integration — for a deeper technical guide covering specific vendors, HL7 FHIR standards, and US regulatory requirements, see the <a href=’/blogs/ehr-emr-integration-telemedicine-guide/’>detailed EHR/EMR integration guide for telemedicine platforms</a>.",
+  intro: "Integrating Electronic Health Record (EHR) or Electronic Medical Record (EMR) systems with <a href='/solutions/white-label-telemedicine/'>telemedicine platforms</a> is essential for modern healthcare practices. This integration streamlines workflows, enhances data accuracy, and improves patient care. This overview covers the core benefits of EHR/EMR integration — for a deeper technical guide covering specific vendors, HL7 FHIR standards, and US regulatory requirements, see the <a href='/blogs/ehr-emr-integration-telemedicine-guide/'>detailed EHR/EMR integration guide for telemedicine platforms</a>.",
 
   sections: [
     {

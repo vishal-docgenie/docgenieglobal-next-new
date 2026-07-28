@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const telemedicineFeaturesContent: BlogContent = {
-  intro: "White-label telemedicine platforms range from basic video consultation tools to end-to-end virtual care systems that manage the complete patient journey. For healthcare providers evaluating their options, the difference between these categories is significant — in clinical capabilities, security architecture, and the operational depth they provide.\n\nChoosing the wrong platform means discovering functional gaps during implementation rather than during vendor evaluation. A platform that handles video calls but not documentation, or one that supports scheduling but not e-prescriptions, creates operational friction that compounds with every patient interaction.\n\nHere are the five most important features to evaluate when selecting a <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>white-label telemedicine platform</a> for your clinic, hospital, or healthcare organization.",
+  intro: "White-label telemedicine platforms range from basic video consultation tools to end-to-end virtual care systems that manage the complete patient journey. For healthcare providers evaluating their options, the difference between these categories is significant — in clinical capabilities, security architecture, and the operational depth they provide.\n\nChoosing the wrong platform means discovering functional gaps during implementation rather than during vendor evaluation. A platform that handles video calls but not documentation, or one that supports scheduling but not e-prescriptions, creates operational friction that compounds with every patient interaction.\n\nHere are the five most important features to evaluate when selecting a <a href='/solutions/white-label-telemedicine/'>white-label telemedicine platform</a> for your clinic, hospital, or healthcare organization.",
 
   sections: [
     {
@@ -21,7 +21,7 @@ End-to-end coverage means the platform handles:
 * Post-consultation follow-up and patient communication
 * Admin dashboards with reporting and audit visibility
 
-When these functions are integrated in a single <a href='https://www.docgenieglobal.com/solutions/virtual-care-features'>virtual care platform</a>, clinical staff work from one system rather than switching between disconnected tools. Data flows without manual re-entry, and patients experience a consistent journey from booking through follow-up.
+When these functions are integrated in a single <a href='/solutions/virtual-care-features/'>virtual care platform</a>, clinical staff work from one system rather than switching between disconnected tools. Data flows without manual re-entry, and patients experience a consistent journey from booking through follow-up.
 
 Ask vendors to demonstrate the full patient journey — from first registration through a complete consultation, prescription, and follow-up interaction — before evaluating individual features in isolation. Platforms that excel at individual components but fail to connect them into a coherent workflow will create operational problems that worsen at scale.
 
@@ -40,7 +40,7 @@ When evaluating a platform's security posture, look beyond the marketing claims 
 * What is the vendor's security certification status? Look for recognized certifications — SOC 2 Type II, ISO/IEC 27001, or equivalent — that demonstrate third-party verification of security controls rather than self-attestation.
 * What is the breach notification protocol? Under HIPAA, breaches involving PHI must be reported to HHS and affected individuals within defined timelines. Understand the vendor's obligations and yours.
 
-A <a href='https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare'>HIPAA-compliant telemedicine platform</a> builds security into the architecture, not as an afterthought. Patient trust in virtual care depends on confidence that their health information is protected at every point in the digital care journey.`
+A <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-compliant telemedicine platform</a> builds security into the architecture, not as an afterthought. Patient trust in virtual care depends on confidence that their health information is protected at every point in the digital care journey.`
     },
     {
       id: 'white-label-branding-depth',
@@ -72,7 +72,7 @@ Before accepting integration claims at face value, ask vendors to specify:
 * **Who owns integration maintenance post-launch?** EHR vendors release software updates that can break API connections. Clarify in writing whether the telemedicine vendor or your IT team is responsible for monitoring and repairing the integration when updates cause issues. This is a common source of post-launch friction.
 * **How are integrations scoped and priced?** Some vendors include common EHR integrations in the platform license; others charge significant additional fees. Get integration scope and pricing in writing before signing.
 
-For a deeper guide to EHR integration considerations, see our article on <a href='https://www.docgenieglobal.com/blogs/ehr-emr-integration-telemedicine/'>EHR and EMR integration for telemedicine platforms</a>.`
+For a deeper guide to EHR integration considerations, see our article on <a href='/blogs/ehr-emr-integration-telemedicine/'>EHR and EMR integration for telemedicine platforms</a>.`
     },
     {
       id: 'scalability-and-api-first-architecture',
@@ -98,5 +98,5 @@ When evaluating vendors, ask for their API documentation and request reference c
     }
   ],
 
-  conclusion: "Selecting a white-label telemedicine platform is a long-term decision that shapes how your patients experience virtual care and how efficiently your clinical and administrative teams operate. Platforms that cover the full care journey, meet serious security obligations, deliver genuine brand depth, integrate cleanly with existing systems, and scale with your growth will serve you far better than tools that look impressive in a demo but reveal gaps in production.\n\n<a href='https://www.docgenieglobal.com/'>DocGenie Global</a> provides a <a href='https://www.docgenieglobal.com/solutions/white-label-telemedicine'>white-label telemedicine platform</a> built around all five of these criteria — end-to-end clinical workflows, <a href='https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare'>HIPAA-aligned security</a>, full brand customization, EHR integration support, and modular API-first architecture. <a href='https://www.docgenieglobal.com/contact'>Talk to our team</a> to see how it maps to your organization's requirements."
+  conclusion: "Selecting a white-label telemedicine platform is a long-term decision that shapes how your patients experience virtual care and how efficiently your clinical and administrative teams operate. Platforms that cover the full care journey, meet serious security obligations, deliver genuine brand depth, integrate cleanly with existing systems, and scale with your growth will serve you far better than tools that look impressive in a demo but reveal gaps in production.\n\n<a href='/'>DocGenie Global</a> provides a <a href='/solutions/white-label-telemedicine/'>white-label telemedicine platform</a> built around all five of these criteria — end-to-end clinical workflows, <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-aligned security</a>, full brand customization, EHR integration support, and modular API-first architecture. <a href='/contact/'>Talk to our team</a> to see how it maps to your organization's requirements."
 };

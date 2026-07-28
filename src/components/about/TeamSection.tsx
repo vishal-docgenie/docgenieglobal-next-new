@@ -19,7 +19,7 @@ const TeamSection = () => {
     }, 
     {
       name: "Aditya Vijay",
-      role: "COO",
+      role: "Co-Founder & COO",
       image: "/lovable-uploads/ccbcf5c8-c4bb-45ba-b7dc-2224a8325887.png",
       linkedin: "https://www.linkedin.com/in/adityavijay94/"
     }, 
