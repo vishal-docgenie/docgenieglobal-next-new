@@ -2,6 +2,7 @@ import React from 'react';
 import { CalendarIcon, Clock } from 'lucide-react';
 import { BlogPost } from '@/data/blogs/types';
 import HeaderShare from './HeaderShare';
+import Link from 'next/link';
 
 interface BlogHeaderProps {
   blog: BlogPost;
@@ -39,11 +40,36 @@ const BlogHeader = ({ blog }: BlogHeaderProps) => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug tracking-tight text-left">
             {blog.title}
           </h1>
-          
+
+          {blog.author && (
+            <div className="flex items-center gap-3 mb-5 pb-5 border-b border-gray-100">
+              <img
+                src={blog.author.image}
+                alt={blog.author.name}
+                className="w-11 h-11 rounded-full object-cover flex-shrink-0"
+              />
+              <div className="text-left">
+                {blog.author.linkedin ? (
+                  <Link
+                    href={blog.author.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-brand-blue hover:underline"
+                  >
+                    {blog.author.name}
+                  </Link>
+                ) : (
+                  <span className="text-sm font-semibold text-gray-900">{blog.author.name}</span>
+                )}
+                <p className="text-xs text-gray-500">{blog.author.title} &middot; {blog.author.credentials}</p>
+              </div>
+            </div>
+          )}
+
           <div className="flex flex-wrap gap-2 mb-3">
             {/* {blog.tags.map((tag, index) => (
-              <span 
-                key={index} 
+              <span
+                key={index}
                 className="text-xs px-2 py-1 bg-brand-blue text-white rounded-full"
               >
                 {tag}

@@ -31,6 +31,14 @@ export interface BlogCustomCta {
   body: string;
 }
 
+export interface BlogAuthor {
+  name: string;
+  title: string;
+  credentials: string;
+  image: string;
+  linkedin?: string;
+}
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -39,6 +47,7 @@ export interface BlogPost {
   date: string;
   dateModified?: string;  // ISO date string; falls back to date if omitted
   readTime: string;
+  author?: BlogAuthor;
   image: string;
   imageAlt?: string;
   category: string;
