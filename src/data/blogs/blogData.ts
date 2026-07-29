@@ -53,50 +53,50 @@ export const blogData: BlogPost[] = [
     featured: true,
     faqs: [
       {
-        question: "What are the main benefits of telemedicine for patients?",
-        answer: "Telemedicine offers patients convenient access to healthcare from anywhere, reduced travel time and costs, decreased exposure to illnesses in waiting rooms, and often shorter wait times for appointments."
+        question: "What is a white-label telemedicine platform?",
+        answer: "A white-label telemedicine platform is a fully built virtual care solution that a clinic or hospital can brand and deploy under its own name. Rather than building technology from scratch, healthcare providers license the platform and customise it with their logo, colours, and domain — so patients experience it as the provider's own digital clinic."
       },
       {
-        question: "How is AI changing the telemedicine landscape?",
-        answer: "AI is enhancing telemedicine through automated scheduling, symptom checkers, clinical decision support tools, remote patient monitoring analysis, and predictive analytics to identify patients who may need intervention."
+        question: "What are the key benefits of a white-label telemedicine solution for clinics?",
+        answer: "The main benefits include stronger brand recognition, a consistent patient experience across digital touchpoints, seamless integration with existing EHR and billing systems, improved patient engagement and retention, new revenue streams from virtual consultations, and greater control over data and platform configuration compared to generic third-party apps."
       },
       {
-        question: "What security measures are important for telemedicine platforms?",
-        answer: "Critical security measures include end-to-end encryption, HIPAA compliance, secure authentication methods, regular security audits, and comprehensive staff training on data protection protocols."
+        question: "How does a white-label telemedicine platform improve patient retention?",
+        answer: "When patients interact with a branded platform — one that carries the clinic's logo, domain, and communication style — they stay connected to the provider rather than a third-party app. This continuity increases rebooking rates, reduces no-shows, and builds the kind of long-term trust that drives patient loyalty."
       },
       {
-        question: "Can telemedicine be as effective as in-person visits?",
-        answer: "For many conditions, especially follow-ups and chronic disease management, telemedicine has proven to be as effective as in-person care. However, some examinations and procedures still require physical visits."
+        question: "Can a white-label telemedicine platform integrate with our existing EHR system?",
+        answer: "Most purpose-built white-label telemedicine platforms support integration with widely used EHR and EMR systems, allowing patient data, appointment records, and clinical notes to flow between systems without duplicate entry. The depth of integration varies by platform, so it is important to confirm specific EHR compatibility before selecting a vendor."
       }
     ],
     schemafaqs: [
       {
         ["@type"]: "Question",
-        "name": "What are the main benefits of telemedicine for patients?",
+        "name": "What is a white-label telemedicine platform?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "Telemedicine offers patients convenient access to healthcare from anywhere, reduced travel time and costs, decreased exposure to illnesses in waiting rooms, and often shorter wait times for appointments."
+          "text": "A white-label telemedicine platform is a fully built virtual care solution that a clinic or hospital can brand and deploy under its own name. Rather than building technology from scratch, healthcare providers license the platform and customise it with their logo, colours, and domain — so patients experience it as the provider's own digital clinic."
         }
       },{
         ["@type"]: "Question",
-        "name": "How is AI changing the telemedicine landscape?",
+        "name": "What are the key benefits of a white-label telemedicine solution for clinics?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "AI is enhancing telemedicine through automated scheduling, symptom checkers, clinical decision support tools, remote patient monitoring analysis, and predictive analytics to identify patients who may need intervention."
+          "text": "The main benefits include stronger brand recognition, a consistent patient experience across digital touchpoints, seamless integration with existing EHR and billing systems, improved patient engagement and retention, new revenue streams from virtual consultations, and greater control over data and platform configuration compared to generic third-party apps."
         }
       },{
         ["@type"]: "Question",
-        "name": "What security measures are important for telemedicine platforms?",
+        "name": "How does a white-label telemedicine platform improve patient retention?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "Critical security measures include end-to-end encryption, HIPAA compliance, secure authentication methods, regular security audits, and comprehensive staff training on data protection protocols."
+          "text": "When patients interact with a branded platform — one that carries the clinic's logo, domain, and communication style — they stay connected to the provider rather than a third-party app. This continuity increases rebooking rates, reduces no-shows, and builds the kind of long-term trust that drives patient loyalty."
         }
       },{
         ["@type"]: "Question",
-        "name": "Can telemedicine be as effective as in-person visits?",
+        "name": "Can a white-label telemedicine platform integrate with our existing EHR system?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "For many conditions, especially follow-ups and chronic disease management, telemedicine has proven to be as effective as in-person care. However, some examinations and procedures still require physical visits."
+          "text": "Most purpose-built white-label telemedicine platforms support integration with widely used EHR and EMR systems, allowing patient data, appointment records, and clinical notes to flow between systems without duplicate entry. The depth of integration varies by platform, so it is important to confirm specific EHR compatibility before selecting a vendor."
         }
       }
     ]
