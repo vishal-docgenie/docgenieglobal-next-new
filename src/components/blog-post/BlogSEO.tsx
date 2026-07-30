@@ -57,10 +57,18 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       "url": blog.image,
       "caption": blog.imageAlt || `Image related to ${blog.title}`
     },
-    "author": {
-      "@type": "Organization",
-      "name": "DocGenie Global"
-    },
+    "author": blog.author
+      ? {
+          "@type": "Person",
+          "name": blog.author.name,
+          "jobTitle": blog.author.title,
+          "description": blog.author.credentials,
+          ...(blog.author.linkedin ? { "sameAs": blog.author.linkedin } : {})
+        }
+      : {
+          "@type": "Organization",
+          "name": "DocGenie Global"
+        },
     "publisher": {
       "@type": "Organization",
       "name": "DocGenie Global",

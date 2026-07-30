@@ -49,7 +49,7 @@ Before selecting a platform, verify that the scheduling system supports your spe
     {
       id: 'patient-communication-and-follow-up-automation',
       title: "3. Patient Communication and Follow-Up Automation",
-      content: `Communication between patients and their care team does not begin and end with the consultation. In well-managed virtual care practices, automated and structured communication extends across the entire care episode — from the first booking reminder through post-consultation follow-up, prescription updates, and recall for chronic care patients.
+      content: `Patient communication and follow-up automation means the virtual care platform handles reminders, post-visit summaries, prescription notifications, and recall messages automatically — so clinical and administrative staff are not managing these tasks manually for every patient. In well-managed virtual care practices, structured communication extends across the entire care episode: from the first booking reminder through post-consultation follow-up, prescription updates, and recall for chronic care patients.
 
 A patient management system that handles communication well should support:
 

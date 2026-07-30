@@ -1,4 +1,4 @@
-import { BlogPost } from '@/data/blogs/types';
+import { BlogPost, BlogAuthor } from '@/data/blogs/types';
 import {
   whitelabelTelemedicineContent,
   staffTrainingContent,
@@ -29,6 +29,14 @@ import {
   whiteLabelSpecialtyCareContent
 } from './blogContent';
 
+const DR_RACHNA: BlogAuthor = {
+  name: 'Dr. Rachna Kucheria',
+  title: 'Founder & Medical Director, DocGenie Global',
+  credentials: 'MD (Family Medicine) · USC California · 30+ years of experience',
+  image: '/lovable-uploads/6e901f07-75f1-463f-a9e0-6e35158e6d01.png',
+  linkedin: 'https://www.linkedin.com/in/dr-rachna-kucheria-76b8b46/',
+};
+
 export const blogData: BlogPost[] = [
   {
     id: '1',
@@ -37,57 +45,59 @@ export const blogData: BlogPost[] = [
     content: whitelabelTelemedicineContent,
     date: 'August 15, 2025',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
     imageAlt: 'Doctor using tablet computer during a virtual telemedicine consultation with a patient, showcasing white-label telehealth software',
     category: 'Telemedicine',
     tags: ['telemedicine', 'white-label', 'healthcare', 'virtual care', 'branding'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
-        question: "What are the main benefits of telemedicine for patients?",
-        answer: "Telemedicine offers patients convenient access to healthcare from anywhere, reduced travel time and costs, decreased exposure to illnesses in waiting rooms, and often shorter wait times for appointments."
+        question: "What is a white-label telemedicine platform?",
+        answer: "A white-label telemedicine platform is a fully built virtual care solution that a clinic or hospital can brand and deploy under its own name. Rather than building technology from scratch, healthcare providers license the platform and customise it with their logo, colours, and domain — so patients experience it as the provider's own digital clinic."
       },
       {
-        question: "How is AI changing the telemedicine landscape?",
-        answer: "AI is enhancing telemedicine through automated scheduling, symptom checkers, clinical decision support tools, remote patient monitoring analysis, and predictive analytics to identify patients who may need intervention."
+        question: "What are the key benefits of a white-label telemedicine solution for clinics?",
+        answer: "The main benefits include stronger brand recognition, a consistent patient experience across digital touchpoints, seamless integration with existing EHR and billing systems, improved patient engagement and retention, new revenue streams from virtual consultations, and greater control over data and platform configuration compared to generic third-party apps."
       },
       {
-        question: "What security measures are important for telemedicine platforms?",
-        answer: "Critical security measures include end-to-end encryption, HIPAA compliance, secure authentication methods, regular security audits, and comprehensive staff training on data protection protocols."
+        question: "How does a white-label telemedicine platform improve patient retention?",
+        answer: "When patients interact with a branded platform — one that carries the clinic's logo, domain, and communication style — they stay connected to the provider rather than a third-party app. This continuity increases rebooking rates, reduces no-shows, and builds the kind of long-term trust that drives patient loyalty."
       },
       {
-        question: "Can telemedicine be as effective as in-person visits?",
-        answer: "For many conditions, especially follow-ups and chronic disease management, telemedicine has proven to be as effective as in-person care. However, some examinations and procedures still require physical visits."
+        question: "Can a white-label telemedicine platform integrate with our existing EHR system?",
+        answer: "Most purpose-built white-label telemedicine platforms support integration with widely used EHR and EMR systems, allowing patient data, appointment records, and clinical notes to flow between systems without duplicate entry. The depth of integration varies by platform, so it is important to confirm specific EHR compatibility before selecting a vendor."
       }
     ],
     schemafaqs: [
       {
         ["@type"]: "Question",
-        "name": "What are the main benefits of telemedicine for patients?",
+        "name": "What is a white-label telemedicine platform?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "Telemedicine offers patients convenient access to healthcare from anywhere, reduced travel time and costs, decreased exposure to illnesses in waiting rooms, and often shorter wait times for appointments."
+          "text": "A white-label telemedicine platform is a fully built virtual care solution that a clinic or hospital can brand and deploy under its own name. Rather than building technology from scratch, healthcare providers license the platform and customise it with their logo, colours, and domain — so patients experience it as the provider's own digital clinic."
         }
       },{
         ["@type"]: "Question",
-        "name": "How is AI changing the telemedicine landscape?",
+        "name": "What are the key benefits of a white-label telemedicine solution for clinics?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "AI is enhancing telemedicine through automated scheduling, symptom checkers, clinical decision support tools, remote patient monitoring analysis, and predictive analytics to identify patients who may need intervention."
+          "text": "The main benefits include stronger brand recognition, a consistent patient experience across digital touchpoints, seamless integration with existing EHR and billing systems, improved patient engagement and retention, new revenue streams from virtual consultations, and greater control over data and platform configuration compared to generic third-party apps."
         }
       },{
         ["@type"]: "Question",
-        "name": "What security measures are important for telemedicine platforms?",
+        "name": "How does a white-label telemedicine platform improve patient retention?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "Critical security measures include end-to-end encryption, HIPAA compliance, secure authentication methods, regular security audits, and comprehensive staff training on data protection protocols."
+          "text": "When patients interact with a branded platform — one that carries the clinic's logo, domain, and communication style — they stay connected to the provider rather than a third-party app. This continuity increases rebooking rates, reduces no-shows, and builds the kind of long-term trust that drives patient loyalty."
         }
       },{
         ["@type"]: "Question",
-        "name": "Can telemedicine be as effective as in-person visits?",
+        "name": "Can a white-label telemedicine platform integrate with our existing EHR system?",
         "acceptedAnswer": {
           ["@type"]: "Answer",
-          "text": "For many conditions, especially follow-ups and chronic disease management, telemedicine has proven to be as effective as in-person care. However, some examinations and procedures still require physical visits."
+          "text": "Most purpose-built white-label telemedicine platforms support integration with widely used EHR and EMR systems, allowing patient data, appointment records, and clinical notes to flow between systems without duplicate entry. The depth of integration varies by platform, so it is important to confirm specific EHR compatibility before selecting a vendor."
         }
       }
     ]
@@ -107,12 +117,14 @@ export const blogData: BlogPost[] = [
       { name: 'Evaluate Training Effectiveness', text: 'Measure impact through pre- and post-training assessments, staff surveys, and patient satisfaction metrics. Use the data to refine the training programme over time.' }
     ],
     date: 'July 22, 2025',
-    readTime: '6 min', // Updated to reflect longer content
+    readTime: '6 min',
+    author: DR_RACHNA, // Updated to reflect longer content
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e',
     imageAlt: 'Healthcare professionals participating in a training session for virtual care delivery, with a trainer demonstrating telehealth software on a large screen',
     category: 'Healthcare',
     tags: ['telehealth', 'staff training', 'virtual care', 'healthcare', 'professional development'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "Why is staff training essential for virtual care delivery?",
@@ -181,11 +193,13 @@ export const blogData: BlogPost[] = [
     content: clinicGrowthContent,
     date: 'June 10, 2025',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81',
     imageAlt: 'Healthcare provider reviewing virtual care platform analytics on a computer screen showing patient growth metrics and revenue charts',
     category: 'Patient Care',
     tags: ['technology', 'patient care', 'telehealth', 'virtual care', 'clinic growth'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "How can a virtual care platform help my clinic reach more patients?",
@@ -258,12 +272,13 @@ export const blogData: BlogPost[] = [
     content: telemedicineFeaturesContent,
     date: 'May 18, 2025',
     readTime: '5 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7',
     imageAlt: 'Doctor using a tablet displaying a white-label telemedicine interface with multiple features highlighted in an organized dashboard',
     category: 'Telemedicine',
     tags: ['telemedicine', 'white-label', 'healthcare technology', 'platform features', 'digital health'],
     featured: false,
-    dateModified: 'July 27, 2026',
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What features should a white-label telemedicine platform include beyond video consultations?",
@@ -331,13 +346,14 @@ export const blogData: BlogPost[] = [
     slug: 'patient-management-system-virtual-care',
     content: patientManagementContent,
     date: 'April 25, 2025',
-    dateModified: 'July 27, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
     imageAlt: 'Healthcare professional using a digital patient management system on a computer, showing patient records and scheduling interface for virtual care',
     category: 'Healthcare',
     tags: ['patient management', 'virtual care', 'healthcare technology', 'EHR', 'telehealth'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "Why is data security and compliance important in a patient management system?",
@@ -405,13 +421,14 @@ export const blogData: BlogPost[] = [
     slug: 'ehr-emr-integration-telemedicine-guide',
     content: ehrIntegrationContent,
     date: 'March 8, 2025',
-    dateModified: 'July 27, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
     imageAlt: 'Healthcare data integration system showing EHR records and telemedicine interface connected on multiple computer screens with secure connection visualization',
     category: 'Technology',
     tags: ['EHR', 'EMR', 'telemedicine', 'healthcare technology', 'data integration'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is EHR/EMR integration with telehealth platforms?",
@@ -479,13 +496,14 @@ export const blogData: BlogPost[] = [
     slug: 'hipaa-compliance-best-practices-healthcare-providers',
     content: hipaaComplianceContent,
     date: 'February 15, 2025',
-    dateModified: 'July 27, 2026',
-    readTime: '7 min', // Updated to reflect longer content
+    readTime: '7 min',
+    author: DR_RACHNA, // Updated to reflect longer content
     image: 'https://images.unsplash.com/photo-1473091534298-04dcbce3278c',
     imageAlt: 'Medical professional reviewing HIPAA compliance guidelines on a tablet in a healthcare setting, emphasizing data security and patient privacy',
     category: 'Technology',
     tags: ['HIPAA compliance', 'data security', 'healthcare technology', 'patient privacy', 'telehealth'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What does HIPAA compliance mean for telehealth providers?",
@@ -553,13 +571,14 @@ export const blogData: BlogPost[] = [
     slug: 'telemedicine-technology-trends-2026',
     content: telemedicineTrendsContent,
     date: 'January 22, 2025',
-    dateModified: 'July 27, 2026',
-    readTime: '7 min', // Updated to reflect new content length
+    readTime: '7 min',
+    author: DR_RACHNA, // Updated to reflect new content length
     image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
     imageAlt: 'Doctor using tablet computer during a virtual telemedicine consultation with a patient, showcasing white-label telehealth software',
     category: 'Telemedicine',
     tags: ['telemedicine', 'artificial intelligence', 'virtual reality', 'IoT', 'blockchain', 'healthcare technology'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "How will AI and Machine Learning (ML) revolutionize telemedicine?",
@@ -630,13 +649,14 @@ export const blogData: BlogPost[] = [
     slug: 'harnessing-ai-in-telemedicine-revolutionizing-virtual-care',
     content: aiTelemedicineContent,
     date: 'September 5, 2025',
-    dateModified: 'July 27, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
     imageAlt: 'AI-powered telemedicine platform interface showing diagnostic tools and patient data analysis for virtual care',
     category: 'AI Healthcare',
     tags: ['artificial intelligence', 'telemedicine', 'virtual care', 'AI diagnostics', 'healthcare technology'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "How does DocGenie's AI-powered telemedicine platform improve diagnostic accuracy?",
@@ -708,13 +728,14 @@ export const blogData: BlogPost[] = [
     slug: 'how-can-telemedicine-help-expand-access-to-mental-health-care',
     content: mentalHealthTelemedicineContent,
     date: 'October 12, 2024',
-    dateModified: 'July 27, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e',
     imageAlt: 'A therapist providing online counseling via telemedicine to a patient, illustrating expanded access to mental health care',
     category: 'Mental Health',
     tags: ['mental health', 'telemedicine', 'virtual therapy', 'online therapy', 'healthcare access'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What Mental Health Conditions Can Be Treated Through Telemedicine?",
@@ -782,13 +803,14 @@ export const blogData: BlogPost[] = [
     slug: 'how-telemedicine-transforms-chronic-care-management',
     content: chronicCareContent,
     date: 'August 15, 2025',
-    dateModified: 'July 27, 2026',
     readTime: '8 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef',
     imageAlt: 'Healthcare provider monitoring chronic care patient remotely through a telemedicine platform showing vital signs and health metrics',
     category: 'Chronic Care',
     tags: ['telemedicine', 'chronic care', 'remote monitoring', 'healthcare technology', 'patient engagement'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "How does telemedicine improve access to care for chronic condition patients?",
@@ -856,13 +878,14 @@ export const blogData: BlogPost[] = [
     slug: 'comprehensive-telemedicine-platform-benefits',
     content: telemedicinePlatformContent,
     date: 'June 10, 2025',
-    dateModified: 'July 27, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d',
     imageAlt: 'Modern healthcare professional using a comprehensive telemedicine platform with multiple integrated features displayed across screens',
     category: 'Digital Health',
     tags: ['telemedicine', 'digital ecosystem', 'healthcare technology', 'AI healthcare', 'virtual care'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What makes modern telemedicine platforms different from early versions?",
@@ -929,7 +952,6 @@ export const blogData: BlogPost[] = [
     title: 'Launch a Branded Digital Clinic in 30 Days | DocGenie Global',
     slug: 'launch-branded-digital-clinic-under-30-days',
     content: launchBrandedDigitalClinicContent,
-    dateModified: 'July 27, 2026',
     howToSteps: [
       { name: 'Define Your Digital Clinic Requirements', text: 'Clarify brand requirements, clinical workflows, patient communication needs, required system integrations, and regulatory obligations before choosing a platform.' },
       { name: 'Choose the Right White-Label Telemedicine Platform', text: 'Evaluate platforms on end-to-end healthcare workflows, security certifications, healthcare-first design, and the vendor\'s implementation support model.' },
@@ -941,11 +963,13 @@ export const blogData: BlogPost[] = [
     ],
     date: 'May 07, 2026',
     readTime: '15 min',
+    author: DR_RACHNA,
     image: 'https://www.docgenieglobal.com/images/blog/launch-branded-digital-clinic-white-label-telemedicine-platform.webp',
     imageAlt: 'Doctor using a white-label telemedicine platform to launch a branded digital clinic in under 30 days',
     category: 'Digital Health',
     tags: ['white-label telemedicine platform', 'branded digital clinic', 'virtual care platform', 'telemedicine platform for clinics', 'digital clinic solution', 'virtual healthcare platform', 'HIPAA-compliant telehealth platform', 'telehealth platform for hospitals'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is a branded digital clinic?",
@@ -1025,11 +1049,13 @@ export const blogData: BlogPost[] = [
     content: secureVirtualConsultationsContent,
     date: 'May 15, 2026',
     readTime: '15 min',
+    author: DR_RACHNA,
     image: 'https://www.docgenieglobal.com/images/blog/secure-virtual-consultations-beyond-video-calls.webp',
     imageAlt: 'Doctor consulting a patient using a white-label telemedicine platform',
     category: 'Technology',
     tags: ['white-label telemedicine platform', 'branded digital clinic', 'virtual care platform', 'telemedicine platform for clinics', 'digital clinic solution', 'virtual healthcare platform', 'HIPAA-compliant telehealth platform', 'telehealth platform for hospitals'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is a secure virtual consultation?",
@@ -1109,11 +1135,13 @@ export const blogData: BlogPost[] = [
     content: keyVirtualCareTrendsContent,
     date: 'May 28, 2026',
     readTime: '10 min',
+    author: DR_RACHNA,
     image: 'https://www.docgenieglobal.com/images/blog/virtual-care-trends-2026-healthcare-leaders.webp',
     imageAlt: 'Doctor consulting a patient using a white-label telemedicine platform',
     category: 'Telemedicine',
     tags: ['white-label telemedicine platform', 'branded digital clinic', 'virtual care platform', 'telemedicine platform for clinics', 'digital clinic solution', 'virtual healthcare platform'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What are the top virtual care trends for 2026?",
@@ -1193,11 +1221,13 @@ export const blogData: BlogPost[] = [
     content: roiReadymadeVirtualCarePlatformContent,
     date: 'Jun 08, 2026',
     readTime: '15 min',
+    author: DR_RACHNA,
     image: '/images/blog/roi-ready-made-virtual-care-platform.webp',
     imageAlt: 'Graphs showing growth and text stating ROI of Ready-made virtual care with sub-text Grow revenue without new staff',
     category: 'Technology',
     tags: ['ROI of ready-made virtual care platform','ready-made virtual care platform','white-label virtual care platform','white-label telemedicine platform','virtual care ROI','telemedicine ROI','grow healthcare revenue','reduce healthcare admin workload','virtual care platform for clinics','branded virtual care platform','healthcare digital transformation'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is a ready-made virtual care platform?",
@@ -1281,11 +1311,13 @@ export const blogData: BlogPost[] = [
     content: browserNativeVirtualCareContent,
     date: 'Jun 13, 2026',
     readTime: '10 min',
+    author: DR_RACHNA,
     image: '/images/blog/browser-native-virtual-care.webp',
     imageAlt: 'a browser-based virtual care platform with secure, HIPAA-compliant access to appointments, records, and prescriptions without requiring an app download',
     category: 'Technology',
     tags: ['technology','virtual care','telehealth','helathcare technology','patient care','white-label'],
     featured: true,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is browser-native virtual care?",
@@ -1369,11 +1401,13 @@ export const blogData: BlogPost[] = [
     content: whiteLabelVsBuildInhouseContent,
     date: 'Jul 18, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: '/images/blog/white-label-telemedicine-vs-building-in-house-true-cost-comparison-for-us-healthcare-providers.webp',
     imageAlt: 'Healthcare administrator comparing white label telemedicine platform options versus in-house development costs on a laptop',
     category: 'Telemedicine',
     tags: ['white-label telemedicine', 'build vs buy', 'telemedicine cost', 'US healthcare', 'virtual care platform'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is white-label telemedicine software?",
@@ -1450,11 +1484,13 @@ export const blogData: BlogPost[] = [
     content: hipaaTelemedicineUsContent,
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/hipaa-compliance-for-telemedicine-platforms-what-us-healthcare-providers-need-to-know.webp',
     imageAlt: 'US healthcare provider reviewing HIPAA compliance documentation for telemedicine platform implementation',
     category: 'Healthcare',
     tags: ['HIPAA', 'telemedicine compliance', 'US healthcare', 'virtual care', 'healthcare regulations'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What HIPAA rules apply to telemedicine platforms?",
@@ -1529,7 +1565,6 @@ export const blogData: BlogPost[] = [
     title: 'How to Launch a White Label Telemedicine Platform: A Step-by-Step Guide for US Healthcare Providers',
     slug: 'how-to-launch-white-label-telemedicine-platform',
     content: howToLaunchWhiteLabelContent,
-    dateModified: 'July 27, 2026',
     howToSteps: [
       { name: 'Define Your Virtual Care Model', text: 'Determine the consultation types, patient segments, booking methods, and post-consultation workflows before selecting any platform.' },
       { name: 'Choose a White Label Telemedicine Vendor', text: 'Evaluate vendors against BAA availability, EHR/EMR compatibility, full branding support, implementation support model, and post-launch maintenance capabilities.' },
@@ -1540,11 +1575,13 @@ export const blogData: BlogPost[] = [
     ],
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/how-to-launch-a-white-label-telemedicine-platform-a-step-by-step-guide-for-us-healthcare-providers.webp',
     imageAlt: 'Healthcare team planning a white label telemedicine platform launch with step-by-step implementation roadmap',
     category: 'Telemedicine',
     tags: ['launch telemedicine platform', 'white-label telemedicine', 'virtual care setup', 'US healthcare', 'telemedicine implementation'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What are the first steps to launching a white-label telemedicine platform?",
@@ -1621,11 +1658,13 @@ export const blogData: BlogPost[] = [
     content: whiteLabelMentalHealthContent,
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/white-label-telemedicine-for-mental-health-practices-a-complete-guide.webp',
     imageAlt: 'Mental health therapist conducting a secure branded telemedicine consultation with a patient via white label virtual care platform',
     category: 'Healthcare',
     tags: ['mental health telemedicine', 'white-label telehealth', 'behavioural health platform', 'therapy virtual care', 'mental health virtual care'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is white-label telemedicine for mental health practices?",
@@ -1702,11 +1741,13 @@ export const blogData: BlogPost[] = [
     content: ehrEmrIntegrationGuideContent,
     date: 'Jul 18, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: '/images/blog/ehremr-integration-for-telemedicine-platforms-what-us-healthcare-providers-need-to-know.webp',
     imageAlt: 'Healthcare IT team integrating EHR and EMR systems with a white label telemedicine platform for seamless patient data flow',
     category: 'Technology',
     tags: ['EHR integration', 'EMR telemedicine', 'healthcare interoperability', 'HL7 FHIR', 'telemedicine integration'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What is the difference between EHR and EMR integration for telemedicine?",
@@ -1783,11 +1824,13 @@ export const blogData: BlogPost[] = [
     content: whiteLabelPricingGuideContent,
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/white-label-telemedicine-platform-pricing-what-us-healthcare-providers-should-expect.webp',
     imageAlt: 'Healthcare administrator reviewing white label telemedicine platform pricing options and total cost of ownership comparison',
     category: 'Telemedicine',
     tags: ['telemedicine pricing', 'white-label telemedicine cost', 'virtual care platform pricing', 'healthcare SaaS pricing', 'telemedicine ROI'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What pricing models do white-label telemedicine platforms typically use?",
@@ -1864,11 +1907,13 @@ export const blogData: BlogPost[] = [
     content: telemedicineBrandingPatientTrustContent,
     date: 'Jul 18, 2026',
     readTime: '5 min',
+    author: DR_RACHNA,
     image: '/images/blog/how-branded-telemedicine-platforms-build-more-patient-trust-than-generic-apps.webp',
     imageAlt: 'Patient engaging with a fully branded telemedicine portal showing consistent healthcare provider branding and trust signals',
     category: 'Telemedicine',
     tags: ['telemedicine branding', 'patient trust', 'white-label telehealth', 'branded virtual care', 'patient experience'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "Why does branding matter in telemedicine?",
@@ -1937,11 +1982,13 @@ export const blogData: BlogPost[] = [
     content: multiStateTelemedicineContent,
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/multi-state-telemedicine-how-white-label-platforms-support-geographic-expansion.webp',
     imageAlt: 'US healthcare organisation expanding telemedicine services across multiple states using a scalable white label virtual care platform',
     category: 'Healthcare',
     tags: ['multi-state telemedicine', 'geographic expansion', 'virtual care scaling', 'US telehealth', 'white-label telemedicine'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What medical licensing is required to practise telemedicine across US states?",
@@ -2018,11 +2065,13 @@ export const blogData: BlogPost[] = [
     content: patientRetentionVirtualCareContent,
     date: 'Jul 18, 2026',
     readTime: '6 min',
+    author: DR_RACHNA,
     image: '/images/blog/patient-retention-in-virtual-care-why-branded-telemedicine-platforms-outperform-generic-apps.webp',
     imageAlt: 'Healthcare provider reviewing patient retention metrics from a branded telemedicine platform compared to generic telehealth apps',
     category: 'Healthcare',
     tags: ['patient retention', 'branded telemedicine', 'virtual care retention', 'telehealth patient engagement', 'white-label platform'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "What patient retention metrics matter most in virtual care?",
@@ -2099,11 +2148,13 @@ export const blogData: BlogPost[] = [
     content: whiteLabelSpecialtyCareContent,
     date: 'Jul 18, 2026',
     readTime: '7 min',
+    author: DR_RACHNA,
     image: '/images/blog/white-label-telemedicine-for-specialty-care-a-guide-for-us-specialty-practices.webp',
     imageAlt: 'US specialty care physician using a white label telemedicine platform for dermatology, cardiology, and mental health virtual consultations',
     category: 'Telemedicine',
     tags: ['specialty care telemedicine', 'white-label telehealth', 'dermatology telemedicine', 'cardiology virtual care', 'mental health telehealth'],
     featured: false,
+    dateModified: 'July 30, 2026',
     faqs: [
       {
         question: "Which medical specialties are best suited to telemedicine?",

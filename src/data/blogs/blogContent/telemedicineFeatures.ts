@@ -45,7 +45,7 @@ A <a href='/solutions/hipaa-compliant-healthcare/'>HIPAA-compliant telemedicine 
     {
       id: 'white-label-branding-depth',
       title: "3. White-Label Branding Depth",
-      content: `Not all white-label branding is equal. Some platforms allow you to add your logo and choose a colour scheme. Others deliver a fully branded patient experience — every patient-facing touchpoint, communication, and workflow carries your organization's identity, not the vendor's.
+      content: `White-label branding depth determines how completely your organization's identity appears across every patient touchpoint — from the booking domain to post-visit communications. Some platforms allow you to add your logo and choose a colour scheme. Others deliver a fully branded experience where every communication and workflow carries your organization's identity, not the vendor's.
 
 The difference matters because in virtual care, your brand is the environment. Patients do not have a waiting room, staff uniforms, or physical clinic signage to anchor their trust. The digital interface is the representation of your organization. Shallow branding on a generic-feeling platform undermines that trust; deep branding reinforces it.
 
@@ -62,7 +62,7 @@ A platform with genuine white-label depth allows patients to complete a full vir
     {
       id: 'ehr-emr-integration-capabilities',
       title: "4. EHR/EMR Integration Capabilities",
-      content: `EHR and EMR integration is one of the most technically complex aspects of telemedicine platform evaluation — and one of the most commonly oversimplified in vendor conversations. A vendor claiming "seamless EHR integration" may mean a one-way read of basic patient demographics or a bi-directional, real-time sync of clinical records, consultation notes, prescriptions, and lab orders.
+      content: `EHR and EMR integration capabilities determine whether clinical data flows seamlessly between your telemedicine platform and your existing records systems — making this one of the most consequential, and most commonly oversimplified, features to evaluate. A vendor claiming "seamless EHR integration" may mean a one-way read of basic patient demographics or a bi-directional, real-time sync of clinical records, consultation notes, prescriptions, and lab orders.
 
 Before accepting integration claims at face value, ask vendors to specify:
 
