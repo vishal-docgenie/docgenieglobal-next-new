@@ -360,7 +360,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                South Africa has a mature and competitive private healthcare sector with demanding patients, complex medical aid billing requirements, and increasing pressure on providers to offer digital access to care. At the same time, load shedding, uneven connectivity, and a large uninsured population create infrastructure challenges that generic telehealth platforms were not designed to solve.<br /><br />
+                                South Africa has a mature and competitive private healthcare sector. Approximately 9 million South Africans are covered by registered medical aid schemes regulated by the Council for Medical Schemes (CMS) — yet private healthcare providers face mounting pressure to offer digital access to care, complex billing requirements, and infrastructure challenges including load shedding and uneven connectivity that generic telehealth platforms were not designed to solve.<br /><br />
                                 DocGenie Global's white label telemedicine platform is built to address South Africa's specific market realities. The platform can support:
                             </p>
                             <ul>
@@ -421,7 +421,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Medical aid billing is central to South Africa's private healthcare sector. Patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. DocGenie Global supports billing and payment workflows that accommodate South Africa's medical aid landscape:
+                                                Medical aid billing is central to South Africa's private healthcare sector. South Africa has over 70 registered medical schemes regulated by the Council for Medical Schemes (CMS), covering approximately 9 million beneficiaries. Patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. DocGenie Global supports billing and payment workflows that accommodate South Africa's medical aid landscape:
                             </p>
                             <ul>
                                 <li>Integration with medical aid billing systems and practice management software</li>
@@ -476,7 +476,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                The Health Professions Council of South Africa (HPCSA) has issued guidelines for telemedicine practice, establishing standards for informed consent, patient identification, clinical documentation, and referral workflows in virtual consultations. DocGenie Global's platform is designed to support these operational requirements:
+                                The Health Professions Council of South Africa (HPCSA) has issued guidelines for telemedicine practice — including requirements for informed consent, patient identification, clinical documentation, and referral workflows in virtual consultations. These guidelines apply to all HPCSA-registered practitioners delivering care via telemedicine, regardless of the platform used. DocGenie Global's platform is designed to support the operational workflows these guidelines require:
                             </p>
                             <ul>
                                 <li>Structured informed consent capture before consultations</li>
@@ -639,6 +639,47 @@ const SouthAfricaWhiteLabelPage = () => (
                                 ))}
                             </Accordion>
                         </div>
+                    </div>
+                </div>
+            </section>
+        </ErrorBoundary>
+
+        {/* Related Articles */}
+        <ErrorBoundary>
+            <section className="py-12 bg-white">
+                <div className="container mx-auto px-8">
+                    <div className="text-center mb-10">
+                        <h2 className="heading-3 mb-3">Related Articles</h2>
+                        <p className="text-gray-600">Further reading for South African healthcare providers evaluating virtual care platforms.</p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                        {[
+                            {
+                                href: "/blogs/telemedicine-platform-branding-patient-trust",
+                                title: "How Branded Telemedicine Platforms Build More Patient Trust Than Generic Apps",
+                                label: "Branding & Trust"
+                            },
+                            {
+                                href: "/blogs/patient-retention-branded-telemedicine",
+                                title: "How Branded Virtual Care Platforms Improve Patient Retention",
+                                label: "Patient Retention"
+                            },
+                            {
+                                href: "/blogs/white-label-telemedicine-specialty-care",
+                                title: "White Label Telemedicine for Specialty Care",
+                                label: "Specialty Care"
+                            },
+                            {
+                                href: "/blogs/white-label-telemedicine-mental-health-practices",
+                                title: "White Label Telemedicine for Mental Health Practices",
+                                label: "Mental Health"
+                            }
+                        ].map((article) => (
+                            <Link key={article.href} href={article.href} className="block group border border-gray-200 rounded-xl p-5 hover:border-brand-blue/40 hover:shadow-sm transition-all">
+                                <span className="text-xs font-semibold uppercase tracking-wide text-brand-blue mb-2 block">{article.label}</span>
+                                <span className="text-gray-800 text-sm font-medium group-hover:text-brand-blue leading-snug">{article.title}</span>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </section>
