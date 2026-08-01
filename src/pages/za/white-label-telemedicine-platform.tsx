@@ -282,7 +282,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in South Africa</h1>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
-                                <a href="https://www.docgenieglobal.com/">DocGenie Global</a> helps private clinics, hospitals, specialist practices, and digital health companies in South Africa launch their own branded virtual care platform. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, medical aid billing support, POPIA-aligned data workflows, and a fully branded patient experience across web and mobile.<br /><br />
+                                <a href="/">DocGenie Global</a> helps private clinics, hospitals, specialist practices, and digital health companies in South Africa launch their own branded virtual care platform. Our <a href="/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, medical aid billing support, POPIA-aligned data workflows, and a fully branded patient experience across web and mobile.<br /><br />
                                 Whether you run a GP practice in Johannesburg, a specialist clinic in Cape Town, a multi-location hospital group, an occupational health service, or a digital health startup — DocGenie Global gives you the technology foundation to launch quickly, serve patients under your own brand, and scale with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -325,7 +325,7 @@ const SouthAfricaWhiteLabelPage = () => (
                     <div className="max-w-4xl mx-auto bg-brand-blue/20 border border-brand-blue/20 rounded-xl p-6 md:p-8">
                         <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                             <h2 id="za-quick-answer-heading" className="text-sm font-semibold uppercase tracking-wide text-brand-blue">Quick Answer</h2>
-                            <span className="text-xs text-gray-500">Last updated: July 31, 2026</span>
+                            <span className="text-xs text-gray-500">Last updated: August 01, 2026</span>
                         </div>
                         <p className="text-gray-800 leading-relaxed">
                             A <strong>white label telemedicine platform for South African healthcare providers</strong> is a ready-configured virtual care solution that lets private clinics, specialist practices, hospitals, and digital health companies offer online consultations, patient booking, medical aid billing, and secure follow-up workflows under their own brand — without building the technology from scratch.
@@ -421,7 +421,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                                Medical aid billing is central to South Africa's private healthcare sector. South Africa has over 70 registered medical schemes regulated by the Council for Medical Schemes (CMS), covering approximately 9 million beneficiaries. Patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. DocGenie Global supports billing and payment workflows that accommodate South Africa's medical aid landscape:
+                                Medical aid billing is central to South Africa's private healthcare sector. South Africa has over 70 registered medical schemes regulated by the Council for Medical Schemes (CMS), covering approximately 9 million beneficiaries. Patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. DocGenie Global supports billing and payment workflows that accommodate South Africa's medical aid landscape:
                             </p>
                             <ul>
                                 <li>Integration with medical aid billing systems and practice management software</li>
