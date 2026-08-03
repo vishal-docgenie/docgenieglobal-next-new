@@ -44,7 +44,7 @@ const schemaData = {
                 "@id": "https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/#service"
             },
             "datePublished": "2025-06-12",
-            "dateModified": "2026-08-01"
+            "dateModified": "2026-08-03"
         },
         {
             "@type": "Service",
@@ -337,7 +337,7 @@ const GhanaWhiteLabelPage = () => (
                     <p className="text-gray-700">
                         A white label telemedicine platform for Ghana is a branded virtual care solution that enables clinics, hospitals, and digital health companies to offer online consultations, mobile money payments (MTN MoMo, Vodafone Cash, AirtelTigo), and patient management under their own brand — without building technology from scratch. DocGenie Global provides a fully customisable, low-bandwidth-resilient platform designed with Ghana's Data Protection Act 2012 (Act 843) and Ghana Health Service (GHS) considerations in mind. MDC-registered practitioners can deploy a complete branded virtual care service accessible on web, tablet, and phone within weeks.
                     </p>
-                    <p className="text-sm text-gray-500 mt-2">Last updated: August 01, 2026</p>
+                    <p className="text-sm text-gray-500 mt-2">Last updated: August 03, 2026</p>
                 </div>
             </section>
         </ErrorBoundary>
