@@ -35,7 +35,7 @@ const schemaData = {
       "description": "Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows.",
       "inLanguage": "en-US",
       "datePublished": "2025-01-01",
-      "dateModified": "2026-07-16",
+      "dateModified": "2026-08-05",
       "isPartOf": {
         "@id": "https://www.docgenieglobal.com/#website"
       },
@@ -169,6 +169,22 @@ const schemaData = {
             "@type": "Answer",
             "text": "Timeline depends on customization, integrations, payment setup, and workflow complexity. A basic branded deployment can be faster, while advanced integrations may take longer."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the platform handle multi-state licensure and reimbursement for US providers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. DocGenie Global provides the technology to deliver branded virtual care and can support multi-provider, multi-location operations, but it does not manage clinician licensure or guarantee reimbursement. Providers remain responsible for state licensure, billing, coding, and payer requirements in the states where they deliver care, and should confirm these obligations with their own advisers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will DocGenie Global sign a Business Associate Agreement (BAA)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where DocGenie Global handles protected health information on your behalf, a Business Associate Agreement can be discussed as part of the implementation. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
+          }
         }
       ]}
 ]};
@@ -238,14 +254,22 @@ const faqs = [
     {
         question: "How long does implementation take?",
         answer: "Timeline depends on customization, integrations, payment setup, and workflow complexity. A basic branded deployment can be faster, while advanced integrations may take longer."
+    },
+    {
+        question: "Does the platform handle multi-state licensure and reimbursement for US providers?",
+        answer: "No. DocGenie Global provides the technology to deliver branded virtual care and can support multi-provider, multi-location operations, but it does not manage clinician licensure or guarantee reimbursement. Providers remain responsible for state licensure, billing, coding, and payer requirements in the states where they deliver care, and should confirm these obligations with their own advisers."
+    },
+    {
+        question: "Will DocGenie Global sign a Business Associate Agreement (BAA)?",
+        answer: "Where DocGenie Global handles protected health information on your behalf, a Business Associate Agreement can be discussed as part of the implementation. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
     }
 ];
 
 const usWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global</title>
-            <meta name="description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
+            <title>HIPAA-Aligned White Label Telemedicine Platform for US Healthcare Providers | DocGenie Global</title>
+            <meta name="description" content="A HIPAA-aligned white label telemedicine platform for US clinics, hospitals, specialty groups, and multi-location practices. Launch branded virtual care with secure consultations, EHR/EMR integration, payments, and patient engagement — configured for US healthcare workflows." />
             <link rel="canonical" href="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
 
             {/* hreflang for regional targeting */}
@@ -257,8 +281,8 @@ const usWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global" />
-            <meta property="og:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
+            <meta property="og:title" content="HIPAA-Aligned White Label Telemedicine Platform for US Healthcare Providers | DocGenie Global" />
+            <meta property="og:description" content="A HIPAA-aligned white label telemedicine platform for US clinics, hospitals, specialty groups, and multi-location practices. Launch branded virtual care configured for US healthcare workflows." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -270,8 +294,8 @@ const usWhiteLabelPage = () => (
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@DocGenieGlobal" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform USA | HIPAA-Aligned | DocGenie Global" />
-            <meta name="twitter:description" content="Launch a white label telemedicine platform for US clinics, hospitals, and digital health companies. Build a branded, HIPAA-aligned virtual care experience with secure consultations, EHR/EMR integration, payments, and patient engagement workflows." />
+            <meta name="twitter:title" content="HIPAA-Aligned White Label Telemedicine Platform for US Healthcare Providers | DocGenie Global" />
+            <meta name="twitter:description" content="A HIPAA-aligned white label telemedicine platform for US clinics, hospitals, specialty groups, and multi-location practices. Launch branded virtual care configured for US healthcare workflows." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/us/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -293,7 +317,7 @@ const usWhiteLabelPage = () => (
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for US Healthcare Providers</h1>
                             <p className="text-lg text-gray-700 mb-4 max-w-2xl prose">
-                                Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global. Our <a href="/solutions/white-label-telemedicine">white label virtual care solution</a> helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.
+                                Launch your own branded telemedicine platform for the US healthcare market with DocGenie Global — the US-focused edition of our <a href="/solutions/white-label-telemedicine/">global white-label telemedicine platform</a>. It helps clinics, hospitals, specialty practices, and digital health companies deliver secure online consultations, patient booking, provider workflows, EHR/EMR integration, payments, and follow-up communication under their own brand.
                             </p>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
                                 Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.
@@ -342,7 +366,7 @@ const usWhiteLabelPage = () => (
                     className="text-sm font-semibold uppercase tracking-wide text-brand-blue">
                     Quick Answer
                   </h2>
-                  <span className="text-xs text-gray-500">Last updated: July 16, 2026</span>
+                  <span className="text-xs text-gray-500">Last updated: August 5, 2026</span>
                 </div>
                 <p className="text-gray-800 leading-relaxed">
                   A white label telemedicine platform for US healthcare providers is a
@@ -414,17 +438,20 @@ const usWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information through administrative, physical, and technical safeguards.<br /><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.<br />Key capabilities include:
+                                For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information (ePHI) through administrative, physical, and technical safeguards, and the HITECH Act extends breach-notification and enforcement requirements. Where a vendor handles ePHI, a Business Associate Agreement (BAA) typically governs those responsibilities.<br /><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.<br />Key capabilities include:
                             </p>
                             <ul>
                                 <li>Secure video consultation workflows</li>
-                                <li>Patient data protection</li>
+                                <li>Protected health information (PHI/ePHI) handling with encrypted data transmission</li>
                                 <li>Role-based provider and admin access</li>
+                                <li>Audit logs and controlled access to patient records</li>
                                 <li>Secure patient communication</li>
                                 <li>EHR/EMR data syncing support</li>
-                                <li>Controlled access to patient records</li>
                                 <li>Audit-friendly healthcare workflows</li>
                             </ul>
+                            <p className="text-lg text-gray-700">
+                                Requirements vary at both the federal and state level, and telehealth rules differ from state to state. DocGenie Global is designed to support secure workflows and can help organizations align with applicable requirements, but it does not provide HIPAA certification, regulatory approval, or automatic compliance. Each provider remains responsible for its own compliance program, and organizations should confirm their obligations — including BAAs and applicable federal and state requirements — with their own legal and compliance advisers.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -537,6 +564,33 @@ const usWhiteLabelPage = () => (
                                 <li>Patient engagement workflows</li>
                             </ul>
                             <p className="text-lg text-gray-700">This makes the platform suitable for both focused practices and larger healthcare networks.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+            <section>
+                <div className="py-10 bg-white">
+                    <div className="container mx-auto px-8">
+                        <div className="text-center">
+                            <h2 className="heading-3 mb-6">Payer, Reimbursement, and Licensure Context</h2>
+                        </div>
+                        <div className="prose my-8">
+                            <p className="text-lg text-gray-700">
+                                US virtual care spans several payment and operational models, and a branded platform should fit whichever model your organization uses. At a high level, DocGenie Global can support the patient journey across:
+                            </p>
+                            <ul>
+                                <li>Private-pay and self-pay consultation journeys</li>
+                                <li>Employer-sponsored and member-based virtual care programs</li>
+                                <li>Insurance-related workflows where your billing systems handle claims</li>
+                                <li>Medicare and Medicaid considerations for eligible services</li>
+                                <li>State-level telehealth variation across the providers you serve</li>
+                            </ul>
+                            <p className="text-lg text-gray-700">
+                                DocGenie Global does not provide automated payer, reimbursement, e-prescribing, or insurance claim functionality unless specifically confirmed for your implementation, and it does not offer legal, billing, or reimbursement guarantees. Providers remain responsible for billing, coding, reimbursement, payer contracts, and clinician licensure in the states where they deliver care, and should confirm these obligations with their own advisers.
+                            </p>
                         </div>
                     </div>
                 </div>
