@@ -36,7 +36,7 @@ const PerformanceSection = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold mb-2 text-left">Enterprise-Grade Security</h3>
                   <p className="text-gray-600 text-left">
-                    HIPAA-compliant infrastructure with end-to-end encryption for all patient data and communications.
+                    The HIPAA-compliant platform includes security, access-control and data-protection capabilities appropriate to the selected implementation. Specific security controls and encryption architecture are confirmed during technical and security discovery.
                   </p>
                 </div>
               </div>

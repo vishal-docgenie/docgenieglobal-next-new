@@ -27,7 +27,7 @@ const TechnicalStandardsSection = () => {
                 </div>
                 <div className="ml-3 sm:ml-4">
                   <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Security & Compliance</h3>
-                  <p className="text-sm sm:text-base text-gray-600 text-left">Beyond HIPAA compliance, the platform uses secure, encrypted data transmission for all video consultations and applies structured access controls to protect patient data throughout the care journey.</p>
+                  <p className="text-sm sm:text-base text-gray-600 text-left">The HIPAA-compliant platform includes security, access-control and data-protection capabilities appropriate to the selected implementation. Specific security controls and encryption architecture are confirmed during technical and security discovery.</p>
                 </div>
               </div>
               
@@ -37,7 +37,7 @@ const TechnicalStandardsSection = () => {
                 </div>
                 <div className="ml-3 sm:ml-4">
                   <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Dev-Friendly API</h3>
-                  <p className="text-sm sm:text-base text-gray-600 text-left">Our documentation is built for developers, supporting RESTful APIs and Webhooks for real-time data syncing.</p>
+                  <p className="text-sm sm:text-base text-gray-600 text-left">API and integration options are reviewed during technical discovery based on the required workflows and available systems.</p>
                 </div>
               </div>
               
@@ -46,8 +46,8 @@ const TechnicalStandardsSection = () => {
                   <Network className="h-3 w-3 sm:h-4 sm:w-4 text-brand-blue" />
                 </div>
                 <div className="ml-3 sm:ml-4">
-                  <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Global Edge Network</h3>
-                  <p className="text-sm sm:text-base text-gray-600 text-left">Low-latency video powered by a global CDN, delivering reliable performance even in low-bandwidth regions.</p>
+                  <h3 className="text-base sm:text-lg font-semibold mb-1 text-left">Scalable Infrastructure</h3>
+                  <p className="text-sm sm:text-base text-gray-600 text-left">Infrastructure, hosting and performance requirements depend on the selected deployment and implementation scope.</p>
                 </div>
               </div>
             </div>

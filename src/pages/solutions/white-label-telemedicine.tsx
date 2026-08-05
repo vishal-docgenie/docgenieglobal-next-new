@@ -88,25 +88,25 @@ const WhiteLabelTelemedicine = () => {
       </ErrorBoundary>
 
       <ErrorBoundary>
-        <FeatureSection 
-          title="Seamless Integration with Your Systems"
-          description="Our platform adapts to your existing healthcare infrastructure, enabling a smooth transition to virtual care without disrupting established workflows."
+        <FeatureSection
+          title="Integration with Your Systems"
+          description="The platform is designed to work alongside your existing healthcare infrastructure. Integration requirements are reviewed during technical discovery based on your systems, available APIs and implementation scope."
           features={[
             {
               title: "EHR/EMR Integration",
-              description: "Connect with leading electronic health record systems for streamlined documentation and data exchange."
+              description: "EHR and EMR integration requirements can be assessed based on your existing systems, available APIs and implementation scope."
             },
             {
-              title: "Multiple Payment Options",
-              description: "Integrate with your preferred payment processors and billing systems for flexible patient payments."
+              title: "Payment Options",
+              description: "Payment integration requirements can be assessed based on your preferred payment providers, billing systems and implementation scope."
             },
             {
-              title: "Comprehensive API Ecosystem",
-              description: "Leverage our extensive API architecture to connect with third-party applications and services."
+              title: "API and Integration Options",
+              description: "API and integration options are reviewed during technical discovery based on the required workflows and available systems."
             }
           ]}
           image="/lovable-uploads/beaa9887-15a9-4526-ad87-2edcd6ec20c1.png"
-          altText="Healthcare professional integrating DocGenie white label telemedicine platform with existing EHR systems on multiple screens showing seamless workflow"
+          altText="Healthcare professional integrating DocGenie white label telemedicine platform with existing EHR systems on multiple screens showing connected workflow"
         />
       </ErrorBoundary>
       
@@ -125,11 +125,11 @@ const WhiteLabelTelemedicine = () => {
             },
             {
               title: "Mobile-friendly experience",
-              description: "Designed for convenient mobile use, it works seamlessly on any smartphone or tablet with support for push notifications."
+              description: "Designed for convenient mobile use on smartphones and tablets, with support for push notifications."
             },
             {
-              title: "Offline Functionality",
-              description: "Select features available offline, ensuring continuity of care even when internet connectivity is limited."
+              title: "Connectivity Options",
+              description: "Availability of offline or connectivity-related functionality depends on the selected configuration and implementation scope."
             }
           ]}
           image="/lovable-uploads/1f93ec14-f910-4b12-8ff8-c1520b2b72bf.png"
@@ -200,7 +200,7 @@ const WhiteLabelTelemedicine = () => {
       <ErrorBoundary>
         <SolutionCTA 
           title="Launch Your Branded Telemedicine Platform"
-          description="Join healthcare providers who have successfully implemented our white label solution to deliver exceptional virtual care experiences under their trusted brand. Our platform provides the perfect balance of customization flexibility and enterprise-grade performance for clinics, doctors, and hospitals."
+          description="Explore how DocGenie can support your branded virtual-care requirements for clinics, doctors, and hospitals — combining customization flexibility with a HIPAA-compliant platform. A proposed implementation plan and timeline are provided after discovery."
         />
       </ErrorBoundary>
     </Layout>

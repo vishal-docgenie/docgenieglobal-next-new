@@ -64,7 +64,7 @@ export const whiteLabelSchemaData = {
         {
           "@type": "HowToStep",
           "name": "Training & Launch",
-          "text": "Your clinical and admin staff are trained, the platform is tested end-to-end, and your branded telemedicine service goes live — typically within weeks, depending on branding scope, integrations, and workflow complexity."
+          "text": "Your clinical and admin staff are trained, the platform is tested end-to-end, and your branded telemedicine service goes live. Implementation timelines depend on branding scope, integrations, and workflow complexity, and a proposed plan and timeline are provided after discovery."
         }
       ]
     },
@@ -85,7 +85,7 @@ export const whiteLabelSchemaData = {
           "name": "How long does it take to implement a white label telemedicine solution?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Implementation timelines vary based on the complexity of your requirements, but our typical implementation takes 4-6 weeks from initial discovery to launch. This includes branding customization, system integration, staff training, and testing. We offer accelerated deployment options for organizations that need to launch more quickly."
+            "text": "Implementation timelines depend on branding requirements, workflows, integrations, mobile applications, data migration and customer readiness. A proposed implementation plan and timeline are provided after discovery."
           }
         },
         {
@@ -93,7 +93,7 @@ export const whiteLabelSchemaData = {
           "name": "Can the platform integrate with our existing EHR/EMR system?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our white label telemedicine platform supports integration with all major EHR/EMR systems including Epic, Cerner, Allscripts, athenahealth, and many others. We provide both standard API connections and custom integration solutions to ensure seamless data flow between systems."
+            "text": "EHR and EMR integration requirements can be assessed based on the organisation's existing systems, available APIs and implementation scope. Specific integration availability is confirmed during technical discovery."
           }
         },
         {
@@ -109,7 +109,7 @@ export const whiteLabelSchemaData = {
           "name": "How does white labeling improve patient trust compared to third-party platforms?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "White labeling significantly enhances patient trust by maintaining brand continuity across all touchpoints. When patients see your logo, domain, and emails rather than a third-party vendor’s, they feel they remain within your care ecosystem — reducing platform friction and reinforcing the doctor-patient bond. This leads to higher adoption rates, better patient satisfaction, and improved clinical outcomes."
+            "text": "White labeling helps maintain brand continuity across all touchpoints. When patients see your logo, domain, and emails rather than a third-party vendor’s, they remain within your care ecosystem, which can support a more consistent patient experience and reinforce the doctor-patient relationship."
           }
         },
         {
@@ -117,7 +117,7 @@ export const whiteLabelSchemaData = {
           "name": "What level of technical support is provided after implementation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We provide comprehensive technical support after implementation, including 24/7 technical assistance, regular platform updates, security patches, and ongoing optimization. Our support team includes dedicated account managers who understand your specific implementation and can provide tailored assistance."
+            "text": "Support, maintenance and account-management arrangements are confirmed according to the selected service plan and implementation scope."
           }
         },
         {
@@ -141,7 +141,7 @@ export const whiteLabelSchemaData = {
           "name": "Is it better to buy a white label telemedicine platform or build one in-house?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For most healthcare organizations, licensing a white label platform is faster and more cost-effective than building in-house. In-house development typically takes 12+ months and requires ongoing investment in HIPAA compliance, security audits, and infrastructure, while a white label platform like DocGenie Global launches in 4-6 weeks with compliance and security already built in."
+            "text": "For most healthcare organizations, licensing a white label platform is faster and more cost-effective than building in-house. In-house development requires sustained investment in HIPAA compliance, security audits, and infrastructure, while a white label platform like DocGenie Global can launch substantially faster, with security and compliance capabilities already built into the HIPAA-compliant platform. Implementation timelines depend on branding, integrations, workflows and customer readiness."
           }
         }
       ]

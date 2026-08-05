@@ -32,7 +32,7 @@ const schemaData = {
             "@id": "https://www.docgenieglobal.com/za/white-label-telemedicine-platform/#webpage",
             "url": "https://www.docgenieglobal.com/za/white-label-telemedicine-platform/",
             "name": "White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care",
-            "description": "Launch a white label telemedicine platform for healthcare providers in South Africa. Branded virtual care with POPIA-aligned data workflows, medical aid billing support, load-shedding resilience, and secure online consultations for private clinics, hospitals, and digital health companies.",
+            "description": "Launch a white label telemedicine platform for healthcare providers in South Africa. Branded virtual care with POPIA-aligned data workflows, medical-aid billing workflow support assessed during implementation, connectivity-resilient design, and secure online consultations for private clinics, hospitals, and digital health companies.",
             "inLanguage": "en-ZA",
             "datePublished": "2025-06-12",
             "dateModified": "2026-07-31",
@@ -52,7 +52,7 @@ const schemaData = {
             "name": "White Label Telemedicine Platform for Healthcare Providers in South Africa",
             "serviceType": "White Label Telemedicine Platform",
             "category": "Virtual Care Platform",
-            "description": "DocGenie Global helps private clinics, hospitals, and digital health companies in South Africa launch branded telemedicine platforms with POPIA-aligned data workflows, medical aid billing support, load-shedding resilience, and secure online consultations.",
+            "description": "DocGenie Global helps private clinics, hospitals, and digital health companies in South Africa launch branded telemedicine platforms with POPIA-aligned data workflows, medical-aid billing workflow requirements assessed during implementation, connectivity-resilient design, and secure online consultations.",
             "provider": {
                 "@id": "https://www.docgenieglobal.com/#organization"
             },
@@ -96,7 +96,7 @@ const schemaData = {
                     "@type": "HowToStep",
                     "position": 2,
                     "name": "Platform Configuration",
-                    "text": "We configure your branded interface, appointment flows, billing integration, POPIA-aligned consent workflows, provider dashboard, and patient communication including SMS and WhatsApp."
+                    "text": "We configure your branded interface, appointment flows, billing workflow configuration, POPIA-aligned consent workflows, provider dashboard, and patient communication channels."
                 },
                 {
                     "@type": "HowToStep",
@@ -161,7 +161,7 @@ const schemaData = {
                     "name": "Does the platform support medical aid billing for South African patients?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, DocGenie Global can support medical aid billing workflows, allowing patients to submit claims or enabling providers to process claims with schemes such as Discovery Health, Momentum Health, Bonitas, Medihelp, Bestmed, and others. ICD-10 code and procedure code capture is supported in consultation workflows. Exact integration depends on your practice management software, scheme requirements, and billing configuration."
+                        "text": "Medical-aid billing workflow requirements, including connection with a provider's existing billing or practice-management systems, can be assessed during implementation. Requirements for ICD-10, procedure-code capture and medical-aid billing workflows should be confirmed during product discovery."
                     }
                 },
                 {
@@ -169,7 +169,7 @@ const schemaData = {
                     "name": "Does the platform work during load shedding?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DocGenie Global is built with connectivity and power resilience in mind. The platform supports adaptive video quality that degrades gracefully on reduced bandwidth, a lightweight Progressive Web App (PWA) that runs on 4G mobile data, automatic reconnection if a call drops, and SMS and WhatsApp notification fallbacks. This ensures load shedding reduces friction rather than shutting down your virtual care service entirely."
+                        "text": "Connectivity, fallback communication and continuity requirements are reviewed during technical discovery. Availability of reconnection, messaging fallback, asynchronous workflows and offline functionality depends on the selected configuration and implementation scope."
                     }
                 },
                 {
@@ -177,7 +177,7 @@ const schemaData = {
                     "name": "Is the platform suitable for HPCSA-registered practitioners?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, DocGenie Global can be used by HPCSA-registered practitioners including GPs, specialists, psychologists, physiotherapists, and allied health professionals to deliver branded virtual consultations. The platform supports structured informed consent capture, patient identity verification, digital consultation notes, referral documentation, and audit trails. Practitioners remain responsible for ensuring their telehealth practice aligns with current HPCSA guidelines on telemedicine."
+                        "text": "DocGenie Global can be used by HPCSA-registered practitioners including GPs, specialists, psychologists, physiotherapists, and allied health professionals to deliver branded virtual consultations. Identity, referral and consultation-record requirements can be evaluated as part of workflow discovery. Practitioners remain responsible for ensuring their telehealth practice aligns with current HPCSA guidelines on telemedicine."
                     }
                 },
                 {
@@ -212,15 +212,15 @@ const faqs = [
     },
     {
         question: "Does the platform support medical aid billing for South African patients?",
-        answer: "Yes, DocGenie Global can support medical aid billing workflows, allowing patients to submit claims or enabling providers to process claims with schemes such as Discovery Health, Momentum Health, Bonitas, Medihelp, Bestmed, and others. ICD-10 code and procedure code capture is supported in consultation workflows. Exact integration depends on your practice management software, scheme requirements, and billing configuration."
+        answer: "Medical-aid billing workflow requirements, including connection with a provider's existing billing or practice-management systems, can be assessed during implementation. Requirements for ICD-10, procedure-code capture and medical-aid billing workflows should be confirmed during product discovery."
     },
     {
         question: "Does the platform work during load shedding?",
-        answer: "DocGenie Global is built with connectivity and power resilience in mind. The platform supports adaptive video quality that degrades gracefully on reduced bandwidth, a lightweight Progressive Web App (PWA) that runs on 4G mobile data, automatic reconnection if a call drops, and SMS and WhatsApp notification fallbacks. This ensures load shedding reduces friction rather than shutting down your virtual care service entirely."
+        answer: "Connectivity, fallback communication and continuity requirements are reviewed during technical discovery. Availability of reconnection, messaging fallback, asynchronous workflows and offline functionality depends on the selected configuration and implementation scope."
     },
     {
         question: "Is the platform suitable for HPCSA-registered practitioners?",
-        answer: "Yes, DocGenie Global can be used by HPCSA-registered practitioners including GPs, specialists, psychologists, physiotherapists, and allied health professionals to deliver branded virtual consultations. The platform supports structured informed consent capture, patient identity verification, digital consultation notes, referral documentation, and audit trails. Practitioners remain responsible for ensuring their telehealth practice aligns with current HPCSA guidelines on telemedicine."
+        answer: "DocGenie Global can be used by HPCSA-registered practitioners including GPs, specialists, psychologists, physiotherapists, and allied health professionals to deliver branded virtual consultations. Identity, referral and consultation-record requirements can be evaluated as part of workflow discovery. Practitioners remain responsible for ensuring their telehealth practice aligns with current HPCSA guidelines on telemedicine."
     },
     {
         question: "Can we use our own brand and domain?",
@@ -236,7 +236,7 @@ const SouthAfricaWhiteLabelPage = () => (
     <Layout>
         <Head>
             <title>White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care</title>
-            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in South Africa. POPIA-aligned data workflows, medical aid billing support, load-shedding resilience, and secure online consultations for private clinics, hospitals, and digital health companies." />
+            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in South Africa. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, connectivity-resilient design, and secure online consultations for private clinics, hospitals, and digital health companies." />
             <link rel="canonical" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -250,7 +250,7 @@ const SouthAfricaWhiteLabelPage = () => (
 
             {/* OpenGraph Tags */}
             <meta property="og:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
-            <meta property="og:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. Medical aid billing, POPIA-aligned data workflows, and load-shedding resilience built for the South African healthcare market." />
+            <meta property="og:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, and connectivity-resilient design for the South African healthcare market." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -264,7 +264,7 @@ const SouthAfricaWhiteLabelPage = () => (
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@DocGenieGlobal" />
             <meta name="twitter:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
-            <meta name="twitter:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. Medical aid billing, POPIA-aligned data workflows, and load-shedding resilience built for the South African healthcare market." />
+            <meta name="twitter:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, and connectivity-resilient design for the South African healthcare market." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -334,8 +334,8 @@ const SouthAfricaWhiteLabelPage = () => (
                             {[
                                 "Launch under your own brand with custom domain, logo, and colour palette",
                                 "POPIA-aligned patient data workflows with privacy-by-design architecture",
-                                "Medical aid billing support — Discovery Health, Momentum, Bonitas & more",
-                                "Load-shedding resilient — PWA with 4G mobile data fallback and SMS/WhatsApp notifications"
+                                "Medical-aid billing workflow requirements assessed during implementation",
+                                "Connectivity and continuity requirements reviewed during technical discovery"
                             ].map((point) => (
                                 <li key={point} className="flex items-start text-gray-700">
                                     <svg className="h-5 w-5 text-brand-blue mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -360,7 +360,7 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                South Africa has a mature and competitive private healthcare sector. Approximately 9 million South Africans are covered by registered medical aid schemes regulated by the Council for Medical Schemes (CMS) — yet private healthcare providers face mounting pressure to offer digital access to care, complex billing requirements, and infrastructure challenges including load shedding and uneven connectivity that generic telehealth platforms were not designed to solve.<br /><br />
+                                South Africa has an established medical-scheme market alongside private-pay and employer-supported healthcare services — yet private healthcare providers face mounting pressure to offer digital access to care, complex billing requirements, and infrastructure challenges including load shedding and uneven connectivity that generic telehealth platforms were not designed to solve.<br /><br />
                                 DocGenie Global's white label telemedicine platform is built to address South Africa's specific market realities. The platform can support:
                             </p>
                             <ul>
@@ -421,17 +421,17 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Medical aid billing is central to South Africa's private healthcare sector. South Africa has over 70 registered medical schemes regulated by the Council for Medical Schemes (CMS), covering approximately 9 million beneficiaries. Patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. DocGenie Global supports billing and payment workflows that accommodate South Africa's medical aid landscape:
+                                Medical-aid billing is central to South Africa's private healthcare sector, and patients expect to use their scheme benefits for virtual consultations just as they would for in-person visits. Medical-aid billing workflow requirements can be assessed during implementation, based on your existing systems and configuration:
                             </p>
                             <ul>
-                                <li>Integration with medical aid billing systems and practice management software</li>
-                                <li>ICD-10 code and procedure code capture in consultation workflows</li>
-                                <li>Support for major schemes including Discovery Health, Momentum Health, Bonitas, Medihelp, Bestmed, and others</li>
-                                <li>Patient co-payment and self-pay flows via card (Visa/Mastercard) and EFT</li>
-                                <li>Detailed consultation records to support claim submissions</li>
-                                <li>Invoice generation for patients and billing teams</li>
+                                <li>Connection with a provider's existing billing or practice-management systems, assessed during implementation</li>
+                                <li>Requirements for ICD-10 and procedure-code capture confirmed during product discovery</li>
+                                <li>Medical-aid billing workflow requirements evaluated against your scheme and configuration needs</li>
+                                <li>Payment integration requirements assessed based on your preferred gateway, banking arrangements and implementation scope</li>
+                                <li>Consultation records to support billing and claim workflows</li>
+                                <li>Invoice generation requirements evaluated during workflow discovery</li>
                             </ul>
-                            <p className="text-lg text-gray-700">Exact integration capabilities depend on your practice management software, scheme requirements, and billing configuration. Our team will assess your setup during the discovery phase.</p>
+                            <p className="text-lg text-gray-700">Specific medical-aid billing and payment-provider availability is confirmed during technical discovery, based on your practice-management software, scheme requirements, and billing configuration.</p>
                         </div>
                     </div>
                 </div>
@@ -448,18 +448,18 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Load shedding remains a daily operational reality for South African healthcare providers and patients. Power outages disrupt broadband routers, affect clinic infrastructure, and interrupt video calls mid-consultation. A telemedicine platform that does not account for South Africa's energy landscape will fail at the worst possible moment.<br /><br />
-                                DocGenie Global is designed with connectivity and power resilience in mind:
+                                Load shedding remains a daily operational reality for South African healthcare providers and patients. Power outages disrupt broadband routers, affect clinic infrastructure, and interrupt video calls mid-consultation. A telemedicine platform for this market should account for South Africa's energy and connectivity landscape.<br /><br />
+                                Connectivity, fallback communication and continuity requirements are reviewed during technical discovery. Availability of the following depends on the selected configuration and implementation scope:
                             </p>
                             <ul>
-                                <li>Adaptive video quality that degrades gracefully on reduced bandwidth (including 4G mobile data fallback)</li>
-                                <li>Lightweight Progressive Web App (PWA) that runs on mobile data without full broadband</li>
-                                <li>Automatic reconnection handling if a call drops during load shedding</li>
-                                <li>SMS and WhatsApp notification fallbacks when push notifications fail</li>
-                                <li>Mobile-first design optimised for lower-end Android devices used on mobile data</li>
-                                <li>Asynchronous consultation tools (secure messaging, file uploads) for when live video is not possible</li>
+                                <li>Adaptive video quality on reduced bandwidth, including mobile-data scenarios</li>
+                                <li>Progressive Web App (PWA) access designed for mobile data</li>
+                                <li>Reconnection handling if a call drops</li>
+                                <li>SMS and WhatsApp notification fallbacks</li>
+                                <li>Mobile-first design for lower-end Android devices used on mobile data</li>
+                                <li>Asynchronous consultation tools (secure messaging, file uploads)</li>
                             </ul>
-                            <p className="text-lg text-gray-700">This ensures that power outages reduce friction — they do not shut down your virtual care service.</p>
+                            <p className="text-lg text-gray-700">These connectivity and continuity options are scoped so that power outages are planned for as part of your virtual-care configuration.</p>
                         </div>
                     </div>
                 </div>
@@ -476,15 +476,15 @@ const SouthAfricaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                The Health Professions Council of South Africa (HPCSA) has issued guidelines for telemedicine practice — including requirements for informed consent, patient identification, clinical documentation, and referral workflows in virtual consultations. These guidelines apply to all HPCSA-registered practitioners delivering care via telemedicine, regardless of the platform used. DocGenie Global's platform is designed to support the operational workflows these guidelines require:
+                                The Health Professions Council of South Africa (HPCSA) has issued guidelines for telemedicine practice — including requirements for informed consent, patient identification, clinical documentation, and referral workflows in virtual consultations. These guidelines apply to all HPCSA-registered practitioners delivering care via telemedicine, regardless of the platform used. Identity, referral and consultation-record requirements can be evaluated as part of workflow discovery, and availability of the following depends on the selected configuration:
                             </p>
                             <ul>
-                                <li>Structured informed consent capture before consultations</li>
+                                <li>Informed consent capture before consultations</li>
                                 <li>Patient identity verification workflows</li>
                                 <li>Digital consultation notes and clinical record keeping</li>
                                 <li>Referral letter generation and secure sharing</li>
                                 <li>Clinical documentation support within the consultation workflow</li>
-                                <li>Audit trail for all consultation events</li>
+                                <li>Audit trail for consultation events</li>
                                 <li>Provider availability and scheduling management</li>
                             </ul>
                             <p className="text-lg text-gray-700">
@@ -561,12 +561,12 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <tr className="border-b border-gray-200 bg-gray-50">
                                     <td className="p-4 font-medium">Medical Aid Billing</td>
                                     <td className="p-4 text-center">Rarely supported locally</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Discovery, Momentum, Bonitas & more</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Billing workflow requirements assessed during implementation</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">Load Shedding</td>
                                     <td className="p-4 text-center">Drops on power loss</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Adaptive, mobile-data fallback</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Connectivity and continuity options reviewed at discovery</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
                                     <td className="p-4 font-medium">POPIA Alignment</td>
@@ -576,7 +576,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">HPCSA Workflows</td>
                                     <td className="p-4 text-center">Generic consent and notes</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Consent, notes, referrals, audit trail</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Consent, notes, referral and audit requirements scoped at discovery</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">Scalability</td>
@@ -603,7 +603,7 @@ const SouthAfricaWhiteLabelPage = () => (
                             <p className="text-lg text-gray-700">We understand your South African healthcare model, patient journey, service lines, medical aid billing setup, provider configuration, and branding requirements.</p>
 
                             <h3>2. Platform Configuration</h3>
-                            <p className="text-lg text-gray-700">We configure your branded interface, appointment flows, billing integration, POPIA-aligned consent workflows, provider dashboard, and patient communication including SMS and WhatsApp.</p>
+                            <p className="text-lg text-gray-700">We configure your branded interface, appointment flows, billing workflow configuration, POPIA-aligned consent workflows, provider dashboard, and patient communication channels.</p>
 
                             <h3>3. Testing and Staff Training</h3>
                             <p className="text-lg text-gray-700">Your clinical and admin team validates the end-to-end patient and provider journey — including payment and billing flows — before launch, and receives platform training.</p>

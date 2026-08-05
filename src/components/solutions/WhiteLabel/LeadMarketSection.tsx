@@ -28,12 +28,12 @@ const LeadMarketSection = () => {
                 <tr className="border-b border-gray-200 bg-gray-50">
                   <td className="p-4 font-medium">Data Architecture</td>
                   <td className="p-4 text-center">Shared database models</td>
-                  <td className="p-4 text-center bg-brand-blue/30">Siloed & Secure Architecture in compliance with healthcare regulations</td>
+                  <td className="p-4 text-center bg-brand-blue/30">Secure architecture on a HIPAA-compliant platform, designed to support healthcare organisations in meeting applicable security, privacy and regulatory requirements, subject to configuration and the organisation&apos;s own obligations</td>
                 </tr>
                 <tr className="border-b border-gray-200">
-                  <td className="p-4 font-medium">Integration Speed</td>
-                  <td className="p-4 text-center">3 – 6 Months</td>
-                  <td className="p-4 text-center bg-brand-blue/30">4 – 6 Weeks (Rapid Deployment)</td>
+                  <td className="p-4 font-medium">Deployment Approach</td>
+                  <td className="p-4 text-center">Lengthy custom build</td>
+                  <td className="p-4 text-center bg-brand-blue/30">Configurable deployment; timeline confirmed after discovery based on branding, integrations and workflows</td>
                 </tr>
                 {/* <tr className="border-b border-gray-200 bg-gray-50">
                   <td className="p-4 font-medium">Interoperability</td>

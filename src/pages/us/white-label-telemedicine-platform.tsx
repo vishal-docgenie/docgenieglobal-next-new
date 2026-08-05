@@ -183,7 +183,7 @@ const schemaData = {
           "name": "Will DocGenie Global sign a Business Associate Agreement (BAA)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Where DocGenie Global handles protected health information on your behalf, a Business Associate Agreement can be discussed as part of the implementation. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
+            "text": "Where DocGenie Global handles protected health information on your behalf, Business Associate Agreement requirements can be discussed as part of the commercial, legal and implementation process. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
           }
         }
       ]}
@@ -261,7 +261,7 @@ const faqs = [
     },
     {
         question: "Will DocGenie Global sign a Business Associate Agreement (BAA)?",
-        answer: "Where DocGenie Global handles protected health information on your behalf, a Business Associate Agreement can be discussed as part of the implementation. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
+        answer: "Where DocGenie Global handles protected health information on your behalf, Business Associate Agreement requirements can be discussed as part of the commercial, legal and implementation process. Final terms depend on your configuration and use case, and each organization remains responsible for its own HIPAA compliance program."
     }
 ];
 
@@ -438,15 +438,15 @@ const usWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information (ePHI) through administrative, physical, and technical safeguards, and the HITECH Act extends breach-notification and enforcement requirements. Where a vendor handles ePHI, a Business Associate Agreement (BAA) typically governs those responsibilities.<br /><a href="/">DocGenie Global</a> is designed to support secure virtual care workflows with privacy-focused architecture, role-based access, encrypted data handling, and structured patient-provider communication.<br />Key capabilities include:
+                                For US healthcare organizations, patient privacy and healthcare data protection are critical. The HIPAA Security Rule sets standards to protect electronic protected health information (ePHI) through administrative, physical, and technical safeguards, and the HITECH Act extends breach-notification and enforcement requirements. Where a vendor handles ePHI, a Business Associate Agreement (BAA) typically governs those responsibilities.<br /><a href="/">DocGenie Global</a> is a HIPAA-compliant platform designed to support secure virtual care workflows with privacy-focused architecture, role-based access, and structured patient-provider communication. Security, access-control, audit and integration requirements are confirmed during technical discovery and implementation planning, and may include:
                             </p>
                             <ul>
                                 <li>Secure video consultation workflows</li>
-                                <li>Protected health information (PHI/ePHI) handling with encrypted data transmission</li>
+                                <li>Protected health information (PHI/ePHI) handling appropriate to the selected implementation</li>
                                 <li>Role-based provider and admin access</li>
-                                <li>Audit logs and controlled access to patient records</li>
+                                <li>Audit and access-control capabilities for patient records</li>
                                 <li>Secure patient communication</li>
-                                <li>EHR/EMR data syncing support</li>
+                                <li>EHR/EMR integration and data-syncing requirements assessed during discovery</li>
                                 <li>Audit-friendly healthcare workflows</li>
                             </ul>
                             <p className="text-lg text-gray-700">

@@ -583,7 +583,7 @@ const ukWhiteLabelPage = () => (
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">Data Workflows</td>
                                     <td className="p-4 text-center">Limited control</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Privacy-focused, UK GDPR-aware workflows</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Privacy-focused workflows that can be configured around the provider&apos;s UK data-protection requirements</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
                                     <td className="p-4 font-medium">Provider Dashboard</td>

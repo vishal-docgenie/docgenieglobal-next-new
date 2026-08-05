@@ -6,7 +6,7 @@ import React from "react";
 const comparisonRows: { dimension: string; whiteLabel: string; custom: string }[] = [
   {
     dimension: "Time to launch",
-    whiteLabel: "Weeks — configure branding, workflows, and integrations on an existing platform",
+    whiteLabel: "Configure branding, workflows, and integrations on an existing platform; timeline confirmed after discovery",
     custom: "Many months to over a year of design, development, and compliance work before go-live",
   },
   {
@@ -26,12 +26,12 @@ const comparisonRows: { dimension: string; whiteLabel: string; custom: string }[
   },
   {
     dimension: "Maintenance",
-    whiteLabel: "Handled by the platform provider as part of the service",
+    whiteLabel: "Maintenance responsibilities are defined according to the selected deployment and service scope",
     custom: "Your responsibility — ongoing bug fixes, patches, and upkeep",
   },
   {
     dimension: "Infrastructure responsibility",
-    whiteLabel: "Hosting, scaling, and uptime managed by the provider",
+    whiteLabel: "Hosting and infrastructure responsibilities are defined according to the selected deployment and service scope",
     custom: "You provision, secure, and operate the infrastructure",
   },
   {
@@ -41,7 +41,7 @@ const comparisonRows: { dimension: string; whiteLabel: string; custom: string }[
   },
   {
     dimension: "Product updates",
-    whiteLabel: "Delivered continuously by the provider",
+    whiteLabel: "Platform updates are provided according to the selected service scope",
     custom: "Planned, built, and released by your own team",
   },
   {
@@ -51,7 +51,7 @@ const comparisonRows: { dimension: string; whiteLabel: string; custom: string }[
   },
   {
     dimension: "Scalability",
-    whiteLabel: "Scales with provider, location, and patient volume on managed infrastructure",
+    whiteLabel: "Can be configured based on expected users, providers, locations and consultation volumes",
     custom: "Scales only as far as your architecture and team can support",
   },
 ];

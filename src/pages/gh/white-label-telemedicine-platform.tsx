@@ -32,7 +32,7 @@ const schemaData = {
             "@id": "https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/#webpage",
             "url": "https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/",
             "name": "White Label Telemedicine Platform Ghana | Branded Virtual Care Solution",
-            "description": "Launch a white label telemedicine platform for healthcare providers in Ghana. Build a branded virtual care experience with mobile money payments, low-bandwidth support, and patient engagement workflows for clinics, hospitals, and digital health companies.",
+            "description": "Launch a white label telemedicine platform for healthcare providers in Ghana. Build a branded virtual care experience with mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and patient engagement workflows for clinics, hospitals, and digital health companies.",
             "inLanguage": "en-GH",
             "isPartOf": {
                 "@id": "https://www.docgenieglobal.com/#website"
@@ -52,7 +52,7 @@ const schemaData = {
             "name": "White Label Telemedicine Platform for Healthcare Providers in Ghana",
             "serviceType": "White Label Telemedicine Platform",
             "category": "Virtual Care Platform",
-            "description": "DocGenie Global helps clinics, hospitals, and digital health companies in Ghana launch branded telemedicine platforms with secure online consultations, mobile money integration, low-bandwidth resilience, and patient engagement workflows — designed with Ghana's Data Protection Act 2012 (Act 843) and Ghana Health Service guidelines in mind.",
+            "description": "DocGenie Global helps clinics, hospitals, and digital health companies in Ghana launch branded telemedicine platforms with secure online consultations, mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and patient engagement workflows — designed with Ghana's Data Protection Act 2012 (Act 843) and Ghana Health Service guidelines in mind.",
             "provider": {
                 "@id": "https://www.docgenieglobal.com/#organization"
             },
@@ -83,7 +83,7 @@ const schemaData = {
             "@type": "HowTo",
             "@id": "https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/#howto",
             "name": "How to Launch a White Label Telemedicine Platform in Ghana",
-            "description": "Steps to deploy a branded virtual care platform for Ghana-based healthcare providers with mobile money integration and low-bandwidth support.",
+            "description": "Steps to deploy a branded virtual care platform for Ghana-based healthcare providers, with payment integration options and connectivity requirements assessed during implementation.",
             "step": [
                 {
                     "@type": "HowToStep",
@@ -95,7 +95,7 @@ const schemaData = {
                     "@type": "HowToStep",
                     "position": 2,
                     "name": "Platform Configuration",
-                    "text": "We configure your branded interface, appointment flows, mobile money payment integration (MTN MoMo, Vodafone Cash, AirtelTigo), patient communication, and provider dashboard."
+                    "text": "We configure your branded interface, appointment flows, payment integration options assessed for your preferred payment services, patient communication, and provider dashboard."
                 },
                 {
                     "@type": "HowToStep",
@@ -144,7 +144,7 @@ const schemaData = {
                     "name": "What is a white label telemedicine platform for Ghana?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "A white label telemedicine platform for Ghana is a branded virtual care solution that allows healthcare providers — clinics, hospitals, and digital health companies — to offer online consultations, appointment booking, patient communication, and digital care services under their own brand. The platform is fully customised with your logo, colours, domain, and patient interface, without building technology from scratch. It is designed to support the Ghanaian market specifically, including mobile money payment integration and low-bandwidth resilience for patients across all regions."
+                        "text": "A white label telemedicine platform for Ghana is a branded virtual care solution that allows healthcare providers — clinics, hospitals, and digital health companies — to offer online consultations, appointment booking, patient communication, and digital care services under their own brand. The platform is fully customised with your logo, colours, domain, and patient interface, without building technology from scratch. It is designed to support the Ghanaian market, with mobile-money and card-payment integration options and connectivity considerations assessed during implementation."
                     }
                 },
                 {
@@ -152,7 +152,7 @@ const schemaData = {
                     "name": "Does the platform support mobile money payments used in Ghana?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, DocGenie Global supports integration with Ghana's leading mobile money providers — MTN Mobile Money (MoMo), Vodafone Cash, and AirtelTigo Money — so patients can pay for consultations through the payment method they already use daily. Card payments via Visa and Mastercard are also supported for urban and diaspora patients. Mobile money integration removes a major barrier to virtual care adoption in Ghana, where mobile money is the dominant payment method."
+                        "text": "Mobile-money and card-payment integration options can be assessed based on the provider's preferred payment services and implementation scope. Specific payment-provider availability is confirmed during technical discovery. Mobile-money services are widely used in Ghana and may be relevant when designing patient-payment journeys."
                     }
                 },
                 {
@@ -160,7 +160,7 @@ const schemaData = {
                     "name": "Does the platform work on low-bandwidth or slow internet connections?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, DocGenie Global is designed to function effectively in low-bandwidth environments. The platform supports adaptive video quality that adjusts to available bandwidth, a lightweight mobile-first interface optimised for lower-end Android devices, and Progressive Web App (PWA) support — no app store download required. SMS and WhatsApp notification fallbacks are also available to ensure care continuity across Ghana's diverse connectivity landscape, from Greater Accra to the Northern and Upper East regions."
+                        "text": "DocGenie Global is designed with low-bandwidth environments in mind. Availability of adaptive video quality, a lightweight mobile-first interface, Progressive Web App (PWA) access, offline or low-connectivity functionality, and SMS or WhatsApp notification fallbacks depends on the selected configuration and implementation scope. Connectivity and continuity requirements are reviewed during technical discovery to support access across Ghana's diverse connectivity landscape."
                     }
                 },
                 {
@@ -176,7 +176,7 @@ const schemaData = {
                     "name": "Can the platform support diaspora consultations — patients abroad consulting Ghanaian doctors?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, DocGenie Global supports cross-border virtual consultations, enabling MDC-registered Ghanaian healthcare providers to serve patients in the diaspora — whether in the UK, US, Europe, or elsewhere — as well as patients within Ghana. Diaspora health services are a growing segment in the Ghanaian healthcare market, and DocGenie Global's platform is built to support international access while keeping your brand central to the patient relationship."
+                        "text": "The platform may support virtual-care access for patients in different locations, including diaspora patients, while keeping your brand central to the patient relationship. Healthcare providers remain responsible for practitioner licensure, jurisdictional rules, prescribing requirements and other applicable legal obligations. DocGenie Global provides the technical ability to connect users; it does not authorise cross-border clinical practice."
                     }
                 },
                 {
@@ -184,7 +184,7 @@ const schemaData = {
                     "name": "Can we use our own clinic brand and domain?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, the platform is fully customisable with your logo, colours, communication templates, and patient interface — all under your own custom domain or subdomain, not a third-party URL. Your patients interact with your brand at every touchpoint: booking, consultation, follow-up reminders, and post-visit communication. This builds patient trust and keeps digital loyalty with your clinic rather than a generic telehealth app. See how branding affects patient retention in our article on telemedicine platform branding."
+                        "text": "Yes, the platform is fully customisable with your logo, colours, communication templates, and patient interface — all under your own custom domain or subdomain, not a third-party URL. Your patients interact with your brand at every touchpoint: booking, consultation, follow-up reminders, and post-visit communication. This builds patient trust and keeps digital loyalty with your clinic rather than a generic telehealth app."
                     }
                 },
                 {
@@ -200,7 +200,7 @@ const schemaData = {
                     "name": "How long does implementation take for a Ghana-based clinic?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "A standard branded deployment can be completed within weeks, depending on branding scope, mobile money integration requirements, and workflow complexity. Timelines depend on the level of customisation, integrations required, and whether you are launching a single-provider clinic or a multi-location healthcare group. Our team guides you through each phase from discovery to launch, with training and go-live support included."
+                        "text": "Implementation timelines depend on branding, workflows, integrations, configuration and provider readiness, including whether you are launching a single-provider clinic or a multi-location healthcare group. Our team guides you through each phase from discovery to launch, with training and go-live support scoped to your service plan."
                     }
                 }
             ]
@@ -211,15 +211,15 @@ const schemaData = {
 const faqs = [
     {
         question: "What is a white label telemedicine platform for Ghana?",
-        answer: "A white label telemedicine platform for Ghana is a branded virtual care solution that allows healthcare providers — clinics, hospitals, and digital health companies — to offer online consultations, appointment booking, patient communication, and digital care services under their own brand. The platform is fully customised with your logo, colours, domain, and patient interface, without building technology from scratch. It is designed to support the Ghanaian market specifically, including mobile money payment integration and low-bandwidth resilience for patients across all regions."
+        answer: "A white label telemedicine platform for Ghana is a branded virtual care solution that allows healthcare providers — clinics, hospitals, and digital health companies — to offer online consultations, appointment booking, patient communication, and digital care services under their own brand. The platform is fully customised with your logo, colours, domain, and patient interface, without building technology from scratch. It is designed to support the Ghanaian market, with mobile-money and card-payment integration options and connectivity considerations assessed during implementation."
     },
     {
         question: "Does the platform support mobile money payments used in Ghana?",
-        answer: "Yes, DocGenie Global supports integration with Ghana's leading mobile money providers — MTN Mobile Money (MoMo), Vodafone Cash, and AirtelTigo Money — so patients can pay for consultations through the payment method they already use daily. Card payments via Visa and Mastercard are also supported for urban and diaspora patients. Mobile money integration removes a major barrier to virtual care adoption in Ghana, where mobile money is the dominant payment method."
+        answer: "Mobile-money and card-payment integration options can be assessed based on the provider's preferred payment services and implementation scope. Specific payment-provider availability is confirmed during technical discovery. Mobile-money services are widely used in Ghana and may be relevant when designing patient-payment journeys."
     },
     {
         question: "Does the platform work on low-bandwidth or slow internet connections?",
-        answer: "Yes, DocGenie Global is designed to function effectively in low-bandwidth environments. The platform supports adaptive video quality that adjusts to available bandwidth, a lightweight mobile-first interface optimised for lower-end Android devices, and Progressive Web App (PWA) support — no app store download required. SMS and WhatsApp notification fallbacks are also available to ensure care continuity across Ghana's diverse connectivity landscape, from Greater Accra to the Northern and Upper East regions."
+        answer: "DocGenie Global is designed with low-bandwidth environments in mind. Availability of adaptive video quality, a lightweight mobile-first interface, Progressive Web App (PWA) access, offline or low-connectivity functionality, and SMS or WhatsApp notification fallbacks depends on the selected configuration and implementation scope. Connectivity and continuity requirements are reviewed during technical discovery to support access across Ghana's diverse connectivity landscape."
     },
     {
         question: "Is the platform aligned with Ghana's Data Protection Act 2012?",
@@ -227,7 +227,7 @@ const faqs = [
     },
     {
         question: "Can the platform support diaspora consultations — patients abroad consulting Ghanaian doctors?",
-        answer: "Yes, DocGenie Global supports cross-border virtual consultations, enabling MDC-registered Ghanaian healthcare providers to serve patients in the diaspora — whether in the UK, US, Europe, or elsewhere — as well as patients within Ghana. Diaspora health services are a growing segment in the Ghanaian healthcare market, and DocGenie Global's platform is built to support international access while keeping your brand central to the patient relationship."
+        answer: "The platform may support virtual-care access for patients in different locations, including diaspora patients, while keeping your brand central to the patient relationship. Healthcare providers remain responsible for practitioner licensure, jurisdictional rules, prescribing requirements and other applicable legal obligations. DocGenie Global provides the technical ability to connect users; it does not authorise cross-border clinical practice."
     },
     {
         question: "Can we use our own clinic brand and domain?",
@@ -239,7 +239,7 @@ const faqs = [
     },
     {
         question: "How long does implementation take for a Ghana-based clinic?",
-        answer: "A standard branded deployment can be completed within weeks, depending on branding scope, mobile money integration requirements, and workflow complexity. Timelines depend on the level of customisation, integrations required, and whether you are launching a single-provider clinic or a multi-location healthcare group. Our team guides you through each phase from discovery to launch, with training and go-live support included."
+        answer: "Implementation timelines depend on branding, workflows, integrations, configuration and provider readiness, including whether you are launching a single-provider clinic or a multi-location healthcare group. Our team guides you through each phase from discovery to launch, with training and go-live support scoped to your service plan."
     }
 ];
 
@@ -247,7 +247,7 @@ const GhanaWhiteLabelPage = () => (
     <Layout>
         <Head>
             <title>White Label Telemedicine Platform Ghana | Branded Virtual Care Solution</title>
-            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in Ghana. Secure online consultations, mobile money payments (MTN MoMo, Vodafone Cash), low-bandwidth support, and full white-label customisation for clinics, hospitals, and digital health companies." />
+            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in Ghana. Secure online consultations, mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and full white-label customisation for clinics, hospitals, and digital health companies." />
             <link rel="canonical" href="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/" />
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -261,7 +261,7 @@ const GhanaWhiteLabelPage = () => (
 
             {/* OpenGraph Tags */}
             <meta property="og:title" content="White Label Telemedicine Platform Ghana | Branded Virtual Care Solution" />
-            <meta property="og:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile money payments, low-bandwidth support, and secure virtual consultations built for the Ghanaian healthcare market." />
+            <meta property="og:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and secure virtual consultations for the Ghanaian healthcare market." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -275,7 +275,7 @@ const GhanaWhiteLabelPage = () => (
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@DocGenieGlobal" />
             <meta name="twitter:title" content="White Label Telemedicine Platform Ghana | Branded Virtual Care Solution" />
-            <meta name="twitter:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile money payments, low-bandwidth support, and secure virtual consultations built for the Ghanaian healthcare market." />
+            <meta name="twitter:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and secure virtual consultations for the Ghanaian healthcare market." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -293,7 +293,7 @@ const GhanaWhiteLabelPage = () => (
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in Ghana</h1>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
-                                <a href="https://www.docgenieglobal.com/">DocGenie Global</a> helps clinics, hospitals, and digital health companies in Ghana launch their own branded virtual care platform — without building technology from scratch. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, mobile money payment integration, low-bandwidth resilience, and a fully branded patient experience accessible on web, tablet, and phone.<br /><br />
+                                <a href="https://www.docgenieglobal.com/">DocGenie Global</a> helps clinics, hospitals, and digital health companies in Ghana launch their own branded virtual care platform — without building technology from scratch. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and a fully branded patient experience accessible on web, tablet, and phone.<br /><br />
                                 Whether you are building a private clinic consultation service in Accra, extending specialist access to patients in Kumasi, Tamale, or rural Ghana, offering diaspora health access, or launching a digital health company — DocGenie Global gives you the foundation to launch quickly and grow with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -335,7 +335,7 @@ const GhanaWhiteLabelPage = () => (
                 <div className="container mx-auto px-8">
                     <h2 id="gh-quick-answer-heading" className="text-lg font-semibold text-brand-blue mb-2">Quick Answer — White Label Telemedicine Platform Ghana</h2>
                     <p className="text-gray-700">
-                        A white label telemedicine platform for Ghana is a branded virtual care solution that enables clinics, hospitals, and digital health companies to offer online consultations, mobile money payments (MTN MoMo, Vodafone Cash, AirtelTigo), and patient management under their own brand — without building technology from scratch. DocGenie Global provides a fully customisable, low-bandwidth-resilient platform designed with Ghana's Data Protection Act 2012 (Act 843) and Ghana Health Service (GHS) considerations in mind. MDC-registered practitioners can deploy a complete branded virtual care service accessible on web, tablet, and phone within weeks.
+                        A white label telemedicine platform for Ghana is a branded virtual care solution that enables clinics, hospitals, and digital health companies to offer online consultations, patient payments, and patient management under their own brand — without building technology from scratch. Mobile-money and card-payment integration options can be assessed based on the provider's preferred payment services and implementation scope. DocGenie Global provides a fully customisable platform designed with Ghana's Data Protection Act 2012 (Act 843) and Ghana Health Service (GHS) considerations in mind. Implementation timelines depend on branding, workflows, integrations, configuration and provider readiness.
                     </p>
                     <p className="text-sm text-gray-500 mt-2">Last updated: August 03, 2026</p>
                 </div>
@@ -378,20 +378,19 @@ const GhanaWhiteLabelPage = () => (
                 <div className="py-10 bg-white">
                     <div className="container mx-auto px-8">
                         <div className="text-center">
-                            <h2 className="heading-3 mb-6">Mobile Money Payment Integration for Ghanaian Patients</h2>
+                            <h2 className="heading-3 mb-6">Patient Payment Options for Ghanaian Patients</h2>
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Mobile money is the dominant payment method in Ghana. MTN Mobile Money (MoMo) alone has over 17 million registered users in Ghana, making it the most widely used digital payment channel in the country. A telemedicine platform for Ghana must make it simple for patients to pay for consultations without friction. DocGenie Global supports integration with Ghana's leading mobile money providers:
+                                Mobile-money services are widely used in Ghana and may be relevant when designing patient-payment journeys. A telemedicine platform for Ghana should make it simple for patients to pay for consultations without friction. Mobile-money and card-payment integration options can be assessed based on the provider's preferred payment services and implementation scope, which may include:
                             </p>
                             <ul>
-                                <li>MTN Mobile Money (MoMo)</li>
-                                <li>Vodafone Cash</li>
-                                <li>AirtelTigo Money</li>
-                                <li>Card payments (Visa/Mastercard) for urban and diaspora patients</li>
+                                <li>Mobile-money payment options commonly used in Ghana</li>
+                                <li>Card-payment options for urban and diaspora patients</li>
+                                <li>Structured billing configurations aligned to your workflows</li>
                             </ul>
                             <p className="text-lg text-gray-700">
-                                Patients can pay for their consultation before or after booking — in the payment method they already use daily. This removes a major barrier to virtual care adoption in the Ghanaian market and ensures your platform is accessible to the broadest possible patient base.
+                                Specific payment-provider availability is confirmed during technical discovery, so patients can pay through the methods appropriate to your service and patient base.
                             </p>
                         </div>
                     </div>
@@ -409,18 +408,18 @@ const GhanaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                Internet connectivity across Ghana varies significantly — from reliable 4G in Accra and other urban centres to slower 2G/3G connections in rural and peri-urban areas. A telemedicine platform that only works well on high-speed connections will exclude a significant portion of Ghanaian patients.<br /><br />
-                                DocGenie Global is designed with connectivity resilience in mind:
+                                Internet connectivity across Ghana varies significantly — from reliable 4G in Accra and other urban centres to slower 2G/3G connections in rural and peri-urban areas. A telemedicine platform for this market should account for varied connectivity so it does not exclude patients on slower connections.<br /><br />
+                                Connectivity and continuity requirements are reviewed during technical discovery. Availability of the following depends on the selected configuration and implementation scope:
                             </p>
                             <ul>
                                 <li>Adaptive video quality that adjusts to available bandwidth</li>
-                                <li>Lightweight mobile-first interface optimised for lower-end Android devices</li>
-                                <li>Progressive Web App (PWA) support — no app store download required</li>
-                                <li>Select offline functionality for care continuity</li>
+                                <li>Lightweight mobile-first interface for lower-end Android devices</li>
+                                <li>Progressive Web App (PWA) access — no app store download required</li>
+                                <li>Offline or low-connectivity functionality for care continuity</li>
                                 <li>SMS and WhatsApp notification support as communication fallbacks</li>
-                                <li>Fast page load optimisation for 3G networks</li>
+                                <li>Page-load optimisation for slower networks</li>
                             </ul>
-                            <p className="text-lg text-gray-700">This ensures your branded telemedicine platform is accessible to patients across Greater Accra, Ashanti, Northern, Volta, Upper East, and all other regions of Ghana.</p>
+                            <p className="text-lg text-gray-700">These connectivity options are scoped to help make your branded telemedicine platform accessible to patients across Greater Accra, Ashanti, Northern, Volta, Upper East, and other regions of Ghana.</p>
                         </div>
                     </div>
                 </div>
@@ -467,7 +466,7 @@ const GhanaWhiteLabelPage = () => (
                         </div>
                         <div className="prose my-8">
                             <p className="text-lg text-gray-700">
-                                When patients in Ghana look for healthcare online, they trust the clinics and hospitals they already know. A white label telemedicine platform means your patients interact with your brand — not a generic third-party app — at every digital touchpoint. Research consistently shows that patients who engage with a familiar, branded care environment complete appointments at higher rates, are more likely to rebook, and build stronger long-term relationships with their provider. See <Link href="/blogs/telemedicine-platform-branding-patient-trust">how branded telemedicine platforms build patient trust</Link>.<br /><br />
+                                When patients in Ghana look for healthcare online, they trust the clinics and hospitals they already know. A white label telemedicine platform means your patients interact with your brand — not a generic third-party app — at every digital touchpoint. A branded patient experience can support clearer communication and a more consistent virtual-care journey. See <Link href="/blogs/telemedicine-platform-branding-patient-trust">how branded telemedicine platforms build patient trust</Link>.<br /><br />
                                 With DocGenie Global, your healthcare organisation can provide:
                             </p>
                             <ul>
@@ -563,19 +562,19 @@ const GhanaWhiteLabelPage = () => (
                                     <td className="p-4 text-center bg-brand-blue/30">Your clinic's brand experience</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
-                                    <td className="p-4 font-medium">Mobile Money</td>
+                                    <td className="p-4 font-medium">Payment Options</td>
                                     <td className="p-4 text-center">Rarely supported</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">MTN MoMo, Vodafone Cash, AirtelTigo</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Mobile-money and card-payment options assessed during implementation</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">Low Bandwidth</td>
                                     <td className="p-4 text-center">Optimised for high-speed only</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Adaptive, mobile-first design</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Connectivity options reviewed at discovery</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
                                     <td className="p-4 font-medium">Diaspora Access</td>
                                     <td className="p-4 text-center">Not built for cross-border</td>
-                                    <td className="p-4 text-center bg-brand-blue/30">Cross-border consultation support</td>
+                                    <td className="p-4 text-center bg-brand-blue/30">Can connect patients across locations; provider responsible for licensure and jurisdiction</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="p-4 font-medium">Patient Trust</td>
@@ -610,7 +609,7 @@ const GhanaWhiteLabelPage = () => (
 
                             <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">2. Platform Configuration</h3>
                             <p className="text-lg text-gray-700">
-                                We configure your branded interface, appointment flows, mobile money payment integration (MTN MoMo, Vodafone Cash, AirtelTigo), patient communication channels (including SMS and WhatsApp), provider dashboard, and any required workflow integrations.
+                                We configure your branded interface, appointment flows, payment integration options assessed for your preferred payment services, patient communication channels, provider dashboard, and any required workflow integrations.
                             </p>
 
                             <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">3. Testing and Staff Training</h3>
