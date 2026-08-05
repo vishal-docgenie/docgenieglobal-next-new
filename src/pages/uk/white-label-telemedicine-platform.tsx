@@ -25,7 +25,7 @@ const schemaData = {
             "name": "White Label Telemedicine Platform for Healthcare Providers in the UK",
             "description": "Build a white label telemedicine platform for healthcare providers in the UK. Launch secure online consultations, branded patient journeys, appointment workflows, provider dashboards, and privacy-focused virtual care experiences.",
             "inLanguage": "en-GB",
-            "dateModified": "2026-07-20",
+            "dateModified": "2026-08-05",
             "isPartOf": {
                 "@type": "WebSite",
                 "@id": "https://www.docgenieglobal.com/#website",
@@ -258,8 +258,8 @@ const faqs = [
 const ukWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform UK | Branded Virtual Care Solution</title>
-            <meta name="description" content="Build a white label telemedicine platform for UK private clinics, healthcare providers, and digital health companies. Launch secure online consultations, branded patient journeys, appointment workflows, and GDPR-aware virtual care experiences." />
+            <title>White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global</title>
+            <meta name="description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch secure online consultations, branded patient journeys, appointment workflows, and UK GDPR-aware virtual care experiences." />
             <link rel="canonical" href="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
 
             {/* hreflang for regional targeting */}
@@ -271,8 +271,8 @@ const ukWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform UK | Branded Virtual Care Solution" />
-            <meta property="og:description" content="Build a white label telemedicine platform for UK private clinics, healthcare providers, and digital health companies. Launch secure online consultations, branded patient journeys, appointment workflows, and GDPR-aware virtual care experiences." />
+            <meta property="og:title" content="White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global" />
+            <meta property="og:description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch branded, UK GDPR-aware virtual care." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:url" content="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
             <meta property="og:type" content="website" />
@@ -281,8 +281,8 @@ const ukWhiteLabelPage = () => (
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform UK | Branded Virtual Care Solution" />
-            <meta name="twitter:description" content="Build a white label telemedicine platform for UK private clinics, healthcare providers, and digital health companies. Launch secure online consultations, branded patient journeys, appointment workflows, and GDPR-aware virtual care experiences." />
+            <meta name="twitter:title" content="White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global" />
+            <meta name="twitter:description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch branded, UK GDPR-aware virtual care." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -299,8 +299,8 @@ const ukWhiteLabelPage = () => (
                 <div className="container mx-auto px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
-                            <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in the UK</h1>
-                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Our <a href="/solutions/white-label-telemedicine/">white label telemedicine solution</a> allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
+                            <h1 className="heading-2 mb-6">White Label Telemedicine Platform for UK Private Healthcare Providers</h1>
+                            <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Built on our <a href="/solutions/white-label-telemedicine/">global white-label telemedicine platform</a>, it allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <Link href="/contact" data-hero-cta>
@@ -342,7 +342,7 @@ const ukWhiteLabelPage = () => (
                     <div className="max-w-4xl mx-auto bg-brand-blue/20 border border-brand-blue/20 rounded-xl p-6 md:p-8">
                         <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                             <h2 id="uk-quick-answer-heading" className="text-sm font-semibold uppercase tracking-wide text-brand-blue">Quick Answer</h2>
-                            <span className="text-xs text-gray-500">Last updated: July 20, 2026</span>
+                            <span className="text-xs text-gray-500">Last updated: August 5, 2026</span>
                         </div>
                         <p className="text-gray-800 leading-relaxed">
                             A <strong>white label telemedicine platform for UK healthcare providers</strong> is a ready-configured virtual care solution that lets private clinics, specialist practices, and digital health companies offer online consultations, patient booking, provider dashboards, and secure follow-up workflows under their own brand — without building the technology from scratch.
@@ -407,6 +407,9 @@ const ukWhiteLabelPage = () => (
                             <p className="text-lg text-gray-700">
                                 Patient data protection is a legal and trust requirement for UK healthcare providers. The UK GDPR and Data Protection Act 2018 (DPA 2018) set the framework for how patient data must be handled, stored, and accessed. DocGenie Global supports privacy-focused digital care workflows designed with these requirements in mind — though each provider remains responsible for their own compliance obligations, ICO registration, and data processing agreements relevant to their services.
                             </p>
+                            <p className="text-lg text-gray-700">
+                                Depending on the services you deliver, other frameworks may apply — for example CQC registration for regulated activities, the NHS Data Security and Protection Toolkit (DSPT) where you handle NHS patient data, and GMC-registered clinician workflows for the doctors delivering care. DocGenie Global is designed to support secure workflows and can help organisations align with applicable requirements, but availability depends on implementation scope, and it does not provide CQC approval, NHS accreditation, GMC approval, or guaranteed compliance. Organisations should confirm their obligations with their own data-controller and compliance advisers.
+                            </p>
                             <p className="text-lg text-gray-700">Key capabilities include:</p>
                             <ul>
                                 <li>Secure patient registration workflows</li>
@@ -448,6 +451,36 @@ const ukWhiteLabelPage = () => (
                                 <li>Admin reporting</li>
                             </ul>
                             <p className="text-lg text-gray-700">This connected workflow replaces multiple disconnected tools with a single branded platform. The same workflow scales across multiple locations and provider teams, giving multi-location clinic groups a consistent patient experience regardless of which site or specialist a patient accesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </ErrorBoundary>
+
+        {/* UK Integrations */}
+        <ErrorBoundary>
+            <section>
+                <div className="py-10 bg-white">
+                    <div className="container mx-auto px-8">
+                        <div className="text-center">
+                            <h2 className="heading-3 mb-6">Integrations for UK Healthcare Workflows</h2>
+                        </div>
+                        <div className="prose my-8">
+                            <p className="text-lg text-gray-700">
+                                A branded telemedicine platform works best when it connects to the systems your practice already uses. DocGenie Global is designed to support integration-ready workflows across common categories, with availability depending on your existing systems and implementation scope:
+                            </p>
+                            <ul>
+                                <li>EHR/EMR and practice management systems (PMS)</li>
+                                <li>Appointment scheduling and calendar workflows</li>
+                                <li>Payment and billing providers</li>
+                                <li>Patient communications (email, SMS, reminders)</li>
+                                <li>Identity and access management</li>
+                                <li>APIs for connecting to your existing tools</li>
+                                <li>Reporting and admin dashboards</li>
+                            </ul>
+                            <p className="text-lg text-gray-700">
+                                UK providers often ask about systems such as EMIS, SystmOne/TPP, Cliniko, NHS login, and GP Connect. Support for any specific system depends on your requirements and is confirmed as part of the implementation scope rather than assumed — organisations should validate integration availability with our team before launch.
+                            </p>
                         </div>
                     </div>
                 </div>
