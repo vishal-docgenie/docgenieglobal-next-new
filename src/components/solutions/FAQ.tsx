@@ -35,7 +35,7 @@ const FAQ = () => {
     },
     {
       question: "Is the mobile experience a \"Wrapper\" or Native?",
-      answer: "We provide High-Performance Native-style Progressive Web Apps (PWAs) and optional Native iOS/Android wrappers that support Push Notifications and biometric login (FaceID/Fingerprint)."
+      answer: "We provide high-performance native-style Progressive Web Apps (PWAs) that deliver a fast, app-like experience on any smartphone or tablet, with support for push notifications and mobile-optimised workflows."
     },
     {
       question: "How much does white label telemedicine cost?",

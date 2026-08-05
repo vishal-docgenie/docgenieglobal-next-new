@@ -26,7 +26,9 @@ const QuickAnswerSection = () => {
             their own — your logo, your colours, your domain, and your patient portal — instead of building telehealth
             software from scratch. The platform supports the complete care journey: patient registration, appointment
             scheduling, secure video consultations, EHR/EMR workflow support, billing/payment integrations where
-            required, and patient communication — all under your brand.
+            required, and patient communication — all under your brand. Unlike a generic telehealth marketplace that
+            pools patients under a third-party name, a white label platform keeps the patient relationship — and your
+            branding — with your organisation across every touchpoint.
           </p>
           <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
             {[

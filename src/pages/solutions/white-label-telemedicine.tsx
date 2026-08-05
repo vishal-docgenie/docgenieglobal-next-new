@@ -17,6 +17,7 @@ import ImplementationSection from "@/components/solutions/WhiteLabel/Implementat
 import TechnicalStandardsSection from "@/components/solutions/WhiteLabel/TechnicalStandardsSection";
 import QuickAnswerSection from "@/components/solutions/WhiteLabel/QuickAnswerSection";
 import KeyQuestionsSection from "@/components/solutions/WhiteLabel/KeyQuestionsSection";
+import BuildVsBuySection from "@/components/solutions/WhiteLabel/BuildVsBuySection";
 import Testimonials from "@/components/solutions/Testimonials";
 import { whiteLabelSchemaData } from "@/components/solutions/WhiteLabel/SchemaData";
 
@@ -143,6 +144,10 @@ const WhiteLabelTelemedicine = () => {
       
       <ErrorBoundary>
         <LeadMarketSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <BuildVsBuySection />
       </ErrorBoundary>
 
       <ErrorBoundary>
