@@ -42,24 +42,28 @@ function generateSitemap(): string {
   const today = new Date().toISOString().split("T")[0];
 
   const staticEntries = staticPages
-    .map(
-      ({ path, priority, changefreq }) => `
+    .map(({ path, priority, changefreq }) => {
+      // Site uses trailingSlash: true. Ensure every non-root URL ends with "/"
+      // and never produce a double slash. Root stays exactly "${BASE_URL}/".
+      const normalizedPath = path === "/" ? "/" : `${path.replace(/\/+$/, "")}/`;
+      const loc = `${BASE_URL}${normalizedPath}`;
+      return `
   <url>
-    <loc>${BASE_URL}${path}</loc>
+    <loc>${loc}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
-  </url>`
-    )
+  </url>`;
+    })
     .join("");
 
   const blogEntries = blogData
     .map((post) => {
-      const slug = post.slug ?? generateSlug(post.title);
+      const slug = (post.slug ?? generateSlug(post.title)).replace(/^\/+|\/+$/g, "");
       const lastmod = toISODate(post.date);
       return `
   <url>
-    <loc>${BASE_URL}/blogs/${slug}</loc>
+    <loc>${BASE_URL}/blogs/${slug}/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>

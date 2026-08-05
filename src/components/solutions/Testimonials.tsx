@@ -1,56 +1,55 @@
 
 import React from "react";
-import { MessageCircle } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { ShieldCheck, Palette, Plug } from "lucide-react";
 
+// Factual product-capability section. Replaces previously unverified
+// testimonials — no client names, quotes, or performance figures are asserted.
 const Testimonials = () => {
-  const isMobile = useIsMobile();
-  
-  const testimonials = [
+  const capabilities = [
     {
-      quote: "The white label telemedicine platform allowed us to expand our reach by 40% while maintaining our established brand identity. Patients trust our virtual services because they recognize our brand.",
-      author: "Dr. Sarah Johnson",
-      role: "Medical Director",
-      organization: "Westside Family Clinic"
+      icon: Palette,
+      title: "Your brand, end to end",
+      description:
+        "Your logo, colours, custom domain, and branded patient communications appear consistently across web and mobile, so virtual visits stay within your own care experience.",
     },
     {
-      quote: "Implementing DocGenie's white label solution was seamless. Our patients appreciate the consistent experience between in-person and virtual visits, which has been crucial for building trust.",
-      author: "Dr. Michael Chen",
-      role: "Chief Medical Officer",
-      organization: "Integrated Health Partners"
+      icon: Plug,
+      title: "Fits your existing systems",
+      description:
+        "The platform is designed to connect with your EHR/EMR, payment processors, and third-party services through a comprehensive API ecosystem, adapting to established clinical workflows.",
     },
     {
-      quote: "As a hospital network, brand consistency is vital. This platform allowed us to offer telemedicine services under our trusted brand name, resulting in 30% higher adoption rates compared to generic solutions.",
-      author: "Amanda Rodriguez",
-      role: "VP of Digital Transformation",
-      organization: "Central Regional Medical Center"
-    }
+      icon: ShieldCheck,
+      title: "Built for secure virtual care",
+      description:
+        "Configurable role-based access, secure consultation workflows, and branded patient portals are designed to support providers delivering telehealth under their own identity.",
+    },
   ];
 
   return (
     <div className="py-16 bg-brand-blue/5">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="heading-3 mb-6">What Healthcare Providers Are Saying</h2>
+          <h2 className="heading-3 mb-6">Why Healthcare Providers Choose White Label</h2>
           <p className="text-lg text-gray-700">
-            Discover how clinics, doctors, and hospitals have transformed their practice with our white label telemedicine solution.
+            Deliver branded virtual care that fits your organisation — from patient experience to
+            integrations — without building a telemedicine platform from scratch.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-md relative">
-              <div className={`absolute -top-4 ${isMobile ? 'left-1/2 -translate-x-1/2' : 'left-8'} h-8 w-8 bg-brand-blue rounded-full flex items-center justify-center`}>
-                <MessageCircle className="h-4 w-4 text-white" />
+          {capabilities.map((capability, index) => {
+            const Icon = capability.icon;
+            return (
+              <div key={index} className="bg-white p-8 rounded-xl shadow-md relative">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 md:left-8 md:translate-x-0 h-8 w-8 bg-brand-blue rounded-full flex items-center justify-center">
+                  <Icon className="h-4 w-4 text-white" />
+                </div>
+                <h3 className="font-semibold text-lg mt-2 mb-3">{capability.title}</h3>
+                <p className="text-gray-700">{capability.description}</p>
               </div>
-              <p className="italic text-gray-700 mb-6">"{testimonial.quote}"</p>
-              <div>
-                <p className="font-semibold">{testimonial.author}</p>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
-                <p className="text-sm text-brand-blue">{testimonial.organization}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
