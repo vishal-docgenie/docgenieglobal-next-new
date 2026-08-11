@@ -30,7 +30,7 @@ const QuickAnswerSection = () => {
             pools patients under a third-party name, a white label platform keeps the patient relationship — and your
             branding — with your organisation across every touchpoint.
           </p>
-          <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+          <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
             {[
               "Launch in weeks under your own brand",
               "HIPAA-compliant virtual care with secure, encrypted data transmission",
