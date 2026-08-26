@@ -10,7 +10,7 @@ interface BlogsHeroProps {
 
 const BlogsHero = ({ searchQuery, setSearchQuery }: BlogsHeroProps) => {
   return (
-    <div className="bg-gradient-to-r from-gray-50 to-white py-16 md:py-24">
+    <div className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
       <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in">
           Blogs & News

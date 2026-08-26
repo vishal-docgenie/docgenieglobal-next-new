@@ -710,7 +710,7 @@ const usWhiteLabelPage = () => (
         </ErrorBoundary>
 
         <ErrorBoundary>
-            <section className="py-10 bg-white" aria-labelledby="us-related-resources">
+            <section className="py-10 bg-gradient-to-br from-brand-blue/10 to-brand-orange/10" aria-labelledby="us-related-resources">
                 <div className="container mx-auto px-8">
                     <div className="text-center">
                         <h2 id="us-related-resources" className="heading-3 mb-6">Related Resources for US Healthcare Providers</h2>
