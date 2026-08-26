@@ -1,5 +1,6 @@
 
 import React from "react";
+import Link from "next/link";
 import Layout from "@/components/Layout";
 import SolutionHero from "@/components/solutions/SolutionHero";
 import FeatureSection from "@/components/solutions/FeatureSection";
@@ -73,6 +74,20 @@ const WhiteLabelTelemedicine = () => {
           image="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png"
           altText="Medical professional using white-labeled DocGenie telemedicine platform with customized branding for virtual consultation with patient"
         />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <section className="py-6 bg-white border-b border-gray-100" aria-label="Regional editions">
+          <div className="container mx-auto px-8">
+            <p className="text-gray-700 text-center">
+              Serving healthcare providers worldwide. For region-specific guidance, see our{" "}
+              <Link href="/us/white-label-telemedicine-platform/" className="text-brand-blue underline">white label telemedicine platform for US healthcare providers</Link>,{" "}
+              <Link href="/uk/white-label-telemedicine-platform/" className="text-brand-blue underline">UK edition</Link>,{" "}
+              <Link href="/za/white-label-telemedicine-platform/" className="text-brand-blue underline">South Africa edition</Link>, and{" "}
+              <Link href="/gh/white-label-telemedicine-platform/" className="text-brand-blue underline">Ghana edition</Link>.
+            </p>
+          </div>
+        </section>
       </ErrorBoundary>
 
       <ErrorBoundary>
