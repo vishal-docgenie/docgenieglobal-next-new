@@ -4,6 +4,12 @@ import { generateSlug } from "@/lib/blog-slug";
 
 const BASE_URL = "https://www.docgenieglobal.com";
 
+// Stable reference date for static/structural pages. Using a fixed value (rather
+// than `new Date()` at request time) keeps <lastmod> deterministic so Google is
+// not told every page "changed today" on every crawl. Bump this only when the
+// static pages are meaningfully updated.
+const SITE_LASTMOD = "2026-08-11";
+
 const staticPages = [
   { path: "/", priority: "1.00", changefreq: "weekly" },
   { path: "/solutions", priority: "0.90", changefreq: "weekly" },
@@ -30,27 +36,32 @@ const staticPages = [
   { path: "/terms-of-service", priority: "0.30", changefreq: "yearly" },
 ];
 
-function toISODate(dateStr: string): string {
-  try {
-    return new Date(dateStr).toISOString().split("T")[0];
-  } catch {
-    return new Date().toISOString().split("T")[0];
-  }
+function toISODate(dateStr: string, fallback: string): string {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return fallback;
+  return d.toISOString().split("T")[0];
+}
+
+function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
 }
 
 function generateSitemap(): string {
-  const today = new Date().toISOString().split("T")[0];
-
   const staticEntries = staticPages
     .map(({ path, priority, changefreq }) => {
       // Site uses trailingSlash: true. Ensure every non-root URL ends with "/"
       // and never produce a double slash. Root stays exactly "${BASE_URL}/".
       const normalizedPath = path === "/" ? "/" : `${path.replace(/\/+$/, "")}/`;
-      const loc = `${BASE_URL}${normalizedPath}`;
+      const loc = escapeXml(`${BASE_URL}${normalizedPath}`);
       return `
   <url>
     <loc>${loc}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${SITE_LASTMOD}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -60,10 +71,13 @@ function generateSitemap(): string {
   const blogEntries = blogData
     .map((post) => {
       const slug = (post.slug ?? generateSlug(post.title)).replace(/^\/+|\/+$/g, "");
-      const lastmod = toISODate(post.date);
+      // Reflect the real freshness of the post: prefer dateModified, fall back to
+      // the publish date. Previously this always used `date`, so updated posts
+      // never surfaced their new lastmod in the sitemap.
+      const lastmod = toISODate(post.dateModified ?? post.date, SITE_LASTMOD);
       return `
   <url>
-    <loc>${BASE_URL}/blogs/${slug}/</loc>
+    <loc>${escapeXml(`${BASE_URL}/blogs/${slug}/`)}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
