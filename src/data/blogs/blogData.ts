@@ -1479,7 +1479,7 @@ export const blogData: BlogPost[] = [
   },
   {
     id: '19',
-    title: 'HIPAA Compliance for Telehealth Platforms: A 2026 Guide for US Healthcare Providers',
+    title: 'HIPAA Telehealth Compliance: 2026 US Guide',
     slug: 'hipaa-compliance-telemedicine-us-healthcare',
     content: hipaaTelemedicineUsContent,
     date: 'Jul 18, 2026',
