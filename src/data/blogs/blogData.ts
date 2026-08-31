@@ -428,7 +428,7 @@ export const blogData: BlogPost[] = [
     category: 'Technology',
     tags: ['EHR', 'EMR', 'telemedicine', 'healthcare technology', 'data integration'],
     featured: false,
-    dateModified: 'August 27, 2026',
+    dateModified: 'August 31, 2026',
     faqs: [
       {
         question: "What is EHR/EMR integration with telehealth platforms?",
@@ -1227,7 +1227,7 @@ export const blogData: BlogPost[] = [
     category: 'Technology',
     tags: ['ROI of ready-made virtual care platform','ready-made virtual care platform','white-label virtual care platform','white-label telemedicine platform','virtual care ROI','telemedicine ROI','grow healthcare revenue','reduce healthcare admin workload','virtual care platform for clinics','branded virtual care platform','healthcare digital transformation'],
     featured: true,
-    dateModified: 'August 27, 2026',
+    dateModified: 'August 31, 2026',
     faqs: [
       {
         question: "What is a ready-made virtual care platform?",
@@ -1830,7 +1830,7 @@ export const blogData: BlogPost[] = [
     category: 'Telemedicine',
     tags: ['telemedicine pricing', 'white-label telemedicine cost', 'virtual care platform pricing', 'healthcare SaaS pricing', 'telemedicine ROI'],
     featured: false,
-    dateModified: 'August 27, 2026',
+    dateModified: 'August 31, 2026',
     faqs: [
       {
         question: "What pricing models do white-label telemedicine platforms typically use?",
