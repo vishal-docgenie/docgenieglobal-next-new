@@ -172,21 +172,45 @@ const MobileMenu = ({
                 </button>
               </div>
               <div id={`${link.name.toLowerCase()}-dropdown-menu`} className={`pl-4 space-y-2 mt-2 transition-all overflow-hidden text-left ${(link.name === "Solutions" ? isSolutionsDropdownOpen : isIndustriesDropdownOpen) ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-              {(link.name === "Solutions" ? solutionsDropdownItems : industriesDropdownItems).map(item => (
-                  <button
-                    key={item.name}
-                    className={`flex items-center py-2 w-full text-left ${
-                      link.name === "Solutions" && "isRegional" in item && (item as { isRegional?: boolean }).isRegional ? "pl-6 text-sm" : ""
-                    } ${
-                      currentPath === item.path ? "text-brand-blue" : "text-gray-700 hover:text-brand-blue"
-                    } transition-colors`}
-                    onClick={() => handleDropdownItemClick(item.path)}
-                    aria-label={("ariaLabel" in item && (item as { ariaLabel?: string }).ariaLabel) ? (item as { ariaLabel?: string }).ariaLabel : `Navigate to ${item.name}`}
-                  >
-                    {item.icon}
-                    <span>{item.name}</span>
-                  </button>
-                ))}
+              {(link.name === "Solutions" ? solutionsDropdownItems : industriesDropdownItems).map(item => {
+                  const isRegional = "isRegional" in item && (item as { isRegional?: boolean }).isRegional;
+                  const ariaLabel = ("ariaLabel" in item && (item as { ariaLabel?: string }).ariaLabel)
+                    ? (item as { ariaLabel?: string }).ariaLabel
+                    : `Navigate to ${item.name}`;
+                  const activeClasses = currentPath === item.path ? "text-brand-blue" : "text-gray-700 hover:text-brand-blue";
+                  // Regional editions render as a genuine crawlable <a href> (Next.js Link),
+                  // present in server-rendered HTML, while still closing the menu on click.
+                  if (isRegional) {
+                    const href = item.path.endsWith("/") ? item.path : `${item.path}/`;
+                    return (
+                      <Link
+                        key={item.name}
+                        href={href}
+                        className={`flex items-center py-2 w-full text-left pl-6 text-sm ${activeClasses} transition-colors`}
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setSolutionsDropdownOpen(false);
+                          setIndustriesDropdownOpen(false);
+                        }}
+                        aria-label={ariaLabel}
+                      >
+                        {item.icon}
+                        <span>{item.name}</span>
+                      </Link>
+                    );
+                  }
+                  return (
+                    <button
+                      key={item.name}
+                      className={`flex items-center py-2 w-full text-left ${activeClasses} transition-colors`}
+                      onClick={() => handleDropdownItemClick(item.path)}
+                      aria-label={ariaLabel}
+                    >
+                      {item.icon}
+                      <span>{item.name}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
           ) : (

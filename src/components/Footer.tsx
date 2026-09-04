@@ -80,6 +80,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/us/white-label-telemedicine-platform/"
+                  className="text-gray-500 text-sm hover:text-brand-blue transition-colors"
+                >
+                  White Label Telemedicine (United States)
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pricing"
                   className="text-gray-600 hover:text-brand-blue transition-colors"
                 >
