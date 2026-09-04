@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const whiteLabelVsBuildInhouseContent: BlogContent = {
-  intro: "For most US healthcare organisations, licensing a <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> is the faster, more cost-effective, and lower-risk path to branded virtual care than building in-house. The decision comes down to one question: is your core business delivering healthcare, or building software? For most providers, the answer shapes everything that follows.",
+  intro: "For most US healthcare organisations, licensing a <a href='/us/white-label-telemedicine-platform/'>white label telemedicine platform for US clinics and hospitals</a> is the faster, more cost-effective, and lower-risk path to branded virtual care than building in-house. The decision comes down to one question: is your core business delivering healthcare, or building software? For most providers, the answer shapes everything that follows.",
 
   sections: [
     {

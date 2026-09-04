@@ -27,7 +27,10 @@ export const whiteLabelSchemaData = {
         "@type": "Organization",
         "name": "DocGenie Global"
       },
-      "areaServed": ["US","UK","ZA","GH"],
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
       "audience": {
         "@type": "Audience",
         "audienceType": "Hospitals, Clinics, Healthcare Providers, Startups"

@@ -35,6 +35,11 @@ export const solutionsDropdownItems = [
     iconName: "Monitor"
   },
   {
+    name: "White Label Telemedicine Platform (United States)",
+    path: "/us/white-label-telemedicine-platform",
+    iconName: "Globe"
+  },
+  {
     name: "HIPAA Compliant Healthcare",
     path: "/solutions/hipaa-compliant-healthcare",
     iconName: "ShieldCheck"

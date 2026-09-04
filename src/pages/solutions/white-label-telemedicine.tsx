@@ -81,7 +81,7 @@ const WhiteLabelTelemedicine = () => {
           <div className="container mx-auto px-8">
             <p className="text-gray-700 text-center">
               Serving healthcare providers worldwide. For region-specific guidance, see our{" "}
-              <Link href="/us/white-label-telemedicine-platform/" className="text-brand-blue underline">white label telemedicine platform for US healthcare providers</Link>,{" "}
+              <Link href="/us/white-label-telemedicine-platform/" className="text-brand-blue underline">United States edition</Link>,{" "}
               <Link href="/uk/white-label-telemedicine-platform/" className="text-brand-blue underline">UK edition</Link>,{" "}
               <Link href="/za/white-label-telemedicine-platform/" className="text-brand-blue underline">South Africa edition</Link>, and{" "}
               <Link href="/gh/white-label-telemedicine-platform/" className="text-brand-blue underline">Ghana edition</Link>.

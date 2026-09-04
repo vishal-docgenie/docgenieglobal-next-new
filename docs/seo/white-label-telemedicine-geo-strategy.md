@@ -11,6 +11,40 @@ been shipped on this branch — see the diff in this PR.
 
 ---
 
+## 0. Regional keyword-ownership model (authoritative)
+
+DocGenie runs one global white-label page and dedicated regional editions. Both are kept —
+they are **not** consolidated, redirected, canonicalized to each other, or deleted. Roles:
+
+- **US page — `/us/white-label-telemedicine-platform/`** owns **US-market commercial intent**.
+  When the Google Search Console country is **United States**, the US page is the preferred
+  landing page for the commercial cluster, including the generic head terms searched from the US:
+  - white label telemedicine platform
+  - white label telehealth platform
+  - white label telemedicine app
+  - white label telemedicine software
+  - HIPAA-aligned white-label platform queries
+  - US clinic / hospital / provider queries (and other explicitly US-focused searches)
+- **Global page — `/solutions/white-label-telemedicine/`** remains the **international** landing
+  page and the `en` / `x-default` version for users outside a dedicated regional market. Its
+  `areaServed` is worldwide (it still serves the US as a business; the US *page* simply owns US
+  search intent). Regional editions stay discoverable via hreflang and visible regional links.
+- **Informational blogs are informational only.** No blog is the primary commercial owner of the
+  cluster. Each blog supports **one** commercial landing page appropriate to its intent:
+  - **Global / international blogs → link to the global page.**
+  - **US-specific blogs** (title or subject explicitly US: HIPAA-US, multi-state, US pricing, US
+    build-vs-buy, US specialty/EHR, US launch) **→ link their strongest commercial link to the
+    US page.**
+- **Anchor-text hygiene:** do **not** repeat one exact-match anchor ("white label telemedicine
+  platform") across every supporting page. Vary anchors naturally and route each to the correct
+  regional owner. Do not change page copy merely to raise keyword density.
+
+This model supersedes any earlier statement in this document that treated the global page as the
+sole owner of "white label telemedicine platform"; for US-country searches that head term is
+owned by the US page.
+
+---
+
 ## 1. On-page changes shipped in this PR
 
 - `QuickAnswerSection` — 60-word direct-answer block ("Quick Answer") placed right after the
@@ -72,9 +106,10 @@ competitors without verified data — use for internal competitive positioning o
 
 ## 3. Content cluster plan (10–15 supporting blogs)
 
-All posts interlink to `/solutions/white-label-telemedicine/` with descriptive anchor text
-("white label telemedicine platform", "branded telehealth solution") and to each other where
-topically relevant. Each post should open with a 40-60 word direct-answer block, use
+Posts interlink to the commercial landing page that matches their intent per the ownership
+model in Section 0 — **global/international posts → `/solutions/white-label-telemedicine/`**,
+**US-specific posts → `/us/white-label-telemedicine-platform/`** — using varied descriptive
+anchor text (not one repeated exact-match phrase) and to each other where topically relevant. Each post should open with a 40-60 word direct-answer block, use
 question-based H2s, and close with a short summary — same pattern as the main page.
 
 | # | Title | Target keyword | Intent |

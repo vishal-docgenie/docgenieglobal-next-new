@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, Monitor, ShieldCheck, MessageCircle, HeartPulse, Brain } from "lucide-react";
+import { ChevronDown, Monitor, ShieldCheck, MessageCircle, HeartPulse, Brain, Globe } from "lucide-react";
 import { getButtonA11yProps } from "@/utils/accessibilityUtils";
 
 interface SolutionsDropdownProps {
@@ -23,11 +23,24 @@ const SolutionsDropdown = ({ isOpen, setIsOpen, isCurrentPage }: SolutionsDropdo
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [setIsOpen]);
 
-  const solutionsDropdownItems = [
+  const solutionsDropdownItems: {
+    name: string;
+    path: string;
+    icon: React.ReactNode;
+    isRegional?: boolean;
+    ariaLabel?: string;
+  }[] = [
     {
       name: "White Label Telemedicine Platform",
       path: "/solutions/white-label-telemedicine",
       icon: <Monitor className="h-5 w-5 mr-2" />
+    },
+    {
+      name: "United States",
+      path: "/us/white-label-telemedicine-platform",
+      icon: <Globe className="h-4 w-4 mr-2" />,
+      isRegional: true,
+      ariaLabel: "White Label Telemedicine Platform — United States edition"
     },
     {
       name: "HIPAA Compliant Healthcare",
@@ -90,9 +103,12 @@ const SolutionsDropdown = ({ isOpen, setIsOpen, isCurrentPage }: SolutionsDropdo
             <Link
               key={item.name}
               href={item.path}
-              className="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-blue/10 hover:text-brand-blue transition-colors"
+              className={`flex items-center py-3 text-gray-700 hover:bg-brand-blue/10 hover:text-brand-blue transition-colors ${
+                item.isRegional ? "pl-10 pr-4 text-sm text-gray-500" : "px-4"
+              }`}
               onClick={() => setIsOpen(false)}
               role="menuitem"
+              aria-label={item.ariaLabel ?? item.name}
             >
               {item.icon}
               <span>{item.name}</span>

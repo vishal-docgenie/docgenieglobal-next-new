@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const whiteLabelSpecialtyCareContent: BlogContent = {
-  intro: "White label telemedicine for specialty care requires platform flexibility that general telehealth tools rarely provide. Each specialty has a distinct consultation model, patient journey, and workflow integration need — dermatology relies on visual assessment, mental health requires session privacy and therapeutic continuity, chronic care depends on recurring engagement, cardiology follow-up needs structured clinical documentation. A configurable <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a> accommodates these differences; a one-size-fits-all generic tool typically does not.",
+  intro: "White label telemedicine for specialty care requires platform flexibility that general telehealth tools rarely provide. Each specialty has a distinct consultation model, patient journey, and workflow integration need — dermatology relies on visual assessment, mental health requires session privacy and therapeutic continuity, chronic care depends on recurring engagement, cardiology follow-up needs structured clinical documentation. A configurable <a href='/us/white-label-telemedicine-platform/'>white label telemedicine platform for US specialty practices</a> accommodates these differences; a one-size-fits-all generic tool typically does not.",
 
   sections: [
     {

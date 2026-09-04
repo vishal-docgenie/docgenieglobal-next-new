@@ -1,7 +1,7 @@
 import type { BlogContent } from '@/data/blogs/types';
 
 export const hipaaTelemedicineUsContent: BlogContent = {
-  intro: "HIPAA compliance for telemedicine means more than secure video. Across the virtual care journey — patient registration, appointment booking, consultation, post-visit communication, and data storage — a telehealth platform typically handles electronic protected health information (ePHI). Understanding what HIPAA actually requires of covered entities and their vendors helps US healthcare providers ask the right questions when selecting a <a href='/solutions/white-label-telemedicine/'>white label telemedicine platform</a>.",
+  intro: "HIPAA compliance for telemedicine means more than secure video. Across the virtual care journey — patient registration, appointment booking, consultation, post-visit communication, and data storage — a telehealth platform typically handles electronic protected health information (ePHI). Understanding what HIPAA actually requires of covered entities and their vendors helps US healthcare providers ask the right questions when selecting a <a href='/us/white-label-telemedicine-platform/'>white label telemedicine platform for US healthcare organizations</a>.",
 
   sections: [
     {

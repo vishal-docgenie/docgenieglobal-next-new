@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import {
   ChevronDown,
   Monitor,
+  Globe,
   ShieldCheck,
   MessageCircle,
   HeartPulse,
@@ -45,11 +46,24 @@ const MobileMenu = ({
 }: MobileMenuProps) => {
   const router = useRouter();
 
-  const solutionsDropdownItems = [
+  const solutionsDropdownItems: {
+    name: string;
+    path: string;
+    icon: React.ReactNode;
+    isRegional?: boolean;
+    ariaLabel?: string;
+  }[] = [
     {
       name: "White Label Telemedicine Platform",
       path: "/solutions/white-label-telemedicine",
       icon: <Monitor className="h-5 w-5 mr-2" />,
+    },
+    {
+      name: "United States",
+      path: "/us/white-label-telemedicine-platform",
+      icon: <Globe className="h-4 w-4 mr-2" />,
+      isRegional: true,
+      ariaLabel: "White Label Telemedicine Platform — United States edition",
     },
     {
       name: "HIPAA Compliant Healthcare",
@@ -159,13 +173,15 @@ const MobileMenu = ({
               </div>
               <div id={`${link.name.toLowerCase()}-dropdown-menu`} className={`pl-4 space-y-2 mt-2 transition-all overflow-hidden text-left ${(link.name === "Solutions" ? isSolutionsDropdownOpen : isIndustriesDropdownOpen) ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
               {(link.name === "Solutions" ? solutionsDropdownItems : industriesDropdownItems).map(item => (
-                  <button 
+                  <button
                     key={item.name}
                     className={`flex items-center py-2 w-full text-left ${
+                      link.name === "Solutions" && "isRegional" in item && (item as { isRegional?: boolean }).isRegional ? "pl-6 text-sm" : ""
+                    } ${
                       currentPath === item.path ? "text-brand-blue" : "text-gray-700 hover:text-brand-blue"
                     } transition-colors`}
                     onClick={() => handleDropdownItemClick(item.path)}
-                    aria-label={`Navigate to ${item.name}`}
+                    aria-label={("ariaLabel" in item && (item as { ariaLabel?: string }).ariaLabel) ? (item as { ariaLabel?: string }).ariaLabel : `Navigate to ${item.name}`}
                   >
                     {item.icon}
                     <span>{item.name}</span>
