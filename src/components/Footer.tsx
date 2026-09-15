@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Youtube, X } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const regions = [
+  { name: "United States", slug: "us" },
+  { name: "United Kingdom", slug: "uk" },
+  { name: "South Africa", slug: "south-africa" },
+  { name: "Ghana", slug: "ghana" },
+];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [isRegionsOpen, setIsRegionsOpen] = useState(false);
 
   return (
     <footer className="blue-orange-gradient-r-20 py-16">
@@ -80,10 +88,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/us/white-label-telemedicine-platform/"
-                  className="text-gray-500 text-sm hover:text-brand-blue transition-colors"
+                  href="/solutions/white-label-telemedicine/"
+                  className="text-gray-600 hover:text-brand-blue transition-colors"
                 >
-                  White Label Telemedicine (United States)
+                  White Label Platform
                 </Link>
               </li>
               <li>
@@ -103,6 +111,39 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+
+            {/* Regional Solutions dropdown */}
+            <div className="mt-6">
+              <button
+                type="button"
+                onClick={() => setIsRegionsOpen((prev) => !prev)}
+                aria-expanded={isRegionsOpen}
+                aria-controls="regional-solutions-list"
+                className="flex items-center gap-1 text-lg font-semibold mb-4 text-left w-full"
+              >
+                Regional Solutions
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform ${
+                    isRegionsOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isRegionsOpen && (
+                <ul id="regional-solutions-list" className="space-y-3">
+                  {regions.map((region) => (
+                    <li key={region.slug}>
+                      <Link
+                        href={`/${region.slug}/white-label-telemedicine-platform/`}
+                        className="text-gray-600 hover:text-brand-blue transition-colors"
+                      >
+                        {region.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
 
           <div className="md:col-span-2 text-left">
