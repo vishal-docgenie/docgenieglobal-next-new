@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const regions = [
   { name: "United States", slug: "us" },
   { name: "United Kingdom", slug: "uk" },
-  { name: "South Africa", slug: "south-africa" },
-  { name: "Ghana", slug: "ghana" },
+  { name: "South Africa", slug: "za" },
+  { name: "Ghana", slug: "gh" },
 ];
 
 const Footer = () => {
