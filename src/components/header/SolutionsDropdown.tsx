@@ -36,13 +36,6 @@ const SolutionsDropdown = ({ isOpen, setIsOpen, isCurrentPage }: SolutionsDropdo
       icon: <Monitor className="h-5 w-5 mr-2" />
     },
     {
-      name: "United States",
-      path: "/us/white-label-telemedicine-platform",
-      icon: <Globe className="h-4 w-4 mr-2" />,
-      isRegional: true,
-      ariaLabel: "White Label Telemedicine Platform — United States edition"
-    },
-    {
       name: "HIPAA Compliant Healthcare",
       path: "/solutions/hipaa-compliant-healthcare",
       icon: <ShieldCheck className="h-5 w-5 mr-2" />
