@@ -373,7 +373,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <li>Chronic disease management programmes</li>
                                 <li>Digital health startups and healthtech companies</li>
                             </ul>
-                            <p className="text-lg text-gray-700">Your patients book, consult, pay — and receive follow-up care — all under your brand, not a third-party app's interface. Learn more about <Link href="/blogs/telemedicine-platform-branding-patient-trust">how branded telemedicine builds more patient trust</Link> than generic platforms.</p>
+                            <p className="text-lg text-gray-700">Your patients book, consult, pay — and receive follow-up care — all under your brand, not a third-party app's interface. Learn more about <Link href="/blogs/telemedicine-platform-branding-patient-trust">how branded telemedicine builds more patient trust</Link> than generic platforms. Comparing vendors? Start with our <Link href="/blogs/white-label-telemedicine-platform-south-africa-buyers-guide">white label telemedicine buyer's guide for South African care providers</Link>.</p>
                         </div>
                     </div>
                 </div>
@@ -431,7 +431,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <li>Consultation records to support billing and claim workflows</li>
                                 <li>Invoice generation requirements evaluated during workflow discovery</li>
                             </ul>
-                            <p className="text-lg text-gray-700">Specific medical-aid billing and payment-provider availability is confirmed during technical discovery, based on your practice-management software, scheme requirements, and billing configuration.</p>
+                            <p className="text-lg text-gray-700">Specific medical-aid billing and payment-provider availability is confirmed during technical discovery, based on your practice-management software, scheme requirements, and billing configuration. For coding, scheme rules, and common claim rejections, read our guide on <Link href="/blogs/medical-aid-billing-virtual-consultations-south-africa">how to bill medical aid for virtual consultations in South Africa</Link>.</p>
                         </div>
                     </div>
                 </div>
@@ -459,7 +459,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <li>Mobile-first design for lower-end Android devices used on mobile data</li>
                                 <li>Asynchronous consultation tools (secure messaging, file uploads)</li>
                             </ul>
-                            <p className="text-lg text-gray-700">These connectivity and continuity options are scoped so that power outages are planned for as part of your virtual-care configuration.</p>
+                            <p className="text-lg text-gray-700">These connectivity and continuity options are scoped so that power outages are planned for as part of your virtual-care configuration. For practical steps on backup power, connectivity fallbacks, and asynchronous care, see our guide to <Link href="/blogs/telemedicine-load-shedding-south-africa">running a telemedicine practice through load shedding</Link>.</p>
                         </div>
                     </div>
                 </div>
@@ -488,7 +488,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 <li>Provider availability and scheduling management</li>
                             </ul>
                             <p className="text-lg text-gray-700">
-                                Registered practitioners — GPs, specialists, psychologists, physiotherapists, and allied health professionals — remain responsible for ensuring their individual telehealth practice complies with current HPCSA guidelines and their professional registration requirements.
+                                Registered practitioners — GPs, specialists, psychologists, physiotherapists, and allied health professionals — remain responsible for ensuring their individual telehealth practice complies with current HPCSA guidelines and their professional registration requirements. For a practical overview of consent, patient identification, prescribing and record-keeping rules, read our guide: <Link href="/blogs/telemedicine-legal-south-africa-hpcsa-guidelines">Is telemedicine legal in South Africa? HPCSA telemedicine guidelines explained</Link>.
                             </p>
                         </div>
                     </div>
@@ -654,6 +654,26 @@ const SouthAfricaWhiteLabelPage = () => (
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         {[
+                            {
+                                href: "/blogs/white-label-telemedicine-platform-south-africa-buyers-guide",
+                                title: "White Label Telemedicine Platform for South African Care Providers: Buyer's Guide",
+                                label: "Buyer's Guide"
+                            },
+                            {
+                                href: "/blogs/medical-aid-billing-virtual-consultations-south-africa",
+                                title: "How to Bill Medical Aid for Virtual Consultations in South Africa",
+                                label: "Medical Aid Billing"
+                            },
+                            {
+                                href: "/blogs/telemedicine-load-shedding-south-africa",
+                                title: "Running a Telemedicine Practice Through Load Shedding",
+                                label: "Load Shedding"
+                            },
+                            {
+                                href: "/blogs/telemedicine-legal-south-africa-hpcsa-guidelines",
+                                title: "Is Telemedicine Legal in South Africa? HPCSA Telemedicine Guidelines Explained",
+                                label: "HPCSA Compliance"
+                            },
                             {
                                 href: "/blogs/telemedicine-platform-branding-patient-trust",
                                 title: "How Branded Telemedicine Platforms Build More Patient Trust Than Generic Apps",

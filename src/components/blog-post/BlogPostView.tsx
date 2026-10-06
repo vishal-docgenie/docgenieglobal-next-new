@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import BlogHeader from './BlogHeader';
 import BlogContent from './BlogContent';
+import QuickAnswerBox from './QuickAnswerBox';
 // import ConclusionBox from './ConclusionBox'; // re-enable when ConclusionBox JSX below is uncommented
 import TableOfContents from './TableOfContents';
 import BlogCTA from './BlogCTA';
@@ -71,9 +72,14 @@ export default function BlogPostView({
 
             {/* main content */}
             {sections.map((section) => (
-              <div key={section.id} id={section.id} className="mb-12 scroll-mt-24">
-                <BlogContent section={section} />
-              </div>
+              <React.Fragment key={section.id}>
+                <div id={section.id} className="mb-12 scroll-mt-24">
+                  <BlogContent section={section} />
+                </div>
+                {section.id === 'introduction' && blog.content?.quickAnswer && (
+                  <QuickAnswerBox answer={blog.content.quickAnswer} />
+                )}
+              </React.Fragment>
             ))}
 
             {/*

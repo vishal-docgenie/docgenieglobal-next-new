@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { BlogPost } from '@/data/blogs/types';
 import { generateSlug } from '@/lib/blog-slug';
+import { stripBlogMarkdown } from '@/lib/blogText';
 
 interface BlogSEOProps {
   blog: BlogPost;
@@ -13,10 +14,14 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
 
   // Create meta description with keywords (prefer conclusion, fall back to intro)
   const generateMetaDescription = () => {
-    const sourceText =
+    if (blog.metaDescription?.trim()) {
+      return blog.metaDescription.trim();
+    }
+    const sourceText = stripBlogMarkdown(
       blog.content?.conclusion?.trim() ||
       blog.content?.intro?.trim() ||
-      "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers.";
+      "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers."
+    );
 
     if (sourceText.length <= 160) {
       return sourceText;
@@ -36,8 +41,9 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
   };
 
   // Build primary meta values with sensible fallbacks
-  const pageTitle = blog.title?.trim()
-    ? `${blog.title.trim()} | DocGenie Global`
+  const seoTitle = blog.seoTitle?.trim() || blog.title?.trim();
+  const pageTitle = seoTitle
+    ? `${seoTitle} | DocGenie Global`
     : "DocGenie Global - B2B Telemedicine Platform";
 
   const metaDescription = generateMetaDescription();

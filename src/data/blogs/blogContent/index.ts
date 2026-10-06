@@ -26,6 +26,10 @@ import { telemedicineBrandingPatientTrustContent } from './telemedicineBrandingP
 import { multiStateTelemedicineContent } from './multiStateTelemedicine';
 import { patientRetentionVirtualCareContent } from './patientRetentionVirtualCare';
 import { whiteLabelSpecialtyCareContent } from './whiteLabelSpecialtyCare';
+import { telemedicineLegalSouthAfricaContent } from './telemedicineLegalSouthAfrica';
+import { medicalAidBillingSouthAfricaContent } from './medicalAidBillingSouthAfrica';
+import { whiteLabelBuyersGuideSouthAfricaContent } from './whiteLabelBuyersGuideSouthAfrica';
+import { telemedicineLoadSheddingSouthAfricaContent } from './telemedicineLoadSheddingSouthAfrica';
 
 export {
   whitelabelTelemedicineContent,
@@ -54,5 +58,9 @@ export {
   telemedicineBrandingPatientTrustContent,
   multiStateTelemedicineContent,
   patientRetentionVirtualCareContent,
-  whiteLabelSpecialtyCareContent
+  whiteLabelSpecialtyCareContent,
+  telemedicineLegalSouthAfricaContent,
+  medicalAidBillingSouthAfricaContent,
+  whiteLabelBuyersGuideSouthAfricaContent,
+  telemedicineLoadSheddingSouthAfricaContent
 };

@@ -14,11 +14,13 @@ export interface BlogSection {
 /**
  * Structured content for a blog post. Replaces the previous flat-string content.
  * - `intro`      — opening paragraph(s); rendered as the "Introduction" section.
+ * - `quickAnswer` — optional short answer; rendered as a "Quick Answer" callout after the intro.
  * - `sections`   — the curated mid-sections (Style B: numbered, listicle-style).
  * - `conclusion` — optional closing paragraph(s); rendered as the "Conclusion" section if present.
  */
 export interface BlogContent {
   intro: string;
+  quickAnswer?: string;   // Optional "Quick Answer" callout rendered right after the intro (supports inline HTML)
   sections: BlogSection[];
   conclusion?: string;
 }
@@ -43,6 +45,8 @@ export interface BlogPost {
   id: string;
   title: string;
   slug?: string;          // Optional — generated from title if not provided
+  seoTitle?: string;      // Optional <title> override; falls back to title
+  metaDescription?: string; // Optional meta description override; falls back to conclusion/intro
   content: BlogContent;   // Structured content (was: string)
   date: string;
   dateModified?: string;  // ISO date string; falls back to date if omitted

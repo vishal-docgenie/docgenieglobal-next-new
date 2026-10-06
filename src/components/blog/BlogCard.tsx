@@ -6,6 +6,7 @@ import { BlogPost } from '@/data/blogs/types';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { generateSlug } from '@/lib/blog-slug';
+import { stripBlogMarkdown } from '@/lib/blogText';
 
 interface BlogCardProps {
   blog: BlogPost;
@@ -97,7 +98,7 @@ const BlogCard = memo(({ blog }: BlogCardProps) => {
         </p> */}
         <p
           className="text-gray-600 text-sm mb-4 line-clamp-3 [&_a]:pointer-events-none [&_a]:cursor-default [&_a]:no-underline"
-          dangerouslySetInnerHTML={{ __html: blog.content.intro }}
+          dangerouslySetInnerHTML={{ __html: stripBlogMarkdown(blog.content.intro) }}
         />
 
         <div className="flex flex-wrap gap-1 mt-auto">
