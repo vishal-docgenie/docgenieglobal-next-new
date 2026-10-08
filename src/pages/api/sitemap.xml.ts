@@ -4,11 +4,18 @@ import { generateSlug } from "@/lib/blog-slug";
 
 const BASE_URL = "https://www.docgenieglobal.com";
 
-// Stable reference date for static/structural pages. Using a fixed value (rather
-// than `new Date()` at request time) keeps <lastmod> deterministic so Google is
-// not told every page "changed today" on every crawl. Bump this only when the
-// static pages are meaningfully updated.
-const SITE_LASTMOD = "2026-08-11";
+// Static/structural pages publish no <lastmod>.
+//
+// History: this used `new Date()` at request time, which told Google every page
+// "changed today" on every crawl and trained it to devalue the signal. That was
+// replaced by a hardcoded SITE_LASTMOD = "2026-08-11" constant, which nobody
+// ever bumped — so 21 URLs claimed the same arbitrary date for two months.
+// Neither value represented real content modification.
+//
+// <lastmod> is optional. Omitting it is strictly better than publishing a date
+// we cannot stand behind: Google ignores a lastmod it does not trust, and an
+// untrustworthy one can discredit the whole sitemap. Blog entries keep their
+// lastmod because it is backed by real editorial metadata (dateModified).
 
 const staticPages = [
   { path: "/", priority: "1.00", changefreq: "weekly" },
@@ -32,13 +39,20 @@ const staticPages = [
   { path: "/uk/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
   { path: "/za/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
   { path: "/gh/white-label-telemedicine-platform", priority: "0.85", changefreq: "monthly" },
-  { path: "/privacy-policy", priority: "0.30", changefreq: "yearly" },
-  { path: "/terms-of-service", priority: "0.30", changefreq: "yearly" },
+  // /privacy-policy and /terms-of-service are intentionally absent: both are
+  // Disallow-ed in public/robots.txt, and submitting a robots-blocked URL in a
+  // sitemap is a self-contradictory signal that surfaces in Search Console as
+  // "Indexed, though blocked by robots.txt" / "Blocked by robots.txt".
+  // Their existing crawl/index intent is unchanged — only the contradiction is
+  // removed. To list them again, remove the Disallow rules first.
 ];
 
-function toISODate(dateStr: string, fallback: string): string {
+/** Real editorial date -> ISO day. Returns null when unparseable, so the
+ *  caller omits <lastmod> rather than inventing one. */
+function toISODate(dateStr: string | undefined): string | null {
+  if (!dateStr) return null;
   const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return fallback;
+  if (isNaN(d.getTime())) return null;
   return d.toISOString().split("T")[0];
 }
 
@@ -61,7 +75,6 @@ function generateSitemap(): string {
       return `
   <url>
     <loc>${loc}</loc>
-    <lastmod>${SITE_LASTMOD}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -72,13 +85,13 @@ function generateSitemap(): string {
     .map((post) => {
       const slug = (post.slug ?? generateSlug(post.title)).replace(/^\/+|\/+$/g, "");
       // Reflect the real freshness of the post: prefer dateModified, fall back to
-      // the publish date. Previously this always used `date`, so updated posts
-      // never surfaced their new lastmod in the sitemap.
-      const lastmod = toISODate(post.dateModified ?? post.date, SITE_LASTMOD);
+      // the publish date. Both are genuine content metadata, so this lastmod is
+      // trustworthy and is kept. If neither parses, the tag is omitted.
+      const lastmod = toISODate(post.dateModified ?? post.date);
       return `
   <url>
-    <loc>${escapeXml(`${BASE_URL}/blogs/${slug}/`)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <loc>${escapeXml(`${BASE_URL}/blogs/${slug}/`)}</loc>${lastmod ? `
+    <lastmod>${lastmod}</lastmod>` : ""}
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>`;

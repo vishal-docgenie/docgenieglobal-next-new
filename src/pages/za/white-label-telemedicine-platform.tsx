@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import { ChevronRight } from "lucide-react";
@@ -286,7 +287,7 @@ const SouthAfricaWhiteLabelPage = () => (
                                 Whether you run a GP practice in Johannesburg, a specialist clinic in Cape Town, a multi-location hospital group, an occupational health service, or a digital health startup — DocGenie Global gives you the technology foundation to launch quickly, serve patients under your own brand, and scale with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                                <Link href="/contact" data-hero-cta>
+                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "za_wlt_hero", page_path: window.location.pathname })}>
                                     <Button className="primary-button">
                                         Request Demo <ChevronRight className="ml-1 h-4 w-4" />
                                     </Button>
@@ -715,7 +716,7 @@ const SouthAfricaWhiteLabelPage = () => (
                             Build a secure, load-shedding resilient, and fully branded virtual care platform for your South African healthcare business. DocGenie Global helps you launch online consultations, support medical aid billing, align with POPIA requirements, and grow your digital health services under your own brand.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link href="/contact">
+                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "za_wlt_closing", page_path: window.location.pathname })}>
                                 <Button className="primary-button">
                                     Request Demo <ChevronRight className="ml-1 h-4 w-4" />
                                 </Button>

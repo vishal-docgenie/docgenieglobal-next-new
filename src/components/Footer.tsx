@@ -129,20 +129,30 @@ const Footer = () => {
                   }`}
                 />
               </button>
-              {isRegionsOpen && (
-                <ul id="regional-solutions-list" className="space-y-3">
-                  {regions.map((region) => (
-                    <li key={region.slug}>
-                      <Link
-                        href={`/${region.slug}/white-label-telemedicine-platform/`}
-                        className="text-gray-600 hover:text-brand-blue transition-colors"
-                      >
-                        {region.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              {/* Always rendered, shown/hidden with CSS rather than mounted
+                  conditionally. The previous `{isRegionsOpen && ...}` form kept
+                  these four links out of the server-rendered HTML entirely, so
+                  crawlers never saw them — a button is not something Googlebot
+                  clicks. `hidden` keeps the collapsed visual behaviour and the
+                  correct accessibility semantics (it removes the list from the
+                  a11y tree exactly as unmounting did) while the anchors remain
+                  present in the initial HTML. */}
+              <ul
+                id="regional-solutions-list"
+                hidden={!isRegionsOpen}
+                className="space-y-3"
+              >
+                {regions.map((region) => (
+                  <li key={region.slug}>
+                    <Link
+                      href={`/${region.slug}/white-label-telemedicine-platform/`}
+                      className="text-gray-600 hover:text-brand-blue transition-colors"
+                    >
+                      {region.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

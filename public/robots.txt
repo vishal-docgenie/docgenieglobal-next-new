@@ -4,9 +4,14 @@ Allow: /api/sitemap.xml
 
 Disallow: /api/
 Disallow: /admindemo/
-Disallow: /integration-guide
-Disallow: /sla-support-policy
 Disallow: /terms-of-service
 Disallow: /privacy-policy
+
+# /integration-guide and /sla-support-policy are deliberately NOT Disallow-ed.
+# Both pages carry <meta name="robots" content="noindex, follow">, which is the
+# mechanism that actually keeps them out of the index. A Disallow rule prevents
+# Google from fetching the page at all, so it can never read that noindex — the
+# URL can then still be indexed without its content. Crawl is allowed so the
+# noindex is honoured; the pages themselves are unchanged.
 
 Sitemap: https://www.docgenieglobal.com/api/sitemap.xml

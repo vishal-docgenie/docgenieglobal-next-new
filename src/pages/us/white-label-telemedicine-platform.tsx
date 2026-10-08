@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import { ChevronRight } from "lucide-react";
@@ -317,7 +318,7 @@ const usWhiteLabelPage = () => (
                                 Whether you are building a virtual primary care service, specialty consultation model, behavioral health platform, chronic care program, or hybrid clinic experience, DocGenie Global gives you the technology foundation to launch faster and scale with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                                <Link href="/contact" data-hero-cta>
+                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "us_wlt_hero", page_path: window.location.pathname })}>
                                     <Button className="primary-button">
                                         Request Demo <ChevronRight className="ml-1 h-4 w-4" />
                                     </Button>
@@ -730,7 +731,7 @@ const usWhiteLabelPage = () => (
                         <h2 className="heading-3 mb-6">Launch Your Branded Telemedicine Platform in the US</h2>
                         <p className="text-lg text-gray-700 mb-8">Build a secure, scalable, and branded virtual care platform for your healthcare business. DocGenie Global helps you move faster from idea to implementation with customizable telemedicine technology and expert support.</p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link href="/contact">
+                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "us_wlt_closing", page_path: window.location.pathname })}>
                                 <Button className="primary-button">
                                     Request Demo <ChevronRight className="ml-1 h-4 w-4" />
                                 </Button>
