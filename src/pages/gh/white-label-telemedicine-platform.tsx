@@ -298,9 +298,9 @@ const GhanaWhiteLabelPage = () => (
                                 Whether you are building a private clinic consultation service in Accra, extending specialist access to patients in Kumasi, Tamale, or rural Ghana, offering diaspora health access, or launching a digital health company — DocGenie Global gives you the foundation to launch quickly and grow with confidence.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "gh_wlt_hero", page_path: window.location.pathname })}>
+                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "See the platform with your branding", cta_location: "gh_wlt_hero", page_path: window.location.pathname })}>
                                     <Button className="primary-button">
-                                        Request Demo <ChevronRight className="ml-1 h-4 w-4" />
+                                        See the platform with your branding <ChevronRight className="ml-1 h-4 w-4" />
                                     </Button>
                                 </Link>
                                 <Link href="/pricing">
@@ -688,9 +688,9 @@ const GhanaWhiteLabelPage = () => (
                             Build a secure, mobile-first, and branded virtual care platform for your healthcare business in Ghana. DocGenie Global helps you launch online consultations, integrate mobile money payments, improve patient access, and grow your digital health services under your own brand.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "gh_wlt_closing", page_path: window.location.pathname })}>
+                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "See the platform with your branding", cta_location: "gh_wlt_closing", page_path: window.location.pathname })}>
                                 <Button className="primary-button">
-                                    Request Demo <ChevronRight className="ml-1 h-4 w-4" />
+                                    See the platform with your branding <ChevronRight className="ml-1 h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link href="/pricing">

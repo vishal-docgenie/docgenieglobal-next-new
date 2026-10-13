@@ -304,9 +304,9 @@ const ukWhiteLabelPage = () => (
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Built on our <a href="/solutions/white-label-telemedicine/">global white-label telemedicine platform</a>, it allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "uk_wlt_hero", page_path: window.location.pathname })}>
+                                <Link href="/contact" data-hero-cta onClick={() => trackEvent({ event: "cta_click", cta_text: "See the platform with your branding", cta_location: "uk_wlt_hero", page_path: window.location.pathname })}>
                                     <Button className="primary-button">
-                                        Request Demo <ChevronRight className="ml-1 h-4 w-4" />
+                                        See the platform with your branding <ChevronRight className="ml-1 h-4 w-4" />
                                     </Button>
                                 </Link>
                                 <Link href="/pricing">
@@ -675,9 +675,9 @@ const ukWhiteLabelPage = () => (
                             Create a secure, branded, and patient-friendly telemedicine platform for your healthcare business in the UK. DocGenie Global helps you launch online consultations, improve patient access, and manage digital care workflows under your own brand.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Request Demo", cta_location: "uk_wlt_closing", page_path: window.location.pathname })}>
+                            <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "See the platform with your branding", cta_location: "uk_wlt_closing", page_path: window.location.pathname })}>
                                 <Button className="primary-button">
-                                    Request Demo <ChevronRight className="ml-1 h-4 w-4" />
+                                    See the platform with your branding <ChevronRight className="ml-1 h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link href="/pricing">

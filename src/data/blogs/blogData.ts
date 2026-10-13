@@ -954,6 +954,8 @@ export const blogData: BlogPost[] = [
   {
     id: '13',
     title: 'Launch a Branded Digital Clinic in 30 Days | DocGenie Global',
+    seoTitle: 'Launch a Branded Digital Clinic in 30 Days: Step-by-Step',
+    metaDescription: 'A step-by-step plan to launch a branded digital clinic in under 30 days - defining requirements, choosing a white-label platform and applying your brand.',
     slug: 'launch-branded-digital-clinic-under-30-days',
     content: launchBrandedDigitalClinicContent,
     howToSteps: [
@@ -1694,6 +1696,8 @@ export const blogData: BlogPost[] = [
   {
     id: '21',
     title: 'White Label Telemedicine for Mental Health Practices: A Complete Guide',
+    seoTitle: 'White Label Telemedicine for Mental Health Practices (2026)',
+    metaDescription: 'What mental health practices need from a white label telemedicine platform: session privacy, therapeutic continuity, recurring-care scheduling and HIPAA.',
     slug: 'white-label-telemedicine-mental-health-practices',
     content: whiteLabelMentalHealthContent,
     date: 'Jul 18, 2026',
@@ -2018,6 +2022,8 @@ export const blogData: BlogPost[] = [
   {
     id: '25',
     title: 'Multi-State Telemedicine: How White Label Platforms Support Geographic Expansion',
+    seoTitle: 'Multi-State Telemedicine: Licensure & Platform Requirements',
+    metaDescription: 'Expanding telemedicine across US state lines: provider licensure, varying state rules, and what your platform must support to scale from one state to many.',
     slug: 'multi-state-telemedicine-geographic-expansion',
     content: multiStateTelemedicineContent,
     date: 'Jul 18, 2026',

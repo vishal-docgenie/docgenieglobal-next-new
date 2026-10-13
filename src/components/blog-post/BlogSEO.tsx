@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { BlogPost } from '@/data/blogs/types';
 import { generateSlug } from '@/lib/blog-slug';
-import { stripBlogMarkdown } from '@/lib/blogText';
+import { stripBlogMarkdown, truncateAtWordBoundary } from '@/lib/blogText';
 
 interface BlogSEOProps {
   blog: BlogPost;
@@ -23,10 +23,9 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers."
     );
 
-    if (sourceText.length <= 160) {
-      return sourceText;
-    }
-    return `${sourceText.substring(0, 157)}...`;
+    // Posts with an explicit metaDescription returned above and never reach
+    // this truncation path.
+    return truncateAtWordBoundary(sourceText);
   };
 
   // Format date for schema
