@@ -6,6 +6,7 @@ import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { Accordion,AccordionContent,AccordionItem,AccordionTrigger } from "@/components/ui/accordion";
+import PlatformProofSection from "@/components/solutions/PlatformProofSection";
 
 const schemaData = {
     "@context": "https://schema.org",
@@ -666,6 +667,10 @@ const ukWhiteLabelPage = () => (
         </ErrorBoundary>
 
         {/* CTA */}
+        <ErrorBoundary>
+            <PlatformProofSection ctaLocation="uk_wlt_proof" complianceLabel="UK GDPR" />
+        </ErrorBoundary>
+
         <ErrorBoundary>
             <section className="py-16 bg-brand-blue/10 rounded-3xl my-8">
                 <div className="container mx-auto px-4 text-center">
