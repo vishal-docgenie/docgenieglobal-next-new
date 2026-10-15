@@ -6,6 +6,7 @@ import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { Accordion,AccordionContent,AccordionItem,AccordionTrigger } from "@/components/ui/accordion";
+import PlatformProofSection from "@/components/solutions/PlatformProofSection";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -722,6 +723,10 @@ const usWhiteLabelPage = () => (
                     </div>
                 </div>
             </section>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+            <PlatformProofSection ctaLocation="us_wlt_proof" />
         </ErrorBoundary>
 
         <ErrorBoundary>

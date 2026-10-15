@@ -41,7 +41,30 @@ const TestimonialSection = () => {
           </div>
         </div>
         
-        {/* Enhanced trust indicators with smooth animations */}
+        {/* Trust indicators. Two badges were removed here rather than reworded.
+
+            "SOC 2 Certified": nothing in this repository evidences a SOC 2
+            report or attestation. Restore only against a current report, and
+            as "SOC 2 Type II attested" — SOC 2 produces an attestation
+            report, not a certification.
+
+            "99.9% Uptime": /sla-support-policy commits only to "strives to
+            ensure continuous platform availability" and states that uptime
+            guarantees "will be customized" per contract, so an unconditional
+            figure on the homepage contradicted our own SLA. Restore only if
+            an approved service-level commitment supports that exact number.
+
+            A "BAAs Available" badge was considered as a replacement and
+            rejected: the /us/ FAQ says BAA requirements "can be discussed as
+            part of the commercial, legal and implementation process" with
+            "final terms depend[ing] on your configuration", and the Terms of
+            Service say only that a BAA "may be required". No BAA template or
+            contracting artefact exists here, so an unconditional badge is not
+            supportable.
+
+            ISO/IEC 27001:2022 is retained: the company has confirmed it holds
+            a valid certification, and the version shown matches the
+            certification badge carried in the footer. */}
         <div className="mt-16 text-center reveal animate-fade-in">
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 hover:opacity-80 transition-opacity duration-300">
             <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
@@ -50,11 +73,7 @@ const TestimonialSection = () => {
             </div>
             <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
               <div className="w-3 h-3 bg-blue-400 rounded-full mr-2 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-              <span>SOC 2 Certified</span>
-            </div>
-            <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
-              <div className="w-3 h-3 bg-purple-400 rounded-full mr-2 animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <span>99.9% Uptime</span>
+              <span>ISO/IEC 27001:2022 Certified</span>
             </div>
           </div>
         </div>
