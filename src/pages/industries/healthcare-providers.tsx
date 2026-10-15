@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Hospital, Users, Clock, DollarSign, Shield, TrendingUp, CheckCircle, ChevronRight, HelpCircle, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/common/LazyImage";
-// import heroImage from "@/assets/images/healthcare-providers-dashboard.png";
 // import multiSpecialtyClinicImage from "@/assets/images/multi-specialty-clinic.png";
 
 const HealthcareProviders = () => {
@@ -196,8 +195,8 @@ const HealthcareProviders = () => {
       {/* Hero Section */}
       <section className="blue-white-gradient-br-50 py-20 sm:py-24 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 gap-12 items-center">
+            <div className="max-w-3xl">
               <div className="flex items-center justify-center sm:justify-start mb-4">
                 <Hospital className="h-8 w-8 text-brand-blue mr-3" />
                 <span className="text-brand-blue font-semibold">Healthcare Providers</span>
@@ -221,18 +220,16 @@ const HealthcareProviders = () => {
                 </Link>
               </div>
             </div>
-            <div>
-              <img 
-                src={'/images/healthcare-providers-dashboard.png'} 
-                alt="Healthcare provider using telemedicine platform" 
-                className="rounded-2xl shadow-lg w-full h-auto" 
-                width={600}
-                height={400}
-                // componentName="HealthcareProviders"
-                // imagePurpose="hero"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
+            {/* The platform screenshot that sat here showed a real clinician's
+                live account, including three identifiable patients (full name,
+                age, consultation type and date) and that clinician's own
+                practice volume. No evidence exists anywhere in this repository
+                or its history that the data was demo or synthetic, so it was
+                removed rather than obscured — blur is reversible and is not an
+                acceptable control for health data. The hero intentionally runs
+                as a single column until an approved, fully redacted replacement
+                is supplied; see the Asset Requirement List on the Phase 3C PR
+                for the capture and redaction spec. */}
           </div>
         </div>
       </section>
