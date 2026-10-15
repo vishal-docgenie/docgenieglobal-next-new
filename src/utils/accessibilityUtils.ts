@@ -44,6 +44,14 @@ export const getButtonA11yProps = (options: {
       if (isExpanded !== undefined) {
         props['aria-expanded'] = isExpanded;
       }
+      // A disclosure button is frequently icon-only (a bare chevron), which
+      // leaves it with no accessible name at all. When the caller supplies a
+      // label, apply it — aria-expanded describes the state, never the button.
+      // Callers that render visible text simply omit `label` and keep using
+      // their text content as the accessible name.
+      if (label) {
+        props['aria-label'] = label;
+      }
       break;
       
     case 'standard':

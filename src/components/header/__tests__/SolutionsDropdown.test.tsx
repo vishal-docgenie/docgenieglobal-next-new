@@ -4,27 +4,36 @@ import SolutionsDropdown from "../SolutionsDropdown";
 import { solutionsDropdownItems } from "../navData";
 
 describe("SolutionsDropdown", () => {
-  test("renders the Solutions link and its disclosure button", () => {
+  test("renders the Solutions link and a named disclosure button", () => {
     render(<SolutionsDropdown isOpen={false} setIsOpen={() => {}} isCurrentPage={false} />);
 
     // "Solutions" is a Link to /solutions. The chevron beside it is a separate
-    // icon-only button, queried here by its aria-expanded state.
-    //
-    // NOTE: that button currently has NO accessible name. SolutionsDropdown
-    // passes label: "Show/Hide Solutions menu" to getButtonA11yProps, but the
-    // 'expanded' branch of that helper only emits aria-expanded/aria-controls
-    // and discards the label. That is a production accessibility defect, left
-    // untouched here because it is outside this branch's approved scope — the
-    // test asserts the DOM as it actually is rather than masking it.
+    // icon-only button, so its accessible name can only come from aria-label.
     expect(screen.getByRole("link", { name: "Solutions" })).toBeInTheDocument();
-    expect(screen.getByRole("button", { expanded: false })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Show Solutions menu" })).toBeInTheDocument();
+  });
+
+  test("the disclosure button's accessible name tracks the open state", () => {
+    const { rerender } = render(
+      <SolutionsDropdown isOpen={false} setIsOpen={() => {}} isCurrentPage={false} />
+    );
+    expect(screen.getByRole("button", { name: "Show Solutions menu" })).toHaveAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+    rerender(<SolutionsDropdown isOpen={true} setIsOpen={() => {}} isCurrentPage={false} />);
+    expect(screen.getByRole("button", { name: "Hide Solutions menu" })).toHaveAttribute(
+      "aria-expanded",
+      "true"
+    );
   });
 
   test("toggles open state when the disclosure button is clicked", () => {
     const setIsOpen = jest.fn();
     render(<SolutionsDropdown isOpen={false} setIsOpen={setIsOpen} isCurrentPage={false} />);
 
-    fireEvent.click(screen.getByRole("button", { expanded: false }));
+    fireEvent.click(screen.getByRole("button", { name: "Show Solutions menu" }));
 
     expect(setIsOpen).toHaveBeenCalledWith(true);
   });
