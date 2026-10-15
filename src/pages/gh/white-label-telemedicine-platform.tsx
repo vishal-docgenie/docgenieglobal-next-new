@@ -681,7 +681,7 @@ const GhanaWhiteLabelPage = () => (
 
         {/* CTA */}
         <ErrorBoundary>
-            <PlatformProofSection ctaLocation="gh_wlt_proof" complianceLabel="Data Protection Act 2012" />
+            <PlatformProofSection ctaLocation="gh_wlt_proof" />
         </ErrorBoundary>
 
         <ErrorBoundary>

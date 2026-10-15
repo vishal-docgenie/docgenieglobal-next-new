@@ -41,7 +41,19 @@ const TestimonialSection = () => {
           </div>
         </div>
         
-        {/* Enhanced trust indicators with smooth animations */}
+        {/* Trust indicators. Two of these previously asserted "SOC 2 Certified"
+            and "99.9% Uptime". Neither is supported by anything in this
+            repository: there is no SOC 2 report or artefact, and
+            /sla-support-policy states the opposite of a fixed uptime figure —
+            it commits only to "strives to ensure continuous platform
+            availability" and says uptime guarantees "will be customized" per
+            contract. The homepage badge therefore contradicted our own
+            published SLA. Both are replaced with claims the site can actually
+            evidence: the ISO/IEC 27001:2022 certification carried in the
+            footer badge, and the BAA availability stated on the HIPAA page.
+            If a current SOC 2 Type II report exists, restore that badge as
+            "SOC 2 Type II attested" — SOC 2 produces an attestation report,
+            not a certification. */}
         <div className="mt-16 text-center reveal animate-fade-in">
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 hover:opacity-80 transition-opacity duration-300">
             <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
@@ -50,11 +62,11 @@ const TestimonialSection = () => {
             </div>
             <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
               <div className="w-3 h-3 bg-blue-400 rounded-full mr-2 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-              <span>SOC 2 Certified</span>
+              <span>ISO/IEC 27001:2022 Certified</span>
             </div>
             <div className="flex items-center text-sm text-gray-600 hover:text-gray-800 transition-all duration-200 hover:scale-105">
               <div className="w-3 h-3 bg-purple-400 rounded-full mr-2 animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <span>99.9% Uptime</span>
+              <span>BAAs Available</span>
             </div>
           </div>
         </div>

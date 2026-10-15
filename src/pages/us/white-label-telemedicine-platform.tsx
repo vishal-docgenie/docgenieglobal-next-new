@@ -726,7 +726,7 @@ const usWhiteLabelPage = () => (
         </ErrorBoundary>
 
         <ErrorBoundary>
-            <PlatformProofSection ctaLocation="us_wlt_proof" complianceLabel="HIPAA" />
+            <PlatformProofSection ctaLocation="us_wlt_proof" />
         </ErrorBoundary>
 
         <ErrorBoundary>

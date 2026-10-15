@@ -668,7 +668,7 @@ const ukWhiteLabelPage = () => (
 
         {/* CTA */}
         <ErrorBoundary>
-            <PlatformProofSection ctaLocation="uk_wlt_proof" complianceLabel="UK GDPR" />
+            <PlatformProofSection ctaLocation="uk_wlt_proof" />
         </ErrorBoundary>
 
         <ErrorBoundary>

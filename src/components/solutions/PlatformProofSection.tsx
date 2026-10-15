@@ -14,8 +14,6 @@ export interface PlatformProofSectionProps {
     | "uk_wlt_proof"
     | "za_wlt_proof"
     | "gh_wlt_proof";
-  /** The data-protection regime this page already speaks to, e.g. "HIPAA". */
-  complianceLabel: string;
 }
 
 /**
@@ -30,27 +28,27 @@ export interface PlatformProofSectionProps {
  * deliberate slot for real product screenshots: when those are supplied and
  * redacted, each step below takes an accompanying image without restructuring.
  */
-const PlatformProofSection = ({ ctaLocation, complianceLabel }: PlatformProofSectionProps) => {
+const PlatformProofSection = ({ ctaLocation }: PlatformProofSectionProps) => {
   const steps = [
     {
       icon: Palette,
       title: "It carries your brand, not ours",
-      body: "Your logo, colour scheme, custom domain and patient-facing messages apply across web and mobile. Patients book, consult and follow up inside your own care experience — DocGenie Global does not appear in it.",
+      body: "Your logo, colour scheme, custom domain and patient-facing messages apply across web and mobile, so patients book, consult and follow up inside your own branded care experience rather than a third-party app's.",
     },
     {
       icon: CalendarCheck,
-      title: "Patients book and join without an app store",
-      body: "Registration, scheduling, reminders and the consultation itself run in the browser on desktop and mobile, so a patient joins from a link rather than installing anything first.",
+      title: "Patients book and join in the browser",
+      body: "Registration, scheduling, reminders and the consultation itself run in the browser on desktop and mobile, so a patient can join from a link you send them.",
     },
     {
       icon: Stethoscope,
       title: "Clinicians work from one consultation view",
-      body: "The clinician sees their day's appointments, opens a consultation, and records notes, medical records and e-prescriptions in the same place, with secure patient messaging alongside.",
+      body: "The clinician sees their day's appointments, opens a consultation, and works with medical records and digital prescriptions in the same place, with secure patient communication alongside.",
     },
     {
       icon: LayoutDashboard,
       title: "Your operations team keeps oversight",
-      body: `Admin and finance views cover appointments, clinician onboarding, payments and role-based access, with activity trails supporting your ${complianceLabel} obligations.`,
+      body: "Admin and finance views cover appointments, clinician accounts and payments. Access is governed by role-based controls, and consultation activity is recorded.",
     },
   ];
 

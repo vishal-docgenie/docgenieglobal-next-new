@@ -709,7 +709,7 @@ const SouthAfricaWhiteLabelPage = () => (
 
         {/* CTA */}
         <ErrorBoundary>
-            <PlatformProofSection ctaLocation="za_wlt_proof" complianceLabel="POPIA" />
+            <PlatformProofSection ctaLocation="za_wlt_proof" />
         </ErrorBoundary>
 
         <ErrorBoundary>
