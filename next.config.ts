@@ -7,14 +7,24 @@ const nextConfig: NextConfig = {
   // Singular-to-plural typo fix: /solution -> /solutions
   async redirects() {
     return [
+      // Destinations carry the trailing slash deliberately. With
+      // trailingSlash: true, a destination written without one is normalised
+      // afterwards in a second 308, so "/solutions" turned
+      // /solution -> /solution/ -> /solutions -> /solutions/ into a
+      // three-hop application-level chain. Writing the canonical form here
+      // collapses that to two.
+      //
+      // Note the /sitemap.xml bridge below is deliberately NOT given one:
+      // trailingSlash does not append to a path with a file extension, and
+      // /api/sitemap.xml/ would not resolve.
       {
         source: "/solution",
-        destination: "/solutions",
+        destination: "/solutions/",
         permanent: true,
       },
       {
         source: "/solution/:path*",
-        destination: "/solutions/:path*",
+        destination: "/solutions/:path*/",
         permanent: true,
       },
       {
