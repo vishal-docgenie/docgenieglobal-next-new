@@ -19,7 +19,7 @@ const IntegrationGuide = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Integration Guide | DocGenie Global" />
         <meta property="og:description" content="Comprehensive integration guide for DocGenie Global's telemedicine platform. Learn about our APIs, deployment options, and integration patterns for healthcare providers." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/integration-guide/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -28,7 +28,7 @@ const IntegrationGuide = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Integration Guide | DocGenie Global" />
         <meta name="twitter:description" content="Comprehensive integration guide for DocGenie Global's telemedicine platform. Learn about our APIs, deployment options, and integration patterns for healthcare providers." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

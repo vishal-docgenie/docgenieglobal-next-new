@@ -7,6 +7,7 @@ import MultiDeviceSection from "@/components/solutions/MultiDeviceSection";
 import TechnicalFeaturesSection from "@/components/solutions/TechnicalFeaturesSection";
 import GetStartedSection from "@/components/solutions/GetStartedSection";
 import CTASection from "@/components/solutions/CTASection";
+import RegionalSolutionsNav from "@/components/solutions/RegionalSolutionsNav";
 import Head from "next/head";
 
 const Solutions = () => {
@@ -63,7 +64,7 @@ const Solutions = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Solutions for Healthcare | Customizable Virtual Care Platform - DocGenie Global" />
         <meta property="og:description" content="Discover DocGenie Global’s customizable telemedicine solutions for clinics and hospitals. Our platform offers white-label virtual care, HIPAA-compliant security, advanced AI capabilities, chronic care management, and comprehensive virtual healthcare features tailored to your needs." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/solutions/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -72,7 +73,7 @@ const Solutions = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Telemedicine Solutions for Healthcare | Customizable Virtual Care Platform - DocGenie Global" />
         <meta name="twitter:description" content="Discover DocGenie Global’s customizable telemedicine solutions for clinics and hospitals. Our platform offers white-label virtual care, HIPAA-compliant security, advanced AI capabilities, chronic care management, and comprehensive virtual healthcare features tailored to your needs." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/" />
 
         {/* Additional SEO Meta Tags */}
@@ -89,6 +90,7 @@ const Solutions = () => {
         <CoreFeaturesSection />
         <MultiDeviceSection />
         <TechnicalFeaturesSection />
+        <RegionalSolutionsNav />
         <GetStartedSection />
         <CTASection />
       </div>
