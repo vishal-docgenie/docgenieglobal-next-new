@@ -99,7 +99,7 @@ const Industries = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Solutions for Hospitals, Clinics & More | Industries" />
         <meta property="og:description" content="See how DocGenie Global supports hospitals, clinics, pharmacies and more with tailored virtual care, white-label telehealth, and enterprise-grade integrations." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/industries/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -108,7 +108,7 @@ const Industries = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Telemedicine Solutions for Hospitals, Clinics & More | Industries" />
         <meta name="twitter:description" content="See how DocGenie Global supports hospitals, clinics, pharmacies and more with tailored virtual care, white-label telehealth, and enterprise-grade integrations." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

@@ -241,7 +241,7 @@ const PublicHealth = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telemedicine Platform for Clinics | Launch Branded Virtual Care" />
         <meta property="og:description" content="Launch a branded telemedicine platform for your clinic with appointment scheduling, doctor logins, admin workflows, prescriptions, payments, alerts, and secure patient management." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/industries/telemedicine-platform-for-clinics/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -250,7 +250,7 @@ const PublicHealth = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Telemedicine Platform for Clinics | Launch Branded Virtual Care" />
         <meta name="twitter:description" content="Launch a branded telemedicine platform for your clinic with appointment scheduling, doctor logins, admin workflows, prescriptions, payments, alerts, and secure patient management." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/telemedicine-platform-for-clinics/" />
         
         <script type="application/ld+json">

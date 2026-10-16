@@ -19,7 +19,7 @@ const SLASupport = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Service Level Agreement (SLA) & Support Policy | DocGenie Global" />
         <meta property="og:description" content="Learn about DocGenie Global's service level agreements, support commitments, and technical assistance policies for our telemedicine platform users." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/sla-support-policy/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -28,7 +28,7 @@ const SLASupport = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Service Level Agreement (SLA) & Support Policy | DocGenie Global" />
         <meta name="twitter:description" content="Learn about DocGenie Global's service level agreements, support commitments, and technical assistance policies for our telemedicine platform users." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />

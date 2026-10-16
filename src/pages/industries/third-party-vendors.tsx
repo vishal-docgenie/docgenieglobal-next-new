@@ -190,7 +190,7 @@ const ThirdPartyVendors = () => {
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Telehealth Platform for Third-Party Vendors | DocGenie Global" />
         <meta property="og:description" content="Empower your offerings with DocGenie's white-label telehealth solutions. Seamlessly integrate secure, scalable virtual care into your services." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/industries/third-party-vendors/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
@@ -199,7 +199,7 @@ const ThirdPartyVendors = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Telehealth Platform for Third-Party Vendors | DocGenie Global" />
         <meta name="twitter:description" content="Empower your offerings with DocGenie's white-label telehealth solutions. Seamlessly integrate secure, scalable virtual care into your services." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/industries/third-party-vendors/" />
         
         {/* Additional SEO Meta Tags */}

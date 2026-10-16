@@ -158,24 +158,36 @@ const Index = () => {
   return (
     <Layout>
       <Head>
-        <title>White Label Telemedicine Platform | HIPAA-Compliant Virtual Care | DocGenie Global</title>
-        <meta name="description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
+        {/* Retargeted in Phase 4. This page previously carried the title
+            "White Label Telemedicine Platform | HIPAA-Compliant Virtual Care |
+            DocGenie Global", and an og:title byte-identical to the <title> of
+            /solutions/white-label-telemedicine/ — two URLs claiming one head
+            term. GSC (90 days) shows the homepage earned ~13 impressions and
+            0 clicks on white-label queries at positions 23-66, while the
+            dedicated page took 611 impressions at position 14.8 for "white
+            label telemedicine platform". The homepage's real demand is brand
+            navigational ("docgenie", 3,138 impressions / 22 clicks) plus
+            position ~1 for "telemedicine singapore". The title now states the
+            company proposition and leaves the white-label head term to the
+            page that actually ranks for it. */}
+        <title>Telemedicine Platform for Clinics & Hospitals | DocGenie Global</title>
+        <meta name="description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
         <link rel="canonical" href="https://www.docgenieglobal.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
 
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global" />
-        <meta property="og:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
-        <meta property="og:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta property="og:title" content="Telemedicine Platform for Clinics & Hospitals | DocGenie Global" />
+        <meta property="og:description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
+        <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DocGenie Global" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global" />
-        <meta name="twitter:description" content="Discover DocGenie Global’s industry-leading telemedicine platform offering secure, customizable, and AI-driven virtual care solutions for clinics and hospitals worldwide." />
-        <meta name="twitter:image" content="https://www.docgenieglobal.com/og-image.png" />
+        <meta name="twitter:title" content="Telemedicine Platform for Clinics & Hospitals | DocGenie Global" />
+        <meta name="twitter:description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
+        <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="author" content="DocGenie Global" />
