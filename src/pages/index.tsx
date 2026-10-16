@@ -169,14 +169,27 @@ const Index = () => {
             navigational ("docgenie", 3,138 impressions / 22 clicks) plus
             position ~1 for "telemedicine singapore". The title now states the
             company proposition and leaves the white-label head term to the
-            page that actually ranks for it. */}
-        <title>Telemedicine Platform for Clinics & Hospitals | DocGenie Global</title>
+            page that actually ranks for it.
+
+            Pre-merge review caught a second collision in the first attempt at
+            this title: "Telemedicine Platform for Clinics & Hospitals"
+            contained, verbatim, the title of
+            /industries/telemedicine-platform-for-clinics/ — it moved the
+            cannibalization rather than removing it. Both industry pages
+            currently record zero impressions over 90 days, so nothing was
+            measurably lost, but the collision was structural and would have
+            surfaced as those pages gained traction. The title below claims no
+            segment owned by a dedicated page, and deliberately keeps the word
+            "Telemedicine": the homepage holds position ~1.2 for
+            "telemedicine singapore", which is carried by the Organization
+            schema's areaServed and the footer address rather than the title. */}
+        <title>Telemedicine &amp; Virtual Care for Healthcare | DocGenie Global</title>
         <meta name="description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
         <link rel="canonical" href="https://www.docgenieglobal.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
 
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="Telemedicine Platform for Clinics & Hospitals | DocGenie Global" />
+        <meta property="og:title" content="Telemedicine &amp; Virtual Care for Healthcare | DocGenie Global" />
         <meta property="og:description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/" />
@@ -185,7 +198,7 @@ const Index = () => {
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Telemedicine Platform for Clinics & Hospitals | DocGenie Global" />
+        <meta name="twitter:title" content="Telemedicine &amp; Virtual Care for Healthcare | DocGenie Global" />
         <meta name="twitter:description" content="DocGenie Global builds secure, branded virtual care platforms for clinics, hospitals and healthcare vendors across the US, UK, South Africa and Ghana." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/og-image.png" />
         
