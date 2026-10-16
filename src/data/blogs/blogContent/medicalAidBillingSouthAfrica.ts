@@ -11,7 +11,7 @@ export const medicalAidBillingSouthAfricaContent: BlogContent = {
       title: "Can You Bill Medical Aid for a Virtual Consultation in South Africa?",
       content: `In most cases, yes. Since telehealth became mainstream, a number of South African medical schemes reimburse virtual consultations much like in-person visits. But this is not universal: coverage, the consultation types allowed, and the exact billing codes differ between schemes and even between plans within the same scheme. The practical rule is simple - verify the member's telehealth benefits and the scheme's current billing requirements before you consult, not after you submit the claim.
 
-      A <a href='/za/white-label-telemedicine-platform/'>white label telemedicine platform for South African providers</a> can be configured to capture the data a clean claim needs - diagnosis and procedure codes, consultation modality, consent, and clinical notes - so billing is not an afterthought bolted on to a generic video-call tool.`
+      A <a href='/za/white-label-telemedicine-platform/'>telemedicine platform for South African providers</a> can be configured to capture the data a clean claim needs - diagnosis and procedure codes, consultation modality, consent, and clinical notes - so billing is not an afterthought bolted on to a generic video-call tool.`
     },
     {
       id: 'telehealth-billing-codes',
