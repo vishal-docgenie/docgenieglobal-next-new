@@ -1605,6 +1605,16 @@ export const blogData: BlogPost[] = [
   {
     id: '20',
     title: 'How to Launch a White Label Telemedicine Platform: A Step-by-Step Guide for US Healthcare Providers',
+    // Phase 5: the article's visible H1 is unchanged, but its SERP title led
+    // with "White Label Telemedicine Platform" — the exact head term owned by
+    // /solutions/white-label-telemedicine/. Over 90 days this post drew 2,848
+    // impressions and 3 clicks against that term at positions 31-84, behind
+    // both commercial pages, while its genuinely informational queries ("how
+    // to start a telemedicine business") sat far down the list. The seoTitle
+    // moves the SERP title to the how-to intent the post actually serves and
+    // leaves the commercial term to the page that ranks for it.
+    seoTitle: 'How to Launch a Branded Telemedicine Service',
+    metaDescription: 'A step-by-step guide to launching a branded telemedicine service: defining your care model, choosing a vendor, configuring branding and integrations.',
     slug: 'how-to-launch-white-label-telemedicine-platform',
     content: howToLaunchWhiteLabelContent,
     howToSteps: [

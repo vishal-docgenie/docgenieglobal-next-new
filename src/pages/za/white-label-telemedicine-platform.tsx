@@ -237,8 +237,8 @@ const faqs = [
 const SouthAfricaWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care</title>
-            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in South Africa. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, connectivity-resilient design, and secure online consultations for private clinics, hospitals, and digital health companies." />
+            <title>Telemedicine Platform South Africa | POPIA-Aligned | DocGenie Global</title>
+            <meta name="description" content="A white-label telemedicine platform for South African providers: POPIA-aligned data workflows, medical aid billing support and load-shedding resilience." />
             <link rel="canonical" href="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -251,8 +251,8 @@ const SouthAfricaWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
-            <meta property="og:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, and connectivity-resilient design for the South African healthcare market." />
+            <meta property="og:title" content="Telemedicine Platform South Africa | POPIA-Aligned | DocGenie Global" />
+            <meta property="og:description" content="A white-label telemedicine platform for South African providers: POPIA-aligned data workflows, medical aid billing support and load-shedding resilience." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -265,8 +265,8 @@ const SouthAfricaWhiteLabelPage = () => (
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@DocGenieGlobal" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform South Africa | POPIA-Aligned Virtual Care" />
-            <meta name="twitter:description" content="Branded telehealth for South Africa — your logo, your domain, your patients. POPIA-aligned data workflows, medical-aid billing workflows assessed during implementation, and connectivity-resilient design for the South African healthcare market." />
+            <meta name="twitter:title" content="Telemedicine Platform South Africa | POPIA-Aligned | DocGenie Global" />
+            <meta name="twitter:description" content="A white-label telemedicine platform for South African providers: POPIA-aligned data workflows, medical aid billing support and load-shedding resilience." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/za/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -282,7 +282,7 @@ const SouthAfricaWhiteLabelPage = () => (
                 <div className="container mx-auto px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
-                            <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in South Africa</h1>
+                            <h1 className="heading-2 mb-6">Telemedicine Platform for Healthcare Providers in South Africa</h1>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
                                 <a href="/">DocGenie Global</a> helps private clinics, hospitals, specialist practices, and digital health companies in South Africa launch their own branded virtual care platform. Our <a href="/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, medical aid billing support, POPIA-aligned data workflows, and a fully branded patient experience across web and mobile.<br /><br />
                                 Whether you run a GP practice in Johannesburg, a specialist clinic in Cape Town, a multi-location hospital group, an occupational health service, or a digital health startup — DocGenie Global gives you the technology foundation to launch quickly, serve patients under your own brand, and scale with confidence.

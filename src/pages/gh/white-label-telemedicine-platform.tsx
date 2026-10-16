@@ -248,8 +248,8 @@ const faqs = [
 const GhanaWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform Ghana | Branded Virtual Care Solution</title>
-            <meta name="description" content="Launch a branded telemedicine platform for healthcare providers in Ghana. Secure online consultations, mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and full white-label customisation for clinics, hospitals, and digital health companies." />
+            <title>Telemedicine Platform Ghana | Mobile Money Payments | DocGenie Global</title>
+            <meta name="description" content="A white-label telemedicine platform for Ghanaian providers: mobile-money and card payment options, low-bandwidth delivery and branded online consultations." />
             <link rel="canonical" href="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/" />
             <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -262,8 +262,8 @@ const GhanaWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform Ghana | Branded Virtual Care Solution" />
-            <meta property="og:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and secure virtual consultations for the Ghanaian healthcare market." />
+            <meta property="og:title" content="Telemedicine Platform Ghana | Mobile Money Payments | DocGenie Global" />
+            <meta property="og:description" content="A white-label telemedicine platform for Ghanaian providers: mobile-money and card payment options, low-bandwidth delivery and branded online consultations." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -276,8 +276,8 @@ const GhanaWhiteLabelPage = () => (
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@DocGenieGlobal" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform Ghana | Branded Virtual Care Solution" />
-            <meta name="twitter:description" content="Branded telehealth for Ghana — your logo, your domain, your patients. Mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and secure virtual consultations for the Ghanaian healthcare market." />
+            <meta name="twitter:title" content="Telemedicine Platform Ghana | Mobile Money Payments | DocGenie Global" />
+            <meta name="twitter:description" content="A white-label telemedicine platform for Ghanaian providers: mobile-money and card payment options, low-bandwidth delivery and branded online consultations." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/gh/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -293,7 +293,7 @@ const GhanaWhiteLabelPage = () => (
                 <div className="container mx-auto px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
-                            <h1 className="heading-2 mb-6">White Label Telemedicine Platform for Healthcare Providers in Ghana</h1>
+                            <h1 className="heading-2 mb-6">Telemedicine Platform for Healthcare Providers in Ghana</h1>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose">
                                 <a href="https://www.docgenieglobal.com/">DocGenie Global</a> helps clinics, hospitals, and digital health companies in Ghana launch their own branded virtual care platform — without building technology from scratch. Our <a href="https://www.docgenieglobal.com/solutions/white-label-telemedicine">white label telemedicine solution</a> delivers secure online consultations, mobile-money and card-payment integration options assessed during implementation, connectivity-resilient design, and a fully branded patient experience accessible on web, tablet, and phone.<br /><br />
                                 Whether you are building a private clinic consultation service in Accra, extending specialist access to patients in Kumasi, Tamale, or rural Ghana, offering diaspora health access, or launching a digital health company — DocGenie Global gives you the foundation to launch quickly and grow with confidence.
