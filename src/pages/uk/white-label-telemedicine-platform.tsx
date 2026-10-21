@@ -260,8 +260,8 @@ const faqs = [
 const ukWhiteLabelPage = () => (
     <Layout>
         <Head>
-            <title>White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global</title>
-            <meta name="description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch secure online consultations, branded patient journeys, appointment workflows, and UK GDPR-aware virtual care experiences." />
+            <title>UK Telehealth Platform for Private Clinics | DocGenie Global</title>
+            <meta name="description" content="A white-label telehealth platform for UK private clinics, GP practices and specialists, with UK GDPR considerations built into branded online consultations." />
             <link rel="canonical" href="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
 
             {/* hreflang for regional targeting */}
@@ -273,8 +273,8 @@ const ukWhiteLabelPage = () => (
             <link rel="alternate" hrefLang="x-default" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
             {/* OpenGraph Tags */}
-            <meta property="og:title" content="White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global" />
-            <meta property="og:description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch branded, UK GDPR-aware virtual care." />
+            <meta property="og:title" content="UK Telehealth Platform for Private Clinics | DocGenie Global" />
+            <meta property="og:description" content="A white-label telehealth platform for UK private clinics, GP practices and specialists, with UK GDPR considerations built into branded online consultations." />
             <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta property="og:url" content="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
             <meta property="og:type" content="website" />
@@ -283,8 +283,8 @@ const ukWhiteLabelPage = () => (
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="White Label Telemedicine Platform UK for Private Clinics & GP Practices | DocGenie Global" />
-            <meta name="twitter:description" content="Build a white label telemedicine platform for UK private clinics, GP practices, specialists, and digital health companies. Launch branded, UK GDPR-aware virtual care." />
+            <meta name="twitter:title" content="UK Telehealth Platform for Private Clinics | DocGenie Global" />
+            <meta name="twitter:description" content="A white-label telehealth platform for UK private clinics, GP practices and specialists, with UK GDPR considerations built into branded online consultations." />
             <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
             <meta name="twitter:url" content="https://www.docgenieglobal.com/uk/white-label-telemedicine-platform/" />
             <meta name="author" content="DocGenie Global" />
@@ -301,7 +301,7 @@ const ukWhiteLabelPage = () => (
                 <div className="container mx-auto px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="reveal flex flex-col items-center lg:items-start text-center lg:text-left">
-                            <h1 className="heading-2 mb-6">White Label Telemedicine Platform for UK Private Healthcare Providers</h1>
+                            <h1 className="heading-2 mb-6">Telehealth Platform for UK Private Clinics and GP Practices</h1>
                             <p className="text-lg text-gray-700 mb-8 max-w-2xl prose"><a href="/">DocGenie Global</a> helps healthcare providers in the UK launch branded virtual care platforms for online consultations, patient booking, provider workflows, follow-ups, and digital care delivery. Built on our <a href="/solutions/white-label-telemedicine/">global white-label telemedicine platform</a>, it allows private clinics, specialist practices, and healthcare companies to create their own branded patient experience across web and mobile.<br /><br />Whether you are building a private GP consultation service, specialist follow-up model, mental health consultation platform, or hybrid care offering, DocGenie Global gives you the foundation to launch and manage virtual care under your own brand.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
