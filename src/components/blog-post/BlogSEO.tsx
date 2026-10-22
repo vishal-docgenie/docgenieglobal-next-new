@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { BlogPost } from '@/data/blogs/types';
 import { generateSlug } from '@/lib/blog-slug';
-import { stripBlogMarkdown, truncateAtWordBoundary } from '@/lib/blogText';
+import { stripBlogMarkdown, stripHtmlTags, truncateAtWordBoundary } from '@/lib/blogText';
 
 interface BlogSEOProps {
   blog: BlogPost;
@@ -12,16 +12,32 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
   const baseUrl = 'https://www.docgenieglobal.com';
   const blogUrl = `${baseUrl}/blogs/${blog.slug || generateSlug(blog.title)}/`;
 
+  /**
+   * Open Graph and schema.org both require absolute image URLs; a path-only
+   * value is simply dropped by most scrapers, so those posts shared without a
+   * preview image. 16 of the 31 published posts stored a site-relative path
+   * (`/images/blog/...`), 3 stored an absolute DocGenie URL and 12 point at
+   * Unsplash. Normalising here rather than rewriting blogData fixes og:image,
+   * twitter:image and the BlogPosting schema in one place, keeps each article's
+   * own artwork, and means a future post stored either way still emits a valid
+   * absolute URL. Values that are already absolute (including the external
+   * ones) pass through untouched.
+   */
+  const absoluteImageUrl = (src?: string) =>
+    src && src.startsWith('/') ? `${baseUrl}${src}` : src;
+
+  const socialImage = absoluteImageUrl(blog.image);
+
   // Create meta description with keywords (prefer conclusion, fall back to intro)
   const generateMetaDescription = () => {
     if (blog.metaDescription?.trim()) {
       return blog.metaDescription.trim();
     }
-    const sourceText = stripBlogMarkdown(
+    const sourceText = stripHtmlTags(stripBlogMarkdown(
       blog.content?.conclusion?.trim() ||
       blog.content?.intro?.trim() ||
       "DocGenie Global offers a comprehensive white-label telemedicine platform for clinics, hospitals, and healthcare providers."
-    );
+    ));
 
     // Posts with an explicit metaDescription returned above and never reach
     // this truncation path.
@@ -59,7 +75,7 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
     "description": generateMetaDescription(),
     "image": {
       "@type": "ImageObject",
-      "url": blog.image,
+      "url": socialImage,
       "caption": blog.imageAlt || `Image related to ${blog.title}`
     },
     "author": blog.author
@@ -151,7 +167,7 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       <meta property="og:url" content={blogUrl} />
       <meta property="og:type" content="article" />
       <meta property="og:title" content={blog.title || "DocGenie Global"} />
-      <meta property="og:image" content={blog.image} />
+      <meta property="og:image" content={socialImage} />
       <meta property="og:image:alt" content={blog.imageAlt || `Image related to ${blog.title}`} />
       <meta property="og:site_name" content="DocGenie Global" />
 
@@ -159,7 +175,7 @@ const BlogSEO = ({ blog }: BlogSEOProps) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={blog.title || "DocGenie Global"} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={blog.image} />
+      <meta name="twitter:image" content={socialImage} />
       <meta name="twitter:image:alt" content={blog.imageAlt || `Image related to ${blog.title}`} />
 
       {/* Article Schema */}

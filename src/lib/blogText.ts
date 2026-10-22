@@ -10,6 +10,30 @@ export const stripBlogMarkdown = (text: string): string =>
     .replace(/^ *\* /gm, '')            // "* " list markers
     .replace(/^ *\d+\. /gm, '');        // "1. " numbered list markers
 
+/**
+ * Removes HTML tags and decodes the handful of entities the blog content uses,
+ * for contexts that must be plain text.
+ *
+ * stripBlogMarkdown deliberately leaves HTML alone because BlogCard renders its
+ * output with dangerouslySetInnerHTML and styles the inline links. Meta
+ * descriptions have the opposite requirement: three published posts were
+ * emitting raw markup into <meta name="description">, e.g.
+ * "...those who treat their <a href='/solutions/white-label-telemedicine/'>virtual..."
+ * which Google shows verbatim. This is applied only on the meta-description
+ * path, so blog cards keep their links.
+ */
+export const stripHtmlTags = (text: string): string =>
+  text
+    .replace(/<[^>]*>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+
 /** Longest meta description we publish, including any ellipsis. */
 export const META_DESCRIPTION_MAX_LENGTH = 160;
 
