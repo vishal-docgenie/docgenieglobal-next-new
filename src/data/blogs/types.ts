@@ -31,6 +31,19 @@ export interface BlogContent {
 export interface BlogCustomCta {
   heading: string;
   body: string;
+  /**
+   * Optional contextual next step for readers of this specific article.
+   *
+   * The end-of-article CTA offers only /contact and /pricing, so a reader who
+   * has just finished a 4,000-word explainer is asked to talk to sales or look
+   * at prices with no route to the page that actually answers what they read
+   * about. Over 90 days the blog CTA recorded zero clicks. Where an article
+   * has a clear commercial counterpart, this points at it instead.
+   */
+  primaryLink?: {
+    href: string;
+    label: string;
+  };
 }
 
 export interface BlogAuthor {

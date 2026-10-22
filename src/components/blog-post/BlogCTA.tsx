@@ -34,7 +34,35 @@ const BlogCTA = ({ cta }: BlogCTAProps) => {
       )}
 
       <div className="flex flex-wrap justify-center gap-4">
-        <Button className="primary-button">
+        {/* Where the article has a clear commercial counterpart, that page
+            leads. A reader who has just finished an explainer is mid-funnel:
+            sending them to the page that answers what they read is a smaller
+            ask than "Contact Us", which over 90 days drew no clicks at all
+            from blog traffic. Articles without a counterpart keep the previous
+            two buttons exactly as they were.
+
+            Tracking uses one new cta_location, blog_contextual_cta. The
+            destination and the article are already carried by cta_text and
+            page_path, so a single new value keeps every existing
+            cta_location untouched while still allowing per-article analysis. */}
+        {cta?.primaryLink && (
+          <Button className="primary-button">
+            <Link
+              href={cta.primaryLink.href}
+              onClick={() =>
+                trackEvent({
+                  event: "cta_click",
+                  cta_text: cta.primaryLink!.label,
+                  cta_location: "blog_contextual_cta",
+                  page_path: window.location.pathname,
+                })
+              }
+            >
+              {cta.primaryLink.label}
+            </Link>
+          </Button>
+        )}
+        <Button className={cta?.primaryLink ? "border-brand-blue text-brand-blue hover:bg-brand-blue/10" : "primary-button"} variant={cta?.primaryLink ? "outline" : "default"}>
           <Link href="/contact" onClick={() => trackEvent({ event: "cta_click", cta_text: "Contact Us", cta_location: "blog_cta", page_path: window.location.pathname })}>Contact Us</Link>
         </Button>
         <Button

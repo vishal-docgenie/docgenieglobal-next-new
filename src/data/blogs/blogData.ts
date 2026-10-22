@@ -1480,7 +1480,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Skip the In-House Build — Launch Branded Virtual Care in Weeks',
-      body: 'DocGenie Global gives US healthcare providers a HIPAA-aligned, fully branded telemedicine platform without the cost and complexity of building from scratch. <b>Request a demo to see how it works for your organisation.</b>'
+      body: 'DocGenie Global gives US healthcare providers a HIPAA-aligned, fully branded telemedicine platform without the cost and complexity of building from scratch. <b>Request a demo to see how it works for your organisation.</b>',
+      primaryLink: { href: '/solutions/white-label-telemedicine/', label: 'See the white label platform' }
     }
   },
   {
@@ -1700,7 +1701,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Ready to Launch Your Branded Telemedicine Platform?',
-      body: 'DocGenie Global guides US healthcare providers through every step — from discovery to go-live. <b>Request a demo to start the conversation.</b>'
+      body: 'DocGenie Global guides US healthcare providers through every step — from discovery to go-live. <b>Request a demo to start the conversation.</b>',
+      primaryLink: { href: '/solutions/white-label-telemedicine/', label: 'See the white label platform' }
     }
   },
   {
@@ -1785,7 +1787,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Branded Virtual Care for Mental Health Practices',
-      body: 'DocGenie Global supports mental health and behavioural health providers with a secure, branded telemedicine platform. <b>Speak to our team about your practice requirements.</b>'
+      body: 'DocGenie Global supports mental health and behavioural health providers with a secure, branded telemedicine platform. <b>Speak to our team about your practice requirements.</b>',
+      primaryLink: { href: '/solutions/white-label-telemedicine/', label: 'See the white label platform' }
     }
   },
   {
@@ -2269,7 +2272,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'White Label Telemedicine Built for Your Specialty',
-      body: 'DocGenie Global supports a range of US specialty care workflows with flexible configuration and full brand ownership. <b>Talk to our team about your specialty requirements.</b>'
+      body: 'DocGenie Global supports a range of US specialty care workflows with flexible configuration and full brand ownership. <b>Talk to our team about your specialty requirements.</b>',
+      primaryLink: { href: '/us/white-label-telemedicine-platform/', label: 'See the platform for US providers' }
     }
   },
   {
@@ -2364,7 +2368,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'HPCSA-Aligned Telemedicine for South African Providers',
-      body: 'DocGenie Global supports HPCSA-aligned consent capture, identity checks, clinical notes, secure referrals, and POPIA-aligned data handling under your own brand. <b>Talk to our team about launching virtual care in South Africa.</b>'
+      body: 'DocGenie Global supports HPCSA-aligned consent capture, identity checks, clinical notes, secure referrals, and POPIA-aligned data handling under your own brand. <b>Talk to our team about launching virtual care in South Africa.</b>',
+      primaryLink: { href: '/za/white-label-telemedicine-platform/', label: 'See the platform for South Africa' }
     }
   },
   {
@@ -2447,7 +2452,8 @@ export const blogData: BlogPost[] = [
     ],
     cta: {
       heading: 'Bill Virtual Consultations as Smoothly as In-Person Visits',
-      body: 'DocGenie Global assesses medical-aid billing workflow requirements - including integration with your billing or practice-management software - during implementation. <b>Talk to our team about billing-ready virtual care in South Africa.</b>'
+      body: 'DocGenie Global assesses medical-aid billing workflow requirements - including integration with your billing or practice-management software - during implementation. <b>Talk to our team about billing-ready virtual care in South Africa.</b>',
+      primaryLink: { href: '/za/white-label-telemedicine-platform/', label: 'See the platform for South Africa' }
     }
   },
   {
