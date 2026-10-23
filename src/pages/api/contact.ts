@@ -11,7 +11,7 @@ type ContactBody = {
     role?: string;
     intent?: string;
     message?: string;
-    turnstileToken?: string;
+    turnstileToken?: unknown;
 };
 
 type ApiResponse = {
@@ -71,12 +71,12 @@ export default async function handler(
         req.socket.remoteAddress ||
         undefined;
     const isHuman = await verifyTurnstile(
-        (body.turnstileToken || "").trim(),
+        body.turnstileToken,
         TURNSTILE_CONTACT_ACTION,
         remoteIp
     );
     if (!isHuman) {
-        return res.status(400).json({
+        return res.status(403).json({
             status: "error",
             message: "Security check failed. Please refresh the page and try again.",
         });
