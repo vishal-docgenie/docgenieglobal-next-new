@@ -1,5 +1,5 @@
 // BlogPostView.tsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import BlogHeader from './BlogHeader';
 import BlogContent from './BlogContent';
@@ -12,6 +12,7 @@ import BlogSEO from './BlogSEO';
 import RelatedArticles from './RelatedArticles';
 import SocialSharing from './SocialSharing';
 import { useScrollTracking } from './useScrollTracking';
+import { useBlogLinkTracking } from './useBlogLinkTracking';
 
 export default function BlogPostView({
   blog,
@@ -23,6 +24,9 @@ export default function BlogPostView({
   allBlogs: any[];
 }) {
   const activeSection = useScrollTracking(sections, false);
+
+  const articleRef = useRef<HTMLDivElement>(null);
+  useBlogLinkTracking(articleRef, `/blogs/${blog.slug}/`);
 
   // Smooth scroll (client-only)
   useEffect(() => {
@@ -64,7 +68,11 @@ export default function BlogPostView({
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-3/4">
+          {/* Phase 8: one delegated listener on this column records editorial
+              links that lead to a commercial page. BlogCTA is a sibling of
+              this element, not a descendant, so the Phase 7 contextual CTA
+              cannot be double-counted by it. */}
+          <div className="w-full md:w-3/4" ref={articleRef}>
             {/* table of contents (mobile) */}
             <div className="md:hidden mb-6">
               <TableOfContents sections={sections} activeSection={activeSection} />
@@ -94,7 +102,7 @@ export default function BlogPostView({
             <SocialSharing blog={blog} />
 
             {blog.faqs?.length ? (
-              <div className="mt-16">
+              <div className="mt-16" data-blog-faq>
                 <FaqSection faqs={blog.faqs} />
               </div>
             ) : null}
