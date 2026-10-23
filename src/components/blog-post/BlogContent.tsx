@@ -11,21 +11,59 @@ interface BlogContentProps {
   section: Section;
 }
 
+// "* item" and "1. item", optionally indented (template-literal content often is)
+const BULLET_ITEM = /^ *\* (.*)$/;
+const NUMBERED_ITEM = /^ *(\d+)\. (.*)$/;
+
+// Converts one blank-line-separated block. Consecutive list lines become a
+// single <ul>/<ol>; any other lines become a paragraph.
+const renderBlock = (block: string) => {
+  const out: string[] = [];
+  let text: string[] = [];
+  // Cast so TS doesn't narrow to null; flushList() reassigns it inside a closure
+  let list = null as { tag: 'ul' | 'ol'; start: number; items: string[] } | null;
+
+  const flushText = () => {
+    if (text.length) out.push(`<p>${text.join('\n')}</p>`);
+    text = [];
+  };
+  const flushList = () => {
+    if (!list) return;
+    const cls = list.tag === 'ul' ? 'list-disc' : 'list-decimal';
+    const start = list.tag === 'ol' && list.start !== 1 ? ` start="${list.start}"` : '';
+    const items = list.items.map((item) => `<li>${item}</li>`).join('');
+    out.push(`<${list.tag} class="${cls}"${start}>${items}</${list.tag}>`);
+    list = null;
+  };
+
+  for (const line of block.split('\n')) {
+    const bullet = line.match(BULLET_ITEM);
+    const numbered = bullet ? null : line.match(NUMBERED_ITEM);
+    if (bullet || numbered) {
+      const tag = bullet ? 'ul' : 'ol';
+      flushText();
+      if (list?.tag !== tag) {
+        flushList();
+        list = { tag, start: numbered ? Number(numbered[1]) : 1, items: [] };
+      }
+      list?.items.push(bullet ? bullet[1] : numbered![2]);
+    } else {
+      flushList();
+      if (line.trim()) text.push(line);
+    }
+  }
+  flushText();
+  flushList();
+  return out.join('');
+};
+
 // Simple function to convert Markdown to HTML
 const markdownToHtml = (markdown: string) => {
   return markdown
     // Convert ** to bold
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    // Convert * list items (with proper indentation)
-    .replace(/^ *\* (.*?)$/gm, '<li>$1</li>')
-    // Wrap lists in ul tags
-    .replace(/<li>(.*?)(<li>|$)/g, '<ul><li>$1</ul>$2')
-    // Convert numbered list items
-    .replace(/^\d+\. (.*?)$/gm, '<li>$1</li>')
-    // Wrap numbered lists in ol tags
-    .replace(/<li>(.*?)(<li>|$)/g, '<ol><li>$1</ol>$2')
-    // Convert line breaks to paragraphs
-    .split(/\n\n+/).map(p => `<p>${p}</p>`).join('');
+    // Paragraphs and lists, block by block
+    .split(/\n\n+/).map(renderBlock).join('');
 };
 
 const BlogContent = ({ section }: BlogContentProps) => {

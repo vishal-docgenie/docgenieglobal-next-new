@@ -1,6 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { logContactError } from "@/lib/contactLogger";
 import nodemailer from "nodemailer";
+import { verifyTurnstile } from "@/lib/turnstile";
+import { TURNSTILE_CONTACT_ACTION } from "@/lib/turnstileConfig";
 type ContactBody = {
     firstName?: string;
     lastName?: string;
@@ -9,6 +11,7 @@ type ContactBody = {
     role?: string;
     intent?: string;
     message?: string;
+    turnstileToken?: string;
 };
 
 type ApiResponse = {
@@ -58,6 +61,25 @@ export default async function handler(
         return res
             .status(400)
             .json({ status: "error", message: "Please enter a valid email." });
+    }
+
+    // Bot check. Runs server-side so a bot posting straight to this endpoint,
+    // without ever loading the form, is rejected before any email is sent.
+    const forwardedFor = req.headers["x-forwarded-for"];
+    const remoteIp =
+        (Array.isArray(forwardedFor) ? forwardedFor[0] : forwardedFor)?.split(",")[0].trim() ||
+        req.socket.remoteAddress ||
+        undefined;
+    const isHuman = await verifyTurnstile(
+        (body.turnstileToken || "").trim(),
+        TURNSTILE_CONTACT_ACTION,
+        remoteIp
+    );
+    if (!isHuman) {
+        return res.status(400).json({
+            status: "error",
+            message: "Security check failed. Please refresh the page and try again.",
+        });
     }
 
     const name = `${firstname} ${lastname}`;

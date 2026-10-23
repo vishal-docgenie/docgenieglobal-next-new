@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { trackEvent } from "@/lib/analytics";
+import { TURNSTILE_CONTACT_ACTION } from "@/lib/turnstileConfig";
+import TurnstileWidget, { TurnstileHandle } from "./TurnstileWidget";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -20,6 +22,8 @@ const ContactForm = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -28,13 +32,17 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!captchaToken) {
+      toast({ title: "Please wait a moment", description: "We're running a quick security check. Try again in a few seconds.", variant: "destructive" });
+      return;
+    }
     setIsSubmitting(true);
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken: captchaToken }),
       });
 
       const responseData = await response.json();
@@ -60,6 +68,8 @@ const ContactForm = () => {
       toast({ title: "Submission Failed", description: "Could not connect to the server. Please check your network connection.", variant: "destructive" });
     } finally {
       setIsSubmitting(false);
+      // Tokens are single-use: get a fresh one for any further submission.
+      turnstileRef.current?.reset();
     }
   };
 
@@ -138,6 +148,8 @@ const ContactForm = () => {
             <Label htmlFor="message">Message</Label>
             <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us more about your needs (optional)" className="w-full min-h-[80px]" rows={4} />
           </div>
+
+          <TurnstileWidget ref={turnstileRef} action={TURNSTILE_CONTACT_ACTION} onToken={setCaptchaToken} />
 
           <Button type="submit" className="primary-button w-full" disabled={isSubmitting} aria-label={isSubmitting ? "Submitting your message" : "Submit your message"}>
             {isSubmitting ? (
