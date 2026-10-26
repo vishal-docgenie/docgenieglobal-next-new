@@ -1347,7 +1347,7 @@ export const blogData: BlogPost[] = [
       },
       {
         question: "How does DocGenie Global support browser-native virtual care?",
-        answer: "<a class='blog-faq-anchor' href='/'>DocGenie Global</a> provides a <a class='blog-faq-anchor' href='/solutions/white-label-telemedicine'>white-label telemedicine platform</a> that supports branded browser-based access, secure virtual consultations, patient dashboards, doctor workflows, EMR support, e-prescriptions, payments, communication, analytics, and integrations."
+        answer: "<a class='blog-faq-anchor' href='/'>DocGenie Global</a> provides a <a class='blog-faq-anchor' href='/solutions/white-label-telemedicine/'>white-label telemedicine platform</a> that supports branded browser-based access, secure virtual consultations, patient dashboards, doctor workflows, EMR support, e-prescriptions, payments, communication, analytics, and integrations."
       }
     ],
     schemafaqs: [
