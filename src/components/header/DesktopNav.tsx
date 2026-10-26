@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { ChevronRight, LogIn } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import SolutionsDropdown from "./SolutionsDropdown";
 import IndustriesDropdown from "./IndustriesDropdown";
 
@@ -64,16 +65,20 @@ const DesktopNav = ({
         )
       )}
 
-      {/* External login stays a normal <a> */}
+      {/* External login stays a normal <a>. The button styling is applied to
+          the anchor itself via buttonVariants rather than nesting a <Button>
+          inside it: <a><button> is invalid HTML and gives keyboard and screen
+          reader users two interactive elements for one control. Classes,
+          variant, href, target and rel are unchanged, so the rendering is
+          identical. */}
       <a
         href="https://admindemo.docgenieglobal.com"
         target="_blank"
         rel="noopener noreferrer"
+        className={cn(buttonVariants({ variant: "outline", className: "flex items-center gap-2" }))}
       >
-        <Button variant="outline" className="flex items-center gap-2">
-          <LogIn className="h-4 w-4" />
-          Login
-        </Button>
+        <LogIn className="h-4 w-4" />
+        Login
       </a>
 
       {/* For Next.js + shadcn, use asChild so the Button renders an <a> under Link */}

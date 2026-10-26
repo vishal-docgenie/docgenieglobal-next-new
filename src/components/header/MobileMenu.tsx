@@ -16,7 +16,8 @@ import {
   LogIn,
   HouseHeart
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { getButtonA11yProps } from "@/utils/accessibilityUtils";
 
 interface MobileMenuProps {
@@ -220,17 +221,21 @@ const MobileMenu = ({
           )
         )}
 
-        <a
-          href="https://admindemo.docgenieglobal.com"
-          className="block text-base py-2 font-medium text-left"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline" className="w-full justify-start">
+        {/* Same fix as DesktopNav: the anchor carries the button styling so
+            the DOM holds one interactive element instead of <a><button>. The
+            anchor's own layout classes stay on the wrapper <div> so the
+            vertical spacing is unchanged. */}
+        <div className="block py-2">
+          <a
+            href="https://admindemo.docgenieglobal.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ variant: "outline", className: "w-full justify-start" }))}
+          >
             <LogIn className="h-5 w-5 mr-2" />
             Login
-          </Button>
-        </a>
+          </a>
+        </div>
 
         <div className="pt-2">
           <Button className="primary-button w-full" asChild>
