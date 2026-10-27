@@ -21,9 +21,9 @@ const QuickAnswerSection = () => {
             <span className="text-xs text-gray-500">Last updated: {lastUpdated}</span>
           </div>
           <p className="text-gray-800 leading-relaxed">
-            A white label telemedicine platform is a ready-made, HIPAA-compliant virtual care solution that clinics,
-            hospitals, healthcare providers, care groups, and healthcare ecosystem partners license and rebrand as
-            their own — your logo, your colours, your domain, and your patient portal — instead of building telehealth
+            A white label telemedicine platform — also sold as a white label telehealth platform — is a ready-made,
+            HIPAA-compliant virtual care solution that clinics, hospitals, healthcare providers, care groups, and
+            healthcare ecosystem partners license and rebrand as their own — your logo, your colours, your domain, and your patient portal — instead of building telehealth
             software from scratch. The platform supports the complete care journey: patient registration, appointment
             scheduling, secure video consultations, EHR/EMR workflow support, billing/payment integrations where
             required, and patient communication — all under your brand. Unlike a generic telehealth marketplace that

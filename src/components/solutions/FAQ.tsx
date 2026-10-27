@@ -14,6 +14,10 @@ const FAQ = () => {
       answer: "A white label telemedicine platform is a fully-featured virtual care solution that can be customized with your healthcare organization's branding, colors, and logo. It allows you to offer telehealth services under your own brand identity rather than a third-party vendor's branding, creating a seamless experience for your patients."
     },
     {
+      question: "Is a white label telehealth platform the same as a white label telemedicine platform?",
+      answer: "Telehealth is the broader term: it covers remote clinical consultations as well as non-clinical remote services such as patient education, scheduling, follow-up messaging and remote monitoring. Telemedicine refers specifically to remote clinical care — a consultation between a patient and a clinician. Vendors use the phrases \"white label telehealth platform\" and \"white label telemedicine platform\" interchangeably when describing a brandable virtual care product, and DocGenie Global is the same platform under either name: secure video consultations, patient registration and scheduling, EHR/EMR workflow support, e-prescriptions, payments, patient communication and analytics, all under your own brand and domain."
+    },
+    {
       question: "How long does it take to implement a white label telemedicine solution?",
       answer: "Implementation timelines depend on branding requirements, workflows, integrations, mobile applications, data migration and customer readiness. A proposed implementation plan and timeline are provided after discovery."
     },
