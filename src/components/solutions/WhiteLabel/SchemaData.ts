@@ -85,6 +85,14 @@ export const whiteLabelSchemaData = {
         },
         {
           "@type": "Question",
+          "name": "Is a white label telehealth platform the same as a white label telemedicine platform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Telehealth is the broader term: it covers remote clinical consultations as well as non-clinical remote services such as patient education, scheduling, follow-up messaging and remote monitoring. Telemedicine refers specifically to remote clinical care — a consultation between a patient and a clinician. Vendors use the phrases \"white label telehealth platform\" and \"white label telemedicine platform\" interchangeably when describing a brandable virtual care product, and DocGenie Global is the same platform under either name: secure video consultations, patient registration and scheduling, EHR/EMR workflow support, e-prescriptions, payments, patient communication and analytics, all under your own brand and domain."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "How long does it take to implement a white label telemedicine solution?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -161,6 +169,7 @@ export const whiteLabelSchemaData = {
       },
       "mentions": [
         { "@type": "MedicalWebPage", "name": "Telemedicine" },
+        { "@type": "MedicalWebPage", "name": "Telehealth" },
         { "@type": "Thing", "name": "HIPAA Compliance" },
         { "@type": "Thing", "name": "EHR/EMR Integration" },
         { "@type": "Thing", "name": "Virtual Care" }

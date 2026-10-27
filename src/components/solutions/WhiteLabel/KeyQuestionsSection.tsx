@@ -9,12 +9,12 @@ const KeyQuestionsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 id="key-questions-heading" className="heading-3 mb-10 text-center">
-            White Label Telemedicine Platform: What You Need to Know
+            White Label Telemedicine and Telehealth Platforms: What You Need to Know
           </h2>
 
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-3">What is white label telemedicine?</h3>
+              <h3 className="text-2xl font-semibold mb-3">What is white label telemedicine (or white label telehealth)?</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 A white label telemedicine platform, also referred to as a white label telehealth platform, is a
                 fully-built, HIPAA-compliant virtual care solution — covering patient registration, appointment

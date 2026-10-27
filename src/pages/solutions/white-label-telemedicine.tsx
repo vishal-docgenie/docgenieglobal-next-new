@@ -27,7 +27,7 @@ const WhiteLabelTelemedicine = () => {
     <Layout>
       <Head>
         <title>White Label Telemedicine Platform | HIPAA-Compliant | DocGenie Global</title>
-        <meta name="description" content="Launch a HIPAA-compliant white label telemedicine platform for clinics, hospitals, and healthcare providers. Your brand, domain, patient portal, and care workflows. Request a demo." />
+        <meta name="description" content="Launch a HIPAA-compliant white label telemedicine and telehealth platform for clinics, hospitals, and healthcare providers. Your brand, domain, patient portal, and care workflows. Request a demo." />
         <link rel="canonical" href="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
         <link rel="preload" as="image" href="/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
 
@@ -41,7 +41,7 @@ const WhiteLabelTelemedicine = () => {
 
         {/* OpenGraph Tags */}
         <meta property="og:title" content="White Label Telemedicine Platform | HIPAA-Compliant Virtual Care Solution" />
-        <meta property="og:description" content="Branded virtual care in weeks. HIPAA-compliant, fully white-label — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
+        <meta property="og:description" content="Branded virtual care in weeks. A HIPAA-compliant, fully white-label telemedicine and telehealth platform — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -54,7 +54,7 @@ const WhiteLabelTelemedicine = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DocGenieGlobal" />
         <meta name="twitter:title" content="White Label Telemedicine Platform | HIPAA-Compliant Virtual Care Solution" />
-        <meta name="twitter:description" content="Branded virtual care in weeks. HIPAA-compliant, fully white-label — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
+        <meta name="twitter:description" content="Branded virtual care in weeks. A HIPAA-compliant, fully white-label telemedicine and telehealth platform — your logo, your domain, your patient portal. Built for clinics, hospitals, and healthcare providers." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/9e6e81c2-be85-41ae-9ba0-dfbb95ee96f3.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/white-label-telemedicine/" />
 
