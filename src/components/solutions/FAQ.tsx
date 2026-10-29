@@ -66,7 +66,19 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left font-medium">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-gray-700 text-left">
+                {/* forceMount keeps every answer in the server-rendered HTML
+                    instead of only appearing once the client-side accordion
+                    opens. Radix drops its own hidden attribute when the content
+                    is force-mounted, and this project has no accordion keyframes
+                    (the animate-accordion-* classes on AccordionContent emit no
+                    CSS under Tailwind v4), so without a collapse rule all ten
+                    answers would render expanded. The ancestor-state variant
+                    restores exactly the previous behaviour: display:none while
+                    the item is closed, which keeps the panel out of the tab
+                    order and the accessibility tree just as the hidden
+                    attribute did, and shows it the moment the item opens.
+                    The answers are plain text with no focusable elements. */}
+                <AccordionContent forceMount className="text-gray-700 text-left [[data-state=closed]_&]:hidden">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
