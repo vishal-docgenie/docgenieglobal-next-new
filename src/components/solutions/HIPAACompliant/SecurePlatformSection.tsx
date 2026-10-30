@@ -12,7 +12,7 @@ const SecurePlatformSection = () => {
               Maintain Patient Trust with a Secure Telemedicine Platform
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Our HIPAA-compliant telemedicine platform delivers enterprise-grade security and reliability to ensure your virtual care services meet the highest standards of data protection.
+              Our HIPAA-compliant telemedicine platform protects patient data with encryption, role-based access and access logging across every consultation.
             </p>
             
             <ul className="space-y-6">
@@ -25,7 +25,7 @@ const SecurePlatformSection = () => {
                     HIPAA Compliance
                   </h3>
                   <p className="text-gray-600 text-left">
-                    Our platform is fully compliant with HIPAA regulations, ensuring the privacy and security of patient data.
+                    DocGenie Global delivers virtual care on a HIPAA-compliant platform, with patient data handling designed around HIPAA workflows.
                   </p>
                 </div>
               </li>

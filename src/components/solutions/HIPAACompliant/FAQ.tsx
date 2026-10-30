@@ -15,23 +15,23 @@ const FAQ = () => {
     },
     {
       question: "How does DocGenie Global ensure its telemedicine platform meets HIPAA requirements?",
-      answer: "DocGenie Global implements a multi-layered security strategy to ensure HIPAA compliance. This includes robust data encryption, secure access controls, regular audits, and continuous system updates to address emerging security threats. These measures are integral to safeguarding patient information and maintaining a compliant telemedicine environment."
+      answer: "DocGenie Global delivers virtual care on a HIPAA-compliant platform. Patient data is encrypted in transit and at rest, access to patient records is role-based and logged, and the company holds ISO/IEC 27001:2022 certification for its information security management system. Arrangements specific to your deployment, including contractual and data-processing documentation, are confirmed during discovery."
     },
     {
       question: "What security features are built into the platform to protect patient information?",
-      answer: "The platform is equipped with several advanced security features:\n\n- End-to-end encryption: Ensures data is protected during transmission.\n- Multi-factor authentication: Adds an extra layer of security for user access.\n- Secure cloud storage: Protects stored data from unauthorized access.\n- Comprehensive logging and monitoring: Helps detect and respond to any suspicious activity.\n\nTogether, these features create a secure environment that minimizes the risk of data breaches."
+      answer: "The platform protects patient information through:\n\n- Encryption of patient data in transit and at rest.\n- Role-based access controls, so clinicians, administrators, finance teams and patients each see only what their role requires.\n- Access logging over patient records, so your compliance team can review who viewed or changed a record and when.\n\nControls that depend on how your organisation deploys the platform are confirmed during discovery."
     },
     {
       question: "Can DocGenie Global's solution integrate with existing electronic health record (EHR) systems?",
-      answer: "Yes, the solution is designed to integrate seamlessly with various EHR systems. This interoperability ensures that healthcare providers can efficiently exchange data, access real-time patient information during teleconsultations, and maintain continuity in patient care—all while keeping data secure and compliant with regulatory standards."
+      answer: "EHR and EMR integration is supported, and the requirements for it are assessed against your existing systems, available APIs and implementation scope. What can be connected, and how, is established for your environment during discovery rather than assumed in advance — so integration scope is confirmed before implementation begins."
     },
     {
       question: "What benefits can healthcare organizations expect from using a HIPAA-compliant telemedicine solution?",
-      answer: "Healthcare organizations benefit in several key ways:\n\n- Enhanced patient privacy and data security: Reduces the risk of breaches and builds trust.\n- Streamlined workflows: Improved operational efficiency through seamless integration with existing systems.\n- Regulatory compliance: Minimizes legal risks associated with handling sensitive patient data.\n- Improved patient access: Facilitates remote consultations and enhances overall care delivery.\n\nThese advantages combine to create a more efficient and secure healthcare service."
+      answer: "Healthcare organizations benefit in several key ways:\n\n- Enhanced patient privacy and data security: Reduces the risk of breaches and builds trust.\n- Streamlined workflows: Consultations, records, prescriptions and payments handled in one place rather than across disconnected tools.\n- Regulatory compliance: Minimizes legal risks associated with handling sensitive patient data.\n- Improved patient access: Facilitates remote consultations and enhances overall care delivery.\n\nThese advantages combine to create a more efficient and secure healthcare service."
     },
     {
-      question: "What training and support are available during and after the implementation of the solution?",
-      answer: "DocGenie Global offers comprehensive onboarding that includes detailed training sessions to help healthcare professionals quickly become proficient with the platform. Additionally, ongoing support is provided through dedicated customer service channels, regular system updates, and technical assistance to ensure smooth operation and address any issues that arise post-implementation."
+      question: "What training and support arrangements apply after implementation?",
+      answer: "Support, maintenance, training and account-management arrangements are confirmed according to your implementation and service scope, so what applies to your organisation is set out as part of the agreement rather than assumed from a standard package."
     }
   ];
 
@@ -50,7 +50,17 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left font-medium">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-gray-700 whitespace-pre-line text-left">
+                {/* Same page-specific fix as the white-label FAQ: forceMount keeps
+                    every answer in the server-rendered HTML instead of only
+                    appearing once the client-side accordion opens. Radix drops its
+                    own hidden attribute when the content is force-mounted, and this
+                    project emits no accordion CSS (the animate-accordion-* classes
+                    on AccordionContent compile to nothing under Tailwind v4), so the
+                    ancestor-state variant restores the previous behaviour exactly:
+                    display:none while the item is closed, which keeps the panel out
+                    of the tab order and the accessibility tree, and shows it the
+                    moment the item opens. The shared ui/accordion.tsx is untouched. */}
+                <AccordionContent forceMount className="text-gray-700 whitespace-pre-line text-left [[data-state=closed]_&]:hidden">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

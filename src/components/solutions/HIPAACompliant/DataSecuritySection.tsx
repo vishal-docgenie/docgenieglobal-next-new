@@ -27,7 +27,7 @@ const DataSecuritySection = () => {
               End-to-End Encryption
             </h3>
             <p className="text-gray-600">
-              Protect patient data in transit and at rest with advanced encryption protocols and secure data centers.
+              Patient data is encrypted in transit and at rest.
             </p>
           </div>
           
@@ -51,7 +51,7 @@ const DataSecuritySection = () => {
               Compliance Documentation
             </h3>
             <p className="text-gray-600">
-              Access a complete library of compliance documentation, including policies, procedures, and risk assessments.
+              Security and data-processing documentation for the platform is reviewed with your team during discovery.
             </p>
           </div>
         </div>

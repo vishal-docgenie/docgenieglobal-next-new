@@ -9,7 +9,7 @@ const HealthRecordsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-3 mb-6">Secure Digital Health Records Management</h2>
           <p className="text-lg text-gray-700">
-            Our HIPAA-compliant telemedicine platform ensures that all electronic health records are protected with industry-leading security measures.
+            Electronic health records on our HIPAA-compliant telemedicine platform are protected by encryption, role-based access and access logging.
           </p>
         </div>
         
@@ -20,7 +20,7 @@ const HealthRecordsSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-center">Secure Cloud Storage</h3>
             <p className="text-gray-600">
-              Patient records are stored in HIPAA-compliant cloud environments with multiple layers of security and redundancy.
+              Patient records are stored in HIPAA-compliant cloud environments.
             </p>
           </div>
           
