@@ -75,20 +75,20 @@ const HIPAACompliantHealthcare = () => {
       <HealthRecordsSection />
       
       <FeatureSection 
-        title="Comprehensive Security Measures"
-        description="Our platform employs a multi-layered security approach to protect patient data and ensure compliance with HIPAA regulations."
+        title="How Patient Data Is Handled"
+        description="Patient data handling on the platform is built around HIPAA-compliant workflows, with the specifics of any deployment confirmed during discovery."
         features={[
           {
-            title: "Secure Data Storage",
-            description: "Redundant data storage in HIPAA-compliant data centers with regular backups and disaster recovery protocols."
+            title: "Encrypted in transit and at rest",
+            description: "Patient data is encrypted in transit and at rest, so consultations, records and messages are protected as they move through the platform."
           },
           {
-            title: "Network Security",
-            description: "Firewalls, intrusion detection systems, and regular security audits to protect against unauthorized access."
+            title: "Role-based access",
+            description: "Clinicians, administrators, finance teams and patients each see only what their role requires, so access to patient records is scoped rather than shared."
           },
           {
-            title: "Physical Security",
-            description: "Strict physical access controls to data centers, including biometric identification and 24/7 monitoring."
+            title: "Access logging",
+            description: "Access to patient records is logged, which is what lets your own compliance team review who viewed or changed a record and when."
           }
         ]}
         image="/lovable-uploads/f7bb3e21-5027-4f43-937b-454a5140ad6f.png"
@@ -100,24 +100,24 @@ const HIPAACompliantHealthcare = () => {
       <BillingSection />
       
       <FeatureSection 
-        title="Ensure Compliance with Our Comprehensive Solution"
-        description="Our HIPAA-compliant telemedicine platform provides the tools and resources you need to meet regulatory requirements and protect patient data."
+        title="What You Can Verify Before You Commit"
+        description="Compliance is a shared responsibility between your organisation and your technology partners, so these are the things worth establishing in writing rather than taking on trust."
         features={[
           {
-            title: "Business Associate Agreement (BAA)",
-            description: "We provide a BAA to all clients, ensuring our commitment to HIPAA compliance and data protection."
+            title: "HIPAA-compliant platform",
+            description: "DocGenie Global delivers virtual care on a HIPAA-compliant platform, with patient data handling designed around HIPAA workflows."
           },
           {
-            title: "Security Risk Assessments",
-            description: "Regular security risk assessments to identify and address potential vulnerabilities in our platform."
+            title: "ISO/IEC 27001:2022 certified",
+            description: "The company holds ISO/IEC 27001:2022 certification for its information security management system — an independently audited standard you can ask to see evidence of."
           },
           {
-            title: "Employee Training",
-            description: "Ongoing employee training on HIPAA regulations and best practices for data security."
+            title: "Agreements confirmed in discovery",
+            description: "Contractual and data-processing arrangements, integration scope and security documentation are reviewed with your team during discovery, so what applies to your deployment is set out before you commit."
           }
         ]}
         image="/lovable-uploads/0d52e95d-09fc-40f0-a772-a1ecd765215a.png"
-        altText="Healthcare compliance officer reviewing HIPAA security documentation and conducting risk assessment on secure telemedicine platform"
+        altText="Healthcare compliance officer reviewing security and data-processing documentation for a telemedicine platform"
         reversed={true}
       />
       
@@ -130,8 +130,8 @@ const HIPAACompliantHealthcare = () => {
       <RelatedSolutions currentSolutionPath="/solutions/hipaa-compliant-healthcare" />
       
       <SolutionCTA 
-        title="Ensure Complete HIPAA Compliance for Your Virtual Care Services" 
-        description="Join healthcare organizations that trust our platform to maintain the highest standards of security and compliance. Our HIPAA-compliant telemedicine solution provides peace of mind while enabling you to focus on what matters most – delivering exceptional patient care."
+        title="Run Your Virtual Care on a HIPAA-Compliant Platform" 
+        description="Tell us how you deliver care today and which systems you already run. We will set out what the platform covers, what integration would involve, and what applies to your deployment — before you commit to anything."
       />
     </Layout>
   );

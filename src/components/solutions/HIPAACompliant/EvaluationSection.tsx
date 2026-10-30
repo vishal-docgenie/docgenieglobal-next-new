@@ -14,10 +14,12 @@ import { trackEvent } from "@/lib/analytics";
  *
  * The steps below describe only what this site already states: that an
  * implementation plan and timeline follow discovery, that integration scope is
- * assessed against the customer's own systems and APIs, and that the company
- * holds ISO/IEC 27001:2022 certification alongside HIPAA-compliant data
- * handling. No timeline figure, uptime number, customer count, audit outcome or
- * Business Associate Agreement commitment is introduced here.
+ * assessed against the customer's own systems and APIs, that support, maintenance,
+ * training and account-management arrangements are confirmed according to
+ * implementation and service scope, and that the company holds ISO/IEC 27001:2022
+ * certification alongside HIPAA-compliant data handling. No timeline figure, uptime
+ * number, customer count, audit outcome, training commitment or Business Associate
+ * Agreement commitment is introduced here.
  */
 const EvaluationSection = () => {
   const steps = [
@@ -39,7 +41,7 @@ const EvaluationSection = () => {
     {
       step: "4",
       title: "Configuration, testing and launch",
-      body: "Branding and workflow configuration, testing of the integrations, training for your teams, then a coordinated launch with ongoing technical support.",
+      body: "Branding and workflow configuration, testing of the integrations, then a coordinated launch. Support, maintenance, training and account-management arrangements are confirmed according to your implementation and service scope.",
     },
   ];
 

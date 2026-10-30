@@ -34,7 +34,7 @@ const PlatformScopeSection = () => {
     {
       icon: Hospital,
       title: "Hospitals and care groups",
-      body: "Extend outpatient and specialist consultations across a wider geography while patient records stay inside your existing EHR/EMR and one brand stays consistent across departments.",
+      body: "Extend outpatient and specialist consultations across a wider geography under one consistent brand across departments, with EHR/EMR integration requirements assessed against your existing systems, available APIs and implementation scope.",
     },
     {
       icon: Rocket,
@@ -57,7 +57,7 @@ const PlatformScopeSection = () => {
     {
       icon: PlugZap,
       title: "Works with the systems you already run",
-      body: "EHR and EMR integration requirements are assessed against your existing systems, available APIs and implementation scope, so records and workflows connect to what your teams already use.",
+      body: "EHR and EMR integration requirements are assessed against your existing systems, available APIs and implementation scope, so what connects — and how — is established for your environment rather than assumed.",
     },
   ];
 

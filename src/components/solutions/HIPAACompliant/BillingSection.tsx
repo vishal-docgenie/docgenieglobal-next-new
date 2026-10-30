@@ -9,7 +9,7 @@ const BillingSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-3 mb-6">HIPAA-Compliant Telemedicine Billing Solutions</h2>
           <p className="text-lg text-gray-700">
-            Our platform integrates secure billing features that maintain HIPAA compliance throughout the entire revenue cycle.
+            Billing features run on the same HIPAA-compliant platform as the rest of the care journey, so patient data handling is consistent across consultations and payments.
           </p>
         </div>
         
@@ -31,7 +31,7 @@ const BillingSection = () => {
                 <div className="ml-4 text-left">
                   <h3 className="text-lg font-semibold mb-2">Secure Payment Processing</h3>
                   <p className="text-gray-600">
-                    Process patient payments securely with PCI-compliant payment gateways that integrate seamlessly with our telemedicine platform.
+                    Patient payments are processed through payment gateway integrations, with the gateways and their configuration confirmed for your deployment.
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const BillingSection = () => {
                 <div className="ml-4 text-left">
                   <h3 className="text-lg font-semibold mb-2">Automated Insurance Verification</h3>
                   <p className="text-gray-600">
-                    Verify patient insurance eligibility in real-time while maintaining full HIPAA compliance throughout the verification process.
+                    Insurance eligibility verification is supported, with the scope of what can be checked determined by the payers and systems your integration covers.
                   </p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const BillingSection = () => {
                 <div className="ml-4 text-left">
                   <h3 className="text-lg font-semibold mb-2">Compliant Claims Management</h3>
                   <p className="text-gray-600">
-                    Generate, submit, and track insurance claims while maintaining full compliance with HIPAA privacy and security requirements.
+                    Insurance claims can be generated, submitted and tracked through the platform&apos;s claims integrations, which are scoped during implementation.
                   </p>
                 </div>
               </div>
