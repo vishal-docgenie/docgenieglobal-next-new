@@ -16,22 +16,24 @@ import HealthRecordsSection from "@/components/solutions/HIPAACompliant/HealthRe
 import SecurePlatformSection from "@/components/solutions/HIPAACompliant/SecurePlatformSection";
 import BillingSection from "@/components/solutions/HIPAACompliant/BillingSection";
 import FAQ from "@/components/solutions/HIPAACompliant/FAQ";
+import PlatformScopeSection from "@/components/solutions/HIPAACompliant/PlatformScopeSection";
+import EvaluationSection from "@/components/solutions/HIPAACompliant/EvaluationSection";
 import { hipaaSchemaData } from "@/components/solutions/HIPAACompliant/SchemaData";
 
 const HIPAACompliantHealthcare = () => {
   return (
     <Layout>
       <Head>
-        <title>HIPAA-Compliant Telemedicine Platform | Secure Virtual Healthcare Solutions</title>
+        <title>HIPAA-Compliant Telemedicine Platform & Software | DocGenie Global</title>
         <meta 
           name="description" 
-          content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." 
+          content="A HIPAA-compliant telemedicine and telehealth platform for clinics, hospitals and healthcare providers. Branded virtual care, EHR/EMR integration and secure patient data handling. Request a demo." 
         />
         <link rel="canonical" href="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
         
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="HIPAA-Compliant Telemedicine Platform | Secure Virtual Healthcare Solutions" />
-        <meta property="og:description" content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." />
+        <meta property="og:title" content="HIPAA-Compliant Telemedicine Platform & Software | DocGenie Global" />
+        <meta property="og:description" content="A HIPAA-compliant telemedicine and telehealth platform for clinics, hospitals and healthcare providers. Branded virtual care, EHR/EMR integration and secure patient data handling. Request a demo." />
         <meta property="og:image" content="https://www.docgenieglobal.com/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png" />
         <meta property="og:url" content="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
         <meta property="og:type" content="website" />
@@ -39,8 +41,8 @@ const HIPAACompliantHealthcare = () => {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HIPAA-Compliant Telemedicine Platform | Secure Virtual Healthcare Solutions" />
-        <meta name="twitter:description" content="Deliver virtual care with confidence using DocGenie Global’s HIPAA-compliant telemedicine platform. Enjoy enterprise-grade security, end-to-end encryption, comprehensive audit trails, seamless EMR integration, and AI-powered features — all designed to protect patient data and enhance clinical workflows." />
+        <meta name="twitter:title" content="HIPAA-Compliant Telemedicine Platform & Software | DocGenie Global" />
+        <meta name="twitter:description" content="A HIPAA-compliant telemedicine and telehealth platform for clinics, hospitals and healthcare providers. Branded virtual care, EHR/EMR integration and secure patient data handling. Request a demo." />
         <meta name="twitter:image" content="https://www.docgenieglobal.com/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png" />
         <meta name="twitter:url" content="https://www.docgenieglobal.com/solutions/hipaa-compliant-healthcare/" />
 
@@ -56,12 +58,14 @@ const HIPAACompliantHealthcare = () => {
       <ErrorBoundary>
         <SolutionHero 
           title="HIPAA-Compliant Telemedicine Platform" 
-          description="Deliver virtual care with complete confidence using our fully HIPAA-compliant telemedicine solution, featuring enterprise-grade security, comprehensive audit trails, and secure digital health records management."
+          description="A HIPAA-compliant telemedicine and telehealth platform that clinics, hospitals and healthcare providers run under their own brand — secure virtual consultations, EHR/EMR workflow support and protected patient data handling."
           image="/lovable-uploads/24334ddb-7ed2-4c58-b7ca-2088b1cb7638.png"
           altText="Secure HIPAA-compliant telemedicine consultation with medical data protection visualization showing encrypted patient information and security protocols"
         />
       </ErrorBoundary>
       
+      <PlatformScopeSection />
+
       <DataSecuritySection />
       
       <ComplianceChecklist />
@@ -117,6 +121,8 @@ const HIPAACompliantHealthcare = () => {
         reversed={true}
       />
       
+      <EvaluationSection />
+
       <ErrorBoundary>
         <FAQ />
       </ErrorBoundary>
